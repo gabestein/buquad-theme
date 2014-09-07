@@ -4,7 +4,7 @@
 
 
 <article class="single" id="<?php the_ID(); ?>">
-    $imgurl = wp_get_attachment_image_src(the_post_thumbnail('article'))['0'];
+    $imgurl = wp_get_attachment_image_src(the_post_thumbnail('banner'))['0'];
     <header style="background-image:url($imgurl);">
         <div>
         <h1><?php the_title(); ?></h1>
