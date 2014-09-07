@@ -81,12 +81,12 @@ function article_card($id) {
     $post_author_url = get_author_posts_url($post_author);
     $post_date = get_the_time('m/d/y', $id);
     $post_url = get_permalink($id);
-    $post_image = get_the_post_thumbnail($id, 'card');
+    $post_image = get_the_post_thumbnail($id, 'thumbnail', array('style' => 'width: 280px; height: 280px'));
     // render card
     ?>
     <object type="card" class="article">
         <section class="top">
-            <img src="<?php echo $post_image; ?>" alt="background">
+            <?php echo $post_image; ?>
             <hgroup>
                 <h1><?php echo $post_title; ?></h1>
                 <h2>
