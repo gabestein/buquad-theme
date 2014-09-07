@@ -12,7 +12,8 @@ function register_menus() {
       'secondary-menu' => __( 'Secondary Menu' )
     )
   );
-} add_action( 'init', 'register_menus' );
+}
+add_action( 'init', 'register_menus' );
 
 // Return true if user is of the specified role, false if otherwise
 // via http://docs.appthemes.com/tutorials/wordpress-check-user-role-function/
@@ -36,7 +37,8 @@ function add_social_media($profile_fields) {
 	$profile_fields['instagram'] = 'Instagram';
 
 	return $profile_fields;
-} add_filter('user_contactmethods', 'add_social_media');
+}
+add_filter('user_contactmethods', 'add_social_media');
 
 // Add a 'column' taxonomy
 function create_column_tax() {
@@ -65,17 +67,18 @@ function create_column_tax() {
             )
         )
     );
-} add_action( 'init', 'create_column_tax', 0 );
+}
+add_action( 'init', 'create_column_tax', 0 );
 
 // Functions to compose a standard _card object_ based on an id
 function article_card($id) {
-    // get data 
+    // get data
     $post = get_post($id);
     $post_title = $post->post_title;
     $post_excerpt = $post->post_excerpt;
     $post_author = $post->post_author;
     $post_author_name = get_the_author_meta('display_name', $post_author);
-    $post_author_url = get_the_author_posts_url($post_author);
+    $post_author_url = get_author_posts_url($post_author);
     $post_date = get_the_time('m/d/y', $id);
     $post_url = get_permalink($id);
     $post_image = get_the_post_thumbnail($id, 'card');
@@ -87,7 +90,7 @@ function article_card($id) {
             <hgroup>
                 <h1><?php echo $post_title; ?></h1>
                 <h2>
-                    by 
+                    by
                     <a href="<?php echo $post_author_url; ?>" title="Author page for <?php echo $post_author_name ?>">
                         <?php echo $post_author_name; ?>
                     </a>
@@ -129,30 +132,31 @@ function user_card($id) {
         </section>
         <section class="middle">
             <ul class="social">
-                <?php if !(empty($email)) { ?>
+                <?php if(!empty($email)) { ?>
                 <li>
                     <a href="mailto:<?php echo $email; ?>" title="Send an email to <?php echo $firstname; ?>">
                     <span class="genericond genericon genericon-mail"></span>
                     </a>
-                </li>  
-                <?php } if !(empty($website)) { ?>
+                </li>
+                <?php } if (!empty($website)) { ?>
                 <li>
                     <a href="<?php echo $website; ?>" title="Visit <?php echo $firstname; ?>'s website">
                     <span class="genericond genericon genericon-website"></span>
                     </a>
-                </li>  
-                <?php } if !(empty($twitter)) { ?>
+                </li>
+                <?php } if (!empty($twitter)) { ?>
                 <li>
                     <a href="http://www.twitter.com/<?php echo $twitter; ?>" title="Find <?php echo $firstname; ?> on Twitter">
                     <span class="genericond genericon genericon-twitter"></span>
                     </a>
-                </li>  
-                <?php } if !(empty($instagram)) { ?>
+                </li>
+                <?php } if (!empty($instagram)) { ?>
                 <li>
                     <a href="http://www.twitter.com/<?php echo $instagram; ?>" title="Find <?php echo $firstname; ?> on Instagram">
                     <span class="genericond genericon genericon-instagram"></span>
                     </a>
-                </li>  
+                </li>
+                <?php } ?>
             </ul>
         </section>
         <section class="bottom">
@@ -164,7 +168,7 @@ function user_card($id) {
     <?php
 }
 /*
-function tag_card($id) { 
+function tag_card($id) {
     $tag = get_tag($id);
     <object type="card" class="subject">
         <section class="top">
@@ -190,7 +194,5 @@ function get_404() {
         <p>Whatever you were looking for isn&rsquo;t here.</p>
         <p><a href="<?php echo home_url(); ?>">Return to our homepage.</a></p>
     </div>
-    <?php 
+    <?php
 }
-
-?>
