@@ -4,13 +4,13 @@
 
 <article class="single" id="<?php the_ID(); ?>">
     <?php $imgurl = wp_get_attachment_image_src(the_post_thumbnail('banner'))['0']; ?>
-    <header style="background-image:url($imgurl);">
+    <header style="background-image:url(<?php $imgurl ?>);">
         <div>
         <h1><?php the_title(); ?></h1>
         <h2><?php the_time('F j, Y')?> at <?php the_time('g:i a')?></h2>
         <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
         </div>
-        <?php user_card(get_the_author_meta('ID')) ?>
+        <?php user_card(get_the_author_meta('ID')); ?>
     </header>
     <?php the_content('Read More'); ?>
     <?php wp_link_pages(array('before' => '<div class="paginate">Page:', 'after' => '</div>', 'next_or_number' => 'number')); ?>
