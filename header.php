@@ -1,9 +1,7 @@
 <!doctype html>
-<html
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:og="http://ogp.me/ns#"
-    <?php language_attributes(); ?>
->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      <?php language_attributes(); ?>>
     <head>
         <title><?php bloginfo('name'); ?></title>
 
@@ -16,19 +14,19 @@
 	    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon.png" />
 	    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 
-    <!-- SOCIAL MEDIA INTEGRATION -->
-    <?php if(have_posts()):while(have_posts()):the_post();endwhile;endif;?>
-    <?php if (is_single()) {
-        $url = the_permalink();
-        $title = single_post_title('');
-        $description = strip_tags(get_the_excerpt($post->ID));
-        $image = '';
-        if (function_exists('wp_get_attachment_image_src')) {
-            $image = (wp_get_attachment_image_src(get_post_thumbnail_id(), 'social'));
-        } else {
-            $image = get_template_directory_uri().'/images/placeholder.png';
-        }
-    ?>
+        <!-- SOCIAL MEDIA INTEGRATION -->
+        <?php if(have_posts()):while(have_posts()):the_post();endwhile;endif; ?>
+        <?php if (is_single()) {
+            $url = get_the_permalink();
+            $title = get_single_post_title('');
+            $description = strip_tags(get_the_excerpt($post->ID));
+            $image = '';
+            if (function_exists('wp_get_attachment_image_src')) {
+                $image = (wp_get_attachment_image_src(get_post_thumbnail_id(), 'social'));
+            } else {
+                $image = get_template_directory_uri().'/images/placeholder.png';
+            }
+        ?>
 		<!-- FACEBOOK OPEN GRAPH -->
 		<meta property="og:url" content="<?php echo $url; ?>"/>
 		<meta property="og:title" content="<?php echo $title; ?>" />
@@ -44,12 +42,12 @@
 		<meta name="twitter:image" content="<?php echo $image; ?>" />
 		<meta property="twitter:creator" content="<?php echo the_author_meta('twitter'); ?>" />
 
-	<?php } else {
-	    $url = bloginfo('url');
-	    $title = bloginfo('name');
-	    $description = bloginfo('description');
-	    $image = get_template_directory_uri().'/images/placeholder.png';
-	?>
+        <?php } else {
+            $url = get_bloginfo('url');
+            $title = get_bloginfo('name');
+            $description = get_bloginfo('description');
+            $image = get_template_directory_uri().'/images/placeholder.png';
+        ?>
 		<!-- FACEBOOK OPEN GRAPH -->
 		<meta property="og:url" content="<?php echo $url; ?>"/>
 		<meta property="og:title" content="<?php echo $title; ?>"/>
@@ -63,7 +61,7 @@
 		<meta name="twitter:title" content="<?php echo $title; ?>"/>
 		<meta name="twitter:description" content="<?php echo $description; ?>"/>
 		<meta name="twitter:image" content="<?php echo $image; ?>" />
-	<?php } ?>
+	    <?php } ?>
 
         <!-- begin GOOGLE ANALYTICS -->
         <script type="text/javascript">
@@ -88,8 +86,9 @@
           }
         </script>
         <!-- end GOOGLE ANALYTICS -->
-
+        
         <?php wp_head(); ?>
+    
     </head>
     <body>
         <header>

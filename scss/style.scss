@@ -11,7 +11,11 @@ Tags: responsive, minimal, content-first
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "reset";
+@import "fonts";
 
-@import "card";
+@import "colors";
+@import "typography";
+@import "cards";
+@import "menus";
 
 @import "single";

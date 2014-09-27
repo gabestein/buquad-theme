@@ -1,4 +1,4 @@
-
+/*
 Theme Name: The Quad
 Theme URI: http://buquad.com/
 Description: Development theme.
@@ -7,9 +7,12 @@ Author URI: http://www.allanlasser.com/
 version: 0.1
 Tags: responsive, minimal, content-first
 */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-
-
+/* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,167 +31,103 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 html {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 q, blockquote {
-  quotes: none;
-}
+  quotes: none; }
 
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
-  content: none;
-}
+  content: none; }
 
 a img {
-  border: none;
-}
+  border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
-/* CARDS */
+/* COOPER HEWITT */
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-Book.eot");
+  src: url("assets/fonts/CooperHewitt-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-Book.woff") format("woff"), url("assets/fonts/CooperHewitt-Book.svg#cooperhewittbook") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-BookItalic.eot");
+  src: url("assets/fonts/CooperHewitt-BookItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-BookItalic.woff") format("woff"), url("assets/fonts/CooperHewitt-BookItalic.svg#cooperhewittbookitalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-Medium.eot");
+  src: url("assets/fonts/CooperHewitt-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-Medium.woff") format("woff"), url("assets/fonts/CooperHewitt-Medium.svg#cooperhewittmedium") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-MediumItalic.eot");
+  src: url("assets/fonts/CooperHewitt-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-MediumItalic.woff") format("woff"), url("assets/fonts/CooperHewitt-MediumItalic.svg#cooperhewittmediumitalic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+/* LORA */
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Regular.eot");
+  src: url("assets/fonts/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Regular.woff") format("woff"), url("assets/fonts/Lora-Regular.ttf") format("truetype"), url("assets/fonts/Lora-Regular.svg#loraregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Italic.eot");
+  src: url("assets/fonts/Lora-Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Italic.woff") format("woff"), url("assets/fonts/Lora-Italic.ttf") format("truetype"), url("assets/fonts/Lora-Italic.svg#loraitalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Bold.eot");
+  src: url("assets/fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Bold.woff") format("woff"), url("assets/fonts/Lora-Bold.ttf") format("truetype"), url("assets/fonts/Lora-Bold.svg#lorabold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-BoldItalic.eot");
+  src: url("assets/fonts/Lora-BoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-BoldItalic.woff") format("woff"), url("assets/fonts/Lora-BoldItalic.ttf") format("truetype"), url("assets/fonts/Lora-BoldItalic.svg#lorabold_italic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+html, body {
+  font-family: "Lora", "Georgia", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
 
-object[type="card"] {
-  max-width: 300px;
-  display: block;
-  margin: 1.5em auto;
-  font-family: "Lato";
-  color: #202020;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  border: 1px solid black;
-  
-  -webkit-box-shadow: 0 5px 5px #bdc3c7;
-  -moz-box-shadow: 0 5px 5px #bdc3c7;
-  box-shadow: 0 5px 5px #bdc3c7;
-  animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  
-  -moz-animation-duration: 0.5s;
-  
-  -o-animation-duration: 0.5s;
-  
-  
-}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif; }
 
-object[type="card"] section {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+a {
+  color: #ff3400; }
+  a:link, a:visited {
+    text-decoration: none; }
+  a:hover, a:active {
+    text-decoration: underline; }
 
-object[type="card"] .top {
-  position: relative;
-  color: white;
-}
-
-object[type="card"] .top h1 {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 900;
-}
-
-object[type="card"] .top img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid black;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-object[type="card"] .middle .social {
-  box-sizing: border-box;
-  display: table;
-  width: 100%;
-  padding: 0.5em 0.75em 0;
-}
-
-object[type="card"] .middle .social li {
-  display: table-cell;
-}
-
-object[type="card"] .middle .social li a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid red;
-  border-left: none;
-}
-
-object[type="card"] .middle .social li a span {
-  font-size: 1.5em;
-  width: 100%;
-  height: 100%;
-  padding: 0.5em 0;
-  color: red;
-}
-
-object[type="card"] .middle .social li a:hover {
-  background-color: red;
-}
-
-object[type="card"] .middle .social li a:hover span {
-  color: white;
-}
-
-object[type="card"] .middle .social li:first-child a {
-  border-left: 2px solid red;
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-object[type="card"] .middle .social li:last-child a {
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-object[type="card"] .bottom {
-  margin: 0.75em;
-}
-
-object[type="card"] .bottom a[type="button"] {
-  display: block;
+a[type="button"] {
+  display: inline-block;
   padding: 0.5em 0.625em;
   text-align: center;
   font-weight: 700;
@@ -196,83 +135,178 @@ object[type="card"] .bottom a[type="button"] {
   color: red;
   background-color: white;
   border: 2px solid red;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
+  border-radius: 4px; }
+  a[type="button"]:hover {
+    color: white;
+    background-color: red; }
 
-object[type="card"] .bottom a[type="button"]:hover {
-  color: white;
-  background-color: red;
-}
-
-object[type="card"].article {
-  text-align: left;
-}
-
-object[type="card"].article hgroup {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
-  -webkit-box-shadow: inset 0 0 100% rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0 0 100% rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 0 100% rgba(0, 0, 0, 0.25);
-}
-
-object[type="card"].article hgroup h1 {
-  margin: 1em;
-}
-
-object[type="card"].article hgroup h2, object[type="card"].article hgroup h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-left: 1.5em;
-}
-
-object[type="card"].article summary {
-  font-size: 16px;
-  line-height: 24px;
-  margin: 1.5em;
-}
-
-object[type="card"].author, object[type="card"].subject {
-  text-align: center;
-}
-
-object[type="card"].author .top, object[type="card"].subject .top {
-  text-shadow: 1px 1px 1px black, 1px 1px 1px 0 black;
-  text-shadow: 1px 1px 1px 0 black, 1px 1px 1px 0 black;
-}
-
-object[type="card"].author .top h1, object[type="card"].subject .top h1 {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  padding: 1em;
+object[type="card"] {
+  display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), #000000);
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), #000000);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), #000000);
-  background-image: linear-gradient(rgba(0, 0, 0, 0), #000000);
-}
-@media screen and (min-width: 700px) {
-  
-  object[type="card"] {
+  max-width: 300px;
+  margin: 1.5em auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+  color: #202020;
+  box-shadow: #bdc3c7, 0, 5px, 5px;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s; }
+  object[type="card"] .top {
+    position: relative;
+    color: white;
+    text-shadow: 1px, 1px, 1px, 0, black; }
+    object[type="card"] .top h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px; }
+    object[type="card"] .top img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid black;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+  object[type="card"] .middle .social {
+    display: table;
+    width: 100%;
+    padding: 0.5em 0.75em 0; }
+    object[type="card"] .middle .social li {
+      display: table-cell; }
+      object[type="card"] .middle .social li a {
+        display: block;
+        border: 2px solid red;
+        border-left: none;
+        color: white;
+        text-align: center;
+        text-decoration: none; }
+        object[type="card"] .middle .social li a span {
+          font-size: 1.5em;
+          width: 100%;
+          height: 100%;
+          padding: 0.5em 0;
+          color: red; }
+        object[type="card"] .middle .social li a:hover {
+          background-color: red; }
+          object[type="card"] .middle .social li a:hover span {
+            color: white; }
+      object[type="card"] .middle .social li:first-child a {
+        border-left: 2px solid red;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+      object[type="card"] .middle .social li:last-child a {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px; }
+  object[type="card"] .bottom {
+    margin: 0.75em; }
+    object[type="card"] .bottom a[type="button"] {
+      display: block; }
+  object[type="card"].article {
+    text-align: left; }
+    object[type="card"].article img {
+      filter: blur(1px);
+      -webkit-filter: blur(1px); }
+    object[type="card"].article hgroup {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background-color: rgba(32, 32, 32, 0.5); }
+      object[type="card"].article hgroup h1 {
+        margin: 1em; }
+      object[type="card"].article hgroup h2, object[type="card"].article hgroup h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-left: 1.5em; }
+    object[type="card"].article summary {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 1.5em; }
+  object[type="card"].author, object[type="card"].subject {
+    text-align: center; }
+    object[type="card"].author .top h1, object[type="card"].subject .top h1 {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 1em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-image: -webkit-linear-gradient(transparent, black);
+      background-image: linear-gradient(transparent, black); }
+  @media screen and (min-width: 700px) {
+    object[type="card"] {
+      display: inline-block;
+      margin: 0.75em; } }
+
+.primary-menu, .secondary-menu {
+  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+  font-size: 24px; }
+  .primary-menu ul, .secondary-menu ul {
+    width: 100%; }
+  .primary-menu li, .secondary-menu li {
     display: inline-block;
-    margin: 0.75em;
-  }
-}
+    margin: 0; }
+  .primary-menu a, .secondary-menu a {
+    display: block;
+    padding: 0.75em 1.5em; }
+
+.primary-menu .the-quad {
+  font-weight: 700; }
+.primary-menu ul {
+  background-color: #ff3400; }
+.primary-menu a {
+  text-decoration: none; }
+  .primary-menu a:link, .primary-menu a:visited {
+    color: #202020; }
+  .primary-menu a:hover, .primary-menu a:active {
+    color: #fcfcfc;
+    background-color: #ff5d33; }
+
+.secondary-menu {
+  font-size: 14px; }
+  .secondary-menu ul {
+    background-color: #202020; }
+  .secondary-menu a {
+    text-decoration: none; }
+    .secondary-menu a:link, .secondary-menu a:visited {
+      color: #fcfcfc; }
+    .secondary-menu a:hover, .secondary-menu a:active {
+      color: #fcfcfc;
+      background-color: #393939; }
+
+/* SINGLE */
+article.single {
+  width: 100%;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  article.single:after {
+    content: "";
+    display: table;
+    clear: both; }
+  article.single header {
+    background-size: cover;
+    background-repeat: no-repeat; }
+    article.single header div {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.9); }
+      article.single header div h1 {
+        font-size: 36px; }
+      article.single header div h2 {
+        font-size: 20px; }
+      article.single header div ul {
+        font-size: 16px; }
+      article.single header div li {
+        display: inline-block; }
+  article.single p {
+    max-width: 900px;
+    margin: 24px auto;
+    font-size: 16px;
+    line-height: 24px; }

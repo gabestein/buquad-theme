@@ -12,7 +12,7 @@ a[type="button"] {
     color: red;
     background-color: white;
     border: 2px solid red;
-    @include border-radius($border-radius / 2);
+    border-radius: $border-radius / 2;
     &:hover {
         color: white;
         background-color: red;
@@ -27,7 +27,7 @@ object[type="card"] {
     border: 1px solid black;
     border-radius: $border-radius;
 
-    font-family: "Lato";
+    font-family: $font-sans-serif;
     color: #202020;
 
     box-shadow: #bdc3c7, 0, 5px, 5px;
@@ -39,7 +39,7 @@ object[type="card"] {
         text-shadow: 1px, 1px, 1px, 0, black;
         h1 {
             font-size: 24px;
-            font-weight: 900;
+            font-weight: 700;
             line-height: 24px;
         }
         img {
@@ -91,19 +91,22 @@ object[type="card"] {
     
     &.article { 
         text-align: left; 
+        img {
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+        }
         hgroup {
             position: absolute;
             top: 0;
             width: 100%;
             height: 100%;
             @include border-top-radius($border-radius);
-            background-color: rgba(0, 0, 0, 0.25);
-            box-shadow: rgba(0,0,0,0.25), 0, 0, 100%, false, true;
+            background-color: rgba(32, 32, 32, 0.5);
             h1 {  margin: 1em; }
             h2, h3 {
                 font-size: 16px;
                 line-height: 24px;
-                font-weight: 700;
+                font-weight: 400;
                 margin-left: 1.5em;
             }
         }

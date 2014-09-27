@@ -1,0 +1,45 @@
+.primary-menu, .secondary-menu {
+    font-family: $font-sans-serif;
+    font-size: $font-size * 1.5;
+    
+    ul { width: 100%; }
+    li {
+        display: inline-block;
+        margin: 0;
+    }
+    a {
+        display: block;
+        padding: 0.75em 1.5em;
+    }
+}
+
+.primary-menu {
+    .the-quad {
+        font-weight: 700;
+        &:before {
+            // quad logo svg
+        }
+    }
+    ul { background-color: $color-red; }
+    a {
+        text-decoration: none;
+        &:link, &:visited { color: $color-black; }
+        &:hover, &:active {
+            color: $color-white;
+            background-color: lighten($color-red, $lighten-amount);
+        }
+    }
+}
+
+.secondary-menu {
+    font-size: $font-size * 0.875;
+    ul { background-color: $color-black; }
+    a {
+        text-decoration: none;
+        &:link, &:visited { color: $color-white; }
+        &:hover, &:active {
+            color: $color-white;
+            background-color: lighten($color-black, $lighten-amount);
+        }
+    }
+}
