@@ -1,0 +1,28 @@
+/* SINGLE */
+
+$article-width: 900px;
+$vertical-spacing: 24px;
+
+article.single {
+    width: 100%;
+    @include outer-container;
+    header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        div {
+            max-width: $article-width;
+            background-color: rgba(255, 255, 255, 0.9);
+            h1 { font-size: 36px; }
+            h2 { font-size: 20px; }
+            ul { font-size: 16px; }
+            li { display: inline-block; }
+        }
+    }
+    p {
+        
+        max-width: $article-width;
+        margin: $vertical-spacing auto;
+        font-size: 16px;
+        line-height: $vertical-spacing;
+    }
+}
