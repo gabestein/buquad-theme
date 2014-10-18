@@ -3,18 +3,25 @@
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
 
 <article class="single" id="<?php the_ID(); ?>">
-    <?php $imgurl = wp_get_attachment_image_src(the_post_thumbnail('banner'))['0']; ?>
-    <header style="background-image:url(<?php $imgurl ?>);">
-        <div>
-        <h1><?php the_title(); ?></h1>
-        <h2><?php the_time('F j, Y')?> at <?php the_time('g:i a')?></h2>
-        <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
+    
+    <header>
+        <?php the_post_thumbnail(
+            'banner',
+            array( 'class' => 'hero-image' )
+        ); ?>
+        <div class="intro-text">
+            <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
+            <h2><?php the_title(); ?></h2>
+            <h3><?php the_time('F j, Y')?></h3>
+            <h4>by <?php the_author_posts_link(); ?></h4>
         </div>
-        <?php user_card(get_the_author_meta('ID')); ?>
     </header>
-    <?php the_content('Read More'); ?>
-    <?php wp_link_pages(array('before' => '<div class="paginate">Page:', 'after' => '</div>', 'next_or_number' => 'number')); ?>
+    <section class="body">
+        <?php the_content('Read More'); ?>
+        <?php wp_link_pages(array('before' => '<div class="paginate">Page:', 'after' => '</div>', 'next_or_number' => 'number')); ?>
+    </section>
     <footer>
+        <!--<?php user_card(get_the_author_meta('ID')); ?>-->
     </footer>
 </article>
 

@@ -85,7 +85,7 @@ function article_card($id) {
     $post_image = get_the_post_thumbnail($id, 'thumbnail', array('style' => 'width: 280px; height: 280px'));
     // render card
     ?>
-    <object type="card" class="article">
+    <section type="card" class="article">
         <section class="top">
             <?php echo $post_image; ?>
             <hgroup>
@@ -110,7 +110,7 @@ function article_card($id) {
         <section class="bottom">
             <a type="button" href="<?php echo $post_url; ?>">Read Article</a>
         </section>
-    </object>
+    </section>
     <?php
 }
 
@@ -118,15 +118,15 @@ function user_card($id) {
     // get data
     $fullname = get_the_author_meta('display_name', $id);
     $firstname = get_the_author_meta('first_name', $id);
-    $image = get_wp_user_avatar($user, 'card');
-    $posts = get_the_author_posts_url($post_author);
+    $image = get_wp_user_avatar($id, 'card');
+    $posts = get_author_posts_url($post_author);
     $email = get_the_author_meta('email', $id);
     $website = get_the_author_meta('user_url', $id);
     $twitter = trim(get_the_author_meta('twitter', $id), '@');
     $instagram = trim(get_the_author_meta('instagram', $id), '@');
     // render card
     ?>
-    <object type="card" class="author">
+    <section type="card" class="author">
         <section class="top">
             <img src="<?php echo $image; ?>" alt="background">
             <h1><?php echo $fullname; ?></h1>
@@ -165,7 +165,7 @@ function user_card($id) {
                 See <?php echo $firstname; ?>&rsquo;s Profile
             </a>
         </section>
-    </object>
+    </section>
     <?php
 }
 /*

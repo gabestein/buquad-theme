@@ -5,24 +5,112 @@ $vertical-spacing: 24px;
 
 article.single {
     width: 100%;
-    @include outer-container;
+    // @include outer-container;
+    
     header {
-        background-size: cover;
-        background-repeat: no-repeat;
-        div {
-            max-width: $article-width;
-            background-color: rgba(255, 255, 255, 0.9);
-            h1 { font-size: 36px; }
-            h2 { font-size: 20px; }
-            ul { font-size: 16px; }
-            li { display: inline-block; }
+        position: relative;
+        .hero-image {
+            width: 100%;
+            height: auto;
+        }
+        .intro-text {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            
+            $intro-text-width: 60%;
+
+            padding: 0.5em;
+            @include media($large-screen) {
+                padding: 3em;
+            }
+            $color-intro-text-top: rgba(255, 255, 255, 0.75);
+            $color-intro-text-bottom: rgba(255, 255, 255, 1);
+            @include background(linear-gradient($color-intro-text-top, $color-intro-text-bottom));
+            text-align: center;
+
+            h2 {
+                margin: 0 auto .3em;
+                font-size: 2em;
+                line-height: $header-line-height;
+                max-width: 80%;
+                @include media($large-screen) {
+                    font-size: 3em;
+                    margin-bottom: .4em;
+                }
+            }
+        
+            h3 {
+                color: lighten($base-font-color, 20);
+                font-size: 1.3em;
+                font-weight: 300;
+                line-height: 1.4em;
+                margin: 0 auto 1em;
+
+                @include media($large-screen) {
+                    font-size: 1.7em;
+                    line-height: 1.35em;
+                    margin: 0 auto 1em;
+                    width: $intro-text-width;
+                }        
+            }
+
+            ul { margin-bottom: 1.5em; }
+            ul li {
+                display: inline-block;
+                margin: 5px;
+                a {
+                    padding: 3px 8px;
+                    text-transform: uppercase;
+                    font-size: .7em;
+                    font-weight: 400;
+                    background: $base-accent-color;
+                    color: white;
+                    &:hover { color: white; }
+                }
+            }
         }
     }
-    p {
-        
-        max-width: $article-width;
-        margin: $vertical-spacing auto;
-        font-size: 16px;
-        line-height: $vertical-spacing;
+    
+    .author {
+        float: right;
+        margin: 3px 0 3px 8px;
+    }
+    
+    .body {
+        @include outer-container();
+        overflow: hidden;
+        max-width: 60em;
+        margin: 1.5em auto;
+        p {
+            margin-bottom: 1em;
+            font-size: 1.2*$base-font-size;
+            line-height: 1.3em;
+        }
+            
+    }
+    
+    .wp-caption {
+        overflow: hidden;
+        width: 100% !important;
+        img {
+            margin: 0.75em;
+        }
+        .wp-caption-text {
+            font-family: $sans-serif;
+            font-size: 0.8*$base-font-size;
+        }
+        @mixin align($side) {
+            &.align#{$side} {
+                @include media($large-screen) {
+                    width: 50%;
+                    float: #{$side};
+                    img, .wp-caption-text { float: #{$side}; }
+                }
+            }
+        }
+        @include align('left');
+        @include align('right');
     }
 }

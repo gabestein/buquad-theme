@@ -18,7 +18,7 @@
         <?php if(have_posts()):while(have_posts()):the_post();endwhile;endif; ?>
         <?php if (is_single()) {
             $url = get_the_permalink();
-            $title = get_single_post_title('');
+            $title = get_the_title('');
             $description = strip_tags(get_the_excerpt($post->ID));
             $image = '';
             if (function_exists('wp_get_attachment_image_src')) {
