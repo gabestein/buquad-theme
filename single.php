@@ -3,13 +3,9 @@
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
 
 <article class="single" id="<?php the_ID(); ?>">
-    
-    <header>
-        <?php the_post_thumbnail(
-            'banner',
-            array( 'class' => 'hero-image' )
-        ); ?>
-        <div class="intro-text">
+    <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
+    <header style="background-image: url(<?php echo $imgsrc; ?>);">
+        <div class="intro-text" >
             <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
             <h2><?php the_title(); ?></h2>
             <h3><?php the_time('F j, Y')?></h3>

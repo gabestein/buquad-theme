@@ -508,7 +508,15 @@ a {
 article.single {
   width: 100%; }
   article.single header {
-    position: relative; }
+    position: relative;
+    background-image: cover;
+    background-position: center top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 45em; }
+    @media screen and (min-width: 53.75em) {
+      article.single header {
+        height: 60em; } }
     article.single header .hero-image {
       width: 100%;
       height: auto; }
@@ -576,24 +584,29 @@ article.single {
     article.single .body p {
       margin-bottom: 1em;
       font-size: 1.2em;
-      line-height: 1.3em; }
+      line-height: 1.6em; }
+      article.single .body p > span {
+        line-height: 1.6em; }
   article.single .wp-caption {
     overflow: hidden;
-    width: 100% !important; }
-    article.single .wp-caption img {
-      margin: 0.75em; }
+    max-width: 100% !important;
+    margin: 0 1.5em; }
     article.single .wp-caption .wp-caption-text {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
       font-size: 0.8em; }
     @media screen and (min-width: 53.75em) {
+      article.single .wp-caption.alignleft, article.single .wp-caption.alignright {
+        width: 60% !important; }
+        article.single .wp-caption.alignleft img, article.single .wp-caption.alignright img {
+          margin-bottom: 0.75em; }
       article.single .wp-caption.alignleft {
-        width: 50%;
         float: left; }
-        article.single .wp-caption.alignleft img, article.single .wp-caption.alignleft .wp-caption-text {
-          float: left; } }
-    @media screen and (min-width: 53.75em) {
+        article.single .wp-caption.alignleft .wp-caption-text {
+          text-align: left; }
       article.single .wp-caption.alignright {
-        width: 50%;
         float: right; }
-        article.single .wp-caption.alignright img, article.single .wp-caption.alignright .wp-caption-text {
-          float: right; } }
+        article.single .wp-caption.alignright .wp-caption-text {
+          text-align: left; } }

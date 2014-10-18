@@ -3,7 +3,9 @@
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size(300, 300, true );
 add_image_size('card', 280, 280, true );
-add_image_size('banner', 1200, 900, true);
+add_image_size('huge', 1200, 900, true);
+add_image_size('large', 900, 600, true);
+add_image_size('medium', 600, 400, true);
 
 function register_menus() {
   register_nav_menus(
