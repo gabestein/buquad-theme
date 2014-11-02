@@ -15,7 +15,7 @@ Tags: responsive, minimal, content-first
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #477dca;
+  background-color: #477DCA;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -36,8 +36,8 @@ input[type="submit"] {
 body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
-  color: #333333;
-  font-family: "Lora", "Georgia", sans-serif;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -47,8 +47,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
-  line-height: 1.25em;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
   margin: 0;
   text-rendering: optimizeLegibility; }
 
@@ -77,7 +77,7 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #477dca;
+  color: #477DCA;
   text-decoration: none; }
   a:hover {
     color: #2c5999; }
@@ -86,7 +86,7 @@ a {
     outline: none; }
 
 hr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -98,7 +98,7 @@ picture {
   max-width: 100%; }
 
 blockquote {
-  border-left: 2px solid #dddddd;
+  border-left: 2px solid #DDD;
   color: #595959;
   margin: 1.5em 0;
   padding-left: 0.75em; }
@@ -111,7 +111,7 @@ cite {
 
 fieldset {
   background: #f7f7f7;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   margin: 0 0 0.75em 0;
   padding: 1.5em; }
 
@@ -119,7 +119,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "Lora", "Georgia", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em; }
 
 label {
@@ -141,9 +141,9 @@ select[multiple=multiple] {
   transition: border-color;
   background-color: white;
   border-radius: 3px;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "Lora", "Georgia", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
@@ -155,7 +155,7 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #477dca;
+    border-color: #477DCA;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
     outline: none; }
 
@@ -196,7 +196,7 @@ th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   padding: 0.75em 0; }
 
 tr,
@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif; }
 
 a {
-  color: #ff3400; }
+  color: #FF3400; }
   a:link, a:visited {
     text-decoration: none; }
   a:hover, a:active {
@@ -483,13 +483,13 @@ a {
 .primary-menu .the-quad {
   font-weight: 700; }
 .primary-menu ul {
-  background-color: #ff3400; }
+  background-color: #FF3400; }
 .primary-menu a {
   text-decoration: none; }
   .primary-menu a:link, .primary-menu a:visited {
     color: #202020; }
   .primary-menu a:hover, .primary-menu a:active {
-    color: #fcfcfc;
+    color: #FCFCFC;
     background-color: #ff5d33; }
 
 .secondary-menu {
@@ -499,9 +499,9 @@ a {
   .secondary-menu a {
     text-decoration: none; }
     .secondary-menu a:link, .secondary-menu a:visited {
-      color: #fcfcfc; }
+      color: #FCFCFC; }
     .secondary-menu a:hover, .secondary-menu a:active {
-      color: #fcfcfc;
+      color: #FCFCFC;
       background-color: #393939; }
 
 /* SINGLE */
@@ -509,14 +509,25 @@ article.single {
   width: 100%; }
   article.single header {
     position: relative;
-    background-image: cover;
-    background-position: center top;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    height: 45em; }
+    z-index: 1;
+    height: 8.7em; }
+    article.single header:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.7;
+      background-image: cover;
+      background-position: center bottom;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      z-index: -1; }
     @media screen and (min-width: 53.75em) {
       article.single header {
-        height: 60em; } }
+        height: 19.4em; } }
     article.single header .hero-image {
       width: 100%;
       height: auto; }
@@ -526,8 +537,6 @@ article.single {
       bottom: 0;
       z-index: 1;
       padding: 0.5em;
-      background: -webkit-linear-gradient(rgba(255, 255, 255, 0.75), white);
-      background: linear-gradient(rgba(255, 255, 255, 0.75), white);
       text-align: center; }
       @media screen and (min-width: 53.75em) {
         article.single header .intro-text {
@@ -563,7 +572,7 @@ article.single {
           text-transform: uppercase;
           font-size: .7em;
           font-weight: 400;
-          background: #477dca;
+          background: #477DCA;
           color: white; }
           article.single header .intro-text ul li a:hover {
             color: white; }
@@ -595,7 +604,7 @@ article.single {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8em; }
     @media screen and (min-width: 53.75em) {
       article.single .wp-caption.alignleft, article.single .wp-caption.alignright {
@@ -610,3 +619,5 @@ article.single {
         float: right; }
         article.single .wp-caption.alignright .wp-caption-text {
           text-align: left; } }
+
+/*# sourceMappingURL=style.css.map */
