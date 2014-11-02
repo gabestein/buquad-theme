@@ -1,2 +1,4 @@
 .sass-cache
 scss
+.gitignore
+.git-ftp-ignore
