@@ -6,18 +6,22 @@ $vertical-spacing: 24px;
 article.single {
     width: 100%;
     // @include outer-container;
-    
+
     header {
         position: relative;
-        
-        background-image: cover;
-        background-position: center top;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        
-        height: 45em;
+        z-index: 1;
+
+        &:before {
+          background-image: cover;
+          background-position: center bottom;
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+
+        height: 8.7em;
         @include media($large-screen) {
-            height: 60em;
+            height: 19.4em;
         }
         .hero-image {
             width: 100%;
@@ -28,7 +32,7 @@ article.single {
             position: absolute;
             bottom: 0;
             z-index: 1;
-            
+
             $intro-text-width: 60%;
 
             padding: 0.5em;
@@ -37,7 +41,7 @@ article.single {
             }
             $color-intro-text-top: rgba(255, 255, 255, 0.75);
             $color-intro-text-bottom: rgba(255, 255, 255, 1);
-            @include background(linear-gradient($color-intro-text-top, $color-intro-text-bottom));
+            //@include background(linear-gradient($color-intro-text-top, $color-intro-text-bottom));
             text-align: center;
 
             h2 {
@@ -50,7 +54,7 @@ article.single {
                     margin-bottom: .4em;
                 }
             }
-        
+
             h3 {
                 color: lighten($base-font-color, 20);
                 font-size: 1.3em;
@@ -63,7 +67,7 @@ article.single {
                     line-height: 1.35em;
                     margin: 0 auto 1em;
                     width: $intro-text-width;
-                }        
+                }
             }
 
             ul { margin-bottom: 1.5em; }
@@ -82,12 +86,12 @@ article.single {
             }
         }
     }
-    
+
     .author {
         float: right;
         margin: 3px 0 3px 8px;
     }
-    
+
     .body {
         @include outer-container();
         overflow: hidden;
@@ -99,9 +103,9 @@ article.single {
             line-height: 1.6em;
             > span { line-height: 1.6em; }
         }
-            
+
     }
-    
+
     .wp-caption {
         overflow: hidden;
         max-width: 100% !important;

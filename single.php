@@ -2,9 +2,15 @@
 
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
 
+<style>
+.article.single header:before {
+  background-image: url(<?php echo $imgsrc; ?>);
+}
+</style>
+
 <article class="single" id="<?php the_ID(); ?>">
     <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
-    <header style="background-image: url(<?php echo $imgsrc; ?>);">
+    <header>
         <div class="intro-text" >
             <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
             <h2><?php the_title(); ?></h2>
