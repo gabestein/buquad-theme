@@ -3,9 +3,9 @@
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size(300, 300, true );
 add_image_size('card', 280, 280, true );
-add_image_size('huge', 1200, 900, true);
-add_image_size('large', 900, 600, true);
-add_image_size('medium', 600, 400, true);
+add_image_size('huge', 1200, 900, false);
+add_image_size('large', 900, 600, false);
+add_image_size('medium', 600, 400, false);
 
 function register_menus() {
   register_nav_menus(
@@ -44,34 +44,34 @@ function add_social_media($profile_fields) {
 add_filter('user_contactmethods', 'add_social_media');
 
 // Add a 'column' taxonomy
-function create_column_tax() {
+function create_series_tax() {
     register_taxonomy(
-        'column',
+        'series',
         'post',
         array(
             'heirarchical' => false,
             'labels' => array(
-                'name' => _x( 'Column', 'taxonomy general name' ),
-                'singular_name' => _x( 'Column', 'taxonomy singular name' ),
-                'search_items' => __( 'Search Columns' ),
-                'all_items' => __( 'All Columns' ),
-                'parent_item' => __( 'Parent Column' ),
-                'parent_item_colon' => __( 'Parent Column:' ),
-                'edit_item' => __( 'Edit column' ),
-                'update_item' => __( 'Update Column' ),
-                'add_new_item' => __( 'Add New Column' ),
-                'new_item_name' => __( 'New Location Column' ),
-                'menu_name' => __( 'Columns' ),
+                'name' => _x( 'Series', 'taxonomy general name' ),
+                'singular_name' => _x( 'Series', 'taxonomy singular name' ),
+                'search_items' => __( 'Search Series' ),
+                'all_items' => __( 'All Series' ),
+                'parent_item' => __( 'Parent Series' ),
+                'parent_item_colon' => __( 'Parent Series:' ),
+                'edit_item' => __( 'Edit Series' ),
+                'update_item' => __( 'Update Series' ),
+                'add_new_item' => __( 'Add New Series' ),
+                'new_item_name' => __( 'New Location Series' ),
+                'menu_name' => __( 'Series' ),
             ),
             'rewrite' => array(
-                'slug' => 'column',
+                'slug' => 'series',
                 'with_front' => false,
                 'hierarchical' => false
             )
         )
     );
 }
-add_action( 'init', 'create_column_tax', 0 );
+add_action( 'init', 'create_series_tax', 0 );
 
 // Functions to compose a standard _card object_ based on an id
 function article_card($id) {
