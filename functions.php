@@ -44,25 +44,25 @@ add_filter('user_contactmethods', 'add_social_media');
 // Add a 'column' taxonomy
 function create_column_tax() {
     register_taxonomy(
-        'column',
+        'series',
         'post',
         array(
             'heirarchical' => false,
             'labels' => array(
-                'name' => _x( 'Column', 'taxonomy general name' ),
-                'singular_name' => _x( 'Column', 'taxonomy singular name' ),
-                'search_items' => __( 'Search Columns' ),
-                'all_items' => __( 'All Columns' ),
-                'parent_item' => __( 'Parent Column' ),
-                'parent_item_colon' => __( 'Parent Column:' ),
-                'edit_item' => __( 'Edit column' ),
-                'update_item' => __( 'Update Column' ),
-                'add_new_item' => __( 'Add New Column' ),
-                'new_item_name' => __( 'New Location Column' ),
-                'menu_name' => __( 'Columns' ),
+                'name' => _x( 'Series', 'taxonomy general name' ),
+                'singular_name' => _x( 'Series', 'taxonomy singular name' ),
+                'search_items' => __( 'Search Series' ),
+                'all_items' => __( 'All Series' ),
+                'parent_item' => __( 'Parent Series' ),
+                'parent_item_colon' => __( 'Parent Series:' ),
+                'edit_item' => __( 'Edit series' ),
+                'update_item' => __( 'Update Series' ),
+                'add_new_item' => __( 'Add New Series' ),
+                'new_item_name' => __( 'New Location Series' ),
+                'menu_name' => __( 'Series' ),
             ),
             'rewrite' => array(
-                'slug' => 'column',
+                'slug' => 'series',
                 'with_front' => false,
                 'hierarchical' => false
             )
@@ -118,7 +118,7 @@ function user_card($id) {
     // get data
     $fullname = get_the_author_meta('display_name', $id);
     $firstname = get_the_author_meta('first_name', $id);
-    $image = get_wp_user_avatar($id, 'card');
+    $image = ''; //get_wp_user_avatar($id, 'card');
     $posts = get_author_posts_url($post_author);
     $email = get_the_author_meta('email', $id);
     $website = get_the_author_meta('user_url', $id);
