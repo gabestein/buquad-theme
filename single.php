@@ -3,7 +3,7 @@
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
 
 <style>
-.article.single header:before {
+article.single header:before {
   background-image: url(<?php echo $imgsrc; ?>);
 }
 </style>
