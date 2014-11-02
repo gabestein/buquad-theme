@@ -12,6 +12,14 @@ article.single {
         z-index: 1;
 
         &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0.7;
           background-image: cover;
           background-position: center bottom;
           background-size: 100% auto;
