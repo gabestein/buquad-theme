@@ -11,23 +11,6 @@ article.single {
         position: relative;
         z-index: 1;
 
-        &:before {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-
-          opacity: 0.7;
-          background-image: cover;
-          background-position: center bottom;
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          z-index: -1;
-        }
-
         height: 8.7em;
         @include media($large-screen) {
             height: 19.4em;
@@ -37,6 +20,18 @@ article.single {
             height: auto;
         }
         .intro-text {
+            &:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              opacity: 0.3;
+              background-color: black;
+            }
+
             width: 100%;
             position: absolute;
             bottom: 0;
