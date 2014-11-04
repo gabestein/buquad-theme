@@ -3,18 +3,20 @@
 $article-width: 900px;
 $vertical-spacing: 24px;
 @mixin image-alignment {
-  img.alignleft, img.alignright {
-      width: 50% !important;
+  &.alignleft, .alignright {
+      width: 67% !important;
       img { margin-bottom: 0.75em; }
   }
-  img.alignleft {
+  &.alignleft {
       float: left;
       clear: left;
+      margin-left: -25%;
       .wp-caption-text { text-align: left; }
   }
-  img.alignright {
+  &.alignright {
       float: right;
       clear: right;
+      margin-right: -25%
       .wp-caption-text { text-align: left; }
   }
 }
@@ -158,7 +160,9 @@ article.single {
         }
     }
 
-    @include media($large-screen) {
-        @include image-alignment;
+    img {
+      @include media($large-screen) {
+          @include image-alignment;
+      }
     }
 }
