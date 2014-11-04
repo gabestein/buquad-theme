@@ -595,7 +595,8 @@ article.single {
     margin-right: auto;
     overflow: hidden;
     max-width: 60em;
-    margin: 1.5em auto; }
+    margin: 1.5em auto;
+    padding: 0 8px; }
     article.single .body:after {
       content: "";
       display: table;
@@ -606,9 +607,9 @@ article.single {
       line-height: 1.6em; }
       article.single .body p > span {
         line-height: 1.6em; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 53.75em) {
       article.single .body {
-        padding: 0 6px; } }
+        padding: 0; } }
   article.single .wp-caption {
     overflow: hidden;
     max-width: 100% !important;

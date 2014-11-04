@@ -138,8 +138,9 @@ article.single {
             line-height: 1.6em;
             > span { line-height: 1.6em; }
         }
-        @include media($medium-screen) {
-          padding: 0 6px;
+        padding: 0 8px;
+        @include media($large-screen) {
+          padding: 0;
         }
     }
 
