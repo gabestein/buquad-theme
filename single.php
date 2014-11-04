@@ -15,8 +15,6 @@
         <div class="intro-text" >
             <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
             <h2><?php the_title(); ?></h2>
-            <h3><?php the_time('F j, Y')?></h3>
-            <h4>by <?php the_author_posts_link(); ?></h4>
         </div>
     </header>
     <section class="body">
