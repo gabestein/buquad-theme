@@ -139,7 +139,7 @@ article.single {
             font-size: 1.5*$base-font-size;
             font-weight: 600;
             text-transform: uppercase;
-            padding-top: 20px;
+            padding-top: 28px;
             margin-bottom: 28px;
             display: block;
             clear: both;
@@ -149,7 +149,7 @@ article.single {
 
         @include outer-container();
         overflow: hidden;
-        max-width: 60em;
+        max-width: 50em;
         margin: 1.5em auto;
         p {
             margin-bottom: 1em;
