@@ -606,6 +606,9 @@ article.single {
       line-height: 1.6em; }
       article.single .body p > span {
         line-height: 1.6em; }
+    @media screen and (min-width: mobile) {
+      article.single .body {
+        padding: 0 6px; } }
   article.single .wp-caption {
     overflow: hidden;
     max-width: 100% !important;

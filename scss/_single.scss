@@ -138,7 +138,9 @@ article.single {
             line-height: 1.6em;
             > span { line-height: 1.6em; }
         }
-
+        @include media(mobile) {
+          padding: 0 6px;
+        }
     }
 
     .wp-caption {
