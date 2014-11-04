@@ -150,4 +150,19 @@ article.single {
             }
         }
     }
+
+    @include media($large-screen) {
+        img.alignleft, img.alignright {
+            width: 60% !important;
+            img { margin-bottom: 0.75em; }
+        }
+        img.alignleft {
+            float: left;
+            .wp-caption-text { text-align: left; }
+        }
+        img.alignright {
+            float: right;
+            .wp-caption-text { text-align: left; }
+        }
+    }
 }

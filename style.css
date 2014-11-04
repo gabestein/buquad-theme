@@ -629,5 +629,18 @@ article.single {
         float: right; }
         article.single .wp-caption.alignright .wp-caption-text {
           text-align: left; } }
+  @media screen and (min-width: 53.75em) {
+    article.single img.alignleft, article.single img.alignright {
+      width: 60% !important; }
+      article.single img.alignleft img, article.single img.alignright img {
+        margin-bottom: 0.75em; }
+    article.single img.alignleft {
+      float: left; }
+      article.single img.alignleft .wp-caption-text {
+        text-align: left; }
+    article.single img.alignright {
+      float: right; }
+      article.single img.alignright .wp-caption-text {
+        text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */
