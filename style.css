@@ -600,9 +600,10 @@ article.single {
     margin: 1.5em auto;
     padding: 0 8px; }
     article.single .body h3 {
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 600;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-bottom: 6px; }
     article.single .body:after {
       content: "";
       display: table;
