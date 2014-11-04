@@ -46,9 +46,6 @@ article.single {
               right: 0;
               opacity: 0.7;
               background-color: black;
-              $color-intro-text-top: rgba(255, 255, 255, 0.75);
-              $color-intro-text-bottom: rgba(255, 255, 255, 1);
-              @include background(linear-gradient($color-intro-text-top, $color-intro-text-bottom));
             }
 
             width: 100%;

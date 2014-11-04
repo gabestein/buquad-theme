@@ -540,9 +540,7 @@ article.single {
         left: 0;
         right: 0;
         opacity: 0.7;
-        background-color: black;
-        background: -webkit-linear-gradient(rgba(255, 255, 255, 0.75), white);
-        background: linear-gradient(rgba(255, 255, 255, 0.75), white); }
+        background-color: black; }
       @media screen and (min-width: 53.75em) {
         article.single header .intro-text {
           padding: 6em; } }
