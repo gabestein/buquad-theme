@@ -603,7 +603,7 @@ article.single {
       font-size: 1.5em;
       font-weight: 600;
       text-transform: uppercase;
-      margin-bottom: 28px;
+      margin: 28px 0;
       display: block;
       clear: both;
       width: 100%;
