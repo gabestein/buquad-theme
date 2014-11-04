@@ -519,7 +519,7 @@ article.single {
       left: 0;
       right: 0;
       background-image: cover;
-      background-position: center bottom;
+      background-position: center center;
       background-size: 100% auto;
       background-repeat: no-repeat; }
     article.single header .hero-image {
@@ -542,7 +542,7 @@ article.single {
         background-color: white; }
       @media screen and (min-width: 53.75em) {
         article.single header .intro-text {
-          padding: 5em; } }
+          padding: 6em; } }
       article.single header .intro-text h2 {
         margin: 0 auto .3em;
         font-size: 2em;
