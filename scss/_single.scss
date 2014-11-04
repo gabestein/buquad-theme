@@ -140,6 +140,11 @@ article.single {
             font-weight: 600;
             text-transform: uppercase;
             padding-bottom: 6px;
+            display: block;
+            clear: both;
+            width: 100%;
+            margin: 0 auto;
+            border-bottom: 1px lighten($base-font-color, 20) solid;
         }
 
         @include outer-container();
