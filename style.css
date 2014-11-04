@@ -651,25 +651,28 @@ article.single {
       article.single .wp-caption.aligncenter {
         display: block;
         margin: 0 auto; } }
-  @media screen and (min-width: 53.75em) {
-    article.single img.alignleft, article.single img.alignright {
-      width: 64% !important; }
-      article.single img.alignleft img, article.single img.alignright img {
-        margin-bottom: 0.75em; }
-    article.single img.alignleft {
-      margin-left: -14%;
-      float: left;
-      clear: left; }
-      article.single img.alignleft .wp-caption-text {
-        text-align: left; }
-    article.single img.alignright {
-      margin-right: -14%;
-      float: right;
-      clear: right; }
-      article.single img.alignright .wp-caption-text {
-        text-align: left; }
-    article.single img.aligncenter {
-      display: block;
-      margin: 0 auto; } }
+  article.single img {
+    width: 100%;
+    height: auto; }
+    @media screen and (min-width: 53.75em) {
+      article.single img.alignleft, article.single img.alignright {
+        width: 64% !important; }
+        article.single img.alignleft img, article.single img.alignright img {
+          margin-bottom: 0.75em; }
+      article.single img.alignleft {
+        margin-left: -14%;
+        float: left;
+        clear: left; }
+        article.single img.alignleft .wp-caption-text {
+          text-align: left; }
+      article.single img.alignright {
+        margin-right: -14%;
+        float: right;
+        clear: right; }
+        article.single img.alignright .wp-caption-text {
+          text-align: left; }
+      article.single img.aligncenter {
+        display: block;
+        margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

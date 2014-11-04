@@ -180,6 +180,8 @@ article.single {
     }
 
     img {
+        width: 100%;
+        height: auto;
         @include media($large-screen) {
             @include image-alignment;
         }
