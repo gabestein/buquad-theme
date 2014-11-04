@@ -134,6 +134,13 @@ article.single {
     }
 
     .body {
+
+        h3 {
+            font-size: 2*$base-font-size;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
         @include outer-container();
         overflow: hidden;
         max-width: 60em;

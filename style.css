@@ -599,6 +599,10 @@ article.single {
     max-width: 60em;
     margin: 1.5em auto;
     padding: 0 8px; }
+    article.single .body h3 {
+      font-size: 2em;
+      font-weight: 600;
+      text-transform: uppercase; }
     article.single .body:after {
       content: "";
       display: table;
