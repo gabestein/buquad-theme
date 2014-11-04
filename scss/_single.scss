@@ -139,12 +139,11 @@ article.single {
             font-size: 1.5*$base-font-size;
             font-weight: 600;
             text-transform: uppercase;
-            padding-bottom: 6px;
+            margin-bottom: 16px;
             display: block;
             clear: both;
             width: 100%;
-            margin: 0 auto;
-            border-bottom: 1px lighten($base-font-color, 20) solid;
+            text-align: center;
         }
 
         @include outer-container();
