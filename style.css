@@ -618,7 +618,7 @@ article.single {
       font-size: 0.8em; }
     @media screen and (min-width: 53.75em) {
       article.single .wp-caption.alignleft, article.single .wp-caption.alignright {
-        width: 60% !important; }
+        width: 50% !important; }
         article.single .wp-caption.alignleft img, article.single .wp-caption.alignright img {
           margin-bottom: 0.75em; }
       article.single .wp-caption.alignleft {
@@ -631,7 +631,7 @@ article.single {
           text-align: left; } }
   @media screen and (min-width: 53.75em) {
     article.single img.alignleft, article.single img.alignright {
-      width: 60% !important; }
+      width: 50% !important; }
       article.single img.alignleft img, article.single img.alignright img {
         margin-bottom: 0.75em; }
     article.single img.alignleft {
