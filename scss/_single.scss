@@ -2,7 +2,22 @@
 
 $article-width: 900px;
 $vertical-spacing: 24px;
-
+@mixin image-alignment {
+  img.alignleft, img.alignright {
+      width: 50% !important;
+      img { margin-bottom: 0.75em; }
+  }
+  img.alignleft {
+      float: left;
+      clear: left;
+      .wp-caption-text { text-align: left; }
+  }
+  img.alignright {
+      float: right;
+      clear: right;
+      .wp-caption-text { text-align: left; }
+  }
+}
 article.single {
     width: 100%;
     // @include outer-container;
@@ -136,33 +151,11 @@ article.single {
             font-size: 0.8*$base-font-size;
         }
         @include media($large-screen) {
-            &.alignleft, &.alignright {
-                width: 50% !important;
-                img { margin-bottom: 0.75em; }
-            }
-            &.alignleft {
-                float: left;
-                .wp-caption-text { text-align: left; }
-            }
-            &.alignright {
-                float: right;
-                .wp-caption-text { text-align: left; }
-            }
+            @include image-alignment;
         }
     }
 
     @include media($large-screen) {
-        img.alignleft, img.alignright {
-            width: 50% !important;
-            img { margin-bottom: 0.75em; }
-        }
-        img.alignleft {
-            float: left;
-            .wp-caption-text { text-align: left; }
-        }
-        img.alignright {
-            float: right;
-            .wp-caption-text { text-align: left; }
-        }
+        @include image-alignment;
     }
 }
