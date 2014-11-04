@@ -3,7 +3,7 @@
 $article-width: 900px;
 $vertical-spacing: 24px;
 @mixin image-alignment {
-  &.alignleft, .alignright {
+  &.alignleft, &.alignright {
       width: 67% !important;
       img { margin-bottom: 0.75em; }
   }
@@ -131,7 +131,7 @@ article.single {
 
     .body {
         @include outer-container();
-        overflow: hidden;
+        //overflow: hidden;
         max-width: 60em;
         margin: 1.5em auto;
         p {
