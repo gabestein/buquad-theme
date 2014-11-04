@@ -26,9 +26,9 @@ article.single {
           background-repeat: no-repeat;
         }
 
-        height: 8.7em;
+        //height: 8.7em;
         @include media($large-screen) {
-            height: 19.4em;
+            //height: 19.4em;
         }
         .hero-image {
             width: 100%;
@@ -49,8 +49,6 @@ article.single {
             }
 
             width: 100%;
-            position: absolute;
-            bottom: 0;
             z-index: 1;
 
             $intro-text-width: 60%;

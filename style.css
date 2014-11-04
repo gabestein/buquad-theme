@@ -509,8 +509,7 @@ article.single {
   width: 100%; }
   article.single header {
     position: relative;
-    z-index: 1;
-    height: 8.7em; }
+    z-index: 1; }
     article.single header:before {
       content: "";
       position: absolute;
@@ -523,16 +522,11 @@ article.single {
       background-position: center bottom;
       background-size: 100% auto;
       background-repeat: no-repeat; }
-    @media screen and (min-width: 53.75em) {
-      article.single header {
-        height: 19.4em; } }
     article.single header .hero-image {
       width: 100%;
       height: auto; }
     article.single header .intro-text {
       width: 100%;
-      position: absolute;
-      bottom: 0;
       z-index: 1;
       padding: 0.5em;
       text-align: center; }
