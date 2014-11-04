@@ -4,17 +4,19 @@ $article-width: 900px;
 $vertical-spacing: 24px;
 @mixin image-alignment {
   &.alignleft, &.alignright {
-      width: 67% !important;
+      width: 66% !important;
       img { margin-bottom: 0.75em; }
   }
   &.alignleft {
       margin-left: -17%;
+      margin-right: 1%;
       float: left;
       clear: left;
       .wp-caption-text { text-align: left; }
   }
   &.alignright {
       margin-right: -17%;
+      margin-left: 1%;
       float: right;
       clear: right;
       .wp-caption-text { text-align: left; }
