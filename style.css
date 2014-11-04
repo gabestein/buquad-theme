@@ -637,13 +637,13 @@ article.single {
         article.single .wp-caption.alignleft img, article.single .wp-caption.alignright img {
           margin-bottom: 0.75em; }
       article.single .wp-caption.alignleft {
-        margin-left: -12%;
+        margin-left: -13%;
         float: left;
         clear: left; }
         article.single .wp-caption.alignleft .wp-caption-text {
           text-align: left; }
       article.single .wp-caption.alignright {
-        margin-right: -12%;
+        margin-right: -13%;
         float: right;
         clear: right; }
         article.single .wp-caption.alignright .wp-caption-text {
@@ -657,13 +657,13 @@ article.single {
       article.single img.alignleft img, article.single img.alignright img {
         margin-bottom: 0.75em; }
     article.single img.alignleft {
-      margin-left: -12%;
+      margin-left: -13%;
       float: left;
       clear: left; }
       article.single img.alignleft .wp-caption-text {
         text-align: left; }
     article.single img.alignright {
-      margin-right: -12%;
+      margin-right: -13%;
       float: right;
       clear: right; }
       article.single img.alignright .wp-caption-text {
