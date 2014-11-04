@@ -150,7 +150,7 @@ article.single {
         }
 
         @include outer-container();
-        overflow: hidden;
+        //overflow: hidden;
         max-width: 44em;
         margin: 1.5em auto;
         p {
