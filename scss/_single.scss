@@ -4,7 +4,7 @@ $article-width: 900px;
 $vertical-spacing: 24px;
 @mixin image-alignment {
   &.alignleft, &.alignright {
-      width: 67% !important;
+      width: 75% !important;
       img { margin-bottom: 0.75em; }
   }
   &.alignleft {
