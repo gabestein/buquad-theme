@@ -157,13 +157,13 @@ article.single {
             font-family: $sans-serif;
             font-size: 0.8*$base-font-size;
         }
-        @include media($large-screen) {
+        @include media($medium-screen) {
             @include image-alignment;
         }
     }
 
     img {
-        @include media($large-screen) {
+        @include media($medium-screen) {
             @include image-alignment;
         }
     }
