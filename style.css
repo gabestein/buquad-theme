@@ -13,6 +13,8 @@ Tags: responsive, minimal, content-first
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
 @import url(http://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Turncoat);
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
@@ -341,7 +343,7 @@ html, body {
   line-height: 24px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Walter Turncoat", "Helvetica Neue", sans-serif; }
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
 
 a {
   color: #FF3400; }
@@ -373,7 +375,7 @@ a {
   margin: 1.5em auto;
   border: 1px solid black;
   border-radius: 8px;
-  font-family: "Walter Turncoat", "Helvetica Neue", sans-serif;
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
   color: #202020;
   box-shadow: #bdc3c7, 0, 5px, 5px;
   -webkit-animation-duration: 0.5s;
@@ -470,7 +472,7 @@ a {
       margin: 0.75em; } }
 
 .primary-menu, .secondary-menu {
-  font-family: "Walter Turncoat", "Helvetica Neue", sans-serif;
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
   font-size: 24px; }
   .primary-menu ul, .secondary-menu ul {
     width: 100%; }
