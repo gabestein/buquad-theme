@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       <?php language_attributes(); ?>>
     <head>
-        <title><?php bloginfo('name'); ?></title>
+        <title><?php wp_title( '|', true, 'right' ); ?></title>
 
         <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
