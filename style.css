@@ -552,6 +552,8 @@ article.single {
       article.single header .intro-text h2 {
         margin: 0 auto .3em;
         font-size: 2em;
+        font-weight: 600;
+        text-transform: capitalize;
         line-height: 1.25;
         max-width: 80%;
         color: white;

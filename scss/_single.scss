@@ -84,6 +84,8 @@ article.single {
             h2 {
                 margin: 0 auto .3em;
                 font-size: 2em;
+                font-weight: 600;
+                text-transform: capitalize;
                 line-height: $header-line-height;
                 max-width: 80%;
                 @include media($large-screen) {
