@@ -3,6 +3,10 @@
 $article-width: 900px;
 $vertical-spacing: 24px;
 @mixin image-alignment {
+  &.alignnone {
+    width: 100%;
+    height: auto;
+  }
   &.alignleft, &.alignright {
       max-width: 66% !important;
       img { margin-bottom: 0.75em; }
