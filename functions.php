@@ -48,7 +48,7 @@ function create_column_tax() {
         'series',
         'post',
         array(
-            'heirarchical' => true,
+            'hierarchical' => true,
             'labels' => array(
                 'name' => _x( 'Series', 'taxonomy general name' ),
                 'singular_name' => _x( 'Series', 'taxonomy singular name' ),
@@ -65,7 +65,7 @@ function create_column_tax() {
             'rewrite' => array(
                 'slug' => 'series',
                 'with_front' => false,
-                'hierarchical' => true
+                'hierarchical' => false
             )
         )
     );
