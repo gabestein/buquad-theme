@@ -29,6 +29,7 @@ Description: Used to style the TinyMCE editor.
 html .mceContentBody {
 	font-size: 100%;
 	max-width: 640px;
+  margin: 0 auto;
 }
 
 body {
