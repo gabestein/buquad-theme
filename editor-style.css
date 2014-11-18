@@ -69,7 +69,8 @@ h2 {
 
 h3 {
   clear: both;
-  font-family: 'Architects Daughter', 'Comic Sans', sans-serif
+  text-align: center;
+  font-family: 'Architects Daughter', 'Comic Sans MS', sans-serif
 	font-size: 22px;
 	line-height: 1.0909090909;
 }
