@@ -311,13 +311,12 @@ a:hover {
   height: auto;
 }
 .alignleft {
-	float: left;
   width: 50%;
   height: auto;
   margin-right: -17%;
   margin-left: 1%;
-  float: right;
-  clear: right;
+  float: left;
+  clear: left;
 }
 
 .alignright {
