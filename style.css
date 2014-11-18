@@ -651,7 +651,6 @@ article.single {
         display: block;
         margin: 0 auto; } }
   article.single img {
-    width: 100%;
     height: auto; }
     @media screen and (min-width: 53.75em) {
       article.single img.alignleft, article.single img.alignright {
