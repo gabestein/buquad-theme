@@ -48,7 +48,7 @@ function create_column_tax() {
         'series',
         'post',
         array(
-            'heirarchical' => false,
+            'heirarchical' => true,
             'labels' => array(
                 'name' => _x( 'Series', 'taxonomy general name' ),
                 'singular_name' => _x( 'Series', 'taxonomy singular name' ),
