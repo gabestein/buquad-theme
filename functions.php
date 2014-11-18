@@ -65,7 +65,7 @@ function create_column_tax() {
             'rewrite' => array(
                 'slug' => 'series',
                 'with_front' => false,
-                'hierarchical' => false
+                'hierarchical' => true
             )
         )
     );
