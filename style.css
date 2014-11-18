@@ -339,8 +339,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: italic; }
 html, body {
   font-family: "Lora", "Georgia", sans-serif;
-  font-size: 16px;
-  line-height: 24px; }
+  font-size: 18px;
+  line-height: 27px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
@@ -473,7 +473,7 @@ a {
 
 .primary-menu, .secondary-menu {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
-  font-size: 24px; }
+  font-size: 27px; }
   .primary-menu ul, .secondary-menu ul {
     width: 100%; }
   .primary-menu li, .secondary-menu li {
@@ -496,7 +496,7 @@ a {
     background-color: #ff5d33; }
 
 .secondary-menu {
-  font-size: 14px; }
+  font-size: 15.75px; }
   .secondary-menu ul {
     background-color: #202020; }
   .secondary-menu a {
