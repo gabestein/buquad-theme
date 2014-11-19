@@ -33,7 +33,7 @@
 		<meta property="og:description" content="<?php echo $description; ?>" />
 		<meta property="og:image" content="<?php echo $image; ?>" />
 		<meta property="og:type" content="article" />
-		<meta property="og:site_name" content="The Quad" />
+		<meta property="og:site_name" content="<?php echo bloginfo('name'); ?>" />
 		<!-- TWITTER CARDS -->
 		<meta property="twitter:card" content="summary" />
 		<meta property="twitter:site" content="@buquad" />
