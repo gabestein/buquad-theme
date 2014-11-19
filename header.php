@@ -36,11 +36,11 @@
 		<meta property="og:site_name" content="<?php echo bloginfo('name'); ?>" />
 		<!-- TWITTER CARDS -->
 		<meta property="twitter:card" content="summary" />
-		<meta property="twitter:site" content="@buquad" />
+		<meta property="twitter:site" content="@edsteinink" />
 		<meta property="twitter:title" content="<?php echo $title; ?>" />
 		<meta property="twitter:description" content="<?php echo $description; ?>" />
 		<meta name="twitter:image" content="<?php echo $image; ?>" />
-		<meta property="twitter:creator" content="<?php echo the_author_meta('twitter'); ?>" />
+		<meta property="twitter:creator" content="@<?php echo the_author_meta('twitter'); ?>" />
 
         <?php } else {
             $url = get_bloginfo('url');
