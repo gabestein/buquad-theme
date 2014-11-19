@@ -180,16 +180,20 @@ article.single {
             font-family: $sans-serif;
             font-size: 0.8*$base-font-size;
         }
-        @include media($medium-screen) {
+        @include media($large-screen) {
             @include image-alignment;
         }
     }
 
     img {
-        //width: 100%;
         height: auto;
-        @include media($medium-screen) {
+        @include media($large-screen) {
             @include image-alignment;
+        }
+        @include media($medium-screen) {
+          img {
+            width: 100%;
+          }
         }
     }
 }
