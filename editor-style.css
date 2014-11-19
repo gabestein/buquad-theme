@@ -393,7 +393,7 @@ img {
 	height: auto;
 	max-width: 640px;
 	vertical-align: middle;
-	margin-bottom: 1em;
+	padding-bottom: 1em;
 }
 
 .wp-caption {
