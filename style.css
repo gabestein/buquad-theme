@@ -654,7 +654,9 @@ article.single {
         display: block;
         margin: 0 auto; } }
   article.single img {
-    height: auto; }
+    height: auto;
+    display: block;
+    margin: 0 auto; }
     @media screen and (min-width: 60.5em) {
       article.single img.alignnone {
         width: 100%;
@@ -691,8 +693,5 @@ article.single {
         margin-left: 1%;
         float: right;
         clear: right; } }
-    @media screen and (min-width: 40em) {
-      article.single img {
-        width: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */
