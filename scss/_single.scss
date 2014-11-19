@@ -204,6 +204,10 @@ article.single {
             margin-left: 1%;
             float: right;
             clear: right;
+          },
+          &.alignnone {
+            width: 100%;
+            height: auto;
           }
         }
         display: block;
