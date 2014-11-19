@@ -692,7 +692,7 @@ article.single {
         float: right;
         clear: right; } }
     @media screen and (min-width: 40em) {
-      article.single img img {
+      article.single img {
         width: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */
