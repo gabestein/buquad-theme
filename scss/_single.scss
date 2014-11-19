@@ -204,10 +204,10 @@ article.single {
             clear: right;
           }
         }
-        /* @include media($small-screen) {
+        @include media($small-screen) {
           img {
             width: 100%;
           }
-        } */
+        }
     }
 }
