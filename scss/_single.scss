@@ -191,8 +191,17 @@ article.single {
             @include image-alignment;
         }
         @include media($medium-screen) {
-          img {
-            width: 100%;
+          &.alignleft {
+            max-width: 50%
+            margin-right: 1%;
+            float: left;
+            clear: left;
+          }
+          &.alignright {
+            max-width: 50%
+            margin-left: 1%;
+            float: right;
+            clear: right;
           }
         }
     }
