@@ -655,6 +655,7 @@ article.single {
         margin: 0 auto; } }
   article.single img {
     height: auto;
+    padding-bottom: 2%;
     display: block;
     margin: 0 auto; }
     @media screen and (min-width: 60.5em) {

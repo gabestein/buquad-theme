@@ -188,6 +188,7 @@ article.single {
 
     img {
         height: auto;
+        padding-bottom: 2%;
         @include media($large-screen) {
             @include image-alignment;
         }
