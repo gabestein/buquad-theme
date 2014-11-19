@@ -546,6 +546,9 @@ article.single {
       @media screen and (min-width: 60.5em) {
         article.single header .intro-text {
           padding: 6em; } }
+      @media screen and (min-width: 40em) {
+        article.single header .intro-text {
+          padding: 2em; } }
       article.single header .intro-text h2 {
         margin: 0 auto .3em;
         font-size: 2em;
