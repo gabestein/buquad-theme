@@ -80,13 +80,11 @@ article.single {
 
             $intro-text-width: 60%;
 
-            padding: 0.5em;
+            padding: 2em;
             @include media($large-screen) {
                 padding: 6em;
             }
-            @include media($medium-screen) {
-              padding: 2em;
-            }
+
             $color-intro-text-top: rgba(255, 255, 255, 0.75);
             $color-intro-text-bottom: rgba(255, 255, 255, 1);
             //@include background(linear-gradient($color-intro-text-top, $color-intro-text-bottom));
