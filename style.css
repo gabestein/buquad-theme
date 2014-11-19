@@ -693,6 +693,6 @@ article.single {
         clear: right; } }
     @media screen and (min-width: 40em) {
       article.single img img {
-        width: 100%; } }
+        width: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */

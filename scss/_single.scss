@@ -206,7 +206,7 @@ article.single {
         }
         @include media($small-screen) {
           img {
-            width: 100%;
+            width: 100% !important;
           }
         }
     }
