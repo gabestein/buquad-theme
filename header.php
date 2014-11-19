@@ -22,7 +22,7 @@
             $description = strip_tags(get_the_excerpt($post->ID));
             $image = '';
             if (function_exists('wp_get_attachment_image_src')) {
-                $image = (wp_get_attachment_image_src(get_post_thumbnail_id(), 'social'));
+                $image = (wp_get_attachment_image_src(get_post_thumbnail_id(), 'social')[0]);
             } else {
                 $image = get_template_directory_uri().'/images/placeholder.png';
             }
