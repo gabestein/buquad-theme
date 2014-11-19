@@ -188,7 +188,7 @@ article.single {
 
     img {
         height: auto;
-        margin-bottom: 1;
+        margin-bottom: 1em;
         @include media($large-screen) {
             @include image-alignment;
         }
@@ -204,7 +204,7 @@ article.single {
             margin-left: 1%;
             float: right;
             clear: right;
-          },
+          }
           &.alignnone {
             width: 100%;
             height: auto;
