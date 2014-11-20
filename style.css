@@ -685,12 +685,12 @@ article.single {
         margin: 0 auto; } }
     @media screen and (min-width: 40em) {
       article.single img.alignleft {
-        max-width: 50%;
+        max-width: 49%;
         margin-right: 1%;
         float: left;
         clear: left; }
       article.single img.alignright {
-        max-width: 50%;
+        max-width: 49%;
         margin-left: 1%;
         float: right;
         clear: right; }
