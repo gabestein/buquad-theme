@@ -572,7 +572,7 @@ article.single {
             margin: 0 auto 1em;
             width: 60%; } }
       article.single header .intro-text h4 {
-        color: white;
+        color: #e6e6e6;
         font-family: Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         font-weight: 500; }
