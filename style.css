@@ -1,106 +1,702 @@
+@charset "UTF-8";
 /*
-Syntax error: Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
-        on line 21 of scss/bourbon/helpers/_linear-angle-parser.scss
-        from line 10 of scss/bourbon/_bourbon.scss
-        from line 11 of scss/style.scss
-
-16: 
-17:   @if $offset {
-18:     $num: _str-to-num($first-val);
-19: 
-20:     @return (
-21:       webkit-image: -webkit- + $prefix + ($offset - $num) + $suffix,
-22:       spec-image: $image
-23:     );
-24:   }
-25: }
-
-Backtrace:
-scss/bourbon/helpers/_linear-angle-parser.scss:21
-scss/bourbon/_bourbon.scss:10
-scss/style.scss:11
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/lexer.rb:206:in `expected!'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:483:in `assert_tok'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:433:in `paren'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:418:in `special_fun'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:413:in `raw'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:337:in `funcall'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:319:in `ident'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:228:in `unary_not'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:228:in `unary_div'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:228:in `unary_minus'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:228:in `unary_plus'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:209:in `times_div_or_mod'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:209:in `plus_or_minus'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:209:in `relational'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:209:in `eq_or_neq'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:209:in `and_expr'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:209:in `or_expr'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:298:in `space'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:283:in `interpolation'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:246:in `expr'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:477:in `assert_expr'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/script/parser.rb:49:in `parse'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1022:in `sass_script'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:215:in `return_directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:174:in `special_directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:146:in `directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:264:in `if_directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:174:in `special_directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:146:in `directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:552:in `block_child'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:211:in `function_directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:174:in `special_directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:146:in `directive'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:543:in `block_contents'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:235:in `watch'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin.rb:107:in `method_missing'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:463:in `watch_or_update'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.2.19/bin/sass:13:in `<top (required)>'
-/Users/gabe/.rbenv/versions/2.1.5/bin/sass:23:in `load'
-/Users/gabe/.rbenv/versions/2.1.5/bin/sass:23:in `<main>'
+Theme Name: The Quad
+Theme URI: http://buquad.com/
+Description: Development theme.
+Author: Allan Lasser
+Author URI: http://www.allanlasser.com/
+version: 0.1
+Tags: responsive, minimal, content-first
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"      webkit-image\": expected \")\", was \": -webkit- + $p...\"\A         on line 21 of scss/bourbon/helpers/_linear-angle-parser.scss\A         from line 10 of scss/bourbon/_bourbon.scss\A         from line 11 of scss/style.scss\A \A 16: \A 17:   @if $offset {\A 18:     $num: _str-to-num($first-val);\A 19: \A 20:     @return (\A 21:       webkit-image: -webkit- + $prefix + ($offset - $num) + $suffix,\A 22:       spec-image: $image\A 23:     );\A 24:   }\A 25: }"; }
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+@import url(http://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477DCA;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #2c5999;
+    color: white; }
+  button:disabled,
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 2.25em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477DCA;
+  text-decoration: none; }
+  a:hover {
+    color: #2c5999; }
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+cite {
+  color: #737373;
+  font-style: italic; }
+  cite:before {
+    content: "\2014 \00A0"; }
+
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  label.required:after {
+    content: "*"; }
+  label abbr {
+    display: none; }
+
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477DCA;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+textarea {
+  resize: vertical; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+dl {
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
+
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* COOPER HEWITT */
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-Book.eot");
+  src: url("assets/fonts/CooperHewitt-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-Book.woff") format("woff"), url("assets/fonts/CooperHewitt-Book.svg#cooperhewittbook") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-BookItalic.eot");
+  src: url("assets/fonts/CooperHewitt-BookItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-BookItalic.woff") format("woff"), url("assets/fonts/CooperHewitt-BookItalic.svg#cooperhewittbookitalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-Medium.eot");
+  src: url("assets/fonts/CooperHewitt-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-Medium.woff") format("woff"), url("assets/fonts/CooperHewitt-Medium.svg#cooperhewittmedium") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-MediumItalic.eot");
+  src: url("assets/fonts/CooperHewitt-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-MediumItalic.woff") format("woff"), url("assets/fonts/CooperHewitt-MediumItalic.svg#cooperhewittmediumitalic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+/* LORA */
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Regular.eot");
+  src: url("assets/fonts/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Regular.woff") format("woff"), url("assets/fonts/Lora-Regular.ttf") format("truetype"), url("assets/fonts/Lora-Regular.svg#loraregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Italic.eot");
+  src: url("assets/fonts/Lora-Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Italic.woff") format("woff"), url("assets/fonts/Lora-Italic.ttf") format("truetype"), url("assets/fonts/Lora-Italic.svg#loraitalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Bold.eot");
+  src: url("assets/fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Bold.woff") format("woff"), url("assets/fonts/Lora-Bold.ttf") format("truetype"), url("assets/fonts/Lora-Bold.svg#lorabold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-BoldItalic.eot");
+  src: url("assets/fonts/Lora-BoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-BoldItalic.woff") format("woff"), url("assets/fonts/Lora-BoldItalic.ttf") format("truetype"), url("assets/fonts/Lora-BoldItalic.svg#lorabold_italic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+html, body {
+  font-family: "Lora", "Georgia", sans-serif;
+  font-size: 18px;
+  line-height: 27px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
+
+a {
+  color: #FF3400; }
+  a:link, a:visited {
+    text-decoration: none; }
+  a:hover, a:active {
+    text-decoration: underline; }
+
+[type="button"] {
+  display: inline-block;
+  padding: 0.5em 0.625em;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  color: red;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 4px; }
+  [type="button"]:hover {
+    color: white;
+    background-color: red; }
+
+[type="card"] {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 300px;
+  margin: 1.5em auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
+  color: #202020;
+  box-shadow: #bdc3c7, 0, 5px, 5px;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s; }
+  [type="card"] .top {
+    position: relative;
+    color: white;
+    text-shadow: 1px, 1px, 1px, 0, black; }
+    [type="card"] .top h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px; }
+    [type="card"] .top img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid black;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+  [type="card"] .middle .social {
+    display: table;
+    width: 100%;
+    padding: 0.5em 0.75em 0; }
+    [type="card"] .middle .social li {
+      display: table-cell; }
+      [type="card"] .middle .social li a {
+        display: block;
+        border: 2px solid red;
+        border-left: none;
+        color: white;
+        text-align: center;
+        text-decoration: none; }
+        [type="card"] .middle .social li a span {
+          font-size: 1.5em;
+          width: 100%;
+          height: 100%;
+          padding: 0.5em 0;
+          color: red; }
+        [type="card"] .middle .social li a:hover {
+          background-color: red; }
+          [type="card"] .middle .social li a:hover span {
+            color: white; }
+      [type="card"] .middle .social li:first-child a {
+        border-left: 2px solid red;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+      [type="card"] .middle .social li:last-child a {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px; }
+  [type="card"] .bottom {
+    margin: 0.75em; }
+    [type="card"] .bottom a[type="button"] {
+      display: block; }
+  [type="card"].article {
+    text-align: left; }
+    [type="card"].article img {
+      filter: blur(1px);
+      -webkit-filter: blur(1px); }
+    [type="card"].article hgroup {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background-color: rgba(32, 32, 32, 0.5); }
+      [type="card"].article hgroup h1 {
+        margin: 1em; }
+      [type="card"].article hgroup h2, [type="card"].article hgroup h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-left: 1.5em; }
+    [type="card"].article summary {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 1.5em; }
+  [type="card"].author, [type="card"].subject {
+    text-align: center; }
+    [type="card"].author .top h1, [type="card"].subject .top h1 {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 1em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-image: -webkit-linear-gradient(transparent, black);
+      background-image: linear-gradient(transparent, black); }
+  @media screen and (min-width: 700px) {
+    [type="card"] {
+      display: inline-block;
+      margin: 0.75em; } }
+
+.primary-menu, .secondary-menu {
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
+  font-size: 27px; }
+  .primary-menu ul, .secondary-menu ul {
+    width: 100%; }
+  .primary-menu li, .secondary-menu li {
+    display: inline-block;
+    margin: 0; }
+  .primary-menu a, .secondary-menu a {
+    display: block;
+    padding: 0.75em 1.5em; }
+
+.primary-menu .the-quad {
+  font-weight: 700; }
+.primary-menu ul {
+  background-color: #FF3400; }
+.primary-menu a {
+  text-decoration: none; }
+  .primary-menu a:link, .primary-menu a:visited {
+    color: #202020; }
+  .primary-menu a:hover, .primary-menu a:active {
+    color: #FCFCFC;
+    background-color: #ff5d33; }
+
+.secondary-menu {
+  font-size: 15.75px; }
+  .secondary-menu ul {
+    background-color: #202020; }
+  .secondary-menu a {
+    text-decoration: none; }
+    .secondary-menu a:link, .secondary-menu a:visited {
+      color: #FCFCFC; }
+    .secondary-menu a:hover, .secondary-menu a:active {
+      color: #FCFCFC;
+      background-color: #393939; }
+
+/* SINGLE */
+article.single {
+  width: 100%; }
+  article.single header {
+    position: relative;
+    z-index: 1; }
+    article.single header:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: cover;
+      background-position: center center;
+      background-size: 100% auto;
+      background-repeat: no-repeat; }
+    article.single header .hero-image {
+      width: 100%;
+      height: auto; }
+    article.single header .intro-text {
+      width: 100%;
+      z-index: 1;
+      padding: 2em;
+      text-align: center; }
+      article.single header .intro-text:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.7;
+        background-color: black; }
+      @media screen and (min-width: 60.5em) {
+        article.single header .intro-text {
+          padding: 6em; } }
+      article.single header .intro-text h2 {
+        margin: 0 auto .3em;
+        font-size: 2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.25;
+        max-width: 80%;
+        color: white;
+        text-shadow: 2px 2px 6px #000; }
+        @media screen and (min-width: 60.5em) {
+          article.single header .intro-text h2 {
+            font-size: 3em;
+            margin-bottom: .4em; } }
+      article.single header .intro-text h3 {
+        color: #666666;
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 1.4em;
+        margin: 0 auto 1em; }
+        @media screen and (min-width: 60.5em) {
+          article.single header .intro-text h3 {
+            font-size: 1.7em;
+            line-height: 1.35em;
+            margin: 0 auto 1em;
+            width: 60%; } }
+      article.single header .intro-text ul {
+        margin-bottom: 1.5em; }
+      article.single header .intro-text ul li {
+        display: inline-block;
+        margin: 5px; }
+        article.single header .intro-text ul li a {
+          padding: 3px 8px;
+          text-transform: uppercase;
+          font-size: .7em;
+          font-weight: 400;
+          background: #477DCA;
+          color: white; }
+          article.single header .intro-text ul li a:hover {
+            color: white; }
+  article.single .author {
+    float: right;
+    margin: 3px 0 3px 8px; }
+  article.single .body {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+    margin: 1.5em auto;
+    padding: 0 8px; }
+    article.single .body h3 {
+      font-size: 1.5em;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-top: 28px;
+      margin-bottom: 28px;
+      display: block;
+      clear: both;
+      width: 100%;
+      text-align: center; }
+    article.single .body:after {
+      content: "";
+      display: table;
+      clear: both; }
+    article.single .body p {
+      clear: both;
+      margin-bottom: 1em;
+      font-size: 1.2em;
+      line-height: 1.6em; }
+      article.single .body p > span {
+        line-height: 1.6em; }
+    @media screen and (min-width: 60.5em) {
+      article.single .body {
+        padding: 0; } }
+  article.single .wp-caption {
+    overflow: hidden;
+    max-width: 100% !important;
+    margin: 0 1.5em; }
+    article.single .wp-caption .wp-caption-text {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 0.8em; }
+    @media screen and (min-width: 60.5em) {
+      article.single .wp-caption.alignnone {
+        width: 100%;
+        height: auto; }
+      article.single .wp-caption.alignleft, article.single .wp-caption.alignright {
+        max-width: 66% !important; }
+        article.single .wp-caption.alignleft img, article.single .wp-caption.alignright img {
+          margin-bottom: 0.75em; }
+      article.single .wp-caption.alignleft {
+        margin-left: -17%;
+        margin-right: 1%;
+        float: left;
+        clear: left; }
+        article.single .wp-caption.alignleft .wp-caption-text {
+          text-align: left; }
+      article.single .wp-caption.alignright {
+        margin-right: -17%;
+        margin-left: 1%;
+        float: right;
+        clear: right; }
+        article.single .wp-caption.alignright .wp-caption-text {
+          text-align: left; }
+      article.single .wp-caption.aligncenter {
+        display: block;
+        margin: 0 auto; } }
+  article.single img {
+    height: auto;
+    padding-bottom: 0.5em;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 60.5em) {
+      article.single img.alignnone {
+        width: 100%;
+        height: auto; }
+      article.single img.alignleft, article.single img.alignright {
+        max-width: 66% !important; }
+        article.single img.alignleft img, article.single img.alignright img {
+          margin-bottom: 0.75em; }
+      article.single img.alignleft {
+        margin-left: -17%;
+        margin-right: 1%;
+        float: left;
+        clear: left; }
+        article.single img.alignleft .wp-caption-text {
+          text-align: left; }
+      article.single img.alignright {
+        margin-right: -17%;
+        margin-left: 1%;
+        float: right;
+        clear: right; }
+        article.single img.alignright .wp-caption-text {
+          text-align: left; }
+      article.single img.aligncenter {
+        display: block;
+        margin: 0 auto; } }
+    @media screen and (min-width: 40em) {
+      article.single img.alignleft {
+        max-width: 49%;
+        margin-right: 1%;
+        float: left;
+        clear: left; }
+      article.single img.alignright {
+        max-width: 49%;
+        margin-left: 1%;
+        float: right;
+        clear: right; }
+      article.single img.alignnone {
+        width: 100%;
+        height: auto; } }
+
+/*# sourceMappingURL=style.css.map */
