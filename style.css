@@ -582,7 +582,7 @@ article.single {
         padding-bottom: .1em; }
         @media screen and (min-width: 60.5em) {
           article.single header .intro-text h4 {
-            padding-bottom: .5em; } }
+            padding-bottom: .4em; } }
       article.single header .intro-text ul {
         margin-bottom: 1.5em; }
       article.single header .intro-text ul li {
