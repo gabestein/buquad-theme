@@ -563,6 +563,14 @@ html .mceContentBody {
   line-height: 27px;
   margin: 0 auto; }
 
+p {
+  clear: both;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  line-height: 1.6em; }
+  p > span {
+    line-height: 1.6em; }
+
 .wp-caption {
   overflow: hidden;
   max-width: 100% !important;

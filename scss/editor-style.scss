@@ -16,6 +16,14 @@ html .mceContentBody {
   margin: 0 auto;
 }
 
+p {
+  clear: both;
+  margin-bottom: 1em;
+  font-size: 1.2*$base-font-size;
+  line-height: 1.6em;
+  > span { line-height: 1.6em; }
+}
+
 @mixin image-alignment {
   &.alignnone {
     width: 100%;
