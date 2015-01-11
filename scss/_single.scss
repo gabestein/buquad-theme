@@ -82,7 +82,7 @@ article.single {
 
             padding: 2em;
             @include media($large-screen) {
-                padding: 6em;
+                padding: 5.25em;
             }
 
             $color-intro-text-top: rgba(255, 255, 255, 0.75);
