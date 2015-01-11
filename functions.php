@@ -199,21 +199,33 @@ function get_404() {
     <?php
 }
 
-function get_post_number($postID){
-  global $wp_query;
-  $temp_query = $wp_query;
-  $postNumberQuery = new WP_Query('orderby=date&order=ASC&posts_per_page=-1');
-  $counter = 1;
-  $postCount = 0;
-  if($postNumberQuery->have_posts()) :
-    while ($postNumberQuery->have_posts()) : $postNumberQuery->the_post();
-    if ($postID == get_the_ID()){
-      $postCount = $counter;
-    } else {
-      $counter++;
+class MY_Post_Numbers {
+
+  private $count = 0;
+  private $posts = array();
+
+  public function display_count() {
+    $this->init(); // prevent unnecessary queries
+    $id = get_the_ID();
+    echo sprintf( '<div class="post-counter">Post number<span class="num">%s</span><span class="slash">/</span><span class="total">%s</span></div>', $this->posts[$id], $this->count );
+  }
+
+  private function init() {
+    if ( $this->count )
+    return;
+    global $wpdb;
+    $posts = $wpdb->get_col( "SELECT ID FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date " ); // can add or change order if you want
+    $this->count = count($posts);
+
+    foreach ( $posts as $key => $value ) {
+      $this->posts[$value] = $key + 1;
     }
-  endwhile; endif;
-  wp_reset_query();
-  $wp_query = $temp_query;
-  return $postCount;
+    unset($posts);
+  }
+
+}
+$GLOBALS['my_post_numbers'] = new MY_Post_Numbers;
+
+function my_post_number() {
+  $GLOBALS['my_post_numbers']->display_count();
 }
