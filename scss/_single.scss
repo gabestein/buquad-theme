@@ -129,6 +129,9 @@ article.single {
               border-bottom: 1px solid darken(white, 20);
               margin: 0 35%;
               padding-bottom: .5em;
+              @include media($large-screen) {
+                padding-bottom: .2em;
+              }
             }
 
             ul { margin-bottom: 1.5em; }

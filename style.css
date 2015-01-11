@@ -580,6 +580,9 @@ article.single {
         border-bottom: 1px solid #cccccc;
         margin: 0 35%;
         padding-bottom: .5em; }
+        @media screen and (min-width: 60.5em) {
+          article.single header .intro-text h4 {
+            padding-bottom: .2em; } }
       article.single header .intro-text ul {
         margin-bottom: 1.5em; }
       article.single header .intro-text ul li {
