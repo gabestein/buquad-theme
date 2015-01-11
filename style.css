@@ -336,11 +336,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: italic; }
 html, body {
   font-family: "Lora", "Georgia", sans-serif;
-  font-size: 16px;
-  line-height: 24px; }
+  font-size: 18px;
+  line-height: 27px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif; }
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
 
 a {
   color: #FF3400; }
@@ -412,7 +412,7 @@ blockquote {
   max-width: 300px;
   border: 1px solid black;
   border-radius: 8px;
-  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
   color: #202020;
   background-color: #FCFCFC;
   box-shadow: #bdc3c7, 0, 5px, 5px;
@@ -521,8 +521,8 @@ blockquote {
       margin-left: 0.75em; } }
 
 .primary-menu, .secondary-menu, .footer-menu {
-  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
-  font-size: 20px; }
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
+  font-size: 22.5px; }
   .primary-menu ul, .secondary-menu ul, .footer-menu ul {
     width: 100%; }
   .primary-menu li, .secondary-menu li, .footer-menu li {
@@ -567,7 +567,7 @@ blockquote {
       background-color: #ff5d33; }
 
 .secondary-menu, .footer-menu {
-  font-size: 14px; }
+  font-size: 15.75px; }
   .secondary-menu ul, .footer-menu ul {
     overflow-x: scroll;
     white-space: nowrap;
@@ -830,7 +830,7 @@ nav.pagination {
     color: #202020;
     margin: 1em 0;
     display: block;
-    font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+    font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
     font-weight: 700; }
     nav.pagination a:hover {
       color: #FF3400;
@@ -868,7 +868,7 @@ nav.pagination {
     text-transform: uppercase;
     color: #FF3400; }
   .homepage .featured-article.container .featured-article-description dfn, .homepage .featured-article.container .featured-article-description h3 {
-    font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+    font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
     text-transform: uppercase;
     font-size: 1.25em;
     font-weight: 700; }
