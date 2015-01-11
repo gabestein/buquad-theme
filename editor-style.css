@@ -557,7 +557,7 @@ article.single {
         height: auto; } }
 
 html .mceContentBody {
-  max-width: 900px;
+  max-width: 640px;
   font-family: "Lora", "Georgia", sans-serif;
   font-size: 18px;
   line-height: 27px;
