@@ -1,0 +1,72 @@
+article.page {
+    @extend article.single;
+    header {
+        height: 3em;
+        max-width: 60em;
+        margin: 0 auto;
+        @media screen and (max-width: 60em) {
+            margin: 0 1.5em;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: 400;
+            margin-top: 2em;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+    }
+    &.error-404 {
+      header {
+        padding: 1em;
+        height: auto;
+        background:rgba(0,0,0,0.5);
+        color: $color-white;
+        padding-top: 3em;
+        h1 {
+          margin-top: 0;
+        }
+        h2 {
+          font-size: 2em;
+          font-weight: 200;
+          margin-top: 2em;
+        }
+      }
+      padding-top: 1em;
+      min-height: 50em;
+      width: 100%;
+      background-image: url('http://buquad.com/wp-content/uploads/2014/02/05_02_010760_full.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+}
+
+article.archive {
+    @extend article.page;
+    header h1 { margin-top: 1em; }
+}
+
+nav.pagination {
+    overflow: hidden;
+    a {
+        color: $color-black;
+        margin: 1em 0;
+        display: block;
+        font-family: $font-sans-serif;
+        font-weight: 700;
+        &:hover {
+            color: $color-red;
+            text-decoration: none;
+        }
+    }
+    .alignleft {
+      display: inline-block;
+      float: left;
+      clear: left;
+    }
+    .alignright {
+      display: inline-block;
+      float: right;
+      clear: right;
+    }
+}
