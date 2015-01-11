@@ -14,7 +14,7 @@
     <header>
         <div class="intro-text" >
             <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
-            <h4><?php get_post_number(); ?></h4>
+            <h4><?php get_post_number(the_ID()); ?></h4>
             <h2><?php the_title(); ?></h2>
         </div>
     </header>
