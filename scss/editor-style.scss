@@ -13,79 +13,76 @@ html .mceContentBody {
   font-family: $font-serif;
   font-size: $font-size;
   line-height: $line-height;
-  margin: 0.75em auto 0;
-}
-
-p {
-  margin-bottom: 1em;
-  font-size: 1.2*$base-font-size;
-  line-height: 1.6em;
-  > span { line-height: 1.6em; }
-}
-@include media($large-screen) {
-  margin: 1.5em auto;
+  margin: 0 auto;
 }
 
 @mixin image-alignment {
   &.alignnone {
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
   }
   &.alignleft, &.alignright {
-    width: 60% !important;
-    height: auto;
+    max-width: 66% !important;
     img { margin-bottom: 0.75em; }
   }
   &.alignleft {
+    margin-left: -17%;
+    margin-right: 1%;
     float: left;
-    margin-left: 0;
-    margin-right: 2em;
+    clear: left;
     .wp-caption-text { text-align: left; }
   }
   &.alignright {
+    margin-right: -17%;
+    margin-left: 1%;
     float: right;
-    margin-left: 2em;
-    margin-right: 0;
+    clear: right;
     .wp-caption-text { text-align: left; }
   }
-}
-
-img {
-  height: auto;
-  padding-bottom: 0.5em;
-  @include media($large-screen) {
-    @include image-alignment;
+  &.aligncenter {
+    display: block;
+    margin: 0 auto;
   }
 }
 
 .wp-caption {
   overflow: hidden;
-  width: 100% !important;
   max-width: 100% !important;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  a {
-    display: block;
-    width: 100%;
-    margin: 1.5em 0em;
-  }
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  .wp-caption-dd {
+  margin: 0 1.5em;
+  .wp-caption-text {
     @include box-sizing(border-box);
     font-family: $sans-serif;
     font-size: 0.8*$base-font-size;
-    font-weight: 700;
-    text-align: left;
-    margin-top: 1em;
   }
   @include media($large-screen) {
-    a { margin: 0; }
     @include image-alignment;
   }
+}
+
+img {
+  height: auto;
+  padding: 0.5em 0;
+  @include media($large-screen) {
+    @include image-alignment;
+  }
+  @include media($medium-screen) {
+    &.alignleft {
+      max-width: 49%;
+      margin-right: 1%;
+      float: left;
+      clear: left;
+    }
+    &.alignright {
+      max-width: 49%;
+      margin-left: 1%;
+      float: right;
+      clear: right;
+    }
+    &.alignnone {
+      width: 100%;
+      height: auto;
+    }
+  }
+  display: block;
+  margin: 0 auto;
 }
