@@ -394,7 +394,7 @@ img {
 	height: auto;
 	max-width: 640px;
 	vertical-align: middle;
-	padding-bottom: 0.5em;
+	padding: 0.5em 0;
 }
 
 .wp-caption {
