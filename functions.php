@@ -74,101 +74,106 @@ add_action( 'init', 'create_column_tax', 0 );
 
 // Functions to compose a standard _card object_ based on an id
 function article_card($id) {
-    // get data
-    $post = get_post($id);
-    $post_title = $post->post_title;
-    $post_excerpt = $post->post_excerpt;
-    $post_author = $post->post_author;
-    $post_author_name = get_the_author_meta('display_name', $post_author);
-    $post_author_url = get_author_posts_url($post_author);
-    $post_date = get_the_time('m/d/y', $id);
-    $post_url = get_permalink($id);
-    $post_image = get_the_post_thumbnail($id, 'thumbnail', array('style' => 'width: 280px; height: 280px'));
-    // render card
-    ?>
-    <section type="card" class="article">
-        <section class="top">
-            <?php echo $post_image; ?>
-            <hgroup>
-                <h1><?php echo $post_title; ?></h1>
-                <h2>
-                    by
-                    <a href="<?php echo $post_author_url; ?>" title="Author page for <?php echo $post_author_name ?>">
-                        <?php echo $post_author_name; ?>
-                    </a>
-                </h2>
-                <h3><?php echo $post_date; ?></h3>
-            </hgroup>
-        </section>
-        <section class="middle">
-            <!-- Excerpts must be 117 characters or less! -->
-            <!-- This example is exactly 117 characters. -->
-            <!-- This is in order to work with Twitter for story promos. -->
-            <summary class="article-excerpt">
-                <?php echo $post_excerpt; ?>
-            </summary>
-        </section>
-        <section class="bottom">
-            <a type="button" href="<?php echo $post_url; ?>">Read Article</a>
-        </section>
+  // get data
+  $post = get_post($id);
+  $post_title = $post->post_title;
+  $post_excerpt = $post->post_excerpt;
+  $post_author = $post->post_author;
+  $post_author_name = get_the_author_meta('display_name', $post_author);
+  $post_author_url = get_author_posts_url($post_author);
+  $post_date = get_the_time('m/d/y', $id);
+  $post_url = get_permalink($id);
+  $post_image = get_the_post_thumbnail($id, 'thumbnail', array('style' => 'width: 280px; height: 280px'));
+  if(!$post_image) {
+    $post_image = '<img style="width: 280px" width="280" alt="placeholder image" src="'.get_template_directory_uri().'/assets/images/default-card.png">';
+  }
+  // render card
+  ?>
+  <section type="card" class="article">
+    <section class="top">
+      <?php echo $post_image; ?>
+      <hgroup>
+        <h1><a class="card-title" href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h1>
+        <h2>
+          by
+          <a class="card-author" href="<?php echo $post_author_url; ?>" title="Author page for <?php echo $post_author_name ?>">
+            <?php echo $post_author_name; ?>
+          </a>
+        </h2>
+        <h3><?php echo $post_date; ?></h3>
+      </hgroup>
     </section>
-    <?php
+    <?php /*
+    <section class="middle">
+    <!-- Excerpts must be 117 characters or less! -->
+    <!-- This example is exactly 117 characters. -->
+    <!-- This is in order to work with Twitter for story promos. -->
+    <summary class="article-excerpt">
+    <?php echo $post_excerpt; ?>
+    </summary>
+    </section>
+    */ ?>
+    <section class="bottom">
+      <a type="button" href="<?php echo $post_url; ?>">Read Article</a>
+    </section>
+  </section>
+  <?php
 }
 
 function user_card($id) {
-    // get data
-    $fullname = get_the_author_meta('display_name', $id);
-    $firstname = get_the_author_meta('first_name', $id);
-    $image = ''; //get_wp_user_avatar($id, 'card');
-    $posts = get_author_posts_url($post_author);
-    $email = get_the_author_meta('email', $id);
-    $website = get_the_author_meta('user_url', $id);
-    $twitter = trim(get_the_author_meta('twitter', $id), '@');
-    $instagram = trim(get_the_author_meta('instagram', $id), '@');
-    // render card
-    ?>
-    <section type="card" class="author">
-        <section class="top">
-            <img src="<?php echo $image; ?>" alt="background">
-            <h1><?php echo $fullname; ?></h1>
-        </section>
-        <section class="middle">
-            <ul class="social">
-                <?php if(!empty($email)) { ?>
+  // get data
+  $fullname = get_the_author_meta('display_name', $id);
+  $firstname = get_the_author_meta('first_name', $id);
+  $image = get_wp_user_avatar($id, 'card');
+  $posts = get_author_posts_url($post_author);
+  $email = get_the_author_meta('email', $id);
+  $website = get_the_author_meta('user_url', $id);
+  $twitter = trim(get_the_author_meta('twitter', $id), '@');
+  $instagram = trim(get_the_author_meta('instagram', $id), '@');
+  // render card
+  ?>
+  <section type="card" class="author">
+    <section class="top">
+      <img src="<?php echo $image; ?>" alt="background">
+      <h1><?php echo $fullname; ?></h1>
+    </section>
+    <section class="middle">
+      <ul class="social">
+        <?php if(!empty($email)) { ?>
+          <li>
+            <a href="mailto:<?php echo $email; ?>" title="Send an email to <?php echo $firstname; ?>">
+              <span class="genericond genericon genericon-mail"></span>
+            </a>
+          </li>
+          <?php } if (!empty($website)) { ?>
+            <li>
+              <a href="<?php echo $website; ?>" title="Visit <?php echo $firstname; ?>'s website">
+                <span class="genericond genericon genericon-website"></span>
+              </a>
+            </li>
+            <?php } if (!empty($twitter)) { ?>
+              <li>
+                <a href="http://www.twitter.com/<?php echo $twitter; ?>" title="Find <?php echo $firstname; ?> on Twitter">
+                  <span class="genericond genericon genericon-twitter"></span>
+                </a>
+              </li>
+              <?php } if (!empty($instagram)) { ?>
                 <li>
-                    <a href="mailto:<?php echo $email; ?>" title="Send an email to <?php echo $firstname; ?>">
-                    <span class="genericond genericon genericon-mail"></span>
-                    </a>
-                </li>
-                <?php } if (!empty($website)) { ?>
-                <li>
-                    <a href="<?php echo $website; ?>" title="Visit <?php echo $firstname; ?>'s website">
-                    <span class="genericond genericon genericon-website"></span>
-                    </a>
-                </li>
-                <?php } if (!empty($twitter)) { ?>
-                <li>
-                    <a href="http://www.twitter.com/<?php echo $twitter; ?>" title="Find <?php echo $firstname; ?> on Twitter">
-                    <span class="genericond genericon genericon-twitter"></span>
-                    </a>
-                </li>
-                <?php } if (!empty($instagram)) { ?>
-                <li>
-                    <a href="http://www.twitter.com/<?php echo $instagram; ?>" title="Find <?php echo $firstname; ?> on Instagram">
+                  <a href="http://www.twitter.com/<?php echo $instagram; ?>" title="Find <?php echo $firstname; ?> on Instagram">
                     <span class="genericond genericon genericon-instagram"></span>
-                    </a>
+                  </a>
                 </li>
                 <?php } ?>
-            </ul>
-        </section>
-        <section class="bottom">
-            <a type="button" href="<?php echo $posts; ?>">
+              </ul>
+            </section>
+            <section class="bottom">
+              <a type="button" href="<?php echo $posts; ?>">
                 See <?php echo $firstname; ?>&rsquo;s Profile
-            </a>
-        </section>
-    </section>
-    <?php
-}
+              </a>
+            </section>
+          </section>
+          <?php
+        }
 /*
 function tag_card($id) {
     $tag = get_tag($id);
@@ -189,15 +194,17 @@ function tax_card($id, $tax) {
 */
 
 function get_404() {
-    ?>
-    <div class="404">
-        <h1>Page Not Found</h2>
+  ?>
+  <article class="page error-404">
+    <header>
+      <h1>Page Not Found</h2>
         <h2>Well, this is embarassing.</h2>
         <p>Whatever you were looking for isn&rsquo;t here.</p>
         <p><a href="<?php echo home_url(); ?>">Return to our homepage.</a></p>
-    </div>
+      </header>
+    </article>
     <?php
-}
+  }
 
 class MY_Post_Numbers {
 

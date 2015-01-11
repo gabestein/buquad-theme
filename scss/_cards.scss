@@ -3,139 +3,177 @@ $thumbnail-width: 300px;    // wordpress thumbnail width
 
 $border-radius: 8px;
 
-[type="button"] {
-    display: inline-block;
-    padding: 0.5em (0.75em - 0.125em);
-    text-align: center;
-    font-weight: 700;
-    text-decoration: none;
-    color: red;
-    background-color: white;
-    border: 2px solid red;
-    border-radius: $border-radius / 2;
-    &:hover {
-        color: white;
-        background-color: red;
+.card.container {
+  $one-across: 306px;
+  $two-across: 604px;
+  $three-across: 902px;
+  $four-across: 1200px;
+  $five-across: 1498px;
+  $six-across: 1796px;
+  margin: 0.75em;
+  @mixin card-container-width($width) {
+    @media screen and (min-width: $width) {
+      width: $width;
+      margin: 0.75em auto;
     }
+  }
+  @include card-container-width($one-across);
+  @include card-container-width($two-across);
+  @include card-container-width($three-across);
+  @include card-container-width($four-across);
+  @include card-container-width($five-across);
+  @include card-container-width($six-across);
+}
+
+[type="button"] {
+  display: inline-block;
+  padding: 1em (0.75em - 0.125em) 0.75em;
+
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 0;
+  color: $color-red;
+  background-color: white;
+  border: 2px solid $color-red;
+  border-radius: $border-radius / 2;
+  &:hover {
+    color: white;
+    background-color: $color-red;
+    text-decoration: none;
+  }
 }
 
 [type="card"] {
-    display: block;
-    @include box-sizing(border-box);
-    max-width: 300px;
-    margin: 1.5em auto;
-    border: 1px solid black;
-    border-radius: $border-radius;
+  display: block;
+  @include box-sizing(border-box);
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: $border-radius;
 
-    font-family: $font-sans-serif;
-    color: #202020;
+  font-family: $font-sans-serif;
+  color: $color-black;
+  background-color: $color-white;
 
-    box-shadow: #bdc3c7, 0, 5px, 5px;
-    @include animation-duration(0.5s);
-    
-    .top {
-        position: relative;
+  box-shadow: #bdc3c7, 0, 5px, 5px;
+  @include animation-duration(0.5s);
+
+  .top {
+    position: relative;
+    color: white;
+    text-shadow: 1px, 1px, 1px, 0, black;
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+      line-height: 24px;
+      a.card-title {
+        text-decoration: none;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid black;
+      @include border-top-radius($border-radius);
+    }
+  }
+  .middle .social {
+    display: table;
+    width: 100%;
+    padding: 0.5em 0.75em 0;
+    li {
+      display: table-cell;
+      a {
+        display: block;
+        border: 2px solid $color-red;
+        border-left: none;
         color: white;
-        text-shadow: 1px, 1px, 1px, 0, black;
-        h1 {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 24px;
+        text-align: center;
+        text-decoration: none;
+        span {
+          font-size: 1.5em;
+          width: 100%;
+          height: 100%;
+          padding: 0.5em 0;
+          color: $color-red;
         }
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid black;
-            @include border-top-radius($border-radius);
+        &:hover {
+          background-color: $color-red;
+          span { color: white; }
         }
+      }
+      &:first-child a {
+        border-left: 2px solid $color-red;
+        @include border-left-radius($border-radius / 2);
+      }
+      &:last-child a {
+        @include border-right-radius($border-radius / 2);
+      }
     }
-    .middle .social {
-        display: table;
+  }
+  .bottom {
+    margin: 0.75em;
+    a[type="button"] { display: block; }
+  }
+
+  &.article {
+    text-align: left;
+    img {
+      filter: blur(1px);
+      -webkit-filter: blur(1px);
+    }
+    hgroup {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      @include border-top-radius($border-radius);
+      @include background(linear-gradient(rgba(32, 32, 32, 0.75), rgba(32,32,32,0.5)));
+      h1 {  margin: 1em; }
+      h2, h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-left: 1.5em;
+      }
+      a {
+        color: $color-white;
+        text-decoration: underline;
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+    summary {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 1.5em;
+    }
+  }
+
+  &.author, &.subject {
+    text-align: center;
+    .top {
+
+      h1 {
         width: 100%;
-        padding: 0.5em 0.75em 0;
-        li {
-            display: table-cell;
-            a {
-                display: block;
-                border: 2px solid red;
-                border-left: none;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                span {
-                    font-size: 1.5em;
-                    width: 100%;
-                    height: 100%;
-                    padding: 0.5em 0;
-                    color: red;
-                }
-                &:hover {
-                    background-color: red;
-                    span { color: white; }
-                }
-            }
-            &:first-child a {
-                border-left: 2px solid red;
-                @include border-left-radius($border-radius / 2);
-            }
-            &:last-child a {
-                @include border-right-radius($border-radius / 2);
-            }
-        }
+        position: absolute;
+        bottom: 0;
+        padding: 1em;
+
+        @include box-sizing(border-box);
+        @include background-image(linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,1)));
+      }
     }
-    .bottom {
-        margin: 0.75em;
-        a[type="button"] { display: block; }
-    }
-    
-    &.article { 
-        text-align: left; 
-        img {
-            filter: blur(1px);
-            -webkit-filter: blur(1px);
-        }
-        hgroup {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            @include border-top-radius($border-radius);
-            background-color: rgba(32, 32, 32, 0.5);
-            h1 {  margin: 1em; }
-            h2, h3 {
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 400;
-                margin-left: 1.5em;
-            }
-        }
-        summary {
-            font-size: 16px;
-            line-height: 24px;
-            margin: 1.5em;
-        }
-    }
-    
-    &.author, &.subject {
-        text-align: center; 
-        .top {
-            
-            h1 {
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                padding: 1em;
-                
-                @include box-sizing(border-box);
-                @include background-image(linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,1)));
-            }
-        }
-    }
-    
-     @media screen and (min-width: 700px) {
-        display: inline-block;
-        margin: 0.75em;
-    }
-    
+  }
+
+  @media screen and (min-width: 300px) {
+    display: inline-block;
+    margin-bottom: 0.75em;
+    margin-left: 0.75em;
+  }
+
 }

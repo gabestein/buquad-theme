@@ -1,7 +1,7 @@
-$font-size: 18px;
+$font-size: 16px;
 $line-height: $font-size * 1.5;
 $font-serif: "Lora", "Georgia", sans-serif;
-$font-sans-serif: "Architects Daughter", "Helvetica Neue", sans-serif;
+$font-sans-serif: "Cooper Hewitt", "Helvetica Neue", sans-serif;
 
 html, body {
     font-family: $font-serif;
@@ -15,4 +15,18 @@ a {
     color: $color-red;
     &:link, &:visited { text-decoration: none; }
     &:hover, &:active { text-decoration: underline; }
+}
+
+blockquote {
+    padding-left: 1.5em;
+    font-size: 0.9em;
+}
+
+.pullquote {
+    font-family: Cooper Hewitt;
+    font-weight:  700;
+    font-size: 2em;
+    font-style: italic;
+    line-height: 1.5em;
+    margin: 1.5em 0;
 }

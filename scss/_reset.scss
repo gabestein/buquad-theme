@@ -48,9 +48,11 @@ q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
+
 a img {
   border: none;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }

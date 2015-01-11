@@ -1,8 +1,8 @@
 // Typography
-$sans-serif: $helvetica;
-$serif: $georgia;
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$sans-serif: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+$serif: "Lora", "Georgia", sans-serif;
+$base-font-family: $serif;
+$header-font-family: $sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;

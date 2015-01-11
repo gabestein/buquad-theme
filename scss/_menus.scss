@@ -1,6 +1,6 @@
-.primary-menu, .secondary-menu {
+.primary-menu, .secondary-menu, .footer-menu {
     font-family: $font-sans-serif;
-    font-size: $font-size * 1.5;
+    font-size: $font-size * 1.25;
 
     ul { width: 100%; }
     li {
@@ -9,31 +9,63 @@
     }
     a {
         display: block;
-        padding: 0.75em 1.5em;
+        padding: 0.5em 1em;
+        @include transition(background-color 0.1s linear);
+        font-weight: 700;
     }
 }
 
 .primary-menu {
+    background-color: $color-red;
+    display: block;
     .the-quad {
-        font-weight: 700;
         &:before {
             // quad logo svg
         }
     }
-    ul { background-color: $color-red; }
+    ul {
+        display: table;
+        max-width: em(300);
+    }
+    li {
+        display: table-cell;
+        height: 100%;
+        vertical-align: center;
+        text-align: center;
+        &:first-child a {
+            padding-left: 0.6em;
+            font-style: italic;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+    li.current-menu-item a {
+      color: $color-white;
+      background-color: lighten($color-red, $lighten-amount);
+    }
     a {
+        height: 100%;
+        padding: 0.6em 0 0.3em 0;
         text-decoration: none;
-        &:link, &:visited { color: $color-black; }
+        &:link, &:visited { color: $color-white; }
         &:hover, &:active {
             color: $color-white;
             background-color: lighten($color-red, $lighten-amount);
         }
+        font-size: 1rem;
+        @include media($large-screen) {
+            //font-size: 1em;
+        }
     }
 }
 
-.secondary-menu {
+.secondary-menu, .footer-menu {
     font-size: $font-size * 0.875;
-    ul { background-color: $color-black; }
+    ul {
+        overflow-x: scroll;
+        white-space: nowrap;
+        background-color: $color-black;
+    }
     a {
         text-decoration: none;
         &:link, &:visited { color: $color-white; }
@@ -41,5 +73,9 @@
             color: $color-white;
             background-color: lighten($color-black, $lighten-amount);
         }
+    }
+    li.current-menu-item a {
+      color: $color-white;
+      background-color: lighten($color-black, $lighten-amount);
     }
 }
