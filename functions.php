@@ -207,7 +207,7 @@ class MY_Post_Numbers {
   public function display_count() {
     $this->init(); // prevent unnecessary queries
     $id = get_the_ID();
-    echo sprintf( '<div class="post-counter">Post number<span class="num">%s</span><span class="slash">/</span><span class="total">%s</span></div>', $this->posts[$id], $this->count );
+    echo sprintf( 'Part <span class="num">%s</span>', $this->posts[$id], $this->count );
   }
 
   private function init() {
