@@ -142,6 +142,7 @@ ins {
 
 p {
 	margin: 0 0 24px;
+	clear: both;
 }
 
 code,
