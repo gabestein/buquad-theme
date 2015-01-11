@@ -198,3 +198,21 @@ function get_404() {
     </div>
     <?php
 }
+
+function get_post_number($postID){
+  $temp_query = $wp_query;
+  $postNumberQuery = new WP_Query('orderby=date&order=ASC&posts_per_page=-1');
+  $counter = 1;
+  $postCount = 0;
+  if($postNumberQuery->have_posts()) :
+    while ($postNumberQuery->have_posts()) : $postNumberQuery->the_post();
+    if ($postID == get_the_ID()){
+      $postCount = $counter;
+    } else {
+      $counter++;
+    }
+  endwhile; endif;
+  wp_reset_query();
+  $wp_query = $temp_query;
+  return $postCount;
+}
