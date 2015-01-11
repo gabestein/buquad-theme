@@ -200,7 +200,7 @@ function get_404() {
 }
 
 function get_post_number($postID){
-  $temp_query = $wp_query;
+  $temp_query = global $wp_query;
   $postNumberQuery = new WP_Query('orderby=date&order=ASC&posts_per_page=-1');
   $counter = 1;
   $postCount = 0;
