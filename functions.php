@@ -73,7 +73,7 @@ function create_column_tax() {
 add_action( 'init', 'create_column_tax', 0 );
 
 // Functions to compose a standard _card object_ based on an id
-function article_card($id) {
+function article_card($id, $link_text) {
   // get data
   $post = get_post($id);
   $post_title = $post->post_title;
@@ -94,27 +94,12 @@ function article_card($id) {
       <?php echo $post_image; ?>
       <hgroup>
         <h1><a class="card-title" href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h1>
-        <h2>
-          by
-          <a class="card-author" href="<?php echo $post_author_url; ?>" title="Author page for <?php echo $post_author_name ?>">
-            <?php echo $post_author_name; ?>
-          </a>
-        </h2>
-        <h3><?php echo $post_date; ?></h3>
       </hgroup>
     </section>
-    <?php /*
     <section class="middle">
-    <!-- Excerpts must be 117 characters or less! -->
-    <!-- This example is exactly 117 characters. -->
-    <!-- This is in order to work with Twitter for story promos. -->
-    <summary class="article-excerpt">
-    <?php echo $post_excerpt; ?>
-    </summary>
-    </section>
-    */ ?>
-    <section class="bottom">
-      <a type="button" href="<?php echo $post_url; ?>">Read Article</a>
+      <summary class="article-excerpt">
+        <?php echo $post_excerpt; ?>
+      </summary>
     </section>
   </section>
   <?php
