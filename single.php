@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
-
+<?php
+  $prev_post = get_previous_post();
+  article_card($prev_post->ID);
+?>
 <article class="single" id="<?php the_ID(); ?>">
     <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
 
