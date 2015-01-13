@@ -73,7 +73,7 @@ function create_column_tax() {
 add_action( 'init', 'create_column_tax', 0 );
 
 // Functions to compose a standard _card object_ based on an id
-function article_card($id, $link_text) {
+function article_card($id) {
   // get data
   $post = get_post($id);
   $post_title = $post->post_title;
