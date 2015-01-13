@@ -94,12 +94,10 @@ function article_card($id, $link_text) {
       <?php echo $post_image; ?>
       <hgroup>
         <h1><a class="card-title" href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h1>
+        <summary class="article-excerpt">
+          <?php echo $post_excerpt; ?>
+        </summary>
       </hgroup>
-    </section>
-    <section class="middle">
-      <summary class="article-excerpt">
-        <?php echo $post_excerpt; ?>
-      </summary>
     </section>
   </section>
   <?php
