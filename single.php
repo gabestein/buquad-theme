@@ -5,6 +5,10 @@
   $prev_post = get_previous_post();
   article_card($prev_post->ID);
 ?>
+<?php
+$next_post = get_nexr_post();
+article_card($prev_post->ID);
+?>
 <article class="single" id="<?php the_ID(); ?>">
     <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
 
