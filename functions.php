@@ -73,7 +73,7 @@ function create_column_tax() {
 add_action( 'init', 'create_column_tax', 0 );
 
 // Functions to compose a standard _card object_ based on an id
-function article_card($id) {
+function article_card($id, $class = '') {
   // get data
   $post = get_post($id);
   $post_title = $post->post_title;
@@ -89,7 +89,7 @@ function article_card($id) {
   }
   // render card
   ?>
-  <section type="card" class="article">
+  <section type="card" class="article $class">
     <section class="top">
       <?php echo $post_image; ?>
       <hgroup>

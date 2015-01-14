@@ -5,13 +5,13 @@
   <?php
     $prev_post = get_previous_post();
     if($prev_post !== '') {
-      article_card($prev_post->ID);
+      article_card($prev_post->ID, 'prev');
     }
   ?>
   <?php
     $next_post = get_next_post();
     if($next_post !== '') {
-      article_card($next_post->ID);
+      article_card($next_post->ID, 'next');
     }
   ?>
 </section>

@@ -120,6 +120,12 @@ $border-radius: 0px;
   }
 
   &.article {
+    &.prev {
+      float: left;
+    }
+    &.next {
+      float: right;
+    }
     text-align: left;
     img {
       filter: blur(1px);

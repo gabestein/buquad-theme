@@ -474,6 +474,10 @@ blockquote {
       display: block; }
   [type="card"].article {
     text-align: left; }
+    [type="card"].article.prev {
+      float: left; }
+    [type="card"].article.next {
+      float: right; }
     [type="card"].article img {
       filter: blur(1px);
       -webkit-filter: blur(1px); }
