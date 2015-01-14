@@ -8,8 +8,10 @@
   }
 ?>
 <?php
-$next_post = get_next_post();
-article_card($next_post->ID);
+  $next_post = get_next_post();
+  if($next_post !== '') {
+    article_card($next_post->ID);
+  }
 ?>
 <article class="single" id="<?php the_ID(); ?>">
     <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
