@@ -74,9 +74,6 @@ add_action( 'init', 'create_column_tax', 0 );
 
 // Functions to compose a standard _card object_ based on an id
 function article_card($id, $class) {
-  if(!isset($class)){
-    $class = null;
-  }
   // get data
   $post = get_post($id);
   $post_title = $post->post_title;
