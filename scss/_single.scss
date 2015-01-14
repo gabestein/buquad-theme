@@ -30,6 +30,9 @@ $vertical-spacing: 24px;
       margin: 0 auto;
   }
 }
+.recommender {
+  overflow: hidden;
+}
 article.single {
     width: 100%;
     // @include outer-container;
