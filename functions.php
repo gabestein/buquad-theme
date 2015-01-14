@@ -107,7 +107,8 @@ function user_card($id) {
   // get data
   $fullname = get_the_author_meta('display_name', $id);
   $firstname = get_the_author_meta('first_name', $id);
-  $image = get_wp_user_avatar($id, 'card');
+  //$image = get_wp_user_avatar($id, 'card');
+  $image = '';
   $posts = get_author_posts_url($post_author);
   $email = get_the_author_meta('email', $id);
   $website = get_the_author_meta('user_url', $id);
