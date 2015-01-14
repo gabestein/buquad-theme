@@ -354,7 +354,8 @@ blockquote {
 
 /* SINGLE */
 .recommender {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #202020; }
 
 article.single {
   width: 100%; }
