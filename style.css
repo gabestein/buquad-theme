@@ -524,6 +524,10 @@ blockquote {
       margin-bottom: 0.75em;
       margin-left: 0em; } }
 
+#brand img.logo {
+  max-width: 300px;
+  height: auto; }
+
 .primary-menu, .secondary-menu, .footer-menu {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
   font-size: 22.5px; }

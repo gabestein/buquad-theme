@@ -1,3 +1,8 @@
+#brand img.logo {
+  max-width: 300px;
+  height: auto;
+}
+
 .primary-menu, .secondary-menu, .footer-menu {
     font-family: $font-sans-serif;
     font-size: $font-size * 1.25;
