@@ -75,8 +75,8 @@
     </head>
     <body>
       <header>
-            <section id="brand" class="logo">
-              <img src="assets/images/sleeper-logo.png">
+            <section id="brand">
+              <img class="logo" src="<?php echo get_stylesheet_directory_url ?>/assets/images/sleeper-logo.png">
             </section>
             <!-- MENU BAR -->
 	           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'primary-menu' ) ); ?>
