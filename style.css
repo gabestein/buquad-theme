@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
 
 a {
-  color: #FF3400; }
+  color: #27562D; }
   a:link, a:visited {
     text-decoration: none; }
   a:hover, a:active {
@@ -395,13 +395,13 @@ blockquote {
   font-weight: 700;
   text-decoration: none;
   line-height: 0;
-  color: #FF3400;
+  color: #27562D;
   background-color: white;
-  border: 2px solid #FF3400;
+  border: 2px solid #27562D;
   border-radius: 0px; }
   [type="button"]:hover {
     color: white;
-    background-color: #FF3400;
+    background-color: #27562D;
     text-decoration: none; }
 
 [type="card"] {
@@ -446,7 +446,7 @@ blockquote {
       display: table-cell; }
       [type="card"] .middle .social li a {
         display: block;
-        border: 2px solid #FF3400;
+        border: 2px solid #27562D;
         border-left: none;
         color: white;
         text-align: center;
@@ -456,13 +456,13 @@ blockquote {
           width: 100%;
           height: 100%;
           padding: 0.5em 0;
-          color: #FF3400; }
+          color: #27562D; }
         [type="card"] .middle .social li a:hover {
-          background-color: #FF3400; }
+          background-color: #27562D; }
           [type="card"] .middle .social li a:hover span {
             color: white; }
       [type="card"] .middle .social li:first-child a {
-        border-left: 2px solid #FF3400;
+        border-left: 2px solid #27562D;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px; }
       [type="card"] .middle .social li:last-child a {
@@ -501,7 +501,7 @@ blockquote {
         color: #FCFCFC;
         text-decoration: underline; }
         [type="card"].article hgroup a:hover {
-          color: #FF3400; }
+          color: #27562D; }
     [type="card"].article summary {
       font-size: 16px;
       line-height: 24px;
@@ -541,7 +541,7 @@ blockquote {
     font-weight: 700; }
 
 .primary-menu {
-  background-color: #FF3400;
+  background-color: #27562D;
   display: block; }
   .primary-menu ul {
     display: table;
@@ -558,7 +558,7 @@ blockquote {
       text-transform: uppercase; }
   .primary-menu li.current-menu-item a {
     color: #FCFCFC;
-    background-color: #ff5d33; }
+    background-color: #37793f; }
   .primary-menu a {
     height: 100%;
     padding: 0.6em 0 0.3em 0;
@@ -568,7 +568,7 @@ blockquote {
       color: #FCFCFC; }
     .primary-menu a:hover, .primary-menu a:active {
       color: #FCFCFC;
-      background-color: #ff5d33; }
+      background-color: #37793f; }
 
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }
@@ -841,7 +841,7 @@ nav.pagination {
     font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
     font-weight: 700; }
     nav.pagination a:hover {
-      color: #FF3400;
+      color: #27562D;
       text-decoration: none; }
   nav.pagination .alignleft {
     display: inline-block;
@@ -874,7 +874,7 @@ nav.pagination {
     line-height: 1em;
     font-style: italic;
     text-transform: uppercase;
-    color: #FF3400; }
+    color: #27562D; }
   .homepage .featured-article.container .featured-article-description dfn, .homepage .featured-article.container .featured-article-description h3 {
     font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
     text-transform: uppercase;
