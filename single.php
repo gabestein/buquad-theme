@@ -3,8 +3,10 @@
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
 <?php
   $prev_post = get_previous_post();
-  print_r($prev_post);
-  article_card($prev_post->ID);
+  if(isset($prev_post)) {
+    article_card($prev_post->ID);  
+  }
+
 ?>
 <?php
 $next_post = get_next_post();
