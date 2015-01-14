@@ -89,7 +89,7 @@ function article_card($id, $class = '') {
   }
   // render card
   ?>
-  <section type="card" class="article $class">
+  <section type="card" class="article <?php $class; ?>">
     <section class="top">
       <?php echo $post_image; ?>
       <hgroup>
