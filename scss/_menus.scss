@@ -1,7 +1,10 @@
-#brand img.logo {
-  max-width: 300px;
-  height: auto;
+#brand {
   line-height: 0;
+  
+  img.logo {
+    max-width: 300px;
+    height: auto;
+  }
 }
 
 .primary-menu, .secondary-menu, .footer-menu {
