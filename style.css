@@ -397,7 +397,7 @@ blockquote {
   line-height: 0;
   color: #FF3400;
   background-color: white;
-  border: 2px solid #FF3400;
+  border: 0px solid #FF3400;
   border-radius: 0px; }
   [type="button"]:hover {
     color: white;
