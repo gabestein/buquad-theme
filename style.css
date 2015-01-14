@@ -397,7 +397,7 @@ blockquote {
   line-height: 0;
   color: #FF3400;
   background-color: white;
-  border: 0px solid #FF3400;
+  border: 2px solid #FF3400;
   border-radius: 0px; }
   [type="button"]:hover {
     color: white;
@@ -410,7 +410,7 @@ blockquote {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 420px;
-  border: 1px solid black;
+  border: 0px solid black;
   border-radius: 0px;
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
   color: #202020;

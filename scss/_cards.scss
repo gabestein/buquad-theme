@@ -35,7 +35,7 @@ $border-radius: 0px;
   line-height: 0;
   color: $color-red;
   background-color: white;
-  border: 0px solid $color-red;
+  border: 2px solid $color-red;
   border-radius: $border-radius / 2;
   &:hover {
     color: white;
@@ -48,7 +48,7 @@ $border-radius: 0px;
   display: block;
   @include box-sizing(border-box);
   max-width: 420px;
-  border: 1px solid black;
+  border: 0px solid black;
   border-radius: $border-radius;
 
   font-family: $font-sans-serif;
