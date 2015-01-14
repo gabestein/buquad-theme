@@ -588,6 +588,9 @@ blockquote {
     background-color: #393939; }
 
 /* SINGLE */
+.recommender {
+  overflow: hidden; }
+
 article.single, article.page, article.archive {
   width: 100%; }
   article.single header, article.page header, article.archive header {

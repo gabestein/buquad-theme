@@ -353,6 +353,9 @@ blockquote {
   margin: 1.5em 0; }
 
 /* SINGLE */
+.recommender {
+  overflow: hidden; }
+
 article.single {
   width: 100%; }
   article.single header {
