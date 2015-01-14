@@ -74,8 +74,11 @@
 
     </head>
     <body>
-        <header>
+      <header>
+            <section id="brand" class="logo">
+              <img src="assets/images/sleeper-logo.png">
+            </section>
             <!-- MENU BAR -->
-	    <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'primary-menu' ) ); ?>
+	           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'primary-menu' ) ); ?>
 	    <!-- <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'container_class' => 'secondary-menu' ) ); ?>-->
         </header>
