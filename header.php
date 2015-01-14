@@ -76,7 +76,9 @@
     <body>
       <header>
             <section id="brand">
-              <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sleeper-logo.png">
+              <a href="http://sleeperave.com">
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sleeper-logo.png">
+              </a>
             </section>
             <!-- MENU BAR -->
 	           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'primary-menu' ) ); ?>
