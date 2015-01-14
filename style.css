@@ -363,9 +363,9 @@ blockquote {
 
 .card.container {
   margin: 0.75em; }
-  @media screen and (min-width: 306px) {
+  @media screen and (min-width: 450px) {
     .card.container {
-      width: 306px;
+      width: 450px;
       margin: 0.75em auto; } }
   @media screen and (min-width: 604px) {
     .card.container {
@@ -409,7 +409,7 @@ blockquote {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 300px;
+  max-width: 420px;
   border: 1px solid black;
   border-radius: 8px;
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;

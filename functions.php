@@ -3,7 +3,7 @@
 add_editor_style();
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size(300, 300, true );
-add_image_size('card', 400, 100, true );
+add_image_size('card', 400, 150, true );
 add_image_size('banner', 1200, 900, true);
 
 function register_menus() {
@@ -83,7 +83,7 @@ function article_card($id) {
   $post_author_url = get_author_posts_url($post_author);
   $post_date = get_the_time('m/d/y', $id);
   $post_url = get_permalink($id);
-  $post_image = get_the_post_thumbnail($id, 'thumbnail', array('style' => 'width: 280px; height: 280px'));
+  $post_image = get_the_post_thumbnail($id, 'thumbnail', array('style' => 'width: 400px; height: 150px'));
   if(!$post_image) {
     $post_image = '<img style="width: 280px" width="280" alt="placeholder image" src="'.get_template_directory_uri().'/assets/images/default-card.png">';
   }
