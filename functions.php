@@ -81,8 +81,8 @@ function action_unit() {
       <div class="email">
         <script>
         function mailchimp_subscribe() {
-          $('.modal .email').fadeout();
-          $('.modal .social').fadein();
+          $('.modal .email').fadeOut();
+          $('.modal .social').fadeIn();
         }
         </script>
         <div class="modal">
