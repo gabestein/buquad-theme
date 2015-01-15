@@ -378,27 +378,27 @@ blockquote {
         @media screen and (min-width: 1192px) {
           .recommender .action .container p.cta {
             display: block; } }
-        .recommender .action .container p.cta a.button {
-          background-color: #27562D;
-          border-radius: 3px;
-          border: none;
-          color: white;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: bold;
-          padding: 7px 18px;
-          text-decoration: none;
-          background-clip: padding-box;
-          padding: 0.8em 1em; }
-          .recommender .action .container p.cta a.button:hover:not(:disabled) {
-            background-color: #2c6b34;
-            cursor: pointer; }
-          .recommender .action .container p.cta a.button:active:not(:disabled), .recommender .action .container p.cta a.button:focus:not(:disabled) {
-            background-color: #214225;
-            cursor: pointer; }
-          .recommender .action .container p.cta a.button:disabled {
-            opacity: 0.5;
-            cursor: not-allowed; }
+      .recommender .action .container a.button {
+        background-color: #27562D;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        padding: 0.8em 1em; }
+        .recommender .action .container a.button:hover:not(:disabled) {
+          background-color: #2c6b34;
+          cursor: pointer; }
+        .recommender .action .container a.button:active:not(:disabled), .recommender .action .container a.button:focus:not(:disabled) {
+          background-color: #214225;
+          cursor: pointer; }
+        .recommender .action .container a.button:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
     .recommender .action .modal {
       text-align: center; }
       .recommender .action .modal h2 {

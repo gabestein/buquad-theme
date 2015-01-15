@@ -52,12 +52,12 @@ $vertical-spacing: 24px;
         @include media(1192px) {
           display: block;
         }
-        a.button {
-          @include button(flat, $base-accent-color);
-          padding: 0.8em 1em;
-        }
         font-size: 0.8em/1.0em;
         font-style: italic;
+      }
+      a.button {
+        @include button(flat, $base-accent-color);
+        padding: 0.8em 1em;
       }
       margin: 0 auto;
       text-align: center;
