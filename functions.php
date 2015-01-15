@@ -77,7 +77,7 @@ function action_unit() {
   ?>
   <section class="action">
     <div class="subscribe">
-      <p>Want to see Sleeper Ave. plus bonuses from me in your inbox or feeds every week? Subscribe! - Ed</p>
+      <p>Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
       <div class="email">
         <div class="modal">
           <label for="modal-1">
@@ -98,36 +98,36 @@ function action_unit() {
                   <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
                 </div>
               </form>
+              <div class="facebook">
+                <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                <script>
+                function fb_action_logger() {
+                  FB.Event.subscribe('edge.create', function(url, element){
+                    console.log(url, element);
+                  });
+                }
+                </script>
+              </div>
+              <div class="twitter">
+                <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
+                <script>
+                twttr.ready(
+                  function (twttr) {
+                    twttr.events.bind(
+                      'follow',
+                      function (event) {
+                        var followedUserId = event.data.user_id;
+                        var followedScreenName = event.data.screen_name;
+                        console.log(followedUserId, followedScreenName);
+                      }
+                    );
+                  }
+                );
+                </script>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="facebook">
-        <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-        <script>
-        function fb_action_logger() {
-          FB.Event.subscribe('edge.create', function(url, element){
-            console.log(url, element);
-          });
-        }
-        </script>
-      </div>
-      <div class="twitter">
-        <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
-        <script>
-          twttr.ready(
-            function (twttr) {
-              twttr.events.bind(
-                'follow',
-                function (event) {
-                  var followedUserId = event.data.user_id;
-                  var followedScreenName = event.data.screen_name;
-                  console.log(followedUserId, followedScreenName);
-                }
-              );
-            }
-          );
-        </script>
       </div>
     </div>
     <!-- end container -->
