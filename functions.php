@@ -78,6 +78,22 @@ function action_unit() {
   <section class="action">
     <div class="subscribe">
       <p>Want to see Sleeper Ave. plus bonuses from me in your inbox or feeds every week? Subscribe! - Ed</p>
+      <div class="email">
+        <div class="modal">
+          <label for="modal-1">
+            <div class="modal-trigger">Click for Modal</div>
+          </label>
+          <input class="modal-state" id="modal-1" type="checkbox" />
+          <div class="modal-window">
+            <div class="modal-inner">
+              <label class="modal-close" for="modal-1"></label>
+              <h1>Modal Title</h1>
+              <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+              <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="facebook">
         <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
         <script>
