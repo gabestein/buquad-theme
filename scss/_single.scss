@@ -38,9 +38,9 @@ $vertical-spacing: 24px;
     padding: 10px;
     margin: 0 400px 0 400px;
     .subscribe {
-      p {
+      p.cta {
         display: none;
-        @include media($medium-screen) {
+        @include media($large-screen) {
           display: block;
         }
         font-size: 0.8em/1.0em;

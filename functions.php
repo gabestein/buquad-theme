@@ -77,7 +77,7 @@ function action_unit() {
   ?>
   <section class="action">
     <div class="subscribe">
-      <p>Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
+      <p class="cta">Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
       <div class="email">
         <div class="modal">
           <label for="modal-1">
