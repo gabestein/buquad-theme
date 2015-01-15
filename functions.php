@@ -76,7 +76,7 @@ function action_unit() {
   //get cookies
   ?>
   <section class="action">
-    <?php support_action(); ?>
+    <?php subscribe_action(); ?>
   </section>
 <?php }
 
