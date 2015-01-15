@@ -79,7 +79,15 @@ function action_unit() {
 
   </script>
   <section class="action">
-    <div class="subscribe">
+    <div class="facebook">
+      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      <script>
+      FB.Event.subscribe('edge.create', function(url, element){
+        console.log(url, element);
+      });
+      </script>
+    </div>
+    <div class="twitter">
       <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sleeperave</a>
       <script>
         twttr.ready(
