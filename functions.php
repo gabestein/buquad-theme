@@ -89,7 +89,7 @@ function action_unit() {
         </script>
       </div>
       <div class="twitter">
-        <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sleeperave</a>
+        <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
         <script>
           twttr.ready(
             function (twttr) {
