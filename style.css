@@ -762,10 +762,13 @@ blockquote {
   background-color: #202020; }
   .recommender .action {
     color: #FCFCFC;
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
     @media screen and (min-width: 40em) {
       .recommender .action {
-        margin: 0 400px 0 400px; } }
+        margin-left: 400px;
+        margin-right: 400px; } }
     .recommender .action .subscribe {
       margin: 0 auto;
       text-align: center; }
