@@ -419,9 +419,9 @@ blockquote {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s; }
-  [type="card"]:hover hgroup {
-    background: -webkit-linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9));
-    background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)); }
+  [type="card"]:hover.article hgroup {
+    background: -webkit-linear-gradient(rgba(32, 32, 32, 0.65), rgba(32, 32, 32, 0.65));
+    background: linear-gradient(rgba(32, 32, 32, 0.65), rgba(32, 32, 32, 0.65)); }
   [type="card"] .prev {
     float: left; }
   [type="card"] .next {
@@ -504,8 +504,8 @@ blockquote {
       height: 100%;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
-      background: -webkit-linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75));
-      background: linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75)); }
+      background: -webkit-linear-gradient(rgba(32, 32, 32, 0.85), rgba(32, 32, 32, 0.85));
+      background: linear-gradient(rgba(32, 32, 32, 0.85), rgba(32, 32, 32, 0.85)); }
       [type="card"].article hgroup h1 {
         margin: 1em; }
       [type="card"].article hgroup h2, [type="card"].article hgroup h3 {
