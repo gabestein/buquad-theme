@@ -38,7 +38,7 @@ $vertical-spacing: 24px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    @include media($medium-screen) {
+    @include media($large-screen) {
       margin-left: 400px;
       margin-right: 400px;
     }
