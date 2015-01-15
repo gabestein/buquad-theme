@@ -177,7 +177,7 @@ article.single {
         @include outer-container();
         //overflow: hidden;
         max-width: 640px;
-        margin: 1.5em auto;
+        margin: 0 auto 1.5em auto;
         p {
             clear: both;
             margin-bottom: 1em;
