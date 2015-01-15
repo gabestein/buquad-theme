@@ -80,9 +80,12 @@ function action_unit() {
       <p class="cta">Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
       <div class="email">
         <script>
+
         function mailchimp_subscribe() {
-          $('.modal .email').fadeOut();
-          $('.modal .social').fadeIn();
+          (function($) {
+            $('.modal .email').fadeOut();
+            $('.modal .social').fadeIn();
+          })(jQuery);
         }
         </script>
         <div class="modal">
