@@ -34,12 +34,10 @@ $vertical-spacing: 24px;
   overflow: hidden;
   background-color: $color-black;
   .action {
-    width: 100%;
     .container {
       margin: 0 auto;
       text-align: center;
     }
-    float: left;
   }
 }
 article.single {

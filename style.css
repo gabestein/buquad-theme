@@ -617,12 +617,9 @@ blockquote {
 .recommender {
   overflow: hidden;
   background-color: #202020; }
-  .recommender .action {
-    width: 100%;
-    float: left; }
-    .recommender .action .container {
-      margin: 0 auto;
-      text-align: center; }
+  .recommender .action .container {
+    margin: 0 auto;
+    text-align: center; }
 
 article.single, article.page, article.archive {
   width: 100%; }
