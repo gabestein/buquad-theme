@@ -54,6 +54,7 @@ $vertical-spacing: 24px;
         }
         font-size: 0.8em/1.0em;
         font-style: italic;
+        margin-bottom: 5px;
       }
       a.button {
         @include button(flat, $base-accent-color);
