@@ -88,7 +88,7 @@ function action_unit() {
             <div class="modal-inner">
               <label class="modal-close" for="modal-1"></label>
               <h2>Subscribe via Email</h2>
-              <form role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <form role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target" novalidate>
                 <div class="form-group">
                   <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
                 </div>
@@ -98,6 +98,7 @@ function action_unit() {
                   <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
                 </div>
               </form>
+              <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
               <h2>And while you're at it...why not our Facebook or Twitter accounts?</h2>
               <div class="facebook">
                 <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
