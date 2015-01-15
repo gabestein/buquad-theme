@@ -72,7 +72,7 @@ function create_column_tax() {
 }
 add_action( 'init', 'create_column_tax', 0 );
 
-function action_unit($id) {
+function action_unit() {
   //get cookies
   ?>
   <script>
@@ -93,7 +93,7 @@ function action_unit($id) {
       </script>
     </div>
   </section>
-}
+<?php } ?>
 
 // Functions to compose a standard _card object_ based on an id
 function article_card($id, $class = '') {

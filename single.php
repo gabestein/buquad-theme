@@ -3,16 +3,19 @@
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
 <section class="recommender">
   <?php
+
     $prev_post = get_previous_post();
     if($prev_post !== '') {
       article_card($prev_post->ID, 'prev');
     }
-  ?>
-  <?php
+
+    action_unit();
+
     $next_post = get_next_post();
     if($next_post !== '') {
       article_card($next_post->ID, 'next');
     }
+
   ?>
 </section>
 <article class="single" id="<?php the_ID(); ?>">
