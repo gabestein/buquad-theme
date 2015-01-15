@@ -106,7 +106,7 @@ article.single {
                     margin-bottom: 0em;
                 }
                 color: $color-black;
-                text-shadow: 2px 2px 6px lighten($color-black, 20);
+                text-shadow: 2px 2px 6px lighten($color-black, 50);
             }
 
             h3 {
@@ -129,7 +129,7 @@ article.single {
               font-family: Helvetica, Arial, sans-serif;
               text-transform: uppercase;
               font-weight: 600;
-              text-shadow: 2px 2px 6px lighten($color-black, 40);
+              //text-shadow: 2px 2px 6px lighten($color-black, 40);
               border-bottom: 1px solid darken(white, 20);
               margin: 0 35%;
               padding-bottom: .1em;
