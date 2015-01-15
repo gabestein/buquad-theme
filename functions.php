@@ -87,7 +87,7 @@ function action_unit() {
           <div class="modal-window">
             <div class="modal-inner">
               <label class="modal-close" for="modal-1"></label>
-              <h1>Subscribe via Email</h1>
+              <h2>Subscribe via Email</h2>
               <form role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="form-group">
                   <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
@@ -108,6 +108,7 @@ function action_unit() {
                 }
                 </script>
               </div>
+              <h2>And while you're at it...why not our Facebook or Twitter accounts?</h2>
               <div class="twitter">
                 <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
                 <script>
