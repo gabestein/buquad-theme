@@ -384,8 +384,10 @@ blockquote {
       .recommender .action .modal h2 {
         color: #202020;
         font-size: 1.5em;
-        margin: 10px 0;
+        margin: 0 0 30px;
         text-transform: uppercase; }
+      .recommender .action .modal form {
+        margin: 0 0 30px; }
       .recommender .action .modal .facebook, .recommender .action .modal .twitter {
         float: left;
         margin: 0 5px; }

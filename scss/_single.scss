@@ -64,8 +64,11 @@ $vertical-spacing: 24px;
       h2 {
         color: $color-black;
         font-size: 1.5em;
-        margin: 10px 0;
+        margin: 0 0 30px;
         text-transform: uppercase;
+      }
+      form {
+        margin: 0 0 30px;
       }
       .facebook, .twitter {
         float: left;
