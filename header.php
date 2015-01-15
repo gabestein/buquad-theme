@@ -77,9 +77,11 @@
       <header>
             <section id="brand">
               <a href="http://sleeperave.com">
-                <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sleeper-logo.png">
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sleeper-logo.png" alt="Sleeper Ave. Logo">
               </a>
-            </section>
+              <div class="bg">
+                <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/antenna.png" alt="Sleeper Ave. Logo">
+              </div>
             <!-- MENU BAR -->
 	           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'primary-menu' ) ); ?>
 	    <!-- <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'container_class' => 'secondary-menu' ) ); ?>-->
