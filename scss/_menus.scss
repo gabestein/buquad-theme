@@ -11,8 +11,10 @@
   .bg, img.bg {
     float: right;
   }
-  img.bg {
-    max-width: 300px;
+  @include media($medium-screen) {
+    img.bg {
+      display: none;
+    }
   }
 }
 

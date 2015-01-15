@@ -535,8 +535,9 @@ blockquote {
     height: auto; }
   #brand .bg, #brand img.bg {
     float: right; }
-  #brand img.bg {
-    max-width: 300px; }
+  @media screen and (min-width: 40em) {
+    #brand img.bg {
+      display: none; } }
 
 .primary-menu, .secondary-menu, .footer-menu {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
