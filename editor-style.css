@@ -360,10 +360,10 @@ blockquote {
     color: #FCFCFC;
     padding: 10px;
     margin: 0 400px 0 400px; }
-    .recommender .action .container {
+    .recommender .action .subscribe {
       margin: 0 auto;
       text-align: center; }
-      .recommender .action .container .facebook, .recommender .action .container .twitter {
+      .recommender .action .subscribe .facebook, .recommender .action .subscribe .twitter {
         float: left;
         margin: 0 5px; }
 
