@@ -544,7 +544,9 @@ blockquote {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
   font-size: 22.5px; }
   .primary-menu ul, .secondary-menu ul, .footer-menu ul {
-    width: 100%; }
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap; }
   .primary-menu li, .secondary-menu li, .footer-menu li {
     display: inline-block;
     margin: 0; }
@@ -561,9 +563,7 @@ blockquote {
   display: block; }
   .primary-menu ul {
     display: table;
-    max-width: 18.75em;
-    overflow-x: scroll;
-    white-space: nowrap; }
+    max-width: 18.75em; }
   .primary-menu li {
     display: table-cell;
     height: 100%;
@@ -587,8 +587,6 @@ blockquote {
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }
   .secondary-menu ul, .footer-menu ul {
-    overflow-x: scroll;
-    white-space: nowrap;
     background-color: #202020; }
   .secondary-menu a, .footer-menu a {
     text-decoration: none; }
