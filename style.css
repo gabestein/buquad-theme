@@ -633,7 +633,7 @@ article.single, article.page, article.archive {
         right: 0; }
       @media screen and (min-width: 53.75em) {
         article.single header .intro-text, article.page header .intro-text, article.archive header .intro-text {
-          padding: 5.25em; } }
+          padding: 2em; } }
       article.single header .intro-text h2, article.page header .intro-text h2, article.archive header .intro-text h2 {
         margin: 0 auto .3em;
         font-size: 2em;
