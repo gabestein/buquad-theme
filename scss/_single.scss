@@ -38,6 +38,9 @@ $vertical-spacing: 24px;
     padding: 10px;
     margin: 0 400px 0 400px;
     .container {
+      .facebook, .twitter {
+        float: left;
+      }
       margin: 0 auto;
       text-align: center;
     }
