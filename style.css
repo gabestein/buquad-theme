@@ -522,7 +522,8 @@ blockquote {
       font-family: "Lora", "Georgia", sans-serif;
       font-size: 16px;
       line-height: 24px;
-      margin: 1.5em; }
+      margin: 1.5em;
+      text-shadow: 2px 2px 2px #202020; }
   [type="card"].author, [type="card"].subject {
     text-align: center; }
     [type="card"].author .top h1, [type="card"].subject .top h1 {
