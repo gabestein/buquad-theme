@@ -79,6 +79,12 @@ function action_unit() {
     <div class="subscribe">
       <p class="cta">Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
       <div class="email">
+        <script>
+        function mailchimp_subscribe() {
+          $('.modal .email').fadeOut();
+          $('.modal .social').fadeIn();
+        }
+        </script>
         <div class="modal">
           <label for="modal-1">
             <div class="modal-trigger"><i class="fa fa-envelope"></i> Subscribe via Email</div>
@@ -87,45 +93,49 @@ function action_unit() {
           <div class="modal-window">
             <div class="modal-inner">
               <label class="modal-close" for="modal-1"></label>
-              <h2>Subscribe via Email</h2>
-              <form role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target" novalidate>
-                <div class="form-group">
-                  <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
-                </div>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_95f484d00aece7f081c5241f2_2efc03da6c" tabindex="-1" value=""></div>
-                <div class="clear">
-                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
-                </div>
-              </form>
-              <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
-              <h2>And while you're at it...why not our Facebook or Twitter accounts?</h2>
-              <div class="facebook">
-                <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-                <script>
-                function fb_action_logger() {
-                  FB.Event.subscribe('edge.create', function(url, element){
-                    console.log(url, element);
-                  });
-                }
-                </script>
-              </div>
-              <div class="twitter">
-                <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
-                <script>
-                twttr.ready(
-                  function (twttr) {
-                    twttr.events.bind(
-                      'follow',
-                      function (event) {
-                        var followedUserId = event.data.user_id;
-                        var followedScreenName = event.data.screen_name;
-                        console.log(followedUserId, followedScreenName);
-                      }
-                    );
+              <div class="email">
+                <h2>Subscribe via Email</h2>
+                <form onsubmit="mailchimp_subscribe()" role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target" novalidate>
+                  <div class="form-group">
+                    <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_95f484d00aece7f081c5241f2_2efc03da6c" tabindex="-1" value=""></div>
+                  <div class="clear">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
+                  </div>
+                </form>
+                <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
+              </email>
+              <div class="social">
+                <h2>Thanks so much! While you're at it, follow Sleeper Ave. on Facebook and Twitter, too!</h2>
+                <div class="facebook">
+                  <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                  <script>
+                  function fb_action_logger() {
+                    FB.Event.subscribe('edge.create', function(url, element){
+                      console.log(url, element);
+                    });
                   }
-                );
-                </script>
+                  </script>
+                </div>
+                <div class="twitter">
+                  <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
+                  <script>
+                  twttr.ready(
+                    function (twttr) {
+                      twttr.events.bind(
+                        'follow',
+                        function (event) {
+                          var followedUserId = event.data.user_id;
+                          var followedScreenName = event.data.screen_name;
+                          console.log(followedUserId, followedScreenName);
+                        }
+                      );
+                    }
+                  );
+                  </script>
+                </div>
               </div>
             </div>
           </div>

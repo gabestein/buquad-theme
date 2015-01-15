@@ -387,6 +387,8 @@ blockquote {
         text-transform: uppercase; }
       .recommender .action .modal form {
         margin: 0 0 30px; }
+      .recommender .action .modal .social {
+        display: none; }
       .recommender .action .modal .facebook, .recommender .action .modal .twitter {
         float: left;
         margin: 0 5px; }
