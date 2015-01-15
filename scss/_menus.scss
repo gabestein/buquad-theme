@@ -43,9 +43,6 @@
 .primary-menu {
     background-color: $color-red;
     display: block;
-    ul {
-        max-width: em(300);
-    }
     li {
         height: 100%;
         vertical-align: center;
