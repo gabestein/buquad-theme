@@ -536,7 +536,7 @@ blockquote {
   #brand .bg, #brand img.bg {
     display: none; }
   @media screen and (min-width: 40em) {
-    #brand img.bg {
+    #brand .bg, #brand img.bg {
       display: inline;
       float: right; } }
 
