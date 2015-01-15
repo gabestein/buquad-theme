@@ -80,11 +80,13 @@ function action_unit() {
   </script>
   <section class="action">
     <div class="facebook">
-      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
       <script>
-      FB.Event.subscribe('edge.create', function(url, element){
-        console.log(url, element);
-      });
+      function fb_action_logger() {
+        FB.Event.subscribe('edge.create', function(url, element){
+          console.log(url, element);
+        });
+      }
       </script>
     </div>
     <div class="twitter">
