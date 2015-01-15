@@ -521,7 +521,7 @@ blockquote {
   @media screen and (min-width: 300px) {
     [type="card"] {
       display: inline-block;
-      margin-bottom: 0.75em;
+      margin-bottom: 0em;
       margin-left: 0em; } }
 
 #brand {
