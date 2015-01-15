@@ -81,15 +81,23 @@ function action_unit() {
       <div class="email">
         <div class="modal">
           <label for="modal-1">
-            <div class="modal-trigger">Click for Modal</div>
+            <div class="modal-trigger"><i class="fa fa-envelope"></i> Mailing List</div>
           </label>
           <input class="modal-state" id="modal-1" type="checkbox" />
           <div class="modal-window">
             <div class="modal-inner">
               <label class="modal-close" for="modal-1"></label>
-              <h1>Modal Title</h1>
-              <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
-              <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+              <h1>Subscribe via Email</h1>
+              <form role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="form-group">
+                  <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_95f484d00aece7f081c5241f2_2efc03da6c" tabindex="-1" value=""></div>
+                <div class="clear">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
+                </div>
+              </form>
             </div>
           </div>
         </div>
