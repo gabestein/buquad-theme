@@ -645,7 +645,7 @@ article.single, article.page, article.archive {
         @media screen and (min-width: 53.75em) {
           article.single header .intro-text h2, article.page header .intro-text h2, article.archive header .intro-text h2 {
             font-size: 3em;
-            margin-bottom: .4em; } }
+            margin-bottom: 0em; } }
       article.single header .intro-text h3, article.page header .intro-text h3, article.archive header .intro-text h3 {
         color: #666666;
         font-size: 1.3em;

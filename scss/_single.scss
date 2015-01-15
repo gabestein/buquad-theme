@@ -103,7 +103,7 @@ article.single {
                 max-width: 80%;
                 @include media($large-screen) {
                     font-size: 3em;
-                    margin-bottom: .4em;
+                    margin-bottom: 0em;
                 }
                 color: $color-black;
                 //text-shadow: 2px 2px 6px #000;
