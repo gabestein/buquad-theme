@@ -359,8 +359,7 @@ blockquote {
   .recommender .action {
     color: #FCFCFC;
     padding: 10px;
-    max-width: 640px;
-    float: left; }
+    margin: 0 400px 0 400px; }
     .recommender .action .container {
       margin: 0 auto;
       text-align: center; }
