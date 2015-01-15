@@ -418,11 +418,10 @@ article.single {
             margin: 0 auto 1em;
             width: 60%; } }
       article.single header .intro-text h4 {
-        color: #cccccc;
+        color: #535353;
         font-family: Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         font-weight: 600;
-        text-shadow: 2px 2px 6px #000;
         border-bottom: 1px solid #cccccc;
         margin: 0 35%;
         padding-bottom: .1em; }
