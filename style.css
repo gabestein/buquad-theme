@@ -561,8 +561,6 @@ blockquote {
 .primary-menu {
   background-color: #27562D;
   display: block; }
-  .primary-menu ul {
-    max-width: 18.75em; }
   .primary-menu li {
     height: 100%;
     vertical-align: center;
