@@ -72,6 +72,29 @@ function create_column_tax() {
 }
 add_action( 'init', 'create_column_tax', 0 );
 
+function action_unit($id) {
+  //get cookies
+  ?>
+  <script>
+
+  </script>
+  <section class="action">
+    <div class="subscribe">
+      <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sleeperave</a>
+      <script>
+      twttr.events.bind(
+        'follow',
+        function (event) {
+          var followedUserId = event.data.user_id;
+          var followedScreenName = event.data.screen_name;
+          console.log(followedUserId, followedScreenName);
+        }
+      );
+      </script>
+    </div>
+  </section>
+}
+
 // Functions to compose a standard _card object_ based on an id
 function article_card($id, $class = '') {
   // get data
