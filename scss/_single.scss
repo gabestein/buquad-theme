@@ -33,7 +33,8 @@ $vertical-spacing: 24px;
 .recommender {
   overflow: hidden;
   background-color: $color-black;
-  .action {
+  .subscribe {
+    max-width: 640px;
     float: left;
     .container {
       margin: 0 auto;
