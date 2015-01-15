@@ -75,6 +75,8 @@ add_action( 'init', 'create_column_tax', 0 );
 function action_unit() {
   //get cookies
   ?>
+  <section class="action">
+    <div class="subscribe">
       <h2>Support Independent Art!</h2>
       <p>Show your support by subscribing to Sleeper Ave. today on your network of choice. You'll be notified when the latest cartoons launch, as well as behind-the-scenes info and more. - Ed</p>
       <div class="facebook">
@@ -104,6 +106,9 @@ function action_unit() {
           );
         </script>
       </div>
+    </div>
+    <!-- end container -->
+  </section>
 <?php }
 
 // Functions to compose a standard _card object_ based on an id
