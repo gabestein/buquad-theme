@@ -91,6 +91,11 @@ function article_card($id, $class = '') {
   ?>
   <section type="card" class="article <?php echo $class; ?>">
     <section class="top">
+      <?php if($class === 'prev') { ?>
+        <div class="prev">
+          &#9664;
+        </div>
+      <?php } ?>
       <?php echo $post_image; ?>
       <hgroup>
         <h1><a class="card-title" href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h1>
