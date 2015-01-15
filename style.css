@@ -506,6 +506,8 @@ blockquote {
       border-top-right-radius: 0px;
       background: -webkit-linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75));
       background: linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75)); }
+      [type="card"].article hgroup h1, [type="card"].article hgroup h2, [type="card"].article hgroup h3 {
+        font-family: "Lora", "Georgia", sans-serif; }
       [type="card"].article hgroup h1 {
         margin: 1em; }
       [type="card"].article hgroup h2, [type="card"].article hgroup h3 {

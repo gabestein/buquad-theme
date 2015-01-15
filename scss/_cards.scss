@@ -168,6 +168,9 @@ $border-radius: 0px;
       height: 100%;
       @include border-top-radius($border-radius);
       @include background(linear-gradient(rgba(32, 32, 32, 0.75), rgba(32,32,32,0.75)));
+      h1, h2, h3 {
+        font-family: $font-serif;
+      }
       h1 {  margin: 1em; }
       h2, h3 {
         font-size: 16px;
