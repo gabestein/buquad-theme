@@ -363,6 +363,8 @@ blockquote {
     .recommender .action .subscribe {
       margin: 0 auto;
       text-align: center; }
+      .recommender .action .subscribe p {
+        margin: 0 0 0 .5em; }
       .recommender .action .subscribe .facebook, .recommender .action .subscribe .twitter {
         float: left;
         margin: 0 5px; }
