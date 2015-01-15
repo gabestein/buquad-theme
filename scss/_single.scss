@@ -39,6 +39,10 @@ $vertical-spacing: 24px;
     margin: 0 400px 0 400px;
     .subscribe {
       p {
+        display: none;
+        @include media($medium-screen) {
+          display: block;
+        }
         font-size: 0.8em/1.0em;
         font-style: italic;
         margin: 0 0 .5em;
