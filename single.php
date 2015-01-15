@@ -9,12 +9,13 @@
       article_card($prev_post->ID, 'prev');
     }
 
-    action_unit();
-
     $next_post = get_next_post();
     if($next_post !== '') {
       article_card($next_post->ID, 'next');
     }
+
+    //get our actions
+    action_unit();
 
   ?>
 </section>
