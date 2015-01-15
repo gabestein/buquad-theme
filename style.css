@@ -497,9 +497,6 @@ blockquote {
       float: left; }
     [type="card"].article.next {
       float: right; }
-    [type="card"].article img {
-      filter: blur(1px);
-      -webkit-filter: blur(1px); }
     [type="card"].article hgroup {
       position: absolute;
       top: 0;
