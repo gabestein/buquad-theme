@@ -778,8 +778,7 @@ blockquote {
       .recommender .action .subscribe p.cta {
         display: none;
         font-size: 0.8em/1.0em;
-        font-style: italic;
-        margin: 0 0 .5em; }
+        font-style: italic; }
         @media screen and (min-width: 1192px) {
           .recommender .action .subscribe p.cta {
             display: block; } }
