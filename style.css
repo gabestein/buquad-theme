@@ -617,12 +617,12 @@ blockquote {
 .recommender {
   overflow: hidden;
   background-color: #202020; }
-  .recommender .subscribe {
+  .recommender .action {
     color: #FCFCFC;
     padding: 10px;
     max-width: 640px;
     float: left; }
-    .recommender .subscribe .container {
+    .recommender .action .container {
       margin: 0 auto;
       text-align: center; }
 
