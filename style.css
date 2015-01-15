@@ -606,6 +606,8 @@ blockquote {
   .recommender .prev, .recommender .next {
     height: 100%;
     font-size: 2.5em; }
+  .recommender i.fa {
+    margin: 12px 15px; }
 
 article.single, article.page, article.archive {
   width: 100%; }
