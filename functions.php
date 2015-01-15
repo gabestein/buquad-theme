@@ -93,7 +93,7 @@ function article_card($id, $class = '') {
     <section class="top">
       <?php if($class === 'prev') { ?>
         <div class="prev">
-          &#9664;
+          <i class="fa fa-chevron-left"></i>
         </div>
       <?php } ?>
       <?php echo $post_image; ?>
