@@ -80,7 +80,7 @@
                 <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sleeper-logo.png" alt="Sleeper Ave. Logo">
               </a>
               <div class="bg">
-                <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/antenna.png" alt="Houses with antenna">
+                <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/antenna_sm.png" alt="Houses with antenna">
               </div>
             </section>
             <!-- MENU BAR -->
