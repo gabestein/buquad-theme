@@ -83,9 +83,9 @@ function article_card($id, $class = '') {
   $post_author_url = get_author_posts_url($post_author);
   $post_date = get_the_time('m/d/y', $id);
   $post_url = get_permalink($id);
-  $post_image = get_the_post_thumbnail($id, 'card', array('style' => 'width: 400px; height: 150px'));
+  $post_image = get_the_post_thumbnail($id, 'card', array('style' => 'max-width: 400px; height: auto'));
   if(!$post_image) {
-    $post_image = '<img style="width: 280px" width="280" alt="placeholder image" src="'.get_template_directory_uri().'/assets/images/default-card.png">';
+    $post_image = '<img style="max-width: 400px; height: auto;" alt="placeholder image" src="'.get_template_directory_uri().'/assets/images/default-card.png">';
   }
   // render card
   ?>
