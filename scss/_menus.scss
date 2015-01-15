@@ -1,6 +1,6 @@
 #brand {
   line-height: 0;
-  
+
   img.logo {
     max-width: 300px;
     height: auto;
@@ -41,12 +41,6 @@
         height: 100%;
         vertical-align: center;
         text-align: center;
-        &:first-child a {
-            padding-left: 0.6em;
-            font-style: italic;
-            text-align: left;
-            text-transform: uppercase;
-        }
     }
     li.current-menu-item a {
       color: $color-white;

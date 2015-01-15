@@ -557,11 +557,6 @@ blockquote {
     height: 100%;
     vertical-align: center;
     text-align: center; }
-    .primary-menu li:first-child a {
-      padding-left: 0.6em;
-      font-style: italic;
-      text-align: left;
-      text-transform: uppercase; }
   .primary-menu li.current-menu-item a {
     color: #FCFCFC;
     background-color: #37793f; }
