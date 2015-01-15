@@ -98,15 +98,15 @@ function article_card($id, $class = '') {
             <i class="fa fa-angle-left"></i>
           </div>
         <?php } ?>
-        <h1><a class="card-title" href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h1>
-        <summary class="article-excerpt">
-          <?php echo $post_excerpt; ?>
-        </summary>
         <?php if($class === 'next') { ?>
           <div class="next">
             <i class="fa fa-angle-right"></i>
           </div>
           <?php } ?>
+        <h1><a class="card-title" href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h1>
+        <summary class="article-excerpt">
+          <?php echo $post_excerpt; ?>
+        </summary>
       </hgroup>
     </section>
   </section>

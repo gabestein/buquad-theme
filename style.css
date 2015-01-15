@@ -600,11 +600,9 @@ blockquote {
   overflow: hidden;
   background-color: #202020; }
   .recommender .prev {
-    float: left;
-    clear: right; }
+    float: left; }
   .recommender .next {
-    float: right;
-    clear: left; }
+    float: right; }
   .recommender .prev, .recommender .next {
     height: 100%;
     font-size: 3em; }
