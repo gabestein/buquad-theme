@@ -527,7 +527,11 @@ blockquote {
 #brand {
   line-height: 0;
   background: -webkit-linear-gradient(#ADD8E6, #F0F8FF);
-  background: linear-gradient(#ADD8E6, #F0F8FF); }
+  background: linear-gradient(#ADD8E6, #F0F8FF);
+  background-image: url("assets/images/antenna.png");
+  background-position: center right;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
   #brand img.logo {
     max-width: 300px;
     height: auto; }
