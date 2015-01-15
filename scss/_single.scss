@@ -40,7 +40,7 @@ $vertical-spacing: 24px;
       margin-top: 10px;
       margin-bottom: 10px;
     }
-    @include media($large-screen) {
+    @include media(944px) {
       margin-left: 400px;
       margin-right: 400px;
     }

@@ -766,7 +766,7 @@ blockquote {
     .recommender .action .modal-trigger {
       margin-top: 10px;
       margin-bottom: 10px; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 944px) {
       .recommender .action {
         margin-left: 400px;
         margin-right: 400px; } }
