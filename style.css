@@ -783,10 +783,17 @@ blockquote {
         @media screen and (min-width: 1192px) {
           .recommender .action .subscribe p.cta {
             display: block; } }
-      .recommender .action .subscribe .facebook, .recommender .action .subscribe .twitter {
+    .recommender .action .modal {
+      text-align: center; }
+      .recommender .action .modal h2 {
+        color: #202020;
+        font-size: 1.5em;
+        text-transform: uppercase; }
+      .recommender .action .modal .facebook, .recommender .action .modal .twitter {
         float: left;
         margin: 0 5px; }
-      .recommender .action .subscribe .twitter {
+      .recommender .action .modal .twitter {
+        float: left;
         padding-top: 7px; }
 
 article.single, article.page, article.archive {

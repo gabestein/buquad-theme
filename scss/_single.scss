@@ -56,15 +56,24 @@ $vertical-spacing: 24px;
         font-style: italic;
         margin: 0 0 .5em;
       }
+      margin: 0 auto;
+      text-align: center;
+    }
+    .modal {
+      text-align: center;
+      h2 {
+        color: $color-black;
+        font-size: 1.5em;
+        text-transform: uppercase;
+      }
       .facebook, .twitter {
         float: left;
         margin: 0 5px;
       }
       .twitter {
+        float: left;
         padding-top: 7px;
       }
-      margin: 0 auto;
-      text-align: center;
     }
   }
 }
