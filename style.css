@@ -616,11 +616,13 @@ blockquote {
 /* SINGLE */
 .recommender {
   overflow: hidden;
-  background-color: #202020;
-  max-width: 640px; }
-  @media screen and (min-width: 53.75em) {
-    .recommender {
-      width: 640px; } }
+  background-color: #202020; }
+  .recommender .action {
+    max-width: 640px; }
+    @media screen and (min-width: 53.75em) {
+      .recommender .action {
+        width: 640px;
+        text-align: center; } }
 
 article.single, article.page, article.archive {
   width: 100%; }
