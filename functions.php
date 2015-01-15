@@ -182,9 +182,8 @@ function get_404() {
   <article class="page error-404">
     <header>
       <h1>Page Not Found</h2>
-        <h2>Well, this is embarassing.</h2>
-        <p>Whatever you were looking for isn&rsquo;t here.</p>
-        <p><a href="<?php echo home_url(); ?>">Return to our homepage.</a></p>
+        <h2>Oops! Looks like something was swept away.</h2>
+        <p><a href="<?php echo home_url(); ?>">How about our first cartoon, instead?</a></p>
       </header>
     </article>
     <?php
