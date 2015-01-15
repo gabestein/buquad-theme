@@ -606,10 +606,8 @@ blockquote {
     float: right;
     clear: left; }
   .recommender .prev, .recommender .next {
-    float: left;
     height: 100%;
-    font-size: 5em;
-    margin: 20px 10px; }
+    font-size: 3em; }
 
 article.single, article.page, article.archive {
   width: 100%; }

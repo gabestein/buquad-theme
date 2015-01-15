@@ -363,10 +363,8 @@ blockquote {
     float: right;
     clear: left; }
   .recommender .prev, .recommender .next {
-    float: left;
     height: 100%;
-    font-size: 5em;
-    margin: 20px 10px; }
+    font-size: 5em; }
 
 article.single {
   width: 100%; }
