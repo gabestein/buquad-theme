@@ -76,12 +76,12 @@ function action_unit() {
   //get cookies
   ?>
   <section class="action">
-    <?php subscribe_action(); ?>
+    <?php support_action(); ?>
   </section>
 <?php }
 
-function support_action() { ?>
-  <div class="support container">
+function subscribe_action() { ?>
+  <div class="subscribe container">
     <p class="cta">Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
     <div class="email">
     <script>
@@ -152,8 +152,8 @@ function support_action() { ?>
 
 
 <?php }
-function subscribe_action() { ?>
-  <div class="subscribe container">
+function support_action() { ?>
+  <div class="support container">
     <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) via Beacon Reader. -- Ed</p>
     <a href="http://www.beaconreader.com/projects/sleeper-ave" class="button"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
   </div>
