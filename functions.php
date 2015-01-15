@@ -80,8 +80,8 @@ function action_unit() {
   </section>
 <?php }
 
-function subscribe_action() { ?>
-  <div class="subscribe">
+function support_action() { ?>
+  <div class="support container">
     <p class="cta">Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
     <div class="email">
     <script>
@@ -132,15 +132,15 @@ function subscribe_action() { ?>
               twttr.ready(
                 function (twttr) {
                   twttr.events.bind(
-                    'follow',
-                    function (event) {
-                      var followedUserId = event.data.user_id;
-                      var followedScreenName = event.data.screen_name;
-                      console.log(followedUserId, followedScreenName);
-                    }
+                  'follow',
+                  function (event) {
+                    var followedUserId = event.data.user_id;
+                    var followedScreenName = event.data.screen_name;
+                    console.log(followedUserId, followedScreenName);
+                  }
                   );
                 }
-              );
+                );
               </script>
             </div>
           </div>
@@ -149,6 +149,14 @@ function subscribe_action() { ?>
     </div>
   </div>
 </div>
+
+
+<?php }
+function subscribe_action() { ?>
+  <div class="subscribe container">
+    <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) via Beacon Reader. -- Ed</p>
+    <a href="http://www.beaconreader.com/projects/sleeper-ave" class="button"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
+  </div>
 <?php }
 // Functions to compose a standard _card object_ based on an id
 function article_card($id, $class = '') {

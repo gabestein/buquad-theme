@@ -772,15 +772,15 @@ blockquote {
         clear: none;
         margin-left: 400px;
         margin-right: 400px; } }
-    .recommender .action .subscribe {
+    .recommender .action .container {
       margin: 0 auto;
       text-align: center; }
-      .recommender .action .subscribe p.cta {
+      .recommender .action .container p.cta {
         display: none;
         font-size: 0.8em/1.0em;
         font-style: italic; }
         @media screen and (min-width: 1192px) {
-          .recommender .action .subscribe p.cta {
+          .recommender .action .container p.cta {
             display: block; } }
     .recommender .action .modal {
       text-align: center; }
