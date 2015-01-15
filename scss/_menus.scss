@@ -1,6 +1,6 @@
 #brand {
   line-height: 0;
-
+  @include background(linear-gradient(#ADD8E6, #F0F8FF));
   img.logo {
     max-width: 300px;
     height: auto;
