@@ -33,9 +33,9 @@ $vertical-spacing: 24px;
 .recommender {
   overflow: hidden;
   background-color: $color-black;
-  text-align: center;
-  margin: 0 auto;
   .action {
+    text-align: center;
+    margin: 0 auto;
     max-width: 640px;
     @include media($large-screen) {
       width: 640px;

@@ -616,10 +616,10 @@ blockquote {
 /* SINGLE */
 .recommender {
   overflow: hidden;
-  background-color: #202020;
-  text-align: center;
-  margin: 0 auto; }
+  background-color: #202020; }
   .recommender .action {
+    text-align: center;
+    margin: 0 auto;
     max-width: 640px; }
     @media screen and (min-width: 53.75em) {
       .recommender .action {
