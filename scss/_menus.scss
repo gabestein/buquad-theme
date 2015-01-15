@@ -11,7 +11,7 @@
   .bg, img.bg {
     display: none;
   }
-  @include media($medium-screen) {
+  @include media(660px) {
     .bg, img.bg {
       display: inline;
       float: right;
