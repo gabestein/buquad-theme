@@ -50,6 +50,7 @@ $border-radius: 0px;
     hgroup {
       @include background(linear-gradient(rgba(32, 32, 32, 0.9), rgba(32,32,32,0.9)));
     }
+  }
   .prev {
     float: left;
   }

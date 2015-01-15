@@ -1,69 +1,911 @@
+@charset "UTF-8";
 /*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 218 of scss/_cards.scss
-        from line 19 of scss/style.scss
-
-213:     margin-bottom: 0em;
-214:     margin-left: 0em;
-215:   }
-216: 
-217: }
-
-Backtrace:
-scss/_cards.scss:218
-scss/style.scss:19
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:643:in `block'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:299:in `to_tree'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:252:in `call'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:252:in `on_change'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:252:in `call'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:252:in `report_changes'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:321:in `poll_changed_directories'
-/Users/gabe/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:297:in `block in start_poller'
+Theme Name: Sleeper Ave
+Theme URI: http://sleeperave.com/
+Description: Based on http://github.com/allanlasser/buquad-theme by Allan Lasser
+Author: Gabe Stein
+Author URI: http://www.gabestein.com/
+version: 0.1
+Tags: responsive, minimal, content-first
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 218 of scss/_cards.scss\A         from line 19 of scss/style.scss\A \A 213:     margin-bottom: 0em;\A 214:     margin-left: 0em;\A 215:   }\A 216: \A 217: }"; }
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+@import url(http://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477DCA;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #2c5999;
+    color: white; }
+  button:disabled,
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "Lora", "Georgia", sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 2.25em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #477DCA;
+  text-decoration: none; }
+  a:hover {
+    color: #2c5999; }
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+cite {
+  color: #737373;
+  font-style: italic; }
+  cite:before {
+    content: "\2014 \00A0"; }
+
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+input,
+label,
+select {
+  display: block;
+  font-family: "Lora", "Georgia", sans-serif;
+  font-size: 1em; }
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  label.required:after {
+    content: "*"; }
+  label abbr {
+    display: none; }
+
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Lora", "Georgia", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477DCA;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+textarea {
+  resize: vertical; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+dl {
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
+
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* COOPER HEWITT */
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-Book.eot");
+  src: url("assets/fonts/CooperHewitt-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-Book.woff") format("woff"), url("assets/fonts/CooperHewitt-Book.svg#cooperhewittbook") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-BookItalic.eot");
+  src: url("assets/fonts/CooperHewitt-BookItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-BookItalic.woff") format("woff"), url("assets/fonts/CooperHewitt-BookItalic.svg#cooperhewittbookitalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-Medium.eot");
+  src: url("assets/fonts/CooperHewitt-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-Medium.woff") format("woff"), url("assets/fonts/CooperHewitt-Medium.svg#cooperhewittmedium") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("assets/fonts/CooperHewitt-MediumItalic.eot");
+  src: url("assets/fonts/CooperHewitt-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CooperHewitt-MediumItalic.woff") format("woff"), url("assets/fonts/CooperHewitt-MediumItalic.svg#cooperhewittmediumitalic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+/* LORA */
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Regular.eot");
+  src: url("assets/fonts/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Regular.woff") format("woff"), url("assets/fonts/Lora-Regular.ttf") format("truetype"), url("assets/fonts/Lora-Regular.svg#loraregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Italic.eot");
+  src: url("assets/fonts/Lora-Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Italic.woff") format("woff"), url("assets/fonts/Lora-Italic.ttf") format("truetype"), url("assets/fonts/Lora-Italic.svg#loraitalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-Bold.eot");
+  src: url("assets/fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-Bold.woff") format("woff"), url("assets/fonts/Lora-Bold.ttf") format("truetype"), url("assets/fonts/Lora-Bold.svg#lorabold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lora';
+  src: url("assets/fonts/Lora-BoldItalic.eot");
+  src: url("assets/fonts/Lora-BoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lora-BoldItalic.woff") format("woff"), url("assets/fonts/Lora-BoldItalic.ttf") format("truetype"), url("assets/fonts/Lora-BoldItalic.svg#lorabold_italic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+html, body {
+  font-family: "Lora", "Georgia", sans-serif;
+  font-size: 18px;
+  line-height: 27px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
+
+a {
+  color: #27562D; }
+  a:link, a:visited {
+    text-decoration: none; }
+  a:hover, a:active {
+    text-decoration: underline; }
+
+blockquote {
+  padding-left: 1.5em;
+  font-size: 0.9em; }
+
+.pullquote {
+  font-family: Cooper Hewitt;
+  font-weight: 700;
+  font-size: 2em;
+  font-style: italic;
+  line-height: 1.5em;
+  margin: 1.5em 0; }
+
+.card.container {
+  margin: 0.75em; }
+  @media screen and (min-width: 450px) {
+    .card.container {
+      width: 450px;
+      margin: 0.75em auto; } }
+  @media screen and (min-width: 604px) {
+    .card.container {
+      width: 604px;
+      margin: 0.75em auto; } }
+  @media screen and (min-width: 902px) {
+    .card.container {
+      width: 902px;
+      margin: 0.75em auto; } }
+  @media screen and (min-width: 1200px) {
+    .card.container {
+      width: 1200px;
+      margin: 0.75em auto; } }
+  @media screen and (min-width: 1498px) {
+    .card.container {
+      width: 1498px;
+      margin: 0.75em auto; } }
+  @media screen and (min-width: 1796px) {
+    .card.container {
+      width: 1796px;
+      margin: 0.75em auto; } }
+
+[type="button"] {
+  display: inline-block;
+  padding: 1em 0.625em 0.75em;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 0;
+  color: #27562D;
+  background-color: white;
+  border: 2px solid #27562D;
+  border-radius: 0px; }
+  [type="button"]:hover {
+    color: white;
+    background-color: #27562D;
+    text-decoration: none; }
+
+[type="card"] {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 420px;
+  border: 0px solid black;
+  border-radius: 0px;
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
+  color: #202020;
+  background-color: #FCFCFC;
+  box-shadow: #bdc3c7, 0, 5px, 5px;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s; }
+  [type="card"]:hover hgroup {
+    background: -webkit-linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9));
+    background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)); }
+  [type="card"] .prev {
+    float: left; }
+  [type="card"] .next {
+    float: right; }
+  [type="card"] .prev, [type="card"] .next {
+    height: 100%;
+    font-size: 3em; }
+  [type="card"] i.fa {
+    margin: 39px 15px; }
+  [type="card"] .card-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  [type="card"] .top {
+    position: relative;
+    color: white;
+    text-shadow: 1px, 1px, 1px, 0, black; }
+    [type="card"] .top h1 {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 6px #393939;
+      line-height: 24px; }
+      [type="card"] .top h1 a.card-title {
+        text-decoration: none; }
+    [type="card"] .top img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid black;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px; }
+  [type="card"] .middle .social {
+    display: table;
+    width: 100%;
+    padding: 0.5em 0.75em 0; }
+    [type="card"] .middle .social li {
+      display: table-cell; }
+      [type="card"] .middle .social li a {
+        display: block;
+        border: 2px solid #27562D;
+        border-left: none;
+        color: white;
+        text-align: center;
+        text-decoration: none; }
+        [type="card"] .middle .social li a span {
+          font-size: 1.5em;
+          width: 100%;
+          height: 100%;
+          padding: 0.5em 0;
+          color: #27562D; }
+        [type="card"] .middle .social li a:hover {
+          background-color: #27562D; }
+          [type="card"] .middle .social li a:hover span {
+            color: white; }
+      [type="card"] .middle .social li:first-child a {
+        border-left: 2px solid #27562D;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px; }
+      [type="card"] .middle .social li:last-child a {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px; }
+  [type="card"] .bottom {
+    margin: 0.75em; }
+    [type="card"] .bottom a[type="button"] {
+      display: block; }
+  [type="card"].article {
+    text-align: left; }
+    [type="card"].article.prev {
+      float: left; }
+    [type="card"].article.next {
+      float: right; }
+    [type="card"].article img {
+      filter: blur(1px);
+      -webkit-filter: blur(1px); }
+    [type="card"].article hgroup {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      background: -webkit-linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75));
+      background: linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75)); }
+      [type="card"].article hgroup h1 {
+        margin: 1em; }
+      [type="card"].article hgroup h2, [type="card"].article hgroup h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-left: 1.5em; }
+      [type="card"].article hgroup a {
+        color: #FCFCFC;
+        text-decoration: underline; }
+        [type="card"].article hgroup a:hover {
+          color: #27562D; }
+    [type="card"].article summary {
+      font-family: "Lora", "Georgia", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 1.5em; }
+  [type="card"].author, [type="card"].subject {
+    text-align: center; }
+    [type="card"].author .top h1, [type="card"].subject .top h1 {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 1em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-image: -webkit-linear-gradient(transparent, black);
+      background-image: linear-gradient(transparent, black); }
+  @media screen and (min-width: 300px) {
+    [type="card"] {
+      display: inline-block;
+      margin-bottom: 0em;
+      margin-left: 0em; } }
+
+#brand {
+  overflow: hidden;
+  line-height: 0;
+  background: -webkit-linear-gradient(#ADD8E6, #F0F8FF);
+  background: linear-gradient(#ADD8E6, #F0F8FF); }
+  #brand img.logo {
+    float: left;
+    max-width: 300px;
+    height: auto; }
+  #brand .bg, #brand img.bg {
+    display: none; }
+  @media screen and (min-width: 660px) {
+    #brand .bg, #brand img.bg {
+      display: inline;
+      float: right; } }
+
+.primary-menu, .secondary-menu, .footer-menu {
+  font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
+  font-size: 22.5px; }
+  .primary-menu ul, .secondary-menu ul, .footer-menu ul {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap; }
+  .primary-menu li, .secondary-menu li, .footer-menu li {
+    display: inline-block;
+    margin: 0; }
+  .primary-menu a, .secondary-menu a, .footer-menu a {
+    display: block;
+    padding: 0.5em 1em;
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+    font-weight: 700; }
+
+.primary-menu {
+  background-color: #27562D;
+  display: block; }
+  .primary-menu li {
+    height: 100%;
+    vertical-align: center;
+    text-align: center; }
+  .primary-menu li.current-menu-item a {
+    color: #FCFCFC;
+    background-color: #37793f; }
+  .primary-menu a {
+    height: 100%;
+    padding: 0.6em 1em 0.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem; }
+    .primary-menu a:link, .primary-menu a:visited {
+      color: #FCFCFC; }
+    .primary-menu a:hover, .primary-menu a:active {
+      color: #FCFCFC;
+      background-color: #37793f; }
+
+.secondary-menu, .footer-menu {
+  font-size: 15.75px; }
+  .secondary-menu ul, .footer-menu ul {
+    background-color: #202020; }
+  .secondary-menu a, .footer-menu a {
+    text-decoration: none; }
+    .secondary-menu a:link, .secondary-menu a:visited, .footer-menu a:link, .footer-menu a:visited {
+      color: #FCFCFC; }
+    .secondary-menu a:hover, .secondary-menu a:active, .footer-menu a:hover, .footer-menu a:active {
+      color: #FCFCFC;
+      background-color: #393939; }
+  .secondary-menu li.current-menu-item a, .footer-menu li.current-menu-item a {
+    color: #FCFCFC;
+    background-color: #393939; }
+
+/* SINGLE */
+.recommender {
+  overflow: hidden;
+  background-color: #202020; }
+
+article.single, article.page, article.archive {
+  width: 100%; }
+  article.single header, article.page header, article.archive header {
+    position: relative;
+    z-index: 1; }
+    article.single header:before, article.page header:before, article.archive header:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: cover;
+      background-position: center center;
+      background-size: 100% auto;
+      background-repeat: no-repeat; }
+    article.single header .hero-image, article.page header .hero-image, article.archive header .hero-image {
+      width: 100%;
+      height: auto; }
+    article.single header .intro-text, article.page header .intro-text, article.archive header .intro-text {
+      width: 100%;
+      z-index: 1;
+      padding: 2em;
+      text-align: center; }
+      article.single header .intro-text:before, article.page header .intro-text:before, article.archive header .intro-text:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+      @media screen and (min-width: 53.75em) {
+        article.single header .intro-text, article.page header .intro-text, article.archive header .intro-text {
+          padding: 2em; } }
+      article.single header .intro-text h2, article.page header .intro-text h2, article.archive header .intro-text h2 {
+        margin: 0 auto .3em;
+        font-size: 2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.25;
+        max-width: 80%;
+        color: #202020;
+        text-shadow: 2px 2px 6px #a0a0a0; }
+        @media screen and (min-width: 53.75em) {
+          article.single header .intro-text h2, article.page header .intro-text h2, article.archive header .intro-text h2 {
+            font-size: 3em;
+            margin-bottom: 0em; } }
+      article.single header .intro-text h3, article.page header .intro-text h3, article.archive header .intro-text h3 {
+        color: #666666;
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 1.4em;
+        margin: 0 auto 1em; }
+        @media screen and (min-width: 53.75em) {
+          article.single header .intro-text h3, article.page header .intro-text h3, article.archive header .intro-text h3 {
+            font-size: 1.7em;
+            line-height: 1.35em;
+            margin: 0 auto 1em;
+            width: 60%; } }
+      article.single header .intro-text h4, article.page header .intro-text h4, article.archive header .intro-text h4 {
+        color: #535353;
+        font-family: Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-bottom: 1px solid #cccccc;
+        margin: 0 35%;
+        padding-bottom: .1em; }
+        @media screen and (min-width: 53.75em) {
+          article.single header .intro-text h4, article.page header .intro-text h4, article.archive header .intro-text h4 {
+            padding-bottom: .4em; } }
+      article.single header .intro-text ul, article.page header .intro-text ul, article.archive header .intro-text ul {
+        margin-bottom: 1.5em; }
+      article.single header .intro-text ul li, article.page header .intro-text ul li, article.archive header .intro-text ul li {
+        display: inline-block;
+        margin: 5px; }
+        article.single header .intro-text ul li a, article.page header .intro-text ul li a, article.archive header .intro-text ul li a {
+          padding: 3px 8px;
+          text-transform: uppercase;
+          font-size: .7em;
+          font-weight: 400;
+          background: #477DCA;
+          color: white; }
+          article.single header .intro-text ul li a:hover, article.page header .intro-text ul li a:hover, article.archive header .intro-text ul li a:hover {
+            color: white; }
+  article.single .author, article.page .author, article.archive .author {
+    float: right;
+    margin: 3px 0 3px 8px; }
+  article.single .body, article.page .body, article.archive .body {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+    margin: 0 auto 1.5em auto;
+    padding: 0 8px; }
+    article.single .body h3, article.page .body h3, article.archive .body h3 {
+      font-size: 1.5em;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-top: 28px;
+      margin-bottom: 28px;
+      display: block;
+      clear: both;
+      width: 100%;
+      text-align: center; }
+    article.single .body:after, article.page .body:after, article.archive .body:after {
+      content: "";
+      display: table;
+      clear: both; }
+    article.single .body p, article.page .body p, article.archive .body p {
+      clear: both;
+      margin-bottom: 1em;
+      font-size: 1.2em;
+      line-height: 1.6em; }
+      article.single .body p > span, article.page .body p > span, article.archive .body p > span {
+        line-height: 1.6em; }
+    @media screen and (min-width: 53.75em) {
+      article.single .body, article.page .body, article.archive .body {
+        padding: 0; } }
+  article.single .wp-caption, article.page .wp-caption, article.archive .wp-caption {
+    overflow: hidden;
+    max-width: 100% !important;
+    margin: 0 1.5em; }
+    article.single .wp-caption .wp-caption-text, article.page .wp-caption .wp-caption-text, article.archive .wp-caption .wp-caption-text {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Cooper Hewitt", "Helvetica Neue", sans-serif;
+      font-size: 0.8em; }
+    @media screen and (min-width: 53.75em) {
+      article.single .wp-caption.alignnone, article.page .wp-caption.alignnone, article.archive .wp-caption.alignnone {
+        width: 100%;
+        height: auto; }
+      article.single .wp-caption.alignleft, article.page .wp-caption.alignleft, article.archive .wp-caption.alignleft, article.single .wp-caption.alignright, article.page .wp-caption.alignright, article.archive .wp-caption.alignright {
+        max-width: 66% !important; }
+        article.single .wp-caption.alignleft img, article.page .wp-caption.alignleft img, article.archive .wp-caption.alignleft img, article.single .wp-caption.alignright img, article.page .wp-caption.alignright img, article.archive .wp-caption.alignright img {
+          margin-bottom: 0.75em; }
+      article.single .wp-caption.alignleft, article.page .wp-caption.alignleft, article.archive .wp-caption.alignleft {
+        margin-left: -17%;
+        margin-right: 1%;
+        float: left;
+        clear: left; }
+        article.single .wp-caption.alignleft .wp-caption-text, article.page .wp-caption.alignleft .wp-caption-text, article.archive .wp-caption.alignleft .wp-caption-text {
+          text-align: left; }
+      article.single .wp-caption.alignright, article.page .wp-caption.alignright, article.archive .wp-caption.alignright {
+        margin-right: -17%;
+        margin-left: 1%;
+        float: right;
+        clear: right; }
+        article.single .wp-caption.alignright .wp-caption-text, article.page .wp-caption.alignright .wp-caption-text, article.archive .wp-caption.alignright .wp-caption-text {
+          text-align: left; }
+      article.single .wp-caption.aligncenter, article.page .wp-caption.aligncenter, article.archive .wp-caption.aligncenter {
+        display: block;
+        margin: 0 auto; } }
+  article.single img, article.page img, article.archive img {
+    height: auto;
+    padding: 0.5em 0;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 53.75em) {
+      article.single img.alignnone, article.page img.alignnone, article.archive img.alignnone {
+        width: 100%;
+        height: auto; }
+      article.single img.alignleft, article.page img.alignleft, article.archive img.alignleft, article.single img.alignright, article.page img.alignright, article.archive img.alignright {
+        max-width: 66% !important; }
+        article.single img.alignleft img, article.page img.alignleft img, article.archive img.alignleft img, article.single img.alignright img, article.page img.alignright img, article.archive img.alignright img {
+          margin-bottom: 0.75em; }
+      article.single img.alignleft, article.page img.alignleft, article.archive img.alignleft {
+        margin-left: -17%;
+        margin-right: 1%;
+        float: left;
+        clear: left; }
+        article.single img.alignleft .wp-caption-text, article.page img.alignleft .wp-caption-text, article.archive img.alignleft .wp-caption-text {
+          text-align: left; }
+      article.single img.alignright, article.page img.alignright, article.archive img.alignright {
+        margin-right: -17%;
+        margin-left: 1%;
+        float: right;
+        clear: right; }
+        article.single img.alignright .wp-caption-text, article.page img.alignright .wp-caption-text, article.archive img.alignright .wp-caption-text {
+          text-align: left; }
+      article.single img.aligncenter, article.page img.aligncenter, article.archive img.aligncenter {
+        display: block;
+        margin: 0 auto; } }
+    @media screen and (min-width: 40em) {
+      article.single img.alignleft, article.page img.alignleft, article.archive img.alignleft {
+        max-width: 49%;
+        margin-right: 1%;
+        float: left;
+        clear: left; }
+      article.single img.alignright, article.page img.alignright, article.archive img.alignright {
+        max-width: 49%;
+        margin-left: 1%;
+        float: right;
+        clear: right; }
+      article.single img.alignnone, article.page img.alignnone, article.archive img.alignnone {
+        width: 100%;
+        height: auto; } }
+
+article.page header, article.archive header {
+  height: 3em;
+  max-width: 60em;
+  margin: 0 auto; }
+  @media screen and (max-width: 60em) {
+    article.page header, article.archive header {
+      margin: 0 1.5em; } }
+  article.page header h1, article.archive header h1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-top: 2em;
+    font-style: italic;
+    text-transform: uppercase; }
+article.page.error-404, article.error-404.archive {
+  padding-top: 1em;
+  min-height: 50em;
+  width: 100%;
+  background-image: url("http://sleeperave.com/tornado.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  article.page.error-404 header, article.error-404.archive header {
+    padding: 1em;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FCFCFC;
+    padding-top: 3em; }
+    article.page.error-404 header h1, article.error-404.archive header h1 {
+      margin-top: 0; }
+    article.page.error-404 header h2, article.error-404.archive header h2 {
+      font-size: 2em;
+      font-weight: 200;
+      margin-top: 2em; }
+
+article.archive header h1 {
+  margin-top: 1em; }
+
+nav.pagination {
+  overflow: hidden; }
+  nav.pagination a {
+    color: #202020;
+    margin: 1em 0;
+    display: block;
+    font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
+    font-weight: 700; }
+    nav.pagination a:hover {
+      color: #27562D;
+      text-decoration: none; }
+  nav.pagination .alignleft {
+    display: inline-block;
+    float: left;
+    clear: left; }
+  nav.pagination .alignright {
+    display: inline-block;
+    float: right;
+    clear: right; }
+
+.homepage .featured-article.container {
+  overflow: hidden;
+  padding: 1.5em;
+  background: -webkit-linear-gradient(#FCFCFC, #e3e3e3);
+  background: linear-gradient(#FCFCFC, #e3e3e3); }
+  @media screen and (min-width: 40em) {
+    .homepage .featured-article.container .featured-article-image {
+      width: 40%;
+      float: left; } }
+  .homepage .featured-article.container .featured-article-image img {
+    height: auto;
+    padding-right: 1.5em; }
+  @media screen and (min-width: 40em) {
+    .homepage .featured-article.container .featured-article-description {
+      width: 60%;
+      float: right; } }
+  .homepage .featured-article.container .featured-article-description h2 {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 3em;
+    line-height: 1em;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #27562D; }
+  .homepage .featured-article.container .featured-article-description dfn, .homepage .featured-article.container .featured-article-description h3 {
+    font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 700; }
+  .homepage .featured-article.container .featured-article-description h3 {
+    margin-bottom: 1em; }
+
+/*# sourceMappingURL=style.css.map */
