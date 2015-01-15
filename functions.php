@@ -93,7 +93,7 @@ function action_unit() {
       </script>
     </div>
   </section>
-<?php } ?>
+<?php }
 
 // Functions to compose a standard _card object_ based on an id
 function article_card($id, $class = '') {
