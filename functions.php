@@ -77,8 +77,7 @@ function action_unit() {
   ?>
   <section class="action">
     <div class="subscribe">
-      <h2>Support Independent Art!</h2>
-      <p>Show your support by subscribing to Sleeper Ave. today on your network of choice. You'll be notified when the latest cartoons launch, as well as behind-the-scenes info and more. - Ed</p>
+      <p>Want to see Sleeper Ave. plus bonuses from me in your inbox or feeds every week? Subscribe! - Ed</p>
       <div class="facebook">
         <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
         <script>
