@@ -109,7 +109,7 @@ function action_unit() {
                   </div>
                 </form>
                 <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
-              </email>
+              </div>
               <div class="social">
                 <h2>Thanks so much! While you're at it, follow Sleeper Ave. on Facebook and Twitter, too!</h2>
                 <div class="facebook">
