@@ -18,11 +18,11 @@
 <article class="single" id="<?php the_ID(); ?>">
     <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
 
-    <style>
+    <!--<style>
     article.single header:before {
       background-image: url(<?php echo $imgsrc; ?>);
     }
-    </style>
+  </style>-->
 
     <header>
         <div class="intro-text" >
