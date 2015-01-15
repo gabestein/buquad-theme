@@ -99,19 +99,6 @@
         <!-- Facebook JS API -->
         <div id="fb-root"></div>
         <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '',
-            xfbml      : true,
-            version    : 'v2.1'
-          });
-
-          if (typeof fb_action_logger == 'function') {
-            fb_action_logger();
-          }
-          
-        };
-
         (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
@@ -119,6 +106,14 @@
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=432054876917734&version=v2.0";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
+
+        <script>
+        window.fbAsyncInit = function() {
+          if (typeof fb_action_logger == 'function') {
+            fb_action_logger();
+          }
+        };
+        </script>
         <!-- end Facebook JS API -->
 
         <?php wp_head(); ?>
