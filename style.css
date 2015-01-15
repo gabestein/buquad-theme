@@ -561,7 +561,9 @@ blockquote {
   display: block; }
   .primary-menu ul {
     display: table;
-    max-width: 18.75em; }
+    max-width: 18.75em;
+    overflow-x: scroll;
+    white-space: nowrap; }
   .primary-menu li {
     display: table-cell;
     height: 100%;

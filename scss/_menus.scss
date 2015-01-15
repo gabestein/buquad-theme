@@ -47,6 +47,8 @@
     ul {
         display: table;
         max-width: em(300);
+        overflow-x: scroll;
+        white-space: nowrap;
     }
     li {
         display: table-cell;
