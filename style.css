@@ -525,15 +525,18 @@ blockquote {
       margin-left: 0em; } }
 
 #brand {
+  overflow: hidden;
   line-height: 0;
   background: -webkit-linear-gradient(#ADD8E6, #F0F8FF);
   background: linear-gradient(#ADD8E6, #F0F8FF); }
   #brand img.logo {
+    float: left;
     max-width: 300px;
     height: auto; }
+  #brand .bg, #brand img.bg {
+    float: right; }
   #brand img.bg {
-    float: right;
-    max-width: 200px; }
+    max-width: 300px; }
 
 .primary-menu, .secondary-menu, .footer-menu {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
