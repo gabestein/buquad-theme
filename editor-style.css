@@ -358,8 +358,10 @@ blockquote {
   background-color: #202020; }
   .recommender .action {
     color: #FCFCFC;
-    padding: 10px;
-    margin: 0 400px 0 400px; }
+    padding: 10px; }
+    @media screen and (min-width: 40em) {
+      .recommender .action {
+        margin: 0 400px 0 400px; } }
     .recommender .action .subscribe {
       margin: 0 auto;
       text-align: center; }

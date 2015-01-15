@@ -36,7 +36,9 @@ $vertical-spacing: 24px;
   .action {
     color: $color-white;
     padding: 10px;
-    margin: 0 400px 0 400px;
+    @include media($medium-screen) {
+      margin: 0 400px 0 400px;
+    }
     .subscribe {
       p.cta {
         display: none;
