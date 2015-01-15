@@ -94,7 +94,7 @@ function subscribe_action() { ?>
     </script>
     <div class="modal">
       <label for="modal-1">
-        <div class="modal-trigger"><i class="fa fa-envelope"></i> Subscribe via Email</div>
+        <div class="modal-trigger button"><i class="fa fa-envelope"></i> Subscribe via Email</div>
       </label>
       <input class="modal-state" id="modal-1" type="checkbox" />
       <div class="modal-window">

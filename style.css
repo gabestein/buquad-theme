@@ -764,9 +764,6 @@ blockquote {
     clear: both;
     color: #FCFCFC;
     padding: 10px; }
-    .recommender .action .modal-trigger {
-      margin-top: 10px;
-      margin-bottom: 10px; }
     @media screen and (min-width: 944px) {
       .recommender .action {
         clear: none;
@@ -778,11 +775,13 @@ blockquote {
       .recommender .action .container p.cta {
         display: none;
         font-size: 0.8em/1.0em;
-        font-style: italic;
-        margin-bottom: 5px; }
+        font-style: italic; }
         @media screen and (min-width: 1192px) {
           .recommender .action .container p.cta {
             display: block; } }
+      .recommender .action .container .button {
+        margin-top: 10px;
+        margin-bottom: 10px; }
       .recommender .action .container a.button {
         background-color: #27562D;
         border-radius: 3px;

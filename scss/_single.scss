@@ -37,10 +37,6 @@ $vertical-spacing: 24px;
     clear: both;
     color: $color-white;
     padding: 10px;
-    .modal-trigger {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
     @include media(944px) {
       clear: none;
       margin-left: 400px;
@@ -54,7 +50,10 @@ $vertical-spacing: 24px;
         }
         font-size: 0.8em/1.0em;
         font-style: italic;
-        margin-bottom: 5px;
+      }
+      .button {
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
       a.button {
         @include button(flat, $base-accent-color);
