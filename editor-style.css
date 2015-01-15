@@ -356,9 +356,11 @@ blockquote {
 .recommender {
   overflow: hidden;
   background-color: #202020; }
-  .recommender .action .container {
-    margin: 0 auto;
-    text-align: center; }
+  .recommender .action {
+    float: left; }
+    .recommender .action .container {
+      margin: 0 auto;
+      text-align: center; }
 
 article.single {
   width: 100%; }
