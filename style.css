@@ -761,6 +761,7 @@ blockquote {
   overflow: hidden;
   background-color: #202020; }
   .recommender .action {
+    clear: both;
     color: #FCFCFC;
     padding: 10px; }
     .recommender .action .modal-trigger {
@@ -768,6 +769,7 @@ blockquote {
       margin-bottom: 10px; }
     @media screen and (min-width: 944px) {
       .recommender .action {
+        clear: none;
         margin-left: 400px;
         margin-right: 400px; } }
     .recommender .action .subscribe {

@@ -34,6 +34,7 @@ $vertical-spacing: 24px;
   overflow: hidden;
   background-color: $color-black;
   .action {
+    clear: both;
     color: $color-white;
     padding: 10px;
     .modal-trigger {
@@ -41,6 +42,7 @@ $vertical-spacing: 24px;
       margin-bottom: 10px;
     }
     @include media(944px) {
+      clear: none;
       margin-left: 400px;
       margin-right: 400px;
     }
