@@ -608,6 +608,11 @@ blockquote {
     font-size: 2.5em; }
   .recommender i.fa {
     margin: 12px 15px; }
+  .recommender .card-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
 
 article.single, article.page, article.archive {
   width: 100%; }

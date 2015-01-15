@@ -107,6 +107,7 @@ function article_card($id, $class = '') {
         <summary class="article-excerpt">
           <?php echo $post_excerpt; ?>
         </summary>
+        <a href="<?php echo $post_url; ?>" class="card-link"></a>
       </hgroup>
     </section>
   </section>
