@@ -154,7 +154,7 @@ function subscribe_action() { ?>
 <?php }
 function support_action() { ?>
   <div class="support container">
-    <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) via Beacon Reader. -- Ed</p>
+    <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) over on Beacon Reader. -- Ed</p>
     <a href="http://www.beaconreader.com/projects/sleeper-ave" class="button"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
   </div>
 <?php }
