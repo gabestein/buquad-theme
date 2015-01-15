@@ -762,9 +762,10 @@ blockquote {
   background-color: #202020; }
   .recommender .action {
     color: #FCFCFC;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    padding: 10px; }
+    .recommender .action .modal-trigger {
+      margin-top: 10px;
+      margin-bottom: 10px; }
     @media screen and (min-width: 53.75em) {
       .recommender .action {
         margin-left: 400px;

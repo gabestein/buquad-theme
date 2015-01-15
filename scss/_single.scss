@@ -36,8 +36,10 @@ $vertical-spacing: 24px;
   .action {
     color: $color-white;
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    .modal-trigger {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     @include media($large-screen) {
       margin-left: 400px;
       margin-right: 400px;
