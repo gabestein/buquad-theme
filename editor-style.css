@@ -363,6 +363,8 @@ blockquote {
     .recommender .action .container {
       margin: 0 auto;
       text-align: center; }
+      .recommender .action .container .facebook, .recommender .action .container .twitter {
+        float: left; }
 
 article.single {
   width: 100%; }

@@ -40,6 +40,7 @@ $vertical-spacing: 24px;
     .container {
       .facebook, .twitter {
         float: left;
+        margin: 0 5px;
       }
       margin: 0 auto;
       text-align: center;
