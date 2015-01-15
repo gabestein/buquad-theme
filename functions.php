@@ -91,17 +91,22 @@ function article_card($id, $class = '') {
   ?>
   <section type="card" class="article <?php echo $class; ?>">
     <section class="top">
-      <?php if($class === 'prev') { ?>
-        <div class="prev">
-          <i class="fa fa-chevron-left"></i>
-        </div>
-      <?php } ?>
       <?php echo $post_image; ?>
       <hgroup>
+        <?php if($class === 'prev') { ?>
+          <div class="prev">
+            <i class="fa fa-angle-left"></i>
+          </div>
+        <?php } ?>
         <h1><a class="card-title" href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h1>
         <summary class="article-excerpt">
           <?php echo $post_excerpt; ?>
         </summary>
+        <?php if($class === 'next') { ?>
+          <div class="next">
+            <i class="fa fa-angle-right"></i>
+          </div>
+          <?php } ?>
       </hgroup>
     </section>
   </section>

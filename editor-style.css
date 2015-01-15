@@ -356,6 +356,17 @@ blockquote {
 .recommender {
   overflow: hidden;
   background-color: #202020; }
+  .recommender .prev {
+    float: left;
+    clear: right; }
+  .recommender .next {
+    float: right;
+    clear: left; }
+  .recommender .prev, .recommender .next {
+    float: left;
+    height: 100%;
+    font-size: 5em;
+    margin: 20px 10px; }
 
 article.single {
   width: 100%; }

@@ -33,6 +33,24 @@ $vertical-spacing: 24px;
 .recommender {
   overflow: hidden;
   background-color: $color-black;
+
+  .prev {
+    float: left;
+    clear: right;
+  }
+
+  .next {
+    float: right;
+    clear: left;
+  }
+
+  .prev, .next {
+    float: left;
+    height: 100%;
+    font-size: 5em;
+    margin: 20px 10px;
+  }
+  
 }
 article.single {
     width: 100%;
