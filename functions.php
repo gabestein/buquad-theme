@@ -82,16 +82,18 @@ function action_unit() {
     <div class="subscribe">
       <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sleeperave</a>
       <script>
-      $(document).ready(function(){
-        twttr.events.bind(
-          'follow',
-          function (event) {
-            var followedUserId = event.data.user_id;
-            var followedScreenName = event.data.screen_name;
-            console.log(followedUserId, followedScreenName);
+        twttr.ready(
+          function (twttr) {
+            twttr.events.bind(
+              'follow',
+              function (event) {
+                var followedUserId = event.data.user_id;
+                var followedScreenName = event.data.screen_name;
+                console.log(followedUserId, followedScreenName);
+              }
+            );
           }
         );
-      });
       </script>
     </div>
   </section>
