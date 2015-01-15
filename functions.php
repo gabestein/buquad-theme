@@ -79,33 +79,36 @@ function action_unit() {
 
   </script>
   <section class="action">
-    <div class="facebook">
-      <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-      <script>
-      function fb_action_logger() {
-        FB.Event.subscribe('edge.create', function(url, element){
-          console.log(url, element);
-        });
-      }
-      </script>
+    <div class="container">
+      <div class="facebook">
+        <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+        <script>
+        function fb_action_logger() {
+          FB.Event.subscribe('edge.create', function(url, element){
+            console.log(url, element);
+          });
+        }
+        </script>
+      </div>
+      <div class="twitter">
+        <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sleeperave</a>
+        <script>
+          twttr.ready(
+            function (twttr) {
+              twttr.events.bind(
+                'follow',
+                function (event) {
+                  var followedUserId = event.data.user_id;
+                  var followedScreenName = event.data.screen_name;
+                  console.log(followedUserId, followedScreenName);
+                }
+              );
+            }
+          );
+        </script>
+      </div>
     </div>
-    <div class="twitter">
-      <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sleeperave</a>
-      <script>
-        twttr.ready(
-          function (twttr) {
-            twttr.events.bind(
-              'follow',
-              function (event) {
-                var followedUserId = event.data.user_id;
-                var followedScreenName = event.data.screen_name;
-                console.log(followedUserId, followedScreenName);
-              }
-            );
-          }
-        );
-      </script>
-    </div>
+    <!-- end container -->
   </section>
 <?php }
 
