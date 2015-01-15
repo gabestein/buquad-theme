@@ -564,6 +564,7 @@ blockquote {
     height: 100%;
     padding: 0.6em 0 0.3em 0;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 1rem; }
     .primary-menu a:link, .primary-menu a:visited {
       color: #FCFCFC; }
