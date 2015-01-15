@@ -36,6 +36,7 @@ $vertical-spacing: 24px;
   .action {
     text-align: center;
     margin: 0 auto;
+    float: left;
     max-width: 640px;
     @include media($large-screen) {
       width: 640px;
