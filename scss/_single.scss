@@ -40,7 +40,7 @@ $vertical-spacing: 24px;
     .subscribe {
       p.cta {
         display: none;
-        @include media($large-screen) {
+        @include media(1192px) {
           display: block;
         }
         font-size: 0.8em/1.0em;
