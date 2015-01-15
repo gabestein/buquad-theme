@@ -76,7 +76,7 @@ function action_unit() {
   //get cookies
   ?>
   <section class="action">
-    <?php subscribe_action(); ?>
+    <?php support_action(); ?>
   </section>
 <?php }
 
@@ -155,7 +155,7 @@ function subscribe_action() { ?>
 function support_action() { ?>
   <div class="support container">
     <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) over on Beacon Reader. -- Ed</p>
-    <a href="http://www.beaconreader.com/projects/sleeper-ave" class="button"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
+    <a href="http://www.beaconreader.com/projects/sleeper-ave" class="button" target="_blank"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
   </div>
 <?php }
 // Functions to compose a standard _card object_ based on an id
