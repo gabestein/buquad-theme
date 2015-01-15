@@ -98,6 +98,7 @@ function action_unit() {
                   <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
                 </div>
               </form>
+              <h2>And while you're at it...why not our Facebook or Twitter accounts?</h2>
               <div class="facebook">
                 <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
                 <script>
@@ -108,7 +109,6 @@ function action_unit() {
                 }
                 </script>
               </div>
-              <h2>And while you're at it...why not our Facebook or Twitter accounts?</h2>
               <div class="twitter">
                 <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
                 <script>
