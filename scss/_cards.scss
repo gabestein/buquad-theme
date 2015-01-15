@@ -47,8 +47,9 @@ $border-radius: 0px;
 [type="card"] {
 
   &:hover {
-
-  }
+    hgroup {
+      @include background(linear-gradient(rgba(32, 32, 32, 0.9), rgba(32,32,32,0.9)));
+    }
   .prev {
     float: left;
   }
@@ -185,8 +186,8 @@ $border-radius: 0px;
     }
     summary {
       font-family: $font-serif;
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 16px;
+      line-height: 24px;
       margin: 1.5em;
     }
   }
