@@ -357,6 +357,7 @@ blockquote {
   overflow: hidden;
   background-color: #202020; }
   .recommender .subscribe {
+    color: #FCFCFC;
     padding: 10px;
     max-width: 640px;
     float: left; }
