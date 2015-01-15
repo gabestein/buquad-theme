@@ -34,6 +34,7 @@ $vertical-spacing: 24px;
   overflow: hidden;
   background-color: $color-black;
   .action {
+    float: left;
     .container {
       margin: 0 auto;
       text-align: center;
