@@ -419,6 +419,8 @@ blockquote {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s; }
+  [type="card"]:hover i.fa {
+    color: #27562D; }
   [type="card"] .prev {
     float: left; }
   [type="card"] .next {
@@ -427,7 +429,7 @@ blockquote {
     height: 100%;
     font-size: 3em; }
   [type="card"] i.fa {
-    margin: 12px 15px; }
+    margin: 39px 15px; }
   [type="card"] .card-link {
     position: absolute;
     left: 0;

@@ -46,6 +46,11 @@ $border-radius: 0px;
 
 [type="card"] {
 
+  &:hover {
+    i.fa {
+      color: $color-red;
+    }
+  }
   .prev {
     float: left;
   }
