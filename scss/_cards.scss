@@ -45,6 +45,33 @@ $border-radius: 0px;
 }
 
 [type="card"] {
+
+  .prev {
+    float: left;
+  }
+
+  .next {
+    float: right;
+  }
+
+  .prev, .next {
+    height: 100%;
+    font-size: 2.5em;
+  }
+
+  i.fa {
+    margin: 12px 15px;
+  }
+  .card-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+
   display: block;
   @include box-sizing(border-box);
   max-width: 420px;

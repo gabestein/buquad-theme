@@ -419,6 +419,22 @@ blockquote {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s; }
+  [type="card"] .prev {
+    float: left; }
+  [type="card"] .next {
+    float: right; }
+  [type="card"] .prev, [type="card"] .next {
+    height: 100%;
+    font-size: 2.5em; }
+  [type="card"] i.fa {
+    margin: 12px 15px; }
+  [type="card"] .card-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
   [type="card"] .top {
     position: relative;
     color: white;
@@ -599,20 +615,6 @@ blockquote {
 .recommender {
   overflow: hidden;
   background-color: #202020; }
-  .recommender .prev {
-    float: left; }
-  .recommender .next {
-    float: right; }
-  .recommender .prev, .recommender .next {
-    height: 100%;
-    font-size: 2.5em; }
-  .recommender i.fa {
-    margin: 12px 15px; }
-  .recommender .card-link {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
 
 article.single, article.page, article.archive {
   width: 100%; }

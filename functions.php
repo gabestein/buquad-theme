@@ -93,6 +93,7 @@ function article_card($id, $class = '') {
     <section class="top">
       <?php echo $post_image; ?>
       <hgroup>
+        <a href="<?php echo $post_url; ?>" class="card-link"></a>
         <?php if($class === 'prev') { ?>
           <div class="prev">
             <i class="fa fa-angle-left"></i>
@@ -107,7 +108,6 @@ function article_card($id, $class = '') {
         <summary class="article-excerpt">
           <?php echo $post_excerpt; ?>
         </summary>
-        <a href="<?php echo $post_url; ?>" class="card-link"></a>
       </hgroup>
     </section>
   </section>
