@@ -80,8 +80,9 @@
                 <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sleeper-logo.png" alt="Sleeper Ave. Logo">
               </a>
               <div class="bg">
-                <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/antenna.png" alt="Sleeper Ave. Logo">
+                <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/antenna.png" alt="Houses with antenna">
               </div>
+            </section>
             <!-- MENU BAR -->
 	           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_class' => 'primary-menu' ) ); ?>
 	    <!-- <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'container_class' => 'secondary-menu' ) ); ?>-->
