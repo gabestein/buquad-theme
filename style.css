@@ -419,8 +419,6 @@ blockquote {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s; }
-  [type="card"]:hover i.fa {
-    color: #27562D; }
   [type="card"] .prev {
     float: left; }
   [type="card"] .next {
@@ -506,8 +504,8 @@ blockquote {
       height: 100%;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
-      background: -webkit-linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.5));
-      background: linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.5)); }
+      background: -webkit-linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75));
+      background: linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75)); }
       [type="card"].article hgroup h1 {
         margin: 1em; }
       [type="card"].article hgroup h2, [type="card"].article hgroup h3 {
