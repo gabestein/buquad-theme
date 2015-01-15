@@ -355,13 +355,14 @@ blockquote {
 /* SINGLE */
 .recommender {
   overflow: hidden;
-  background-color: #202020; }
+  background-color: #202020;
+  text-align: center;
+  margin: 0 auto; }
   .recommender .action {
     max-width: 640px; }
     @media screen and (min-width: 53.75em) {
       .recommender .action {
-        width: 640px;
-        text-align: center; } }
+        width: 640px; } }
 
 article.single {
   width: 100%; }
