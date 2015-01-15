@@ -9,11 +9,12 @@
     height: auto;
   }
   .bg, img.bg {
-    float: right;
+    display: none;
   }
   @include media($medium-screen) {
     img.bg {
-      display: none;
+      display: inline;
+      float: right;
     }
   }
 }

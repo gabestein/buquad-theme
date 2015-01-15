@@ -534,10 +534,11 @@ blockquote {
     max-width: 300px;
     height: auto; }
   #brand .bg, #brand img.bg {
-    float: right; }
+    display: none; }
   @media screen and (min-width: 40em) {
     #brand img.bg {
-      display: none; } }
+      display: inline;
+      float: right; } }
 
 .primary-menu, .secondary-menu, .footer-menu {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
