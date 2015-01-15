@@ -562,10 +562,8 @@ blockquote {
   background-color: #27562D;
   display: block; }
   .primary-menu ul {
-    display: table;
     max-width: 18.75em; }
   .primary-menu li {
-    display: table-cell;
     height: 100%;
     vertical-align: center;
     text-align: center; }

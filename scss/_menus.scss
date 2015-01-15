@@ -43,17 +43,10 @@
 .primary-menu {
     background-color: $color-red;
     display: block;
-    .the-quad {
-        &:before {
-            // quad logo svg
-        }
-    }
     ul {
-        display: table;
         max-width: em(300);
     }
     li {
-        display: table-cell;
         height: 100%;
         vertical-align: center;
         text-align: center;

@@ -14,48 +14,54 @@
 	    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png" />
 	    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 
-        <!-- SOCIAL MEDIA INTEGRATION -->
-        <?php if(have_posts()):while(have_posts()):the_post();endwhile;endif; ?>
+      <!-- SOCIAL MEDIA INTEGRATION -->
+      <?php if(have_posts()):while(have_posts()):the_post();endwhile;endif; ?>
         <?php if (is_single()) {
-            $url = get_the_permalink();
-            $title = get_the_title('');
-            $description = strip_tags(get_the_excerpt($post->ID));
-            $image = '';
-            if (function_exists('wp_get_attachment_image_src')) {
-                $image = (wp_get_attachment_image_src(get_post_thumbnail_id(), 'social')[0]);
-            } else {
-                $image = get_template_directory_uri().'/assets/images/placeholder.png';
-            }
-        ?>
-		<!-- FACEBOOK OPEN GRAPH -->
-		<meta property="og:url" content="<?php echo $url; ?>"/>
-		<meta property="og:title" content="<?php echo $title; ?>" />
-		<meta property="og:description" content="<?php echo $description; ?>" />
-		<meta property="og:image" content="<?php echo $image; ?>" />
-		<meta property="og:type" content="article" />
-		<meta property="og:site_name" content="Sleeper Ave." />
-		<!-- TWITTER CARDS -->
-		<meta property="twitter:card" content="summary" />
-		<meta property="twitter:site" content="@sleeperave" />
-		<meta property="twitter:title" content="<?php echo $title; ?>" />
-		<meta property="twitter:description" content="<?php echo $description; ?>" />
-		<meta name="twitter:image" content="<?php echo $image; ?>" />
-		<meta property="twitter:creator" content="<?php echo the_author_meta('twitter'); ?>" />
+          $url = get_the_permalink();
+          $title = get_the_title('');
+          $description = strip_tags(get_the_excerpt($post->ID));
+          $image = '';
+          if (function_exists('wp_get_attachment_image_src')) {
+            $image = (wp_get_attachment_image_src(get_post_thumbnail_id(), 'social')[0]);
+          } else {
+            $image = get_template_directory_uri().'/assets/images/placeholder.png';
+          }
+          ?>
+          <!-- FACEBOOK OPEN GRAPH -->
+          <meta property="og:url" content="<?php echo $url; ?>"/>
+          <meta property="og:title" content="<?php echo $title; ?>" />
+          <meta property="og:description" content="<?php echo $description; ?>" />
+          <meta property="og:image" content="<?php echo $image; ?>" />
+          <meta property="og:type" content="article" />
+          <meta property="og:site_name" content="Sleeper Ave." />
+          <!-- TWITTER CARDS -->
+          <meta property="twitter:card" content="summary" />
+          <meta property="twitter:site" content="@sleeperave" />
+          <meta property="twitter:title" content="<?php echo $title; ?>" />
+          <meta property="twitter:description" content="<?php echo $description; ?>" />
+          <meta name="twitter:image" content="<?php echo $image; ?>" />
+          <meta property="twitter:creator" content="<?php echo the_author_meta('twitter'); ?>" />
 
-        <?php } else {
+          <?php } else {
             $url = get_bloginfo('url');
             $title = get_bloginfo('name');
             $description = get_bloginfo('description');
             $image = get_template_directory_uri().'/images/placeholder.png';
-        ?>
-		<!-- FACEBOOK OPEN GRAPH -->
-		<meta property="og:url" content="<?php echo $url; ?>"/>
-		<meta property="og:title" content="<?php echo $title; ?>"/>
-		<meta property="og:site_name" content="<?php echo $title; ?>"/>
-		<meta property="og:description" content="<?php echo $description; ?>"/>
-		<meta property="og:type" content="website"/>
-		<meta property="og:image" content="<?php echo $image; ?>"/>
-	    <?php } ?>
+            ?>
+            <!-- FACEBOOK OPEN GRAPH -->
+            <meta property="og:url" content="<?php echo $url; ?>"/>
+            <meta property="og:title" content="<?php echo $title; ?>"/>
+            <meta property="og:site_name" content="<?php echo $title; ?>"/>
+            <meta property="og:description" content="<?php echo $description; ?>"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:image" content="<?php echo $image; ?>"/>
+            <!-- TWITTER CARDS -->
+            <meta name="twitter:card" content="summary"/>
+            <meta name="twitter:site" content="@sleepeerave"/>
+            <meta name="twitter:title" content="<?php echo $title; ?>"/>
+            <meta name="twitter:description" content="<?php echo $description; ?>"/>
+            <meta name="twitter:image" content="<?php echo $image; ?>" />
+            <?php } ?>
 
         <!-- begin GOOGLE ANALYTICS -->
         <script>
