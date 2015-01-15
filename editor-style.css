@@ -355,7 +355,11 @@ blockquote {
 /* SINGLE */
 .recommender {
   overflow: hidden;
-  background-color: #202020; }
+  background-color: #202020;
+  max-width: 640px; }
+  @media screen and (min-width: 53.75em) {
+    .recommender {
+      width: 640px; } }
 
 article.single {
   width: 100%; }
