@@ -149,7 +149,9 @@ function subscribe_action() { ?>
               <script>
               function fb_action_logger() {
                 FB.Event.subscribe('edge.create', function(url, element){
-                  console.log(url, element);
+                  (function($) {
+                    $.cookie('facebook_subscriber', 'true', { expires: 7300, path: '/' });
+                  })(jQuery);
                 });
               }
               </script>
@@ -163,9 +165,7 @@ function subscribe_action() { ?>
                   'follow',
                   function (event) {
                     (function($) {
-                      $('.action .subscribe').fadeOut('fast', function(){
-                        $('.action .support').fadeIn('slow');
-                      });
+                      $.cookie('twitter_subscriber', 'true', { expires: 7300, path: '/' });
                     })(jQuery);
                   }
                   );
@@ -185,7 +185,12 @@ function subscribe_action() { ?>
 function support_action() { ?>
   <div class="support container">
     <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) over on Beacon Reader. -- Ed</p>
-    <a href="http://www.beaconreader.com/projects/sleeper-ave" class="button" target="_blank"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
+    <a onclick="donate_action_logger()" href="http://www.beaconreader.com/projects/sleeper-ave" class="button" target="_blank"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
+    <script>
+    (function($) {
+        $.cookie('donator', 'true', { expires: 7300, path: '/' });
+    })(jQuery);
+    </script>
   </div>
 <?php }
 // Functions to compose a standard _card object_ based on an id
