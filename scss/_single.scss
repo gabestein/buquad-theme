@@ -278,10 +278,14 @@ article.single {
             float: right;
             clear: right;
           }
-          &.alignnone, &.aligncenter {
+          &.alignnone {
             width: 100%;
             height: auto;
             padding: 0.5em 0;
+          },
+          &.aligncenter {
+            padding: 0.5em 0;
+            max-width: 100%;
           }
         }
         display: block;
