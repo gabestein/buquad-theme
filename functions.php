@@ -81,16 +81,17 @@ function action_unit() { ?>
     ?>
     <script>
     (function($) {
-      var is_email = $.cookie('email_subscriber') || false;
-      var is_facebook = $.cookie('facebook_subscriber') || false;
-      var is_twitter = $.cookie('twitter_subscriber') || false;
-      var is_donator = $.cookie('donator') || false;
+      window.is_email = $.cookie('email_subscriber') || false;
+      window.is_facebook = $.cookie('facebook_subscriber') || false;
+      window.is_twitter = $.cookie('twitter_subscriber') || false;
+      window.is_donator = $.cookie('donator') || false;
 
-      if(!!is_email) {
+      if(window.is_email) {
         $('.action .support').fadeIn();
       } else {
         $('.action .subscribe').fadeIn();
       }
+
     });
     </script>
   </section>
