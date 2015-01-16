@@ -76,7 +76,7 @@ function action_unit() { ?>
 
   <section class="action">
 
-  <?php {
+  <?php
   //get cookies
   $is_email_subscriber = false;
   $is_facebook_subscriber = false;
