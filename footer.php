@@ -9,7 +9,7 @@
           window.visits = $.cookie('visits') || 0;
           if(window.visits === 0) {
             $.cookie('visits', 1, { expires: 7300, path: '/' });
-          } else if(window.visits <= 6) {
+          } else if(parseInt(window.visits) <= 6) {
             window.visits = parseInt(window.visits) + 1;
             $.cookie('visits', window.visits, { expires: 7300, path: '/' });
           }
