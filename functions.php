@@ -91,7 +91,7 @@ function action_unit() { ?>
       } else {
         $('.action .subscribe').fadeIn();
       }
-    }
+    });
     </script>
   </section>
 
