@@ -103,15 +103,22 @@ function subscribe_action() { ?>
     <p class="cta">Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
     <div class="email">
     <script>
+
     function mailchimp_subscribe() {
       (function($) {
         $('.modal .email').fadeOut();
         $('.modal .social').fadeIn();
-        $('.action .container').fadeOut();
-        $('.action .support').fadeIn();
         $.cookie('email_subscriber', 'true', { expires: 7300, path: '/' });
       })(jQuery);
     }
+
+    function modal_exit() {
+      (function($) {
+        $('.action .container').fadeOut();
+        $('.action .support').fadeIn();
+      });
+    }
+
     </script>
     <div class="modal">
       <label for="modal-1">
@@ -120,7 +127,7 @@ function subscribe_action() { ?>
       <input class="modal-state" id="modal-1" type="checkbox" />
       <div class="modal-window">
         <div class="modal-inner">
-          <label class="modal-close" for="modal-1"></label>
+          <label class="modal-close" for="modal-1" onclick="modal_exit()"></label>
           <div class="email">
             <h2>Subscribe via Email</h2>
             <form onsubmit="mailchimp_subscribe()" role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target" novalidate>
