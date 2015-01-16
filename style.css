@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
 
 a {
-  color: #27562D; }
+  color: #2C75A9; }
   a:link, a:visited {
     text-decoration: none; }
   a:hover, a:active {
@@ -395,13 +395,13 @@ blockquote {
   font-weight: 700;
   text-decoration: none;
   line-height: 0;
-  color: #27562D;
+  color: #2C75A9;
   background-color: white;
-  border: 2px solid #27562D;
+  border: 2px solid #2C75A9;
   border-radius: 0px; }
   [type="button"]:hover {
     color: white;
-    background-color: #27562D;
+    background-color: #2C75A9;
     text-decoration: none; }
 
 [type="card"] {
@@ -465,7 +465,7 @@ blockquote {
       display: table-cell; }
       [type="card"] .middle .social li a {
         display: block;
-        border: 2px solid #27562D;
+        border: 2px solid #2C75A9;
         border-left: none;
         color: white;
         text-align: center;
@@ -475,13 +475,13 @@ blockquote {
           width: 100%;
           height: 100%;
           padding: 0.5em 0;
-          color: #27562D; }
+          color: #2C75A9; }
         [type="card"] .middle .social li a:hover {
-          background-color: #27562D; }
+          background-color: #2C75A9; }
           [type="card"] .middle .social li a:hover span {
             color: white; }
       [type="card"] .middle .social li:first-child a {
-        border-left: 2px solid #27562D;
+        border-left: 2px solid #2C75A9;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px; }
       [type="card"] .middle .social li:last-child a {
@@ -517,7 +517,7 @@ blockquote {
         color: #FCFCFC;
         text-decoration: underline; }
         [type="card"].article hgroup a:hover {
-          color: #27562D; }
+          color: #2C75A9; }
     [type="card"].article summary {
       font-family: "Lora", "Georgia", sans-serif;
       font-size: 16px;
@@ -577,7 +577,7 @@ blockquote {
     font-weight: 700; }
 
 .primary-menu {
-  background-color: #27562D;
+  background-color: #2C75A9;
   display: block; }
   .primary-menu li {
     height: 100%;
@@ -585,7 +585,7 @@ blockquote {
     text-align: center; }
   .primary-menu li.current-menu-item a {
     color: #FCFCFC;
-    background-color: #37793f; }
+    background-color: #3c90cc; }
   .primary-menu a {
     height: 100%;
     padding: 0.6em 1em 0.3em;
@@ -596,7 +596,7 @@ blockquote {
       color: #FCFCFC; }
     .primary-menu a:hover, .primary-menu a:active {
       color: #FCFCFC;
-      background-color: #37793f; }
+      background-color: #3c90cc; }
 
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }
@@ -628,7 +628,7 @@ blockquote {
 .modal input[type="checkbox"] {
   display: none; }
 .modal .modal-trigger {
-  background-color: #27562D;
+  background-color: #2C75A9;
   border-radius: 3px;
   border: none;
   color: white;
@@ -640,10 +640,10 @@ blockquote {
   background-clip: padding-box;
   padding: 0.8em 1em; }
   .modal .modal-trigger:hover:not(:disabled) {
-    background-color: #2c6b34;
+    background-color: #2c84c2;
     cursor: pointer; }
   .modal .modal-trigger:active:not(:disabled), .modal .modal-trigger:focus:not(:disabled) {
-    background-color: #214225;
+    background-color: #2a6691;
     cursor: pointer; }
   .modal .modal-trigger:disabled {
     opacity: 0.5;
@@ -784,7 +784,7 @@ blockquote {
         margin-top: 10px;
         margin-bottom: 10px; }
       .recommender .action .container a.button {
-        background-color: #27562D;
+        background-color: #2C75A9;
         border-radius: 3px;
         border: none;
         color: white;
@@ -796,10 +796,10 @@ blockquote {
         background-clip: padding-box;
         padding: 0.8em 1em; }
         .recommender .action .container a.button:hover:not(:disabled) {
-          background-color: #2c6b34;
+          background-color: #2c84c2;
           cursor: pointer; }
         .recommender .action .container a.button:active:not(:disabled), .recommender .action .container a.button:focus:not(:disabled) {
-          background-color: #214225;
+          background-color: #2a6691;
           cursor: pointer; }
         .recommender .action .container a.button:disabled {
           opacity: 0.5;
@@ -904,7 +904,7 @@ article.single, article.page, article.archive {
           text-transform: uppercase;
           font-size: .7em;
           font-weight: 400;
-          background: #27562D;
+          background: #2C75A9;
           color: white; }
           article.single header .intro-text ul li a:hover, article.page header .intro-text ul li a:hover, article.archive header .intro-text ul li a:hover {
             color: white; }
@@ -1072,7 +1072,7 @@ nav.pagination {
     font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
     font-weight: 700; }
     nav.pagination a:hover {
-      color: #27562D;
+      color: #2C75A9;
       text-decoration: none; }
   nav.pagination .alignleft {
     display: inline-block;
@@ -1105,7 +1105,7 @@ nav.pagination {
     line-height: 1em;
     font-style: italic;
     text-transform: uppercase;
-    color: #27562D; }
+    color: #2C75A9; }
   .homepage .featured-article.container .featured-article-description dfn, .homepage .featured-article.container .featured-article-description h3 {
     font-family: "Architects Daughter", "Helvetica Neue", sans-serif;
     text-transform: uppercase;
