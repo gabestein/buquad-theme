@@ -89,6 +89,7 @@ function subscribe_action() { ?>
       (function($) {
         $('.modal .email').fadeOut();
         $('.modal .social').fadeIn();
+        $.cookie('email_subscriber', 'true', { expires: 7300, path: '/' });
       })(jQuery);
     }
     </script>
