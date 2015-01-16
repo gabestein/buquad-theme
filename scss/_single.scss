@@ -43,6 +43,7 @@ $vertical-spacing: 24px;
       margin-right: 400px;
     }
     .container {
+      display: none;
       p.cta {
         display: none;
         @include media(1192px) {

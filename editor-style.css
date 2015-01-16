@@ -366,6 +366,7 @@ blockquote {
         margin-left: 400px;
         margin-right: 400px; } }
     .recommender .action .container {
+      display: none;
       margin: 0 auto;
       text-align: center; }
       .recommender .action .container p.cta {

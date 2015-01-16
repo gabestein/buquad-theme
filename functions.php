@@ -75,26 +75,22 @@ add_action( 'init', 'create_column_tax', 0 );
 function action_unit() { ?>
 
   <section class="action">
-
-  <?php
-  //get cookies
-  $is_email_subscriber = false;
-  $is_facebook_subscriber = false;
-  $is_twitter_subscriber = false;
-  $is_donator = false;
-
-  if(isset($_COOKIE['email_subscriber']) && $_COOKIE['email_subscriber'] === 'true') {
-    $is_email_subscriber = true;
-  }
-
-  if($is_email_subscriber) {
-    support_action();
-  } else {
     subscribe_action();
-  }
+    support_action();
+    <script>
+    (function($) {
+      var is_email = $.cookie('email_subscriber') || false;
+      var is_facebook = $.cookie('facebook_subscriber') || false;
+      var is_twitter = $.cookie('twitter_subscriber') || false;
+      var is_donator = $.cookie('donator') || false;
 
-  ?>
-
+      if(!!is_email) {
+        $('.action .support').fadeIn();
+      } else {
+        $('.action .subscribe').fadeIn();
+      }
+    }
+    </script>
   </section>
 
 <?php }
@@ -108,6 +104,8 @@ function subscribe_action() { ?>
       (function($) {
         $('.modal .email').fadeOut();
         $('.modal .social').fadeIn();
+        $('.action .container').fadeOut();
+        $('.action .support').fadeIn();
         $.cookie('email_subscriber', 'true', { expires: 7300, path: '/' });
       })(jQuery);
     }
