@@ -420,8 +420,8 @@ blockquote {
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s; }
   [type="card"]:hover.article hgroup {
-    background: -webkit-linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75));
-    background: linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75)); }
+    background: -webkit-linear-gradient(rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8));
+    background: linear-gradient(rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8)); }
   [type="card"] .prev {
     float: left; }
   [type="card"] .next {
