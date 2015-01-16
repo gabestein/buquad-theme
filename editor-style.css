@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Architects Daughter", "Helvetica Neue", sans-serif; }
 
 a {
-  color: ligten(#2C708B, 10); }
+  color: #388fb2; }
   a:link, a:visited {
     text-decoration: none; }
   a:hover, a:active {
@@ -380,7 +380,23 @@ blockquote {
         margin-top: 10px;
         margin-bottom: 10px; }
       .recommender .action .container a.button {
+        background-color: #388fb2;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
         padding: 0.8em 1em; }
+        .recommender .action .container a.button:hover:not(:disabled) {
+          background-color: #3ca0c8;
+          cursor: pointer; }
+        .recommender .action .container a.button:active:not(:disabled), .recommender .action .container a.button:focus:not(:disabled) {
+          background-color: #367e9a;
+          cursor: pointer; }
         .recommender .action .container a.button:disabled {
           opacity: 0.5;
           cursor: not-allowed; }
@@ -484,7 +500,7 @@ article.single {
           text-transform: uppercase;
           font-size: .7em;
           font-weight: 400;
-          background: ligten(#2C708B, 10);
+          background: #388fb2;
           color: white; }
           article.single header .intro-text ul li a:hover {
             color: white; }
