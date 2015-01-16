@@ -80,7 +80,7 @@ function action_unit() { ?>
       support_action();
     ?>
     <script>
-    jQuery(document).ready(function($){
+    (function($) {
       window.is_email = $.cookie('email_subscriber') || false;
       window.is_facebook = $.cookie('facebook_subscriber') || false;
       window.is_twitter = $.cookie('twitter_subscriber') || false;
@@ -91,8 +91,7 @@ function action_unit() { ?>
       } else {
         $('.action .subscribe').fadeIn();
       }
-
-    });
+    })(jQuery);
     </script>
   </section>
 
@@ -163,9 +162,11 @@ function subscribe_action() { ?>
                   twttr.events.bind(
                   'follow',
                   function (event) {
-                    var followedUserId = event.data.user_id;
-                    var followedScreenName = event.data.screen_name;
-                    console.log(followedUserId, followedScreenName);
+                    (function($) {
+                      $('.action .subscribe').fadeOut('fast', function(){
+                        $('.action .support').fadeIn('slow');
+                      });
+                    })(jQuery);
                   }
                   );
                 }
