@@ -81,6 +81,7 @@ function action_unit() { ?>
     ?>
     <script>
     (function($) {
+      console.log('hello?');
       window.is_email = $.cookie('email_subscriber') || false;
       window.is_facebook = $.cookie('facebook_subscriber') || false;
       window.is_twitter = $.cookie('twitter_subscriber') || false;
