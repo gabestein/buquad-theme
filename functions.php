@@ -114,8 +114,8 @@ function subscribe_action() { ?>
 
     function modal_exit() {
       (function($) {
-        $('.action .container').fadeOut();
-        $('.action .support').fadeIn();
+        $('.action .container').fadeOut('fast');
+        $('.action .support').fadeIn('medium');
       })(jQuery);
     }
 
