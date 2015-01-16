@@ -83,7 +83,7 @@ function action_unit() { ?>
   $is_twitter_subscriber = false;
   $is_donator = false;
 
-  if(isset($_COOKIE['email_subscriber'] && $_COOKIE['email_subscriber'] === 'true')) {
+  if(isset($_COOKIE['email_subscriber']) && $_COOKIE['email_subscriber'] === 'true') {
     $is_email_subscriber = true;
   }
 
