@@ -115,7 +115,7 @@
         };
         </script>
         <!-- end Facebook JS API -->
-        <?php wp_enqueue_script('jquery' ?>
+        <?php wp_enqueue_script('jquery'); ?>
         <?php wp_enqueue_script('jquery-cookie', ''.get_template_directory_uri().'/assets/scripts/jquery.cookie.js', 'jquery'); ?>
         <?php wp_head(); ?>
 
