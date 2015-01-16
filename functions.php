@@ -81,18 +81,17 @@ function action_unit() { ?>
     ?>
     <script>
     jQuery(document).ready(function($){
-      console.log('hello?');
       window.is_email = $.cookie('email_subscriber') || false;
       window.is_facebook = $.cookie('facebook_subscriber') || false;
       window.is_twitter = $.cookie('twitter_subscriber') || false;
       window.is_donator = $.cookie('donator') || false;
-      $('.action .subscribe').fadeIn();
+
       if(window.is_email) {
         $('.action .support').fadeIn();
       } else {
         $('.action .subscribe').fadeIn();
       }
-      
+
     });
     </script>
   </section>
