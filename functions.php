@@ -72,12 +72,31 @@ function create_column_tax() {
 }
 add_action( 'init', 'create_column_tax', 0 );
 
-function action_unit() {
-  //get cookies
-  ?>
+function action_unit() { ?>
+
   <section class="action">
-    <?php subscribe_action(); ?>
+
+  <?php {
+  //get cookies
+  $is_email_subscriber = false;
+  $is_facebook_subscriber = false;
+  $is_twitter_subscriber = false;
+  $is_donator = false;
+
+  if(isset($_COOKIE['email_subscriber'] && $_COOKIE['email_subscriber'] === 'true')) {
+    $is_email_subscriber = true;
+  }
+
+  if($is_email_subscriber) {
+    support_action();
+  } else {
+    subsribe_action();
+  }
+
+  ?>
+
   </section>
+
 <?php }
 
 function subscribe_action() { ?>
