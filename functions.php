@@ -90,7 +90,7 @@ function action_unit() { ?>
   if($is_email_subscriber) {
     support_action();
   } else {
-    subsribe_action();
+    subscribe_action();
   }
 
   ?>
