@@ -80,7 +80,7 @@ function action_unit() { ?>
       support_action();
     ?>
     <script>
-    (function($) {
+    jQuery(document).ready(function($){
       console.log('hello?');
       window.is_email = $.cookie('email_subscriber') || false;
       window.is_facebook = $.cookie('facebook_subscriber') || false;
@@ -92,7 +92,7 @@ function action_unit() { ?>
       } else {
         $('.action .subscribe').fadeIn();
       }
-
+      
     });
     </script>
   </section>
