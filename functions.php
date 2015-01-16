@@ -117,7 +117,7 @@ function subscribe_action() { ?>
       (function($) {
         $('.action .container').fadeOut();
         $('.action .support').fadeIn();
-      });
+      })(jQuery);
     }
 
     </script>
