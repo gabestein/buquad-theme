@@ -1018,9 +1018,10 @@ article.single, article.page, article.archive {
         margin-left: 1%;
         float: right;
         clear: right; }
-      article.single img.alignnone, article.page img.alignnone, article.archive img.alignnone {
+      article.single img.alignnone, article.page img.alignnone, article.archive img.alignnone, article.single img.aligncenter, article.page img.aligncenter, article.archive img.aligncenter {
         width: 100%;
-        height: auto; } }
+        height: auto;
+        padding: 0.5em 0; } }
 
 article.page header, article.archive header {
   height: 3em;

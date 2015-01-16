@@ -278,9 +278,10 @@ article.single {
             float: right;
             clear: right;
           }
-          &.alignnone {
+          &.alignnone, &.aligncenter {
             width: 100%;
             height: auto;
+            padding: 0.5em 0;
           }
         }
         display: block;
