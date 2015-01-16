@@ -10,8 +10,8 @@
           if(window.visits === 0) {
             $.cookie('visits', 1, { expires: 7300, path: '/' });
           } else if(window.visits <= 6) {
-            var visits = parseInt(window.visits)++;
-            $.cookie('visits', visits, { expires: 7300, path: '/' });
+            window.visits = parseInt(window.visits) + 1;
+            $.cookie('visits', window.visits, { expires: 7300, path: '/' });
           }
         })(jQuery);
         </script>
