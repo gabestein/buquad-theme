@@ -75,8 +75,10 @@ add_action( 'init', 'create_column_tax', 0 );
 function action_unit() { ?>
 
   <section class="action">
-    subscribe_action();
-    support_action();
+    <?php
+      subscribe_action();
+      support_action();
+    ?>
     <script>
     (function($) {
       var is_email = $.cookie('email_subscriber') || false;
