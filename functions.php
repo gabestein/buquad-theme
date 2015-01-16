@@ -88,9 +88,9 @@ function action_unit() { ?>
       window.visits = $.cookie('visits') || 1;
 
       if(window.is_email) {
-        $('.action .support').fadeIn();
+        $('.action .support').fadeIn('slow');
       } else {
-        $('.action .subscribe').fadeIn();
+        $('.action .subscribe').fadeIn('slow');
       }
     })(jQuery);
     </script>
