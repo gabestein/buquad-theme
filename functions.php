@@ -113,7 +113,6 @@ function subscribe_action() { ?>
     }
 
     function modal_exit() {
-      console.log('hello?');
       (function($) {
         $('.action .container').fadeOut();
         $('.action .support').fadeIn();
