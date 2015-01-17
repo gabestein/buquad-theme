@@ -379,24 +379,24 @@ article.single {
       }
     }
     //end plea
-    .share-fixed {
-      position: fixed;
-      bottom: 0;
+  }
+  //end footer
+  .share-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    ul {
+      list-style-type: none;
+      li {
+        float: left;
+      }
+    }
+    @include media(800px) {
+      top: 0;
       left: 0;
       ul {
-        list-style-type: none;
-        li {
-          float: left;
-        }
-      }
-      @include media(800px) {
-        top: 0;
-        left: 0;
-        ul {
-          li { float: none; }
-        }
+        li { float: none; }
       }
     }
   }
-  //end footer
 }

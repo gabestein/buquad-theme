@@ -1224,20 +1224,20 @@ article.single, article.page, article.archive {
           article.single footer .plea .share-sub .share a.support:disabled, article.page footer .plea .share-sub .share a.support:disabled, article.archive footer .plea .share-sub .share a.support:disabled {
             opacity: 0.5;
             cursor: not-allowed; }
-    article.single footer .share-fixed, article.page footer .share-fixed, article.archive footer .share-fixed {
-      position: fixed;
-      bottom: 0;
-      left: 0; }
-      article.single footer .share-fixed ul, article.page footer .share-fixed ul, article.archive footer .share-fixed ul {
-        list-style-type: none; }
-        article.single footer .share-fixed ul li, article.page footer .share-fixed ul li, article.archive footer .share-fixed ul li {
-          float: left; }
-      @media screen and (min-width: 800px) {
-        article.single footer .share-fixed, article.page footer .share-fixed, article.archive footer .share-fixed {
-          top: 0;
-          left: 0; }
-          article.single footer .share-fixed ul li, article.page footer .share-fixed ul li, article.archive footer .share-fixed ul li {
-            float: none; } }
+  article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0; }
+    article.single .share-fixed ul, article.page .share-fixed ul, article.archive .share-fixed ul {
+      list-style-type: none; }
+      article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
+        float: left; }
+    @media screen and (min-width: 800px) {
+      article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
+        top: 0;
+        left: 0; }
+        article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
+          float: none; } }
 
 article.page header, article.archive header {
   height: 3em;
