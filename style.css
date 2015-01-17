@@ -450,14 +450,20 @@ blockquote {
     color: white;
     text-shadow: 1px, 1px, 1px, 0, black; }
     [type="card"] .top h1 {
-      font-size: 1em;
+      font-size: 0.8em;
+      line-height: 1.2em;
       font-weight: 700;
       text-transform: uppercase;
-      text-shadow: 2px 2px 6px #393939;
-      line-height: 24px; }
+      text-shadow: 2px 2px 6px #393939; }
+      @media screen and (min-width: 380px) {
+        [type="card"] .top h1 {
+          font-size: 1em;
+          line-height: 1.4em;
+          margin: 1em; } }
       @media screen and (min-width: 40em) {
         [type="card"] .top h1 {
-          font-size: 24px; } }
+          font-size: 24px;
+          line-height: 24px; } }
       [type="card"] .top h1 a.card-title {
         text-decoration: none; }
     [type="card"] .top img {
@@ -517,7 +523,7 @@ blockquote {
       background: -webkit-linear-gradient(rgba(32, 32, 32, 0.65), rgba(32, 32, 32, 0.65));
       background: linear-gradient(rgba(32, 32, 32, 0.65), rgba(32, 32, 32, 0.65)); }
       [type="card"].article hgroup h1 {
-        margin: 1em; }
+        margin: 0.8em; }
       [type="card"].article hgroup h2, [type="card"].article hgroup h3 {
         font-size: 16px;
         line-height: 24px;
