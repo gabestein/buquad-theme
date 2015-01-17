@@ -1094,6 +1094,11 @@ article.single, article.page, article.archive {
               display: auto;
               clear: none;
               margin: 0; } }
+          article.single footer .plea .share-sub a form, article.page footer .plea .share-sub a form, article.archive footer .plea .share-sub a form {
+            margin: 10px;
+            text-align: center; }
+            article.single footer .plea .share-sub a form input, article.page footer .plea .share-sub a form input, article.archive footer .plea .share-sub a form input {
+              max-width: 400px; }
         article.single footer .plea .share-sub .facebook, article.page footer .plea .share-sub .facebook, article.archive footer .plea .share-sub .facebook {
           background-color: #3a5795;
           border-radius: 3px;

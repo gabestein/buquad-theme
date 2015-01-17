@@ -337,6 +337,13 @@ article.single {
             clear: none;
             margin: 0;
           }
+          form {
+            margin: 10px;
+            text-align: center;
+            input {
+              max-width: 400px;
+            }
+          }
         }
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase;
