@@ -586,7 +586,7 @@ blockquote {
     text-align: center; }
   .primary-menu li.current-menu-item a {
     color: #FCFCFC;
-    background-color: #54a8c9; }
+    background-color: #54a7c9; }
   .primary-menu a {
     height: 100%;
     padding: 0.6em 1em 0.3em;
@@ -597,7 +597,7 @@ blockquote {
       color: #FCFCFC; }
     .primary-menu a:hover, .primary-menu a:active {
       color: #FCFCFC;
-      background-color: #54a8c9; }
+      background-color: #54a7c9; }
 
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }
@@ -641,7 +641,7 @@ blockquote {
   background-clip: padding-box;
   padding: 0.8em 1em; }
   .modal .modal-trigger:hover:not(:disabled) {
-    background-color: #3ca0c8;
+    background-color: #3ba0c8;
     cursor: pointer; }
   .modal .modal-trigger:active:not(:disabled), .modal .modal-trigger:focus:not(:disabled) {
     background-color: #367e9a;
@@ -797,7 +797,7 @@ blockquote {
         background-clip: padding-box;
         padding: 0.8em 1em; }
         .recommender .action .container a.button:hover:not(:disabled) {
-          background-color: #3ca0c8;
+          background-color: #3ba0c8;
           cursor: pointer; }
         .recommender .action .container a.button:active:not(:disabled), .recommender .action .container a.button:focus:not(:disabled) {
           background-color: #367e9a;

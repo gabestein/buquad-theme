@@ -392,7 +392,7 @@ blockquote {
         background-clip: padding-box;
         padding: 0.8em 1em; }
         .recommender .action .container a.button:hover:not(:disabled) {
-          background-color: #3ca0c8;
+          background-color: #3ba0c8;
           cursor: pointer; }
         .recommender .action .container a.button:active:not(:disabled), .recommender .action .container a.button:focus:not(:disabled) {
           background-color: #367e9a;
