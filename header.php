@@ -20,7 +20,7 @@
         <?php if (is_single()) {
           $url = get_the_permalink();
           $title = get_the_title('');
-          $description = strip_tags(get_the_excerpt($post->ID));
+          $description = strip_tags(get_the_excerpt());
           $image = '';
           if (function_exists('wp_get_attachment_image_src')) {
             $image = (wp_get_attachment_image_src(get_post_thumbnail_id(), 'social')[0]);
