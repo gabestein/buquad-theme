@@ -801,7 +801,7 @@ blockquote {
       text-align: center; }
       .recommender .action .container p.cta {
         display: block;
-        padding: 0 50px;
+        padding: 0 25px;
         font-style: italic; }
         @media screen and (min-width: 800px) {
           .recommender .action .container p.cta {
