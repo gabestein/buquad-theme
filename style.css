@@ -1086,7 +1086,7 @@ article.single, article.page, article.archive {
         article.single footer .plea .share-sub h3, article.page footer .plea .share-sub h3, article.archive footer .plea .share-sub h3 {
           font-weight: bold;
           text-align: center;
-          margin: 10px 0; }
+          margin-top: 20px; }
         article.single footer .plea .share-sub form, article.page footer .plea .share-sub form, article.archive footer .plea .share-sub form {
           margin: 20px auto 0;
           max-width: 400px;
