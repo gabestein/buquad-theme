@@ -19,6 +19,11 @@ function fb_share(url) {
     href: url,
   }, function(response){});
 }
+
+function twitter_share() {
+  twttr.events.trigger('click', {});
+}
+
 function fb_action_logger() {
   FB.Event.subscribe('edge.create', function(url, element){
     (function($) {
