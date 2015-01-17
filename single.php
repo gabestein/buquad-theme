@@ -46,7 +46,7 @@
           <div class="share">
             <a class="facebook"><i class="fa fa-facebook"></i> Share</a>
             <a class="twitter"><i class="fa fa-twitter"></i> Tweet</a>
-            <a class="email" href="mailto:?subject=Sleeper Ave.: <?php the_title(); ?>&body=I thought you might enjoy this comic by Ed Stein.%0D%0A<?php the_title(); ?>%0D%0A<?php the_excerpt(); ?>%0D%0A<?php the_permalink ?>"><i class="fa fa-envelope"></i> Email a Friend</a>
+            <a class="email" href="mailto:?subject=Sleeper Ave.: <?php the_title(); ?>&body=Hi!%0D%0A%0D%0AI thought you might enjoy this Sleeper Ave. comic by Ed Stein.%0D%0A%0D%0A<?php the_title(); ?>%0D%0A<?php echo get_the_excerpt(); ?>%0D%0A%0D%0A<?php the_permalink(); ?>"><i class="fa fa-envelope"></i> Email a Friend</a>
             <a class="support"><i class="fa fa-credit-card"></i> Support</a>
           </div>
           <div class="subscribe">
