@@ -14,9 +14,10 @@ jQuery(document).ready(function($) {
 
   if($(window).width() > 800) {
     var stickyTop = $('.share-fixed').offset().top;
+    var windowTop;
 
     $(window).scroll(function(){
-      var windowTop = $(window).scrollTop();
+      windowTop = $(window).scrollTop();
     });
 
     if(stickyTop < windowTop) {
