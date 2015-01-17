@@ -197,7 +197,7 @@ $border-radius: 0px;
     }
     summary {
       display: none;
-      @include media($large-screen) {
+      @include media(800px) {
         display: block;
       }
       font-family: $font-serif;
