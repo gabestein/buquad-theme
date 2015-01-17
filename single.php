@@ -64,37 +64,40 @@
     </footer>
     <div class="share-fixed">
       <script>
-      if($(window).width() > 1020) {
-        var stickyTop = $('.share-fixed').offset().top;
+      jQuery(document).ready(function($) {
 
-        $(window).scroll(function(){
-          var windowTop = $(window).scrollTop();
+        if($(window).width() > 1020) {
+          var stickyTop = $('.share-fixed').offset().top;
 
-          if(stickyTop < windowTop) {
-            $('.share-fixed').css({ 'position' : 'fixed' });
-          } else {
-            $('.share-fixed').css({ 'position' : 'absolute' });
-          }
+          $(window).scroll(function(){
+            var windowTop = $(window).scrollTop();
+
+            if(stickyTop < windowTop) {
+              $('.share-fixed').css({ 'position' : 'fixed' });
+            } else {
+              $('.share-fixed').css({ 'position' : 'absolute' });
+            }
+          });
+        } else {
+
+          var stickyTop = $('article .body').offset().top;
+
+          $(window).scroll(function(){
+            var windowTop = $(window).scrollTop();
+
+            console.log(stickyTop, windowTop);
+
+            if(stickyTop < windowTop) {
+              $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
+            } else {
+              $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
+            }
+
+          });
+
+        }
         });
-      } else {
-
-        var stickyTop = $('article .body').offset().top;
-
-        $(window).scroll(function(){
-          var windowTop = $(window).scrollTop();
-
-          console.log(stickyTop, windowTop);
-          
-          if(stickyTop < windowTop) {
-            $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
-          } else {
-            $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
-          }
-
-        });
-
-      }
-    </script>
+      </script>
       <ul>
         <li>
           <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')"><i class="fa fa-facebook"></i> Share</a>
