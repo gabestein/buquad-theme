@@ -81,7 +81,7 @@
         } else {
 
           var stickyTop = $('article .body').offset().top;
-          var sitckyBottom = $('article footer .recommender').offset().top;
+          var sitckyBottom = $('.recommender.bottom').offset().top;
 
           $(window).scroll(function(){
             var windowTop = $(window).scrollTop();
@@ -113,7 +113,7 @@
     </div>
 </article>
 
-<section class="recommender">
+<section class="recommender top">
   <?php
 
   $prev_post = get_previous_post();
