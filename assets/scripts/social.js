@@ -14,16 +14,13 @@ jQuery(document).ready(function($) {
 
   if($(window).width() > 800) {
     var stickyTop = $('.share-fixed').offset().top;
-    var windowTop;
 
     $(window).scroll(function(){
-      windowTop = $(window).scrollTop();
+      var windowTop = $(window).scrollTop();
+      if(stickyTop < windowTop) {
+        $('.share-fixed').css({ position: fixed });
+      }
     });
-
-    if(stickyTop < windowTop) {
-      console.log('stick');
-      $('.share-fixed').css({ position: fixed });
-    }
   }
 
 });
