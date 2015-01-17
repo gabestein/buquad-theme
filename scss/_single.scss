@@ -347,9 +347,6 @@ article.single {
             margin: 0;
           }
         }
-        .share {
-          margin-bottom: 20px;
-        }
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase;
         a.facebook {
@@ -366,6 +363,12 @@ article.single {
         }
         .social {
           text-align: center;
+          .twitter-follow-button {
+            margin-bottom: -9px;
+          }
+        }
+        .share {
+          margin-bottom: 20px;
         }
       }
       }

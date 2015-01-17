@@ -1101,8 +1101,6 @@ article.single, article.page, article.archive {
               display: auto;
               clear: none;
               margin: 0; } }
-        article.single footer .plea .share-sub .share, article.page footer .plea .share-sub .share, article.archive footer .plea .share-sub .share {
-          margin-bottom: 20px; }
         article.single footer .plea .share-sub a.facebook, article.page footer .plea .share-sub a.facebook, article.archive footer .plea .share-sub a.facebook {
           background-color: #3a5795;
           border-radius: 3px;
@@ -1217,6 +1215,10 @@ article.single, article.page, article.archive {
             cursor: not-allowed; }
         article.single footer .plea .share-sub .social, article.page footer .plea .share-sub .social, article.archive footer .plea .share-sub .social {
           text-align: center; }
+          article.single footer .plea .share-sub .social .twitter-follow-button, article.page footer .plea .share-sub .social .twitter-follow-button, article.archive footer .plea .share-sub .social .twitter-follow-button {
+            margin-bottom: -9px; }
+        article.single footer .plea .share-sub .share, article.page footer .plea .share-sub .share, article.archive footer .plea .share-sub .share {
+          margin-bottom: 20px; }
 
 article.page header, article.archive header {
   height: 3em;
