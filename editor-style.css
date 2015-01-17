@@ -919,6 +919,7 @@ article.single {
         float: left; }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed {
+        z-index: -100;
         width: auto;
         background-color: transparent;
         top: 14px;
