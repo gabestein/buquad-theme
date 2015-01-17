@@ -357,11 +357,11 @@ blockquote {
   overflow: hidden;
   background-color: #333; }
   .recommender .action {
-    clear: both;
     color: #FCFCFC;
     padding: 10px; }
     @media screen and (min-width: 944px) {
       .recommender .action {
+        clear: none;
         margin-left: 400px;
         margin-right: 400px; } }
     .recommender .action .container {
