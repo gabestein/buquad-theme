@@ -21,8 +21,8 @@ function fb_share(url) {
 }
 
 
-function twitter_share() {
-  twttr.events.trigger('click', {});
+function twitter_share(e) {
+  console.log(e);
 }
 
 function fb_action_logger() {
