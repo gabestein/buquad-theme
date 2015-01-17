@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
       }
     });
   } else {
-    var stickyTop = $('.article.body').offset().top;
+    var stickyTop = $('.share-fixed').offset().top;
 
     $(window).scroll(function(){
       var windowTop = $(window).scrollTop();
@@ -33,9 +33,10 @@ jQuery(document).ready(function($) {
       if(stickyTop < windowTop) {
         $('.share-fixed').css({ 'position' : 'fixed' });
       } else {
-        $('.share-fixed').css({ 'display': 'none' });
+        $('.share-fixed').css({ 'display' : 'none' });
       }
-    }
+    });
+
   }
 
 });

@@ -1227,6 +1227,7 @@ article.single, article.page, article.archive {
             cursor: not-allowed; }
   article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
     position: absolute;
+    display: none;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1349,6 +1350,7 @@ article.single, article.page, article.archive {
         float: left; }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
+        display: block;
         z-index: -100;
         width: auto;
         background-color: transparent;

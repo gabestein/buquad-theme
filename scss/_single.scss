@@ -388,6 +388,7 @@ article.single {
   //end footer
   .share-fixed {
     position: absolute;
+    display: none;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -400,6 +401,7 @@ article.single {
       }
     }
     @include media(1020px) {
+      display: block;
       z-index: -100;
       width: auto;
       background-color: transparent;
