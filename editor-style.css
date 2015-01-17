@@ -369,6 +369,7 @@ blockquote {
       margin: 0 auto;
       text-align: center; }
       .recommender .action .container p.cta {
+        display: block;
         font-size: 0.85em;
         line-height: 1.3em;
         font-style: italic; }
