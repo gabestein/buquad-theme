@@ -1347,8 +1347,9 @@ article.single, article.page, article.archive {
           cursor: not-allowed; }
       article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
         float: left; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1020px) {
       article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
+        z-index: -100;
         width: auto;
         background-color: transparent;
         top: 14px;

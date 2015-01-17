@@ -917,7 +917,7 @@ article.single {
           cursor: not-allowed; }
       article.single .share-fixed ul li {
         float: left; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1020px) {
       article.single .share-fixed {
         width: auto;
         background-color: transparent;

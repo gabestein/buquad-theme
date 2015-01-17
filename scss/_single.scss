@@ -399,7 +399,8 @@ article.single {
         float: left;
       }
     }
-    @include media(800px) {
+    @include media(1020px) {
+      z-index: -100;
       width: auto;
       background-color: transparent;
       top: 14px;

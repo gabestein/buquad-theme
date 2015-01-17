@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
     $('.action .subscribe').fadeIn('slow');
   }
 
-  if($(window).width() > 800) {
+  if($(window).width() > 1020) {
     var stickyTop = $('.share-fixed').offset().top;
 
     $(window).scroll(function(){
