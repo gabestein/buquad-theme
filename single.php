@@ -82,13 +82,9 @@
         } else {
 
           var stickyTop = $('article .body').offset().top;
-          var stickyBottom = $('.recommender.bottom').offset().top;
 
           $(window).scroll(function(){
             var windowTop = $(window).scrollTop();
-            var windowBottom = windowTop + $(window).height();
-
-            console.log(stickyTop, windowTop, stickyBottom, windowBottom);
 
             if(stickyTop < windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
