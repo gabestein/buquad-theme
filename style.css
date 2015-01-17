@@ -1231,7 +1231,9 @@ article.single, article.page, article.archive {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #FCFCFC; }
+    background-color: #FCFCFC;
+    border-top: 2px solid #333;
+    padding: 4px 0; }
     article.single .share-fixed ul, article.page .share-fixed ul, article.archive .share-fixed ul {
       list-style-type: none; }
       article.single .share-fixed ul a.facebook, article.page .share-fixed ul a.facebook, article.archive .share-fixed ul a.facebook {

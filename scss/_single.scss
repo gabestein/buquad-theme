@@ -393,6 +393,8 @@ article.single {
     left: 0;
     width: 100%;
     background-color: $color-white;
+    border-top: 2px solid $color-grey;
+    padding: 4px 0;
     ul {
       @include social-buttons;
       list-style-type: none;
