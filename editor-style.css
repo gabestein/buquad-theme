@@ -376,7 +376,7 @@ blockquote {
         @media screen and (min-width: 1192px) {
           .recommender .action .container p.cta {
             display: block; } }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 1315px) {
           .recommender .action .container p.cta {
             font-size: 1em;
             line-height: inherit; } }
