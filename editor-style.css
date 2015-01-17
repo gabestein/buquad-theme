@@ -655,8 +655,7 @@ article.single {
         text-transform: uppercase; }
         article.single footer .plea .share-sub h3 {
           font-weight: bold;
-          text-align: center;
-          margin-top: 20px; }
+          text-align: center; }
         article.single footer .plea .share-sub form {
           margin: 0 auto;
           max-width: 400px;
@@ -672,6 +671,8 @@ article.single {
               display: auto;
               clear: none;
               margin: 0; } }
+        article.single footer .plea .share-sub .share {
+          margin-bottom: 20px; }
         article.single footer .plea .share-sub a.facebook {
           background-color: #3a5795;
           border-radius: 3px;
