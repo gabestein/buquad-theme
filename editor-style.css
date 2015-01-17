@@ -637,13 +637,15 @@ article.single {
     margin-left: auto;
     margin-right: auto;
     margin: 1.5em auto;
-    border-top: 1px dotted #737373;
-    padding-top: 1.5em; }
+    border-top: 1px dotted #737373; }
     article.single footer .plea {
       color: #737373;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      font-style: italic; }
       article.single footer .plea p {
         margin: 1em 0; }
+        article.single footer .plea p em {
+          font-style: normal; }
 
 html .mceContentBody {
   max-width: 640px;

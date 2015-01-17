@@ -1067,13 +1067,17 @@ article.single, article.page, article.archive {
     margin-left: auto;
     margin-right: auto;
     margin: 1.5em auto;
-    border-top: 1px dotted #737373;
-    padding-top: 1.5em; }
+    border-top: 1px dotted #737373; }
     article.single footer .plea, article.page footer .plea, article.archive footer .plea {
       color: #737373;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      font-style: italic; }
       article.single footer .plea p, article.page footer .plea p, article.archive footer .plea p {
         margin: 1em 0; }
+        article.single footer .plea p em, article.page footer .plea p em, article.archive footer .plea p em {
+          font-style: normal; }
+        article.single footer .plea p strong, article.page footer .plea p strong, article.archive footer .plea p strong {
+          font-weight: bold; }
 
 article.page header, article.archive header {
   height: 3em;
