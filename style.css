@@ -1069,7 +1069,7 @@ article.single, article.page, article.archive {
     margin: 1.5em auto;
     border-top: 1px dotted #737373;
     border-bottom: 1px dotted #737373;
-    padding: 1em 0; }
+    padding: 1em; }
     article.single footer .plea, article.page footer .plea, article.archive footer .plea {
       color: #737373;
       font-size: 0.9em;

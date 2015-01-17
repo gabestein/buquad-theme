@@ -633,6 +633,7 @@ article.single {
         padding: 0.5em 0;
         max-width: 100%; } }
   article.single footer {
+    padding: 0 10px;
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
@@ -657,7 +658,7 @@ article.single {
           display: block;
           clear: both;
           width: 100%;
-          margin: 6px 0; }
+          margin: 6px 20px; }
           @media screen and (min-width: 40em) {
             article.single footer .plea .share-sub a {
               width: auto;
