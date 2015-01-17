@@ -1083,6 +1083,10 @@ article.single, article.page, article.archive {
       article.single footer .plea .share-sub, article.page footer .plea .share-sub, article.archive footer .plea .share-sub {
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase; }
+        article.single footer .plea .share-sub h3, article.page footer .plea .share-sub h3, article.archive footer .plea .share-sub h3 {
+          font-weight: bold;
+          text-align: center;
+          margin: 10px 0; }
         article.single footer .plea .share-sub form, article.page footer .plea .share-sub form, article.archive footer .plea .share-sub form {
           margin: 20px auto 0;
           max-width: 400px;
