@@ -79,10 +79,13 @@ $border-radius: 0px;
     overflow: hidden;
   }
 
-
+  width: 50%;
+  @include media($large-screen) {
+    width: 100%;
+  }
   display: block;
   @include box-sizing(border-box);
-  max-width: 420px;
+  max-width: 400px;
   border: 0px solid black;
   border-radius: $border-radius;
 
@@ -109,10 +112,7 @@ $border-radius: 0px;
     }
     img {
       display: block;
-      width: 50%;
-      @include media($large-screen) {
-        width: 100%;
-      }
+      width: 100%;
       height: auto;
       border-bottom: 1px solid black;
       @include border-top-radius($border-radius);
