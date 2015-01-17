@@ -354,12 +354,14 @@ blockquote {
 
 /* SINGLE */
 .recommender {
-  max-height: 150px;
   overflow: hidden;
   background-color: #333; }
   .recommender .action {
     color: #FCFCFC;
     padding: 10px; }
+    @media screen and (min-width: 955px) {
+      .recommender .action {
+        max-height: 150px; } }
     @media screen and (min-width: 944px) {
       .recommender .action {
         clear: none;
