@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
       }
     });
   } else {
-    var stickyTop = $('.share-fixed').offset().top;
+    var stickyTop = $('.article.body').offset().top;
 
     $(window).scroll(function(){
       var windowTop = $(window).scrollTop();
