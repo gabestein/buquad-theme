@@ -784,7 +784,7 @@ article.single {
             opacity: 0.5;
             cursor: not-allowed; }
         article.single footer .plea .share-sub .social {
-          margin: 0 40px;
+          margin: 0 100px;
           padding: 10px 0;
           text-align: center;
           border: 1px solid #333;
