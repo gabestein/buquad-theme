@@ -47,9 +47,7 @@
           <a class="twitter"><i class="fa fa-twitter"></i> Tweet</a>
           <a class="email"><i class="fa fa-envelope"></i> Email a Friend</a>
           <a class="support"><i class="fa fa-credit-card"></i> Support</a>
-          <fieldset>
-            <?php email_subscribe_form(); ?>
-          </fieldset>
+          <?php email_subscribe_form(); ?>
         </div>
         <p class="appeal"><strong>I need your help!</strong> After a 37-year career in print, it's not easy building an audience from scratch. So if you enjoy Sleeper Ave., please help me out by subscribing, donating if you can, but most importantly, spreading the word. Share this story on Facebook, Twitter and elsewhere, email it to your friends, let people know! Every little bit helps, and I'll be forever grateful. Thanks! -- Ed</p>
       </section>
