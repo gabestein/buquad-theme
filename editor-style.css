@@ -793,6 +793,7 @@ article.single {
           article.single footer .plea .share-sub .social .twitter-follow-button {
             margin-bottom: -9px; }
         article.single footer .plea .share-sub .share {
+          text-align: center;
           margin-bottom: 20px; }
 
 html .mceContentBody {
