@@ -83,14 +83,14 @@
 
           var stickyTop = $('article .body').offset().top;
           var stickyBottom = $('.footer-menu').height() + $('.recommender.bottom').height();
-          var stickyBottom = $(window).height() - stickyBottom;
+          stickyBottom = $(window).height() - stickyBottom;
 
           $(window).scroll(function(){
             var windowTop = $(window).scrollTop();
 
             console.log(stickyBottom, windowTop);
 
-            if(stickyTop < windowTop) {
+            if(stickyTop < windowTop && stickyBottom > windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
               $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
