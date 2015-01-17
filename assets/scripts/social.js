@@ -12,32 +12,6 @@ jQuery(document).ready(function($) {
     $('.action .subscribe').fadeIn('slow');
   }
 
-  if($(window).width() > 1020) {
-    var stickyTop = $('.share-fixed').offset().top;
-
-    $(window).scroll(function(){
-      var windowTop = $(window).scrollTop();
-
-      if(stickyTop < windowTop) {
-        $('.share-fixed').css({ 'position' : 'fixed' });
-      } else {
-        $('.share-fixed').css({ 'position' : 'absolute' });
-      }
-    });
-  } else {
-    var stickyTop = $('.article .body').offset().top;
-
-    $(window).scroll(function(){
-      var windowTop = $(window).scrollTop();
-      if(stickyTop < windowTop) {
-        $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
-      } else {
-        $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
-      }
-    });
-
-  }
-
 });
 
 function fb_share(url) {
