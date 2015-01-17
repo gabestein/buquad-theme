@@ -24,6 +24,18 @@ jQuery(document).ready(function($) {
         $('.share-fixed').css({ 'position' : 'absolute' });
       }
     });
+  } else {
+    var stickyTop = $('.article.body').offset().top;
+
+    $(window).scroll(function(){
+      var windowTop = $(window).scrollTop();
+
+      if(stickyTop < windowTop) {
+        $('.share-fixed').css({ 'position' : 'fixed' });
+      } else {
+        $('.share-fixed').css({ 'display': 'none' });
+      }
+    }
   }
 
 });
