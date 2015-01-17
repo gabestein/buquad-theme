@@ -1087,7 +1087,7 @@ article.single, article.page, article.archive {
           display: block;
           clear: both;
           width: 100%;
-          margin: 6px 20px; }
+          margin: 6px 0; }
           @media screen and (min-width: 40em) {
             article.single footer .plea .share-sub a, article.page footer .plea .share-sub a, article.archive footer .plea .share-sub a {
               width: auto;
