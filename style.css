@@ -1083,6 +1083,10 @@ article.single, article.page, article.archive {
       article.single footer .plea .share-sub, article.page footer .plea .share-sub, article.archive footer .plea .share-sub {
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase; }
+        article.single footer .plea .share-sub form, article.page footer .plea .share-sub form, article.archive footer .plea .share-sub form {
+          margin: 20px auto 0;
+          max-width: 400px;
+          text-align: center; }
         article.single footer .plea .share-sub a, article.page footer .plea .share-sub a, article.archive footer .plea .share-sub a {
           display: block;
           clear: both;
@@ -1094,11 +1098,6 @@ article.single, article.page, article.archive {
               display: auto;
               clear: none;
               margin: 0; } }
-          article.single footer .plea .share-sub a form, article.page footer .plea .share-sub a form, article.archive footer .plea .share-sub a form {
-            margin: 10px;
-            text-align: center; }
-            article.single footer .plea .share-sub a form input, article.page footer .plea .share-sub a form input, article.archive footer .plea .share-sub a form input {
-              max-width: 400px; }
         article.single footer .plea .share-sub .facebook, article.page footer .plea .share-sub .facebook, article.archive footer .plea .share-sub .facebook {
           background-color: #3a5795;
           border-radius: 3px;

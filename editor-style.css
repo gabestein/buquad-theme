@@ -653,6 +653,10 @@ article.single {
       article.single footer .plea .share-sub {
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase; }
+        article.single footer .plea .share-sub form {
+          margin: 20px auto 0;
+          max-width: 400px;
+          text-align: center; }
         article.single footer .plea .share-sub a {
           display: block;
           clear: both;
@@ -664,11 +668,6 @@ article.single {
               display: auto;
               clear: none;
               margin: 0; } }
-          article.single footer .plea .share-sub a form {
-            margin: 10px;
-            text-align: center; }
-            article.single footer .plea .share-sub a form input {
-              max-width: 400px; }
         article.single footer .plea .share-sub .facebook {
           background-color: #3a5795;
           border-radius: 3px;
