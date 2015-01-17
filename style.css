@@ -1100,8 +1100,8 @@ article.single, article.page, article.archive {
       article.single footer .plea .share-sub .share, article.page footer .plea .share-sub .share, article.archive footer .plea .share-sub .share {
         text-align: center;
         margin-bottom: 20px;
-        text-transform: uppercase;
-        font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif; }
+        font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif;
+        text-transform: uppercase; }
         article.single footer .plea .share-sub .share a, article.page footer .plea .share-sub .share a, article.archive footer .plea .share-sub .share a {
           display: block;
           clear: both;
@@ -1237,6 +1237,7 @@ article.single, article.page, article.archive {
     text-align: center; }
     article.single .share-fixed ul, article.page .share-fixed ul, article.archive .share-fixed ul {
       font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif;
+      text-transform: uppercase;
       list-style-type: none; }
       article.single .share-fixed ul a.facebook, article.page .share-fixed ul a.facebook, article.archive .share-fixed ul a.facebook {
         background-color: #3a5795;

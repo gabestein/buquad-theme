@@ -32,6 +32,7 @@ $vertical-spacing: 24px;
 
 @mixin social-buttons {
   font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif;
+  text-transform: uppercase;
   a.facebook {
     @include button(flat, $color-facebook);
   }
@@ -378,7 +379,6 @@ article.single {
               margin: 0;
             }
           }
-          text-transform: uppercase;
           @include social-buttons;
         }
       }
