@@ -362,7 +362,7 @@ article.single {
           @include button(flat, $color-black);
         }
         .social {
-          margin: 0 130px;
+          max-width: 400px;
           padding: 5px 0 10px;
           text-align: center;
           border: 1px solid $color-grey;
