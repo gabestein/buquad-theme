@@ -354,6 +354,7 @@ blockquote {
 
 /* SINGLE */
 .recommender {
+  max-height: 150px;
   overflow: hidden;
   background-color: #333; }
   .recommender .action {

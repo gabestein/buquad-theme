@@ -31,6 +31,7 @@ $vertical-spacing: 24px;
   }
 }
 .recommender {
+  max-height: 150px;
   overflow: hidden;
   background-color: $color-grey;
   .action {
