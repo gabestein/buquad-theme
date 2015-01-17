@@ -13,14 +13,14 @@ jQuery(document).ready(function($) {
   }
 
   if($(window).width() > 800) {
-    var stickyTop = $('.fixed-bar').offset().top;
+    var stickyTop = $('.share-fixed').offset().top;
 
     $(window).scroll(function(){
       var windowTop = $(window).scrollTop();
     });
 
     if(stickyTop < windowTop) {
-      $('.fixed-bar').css({ position: fixed });
+      $('.share-fixed').css({ position: fixed });
     }
   }
 
