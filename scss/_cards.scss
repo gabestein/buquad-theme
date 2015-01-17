@@ -65,7 +65,10 @@ $border-radius: 0px;
   }
 
   i.fa {
-    margin: 39px 15px;
+    margin: 22px 15px;
+    @include media($large-screen) {
+      margin: 39px 15px;
+    }
   }
   .card-link {
     position: absolute;
@@ -106,7 +109,16 @@ $border-radius: 0px;
     }
     img {
       display: block;
-      width: 284px;
+      width: 100%;
+      @include media(400px) {
+        width: 230px;
+      }
+      @include media(510px) {
+        width: 254px;
+      }
+      @include media(800px) {
+        width: 284px;
+      }
       @include media($large-screen) {
         width: 100%;
       }

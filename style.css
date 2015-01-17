@@ -430,7 +430,10 @@ blockquote {
     height: 100%;
     font-size: 3em; }
   [type="card"] i.fa {
-    margin: 39px 15px; }
+    margin: 22px 15px; }
+    @media screen and (min-width: 53.75em) {
+      [type="card"] i.fa {
+        margin: 39px 15px; } }
   [type="card"] .card-link {
     position: absolute;
     left: 0;
@@ -452,11 +455,20 @@ blockquote {
         text-decoration: none; }
     [type="card"] .top img {
       display: block;
-      width: 284px;
+      width: 100%;
       height: auto;
       border-bottom: 1px solid black;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px; }
+      @media screen and (min-width: 400px) {
+        [type="card"] .top img {
+          width: 230px; } }
+      @media screen and (min-width: 510px) {
+        [type="card"] .top img {
+          width: 254px; } }
+      @media screen and (min-width: 800px) {
+        [type="card"] .top img {
+          width: 284px; } }
       @media screen and (min-width: 53.75em) {
         [type="card"] .top img {
           width: 100%; } }
