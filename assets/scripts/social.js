@@ -18,15 +18,13 @@ function fb_share(url) {
     method: 'share',
     href: url,
   }, function(response){});
+  return false;
 }
 
 
 function twitter_share(url, text) {
   var intent = 'https://twitter.com/intent?url='+ url + '&text=' + text + '&via=sleeperave';
-
-  (function($) {
-    $('.popup').click(function(event) {
-      var width  = 575,
+  var width  = 575,
       height = 400,
       left   = ($(window).width()  - width)  / 2,
       top    = ($(window).height() - height) / 2,
@@ -37,12 +35,8 @@ function twitter_share(url, text) {
       ',top='    + top    +
       ',left='   + left;
 
-      window.open(intent, 'twitter', opts);
-
-      return false;
-    });
-  })(jQuery);
-  
+  window.open(intent, 'twitter', opts);
+  return false;
 }
 
 function fb_action_logger() {
