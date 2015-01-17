@@ -1214,7 +1214,10 @@ article.single, article.page, article.archive {
             opacity: 0.5;
             cursor: not-allowed; }
         article.single footer .plea .share-sub .social, article.page footer .plea .share-sub .social, article.archive footer .plea .share-sub .social {
-          text-align: center; }
+          margin: 6px 40px;
+          text-align: center;
+          border: 1px solid #333;
+          background-color: lightyellow; }
           article.single footer .plea .share-sub .social .twitter-follow-button, article.page footer .plea .share-sub .social .twitter-follow-button, article.archive footer .plea .share-sub .social .twitter-follow-button {
             margin-bottom: -9px; }
         article.single footer .plea .share-sub .share, article.page footer .plea .share-sub .share, article.archive footer .plea .share-sub .share {
