@@ -83,12 +83,14 @@
 
           var stickyTop = $('article .body').offset().top;
           var stickyBottom = $('.footer-menu').height() + $('.recommender.bottom').height();
-          stickyBottom = $(window).height() - stickyBottom;
 
           $(window).scroll(function(){
 
             console.log($(window).height());
             var windowTop = $(window).scrollTop();
+            var height = $(window).height();
+
+            stickyBottom = height - stickyBottom;
 
             console.log(stickyBottom, windowTop);
 
