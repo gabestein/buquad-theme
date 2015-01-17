@@ -324,6 +324,20 @@ article.single {
           }
           margin: 1em 0;
         }
+      .share-sub {
+        .facebook {
+          @include button(flat, $color-facebook);
+        }
+        .twitter {
+          @include button(flat, $color-twitter);
+        }
+        .email {
+          @include button(flat, $color-grey);
+        }
+        .support {
+          @include button(flat, $color-black);
+        }
+      }
       }
     }
 }
