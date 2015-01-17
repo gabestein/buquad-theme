@@ -86,10 +86,12 @@
           var footerHeight = $('.footer-menu').height() + $('.recommender.bottom').height();
 
           $(window).scroll(function(){
+            var windowHeight = $(window).height();
             var windowTop = $(window).scrollTop();
-            var windowBottom = windowTop + $(window).height();
+            var windowBottom = windowTop + windowHeight;
+            var stickyBottom = windowHeight - footerHeight;
 
-            console.log(windowBottom, footerHeight);
+            console.log(windowBottom, stickyBottom);
 
             if(stickyTop < windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
