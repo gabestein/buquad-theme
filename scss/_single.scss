@@ -45,9 +45,12 @@ $vertical-spacing: 24px;
     .container {
       display: none;
       p.cta {
-        display: none;
+        display: block;
         @include media(1192px) {
           display: block;
+        }
+        @include media(940px) {
+          display: none;
         }
         font-size: 0.85em;
         line-height: 1.3em;

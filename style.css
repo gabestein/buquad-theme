@@ -529,16 +529,13 @@ blockquote {
         [type="card"].article hgroup a:hover {
           color: #388fb2; }
     [type="card"].article summary {
-      display: block;
+      display: none;
       font-family: "Lora", "Georgia", sans-serif;
       font-weight: bold;
       font-size: 16px;
       line-height: 24px;
       margin: 1.5em;
       text-shadow: 2px 2px 2px #202020; }
-      @media screen and (min-width: 940) {
-        [type="card"].article summary {
-          display: none; } }
       @media screen and (min-width: 800px) {
         [type="card"].article summary {
           display: block; } }
@@ -791,13 +788,16 @@ blockquote {
       margin: 0 auto;
       text-align: center; }
       .recommender .action .container p.cta {
-        display: none;
+        display: block;
         font-size: 0.85em;
         line-height: 1.3em;
         font-style: italic; }
         @media screen and (min-width: 1192px) {
           .recommender .action .container p.cta {
             display: block; } }
+        @media screen and (min-width: 940px) {
+          .recommender .action .container p.cta {
+            display: none; } }
         @media screen and (min-width: 1315px) {
           .recommender .action .container p.cta {
             font-size: 1em;
