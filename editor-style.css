@@ -653,6 +653,10 @@ article.single {
       article.single footer .plea .share-sub {
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase; }
+        article.single footer .plea .share-sub h3 {
+          font-weight: bold;
+          text-align: center;
+          margin: 10px 0; }
         article.single footer .plea .share-sub form {
           margin: 20px auto 0;
           max-width: 400px;
