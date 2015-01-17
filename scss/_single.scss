@@ -31,13 +31,15 @@ $vertical-spacing: 24px;
   }
 }
 .recommender {
-  max-height: 150px;
   overflow: hidden;
   background-color: $color-grey;
   .action {
     //clear: both;
     color: $color-white;
     padding: 10px;
+    @include media(955px) {
+      max-height: 150px;
+    }
     @include media(944px) {
       clear: none;
       margin-left: 400px;
