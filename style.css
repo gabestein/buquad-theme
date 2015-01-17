@@ -1368,7 +1368,7 @@ article.single, article.page, article.archive {
         width: auto;
         background-color: transparent;
         top: 14px;
-        left: 30px; }
+        left: 16px; }
         article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
           float: none;
           display: block;
