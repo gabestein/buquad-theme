@@ -536,7 +536,7 @@ blockquote {
       line-height: 24px;
       margin: 1.5em;
       text-shadow: 2px 2px 2px #202020; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 800px) {
         [type="card"].article summary {
           display: block; } }
   [type="card"].author, [type="card"].subject {
