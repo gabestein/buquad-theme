@@ -86,6 +86,8 @@
           stickyBottom = $(window).height() - stickyBottom;
 
           $(window).scroll(function(){
+
+            console.log($(window).height());
             var windowTop = $(window).scrollTop();
 
             console.log(stickyBottom, windowTop);
