@@ -46,13 +46,13 @@ $vertical-spacing: 24px;
       display: none;
       p.cta {
         display: block;
-        @include media(1192px) {
-          display: block;
-        }
         @include media(800px) {
           display: none;
           font-size: 0.85em;
           line-height: 1.3em;
+        }
+        @include media(1192px) {
+          display: block;
         }
         font-style: italic;
       }
