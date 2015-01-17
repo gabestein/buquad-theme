@@ -81,7 +81,7 @@
         } else {
 
           var stickyTop = $('article .body').offset().top;
-          var sitckyBottom = $('.recommender.bottom').offset().top;
+          var stickyBottom = $('.recommender.bottom').offset().top;
 
           $(window).scroll(function(){
             var windowTop = $(window).scrollTop();
