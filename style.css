@@ -792,9 +792,7 @@ blockquote {
         font-style: italic; }
         @media screen and (min-width: 800px) {
           .recommender .action .container p.cta {
-            display: none;
-            font-size: 0.85em;
-            line-height: 1.3em; } }
+            display: none; } }
         @media screen and (min-width: 1192px) {
           .recommender .action .container p.cta {
             font-size: 1em;
