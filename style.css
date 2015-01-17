@@ -431,7 +431,10 @@ blockquote {
     height: 100%;
     font-size: 3em; }
   [type="card"] i.fa {
-    margin: 22px 15px; }
+    margin: 0 15px; }
+    @media screen and (min-width: 405px) {
+      [type="card"] i.fa {
+        margin: 22px 15px; } }
     @media screen and (min-width: 53.75em) {
       [type="card"] i.fa {
         margin: 39px 15px; } }

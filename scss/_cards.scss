@@ -65,7 +65,10 @@ $border-radius: 0px;
   }
 
   i.fa {
-    margin: 22px 15px;
+    margin: 0 15px;
+    @include media(405px) {
+      margin: 22px 15px;
+    }
     @include media($large-screen) {
       margin: 39px 15px;
     }
