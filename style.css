@@ -522,12 +522,16 @@ blockquote {
         [type="card"].article hgroup a:hover {
           color: #388fb2; }
     [type="card"].article summary {
+      display: none;
       font-family: "Lora", "Georgia", sans-serif;
       font-weight: bold;
       font-size: 16px;
       line-height: 24px;
       margin: 1.5em;
       text-shadow: 2px 2px 2px #202020; }
+      @media screen and (min-width: 53.75em) {
+        [type="card"].article summary {
+          display: block; } }
   [type="card"].author, [type="card"].subject {
     text-align: center; }
     [type="card"].author .top h1, [type="card"].subject .top h1 {

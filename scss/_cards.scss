@@ -189,6 +189,10 @@ $border-radius: 0px;
       }
     }
     summary {
+      display: none;
+      @include media($large-screen) {
+        display: block;
+      }
       font-family: $font-serif;
       font-weight: bold;
       font-size: 16px;
