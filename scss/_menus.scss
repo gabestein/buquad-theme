@@ -72,18 +72,18 @@
 .secondary-menu, .footer-menu {
     font-size: $font-size * 0.875;
     ul {
-        background-color: $color-blue;
+        background-color: $color-red;
     }
     a {
         text-decoration: none;
         &:link, &:visited { color: $color-white; }
         &:hover, &:active {
             color: $color-white;
-            background-color: lighten($color-blue, $lighten-amount);
+            background-color: lighten($color-red, $lighten-amount);
         }
     }
     li.current-menu-item a {
       color: $color-white;
-      background-color: lighten($color-blue, $lighten-amount);
+      background-color: lighten($color-red, $lighten-amount);
     }
 }
