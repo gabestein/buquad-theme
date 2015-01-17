@@ -89,7 +89,7 @@
             var windowHeight = $(window).height();
             var windowTop = $(window).scrollTop();
             var windowBottom = windowTop + windowHeight;
-            var stickyBottom = windowHeight - footerHeight;
+            var stickyBottom = windowBottom - footerHeight;
 
             console.log(windowBottom, stickyBottom);
 
