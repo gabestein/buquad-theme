@@ -84,8 +84,11 @@
           var sitckyBottom = $('.recommender.bottom').offset().top;
 
           $(window).scroll(function(){
+
+            console.log(stickyTop, windowTop, stickyBottom);
+            
             var windowTop = $(window).scrollTop();
-            if(stickyTop < windowTop && windowTop < sitckyBottom) {
+            if(stickyTop < windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
               $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
