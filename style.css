@@ -429,11 +429,7 @@ blockquote {
     float: right; }
   [type="card"] .prev, [type="card"] .next {
     height: 100%;
-    font-size: 3em;
-    width: 50%; }
-    @media screen and (min-width: 940px) {
-      [type="card"] .prev, [type="card"] .next {
-        width: 100%; } }
+    font-size: 3em; }
   [type="card"] i.fa {
     margin: 0 15px; }
     @media screen and (min-width: 405px) {
@@ -513,6 +509,11 @@ blockquote {
       display: block; }
   [type="card"].article {
     text-align: left; }
+    [type="card"].article.prev, [type="card"].article.next {
+      width: 50%; }
+      @media screen and (min-width: 940px) {
+        [type="card"].article.prev, [type="card"].article.next {
+          width: 100%; } }
     [type="card"].article.prev {
       float: left; }
     [type="card"].article.next {

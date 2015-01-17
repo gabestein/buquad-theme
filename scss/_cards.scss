@@ -62,10 +62,6 @@ $border-radius: 0px;
   .prev, .next {
     height: 100%;
     font-size: 3em;
-    width: 50%;
-    @include media(940px) {
-      width: 100%;
-    }
   }
 
   i.fa {
@@ -172,6 +168,12 @@ $border-radius: 0px;
   }
 
   &.article {
+    &.prev, &.next {
+      width: 50%;
+      @include media(940px) {
+        width: 100%;
+      }
+    }
     &.prev {
       float: left;
     }
