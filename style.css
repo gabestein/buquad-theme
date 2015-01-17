@@ -1231,7 +1231,7 @@ article.single, article.page, article.archive {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333; }
+    background-color: #FCFCFC; }
     article.single .share-fixed ul, article.page .share-fixed ul, article.archive .share-fixed ul {
       list-style-type: none; }
       article.single .share-fixed ul a.facebook, article.page .share-fixed ul a.facebook, article.archive .share-fixed ul a.facebook {
@@ -1347,7 +1347,7 @@ article.single, article.page, article.archive {
           opacity: 0.5;
           cursor: not-allowed; }
       article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
-        float: left; }
+        display: inline-block; }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
         display: block;

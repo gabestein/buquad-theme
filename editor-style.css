@@ -917,7 +917,7 @@ article.single {
           opacity: 0.5;
           cursor: not-allowed; }
       article.single .share-fixed ul li {
-        float: left; }
+        display: inline-block; }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed {
         display: block;

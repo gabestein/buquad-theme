@@ -392,12 +392,12 @@ article.single {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: $color-grey;
+    background-color: $color-white;
     ul {
       @include social-buttons;
       list-style-type: none;
       li {
-        float: left;
+        display: inline-block;
       }
     }
     @include media(1020px) {
