@@ -52,6 +52,7 @@ $vertical-spacing: 24px;
         }
         @include media(1192px) {
           font-size: 1em;
+          line-height: 1.3em;
           line-height: inherit;
           display: block;
         }
