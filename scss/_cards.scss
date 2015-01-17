@@ -196,7 +196,10 @@ $border-radius: 0px;
       }
     }
     summary {
-      display: none;
+      display: block;
+      @include media(940) {
+        display: none;
+      }
       @include media(800px) {
         display: block;
       }
