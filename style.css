@@ -452,11 +452,14 @@ blockquote {
         text-decoration: none; }
     [type="card"] .top img {
       display: block;
-      width: 100%;
+      width: 200px;
       height: auto;
       border-bottom: 1px solid black;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px; }
+      @media screen and (min-width: 53.75em) {
+        [type="card"] .top img {
+          width: 100%; } }
   [type="card"] .middle .social {
     display: table;
     width: 100%;
