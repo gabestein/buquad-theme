@@ -383,9 +383,11 @@ article.single {
   }
   //end footer
   .share-fixed {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
+    background-color: $color-grey;
     ul {
       list-style-type: none;
       li {
@@ -393,6 +395,8 @@ article.single {
       }
     }
     @include media(800px) {
+      width: auto;
+      background-color: transparent;
       top: 14px;
       left: 30px;
       ul {

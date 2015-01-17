@@ -860,6 +860,7 @@ blockquote {
         padding-top: 7px; }
 
 article.single, article.page, article.archive {
+  position: relative;
   width: 100%; }
   article.single header, article.page header, article.archive header {
     position: relative;
@@ -1225,15 +1226,19 @@ article.single, article.page, article.archive {
             opacity: 0.5;
             cursor: not-allowed; }
   article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    width: 100%;
+    background-color: #333; }
     article.single .share-fixed ul, article.page .share-fixed ul, article.archive .share-fixed ul {
       list-style-type: none; }
       article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
         float: left; }
     @media screen and (min-width: 800px) {
       article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
+        width: auto;
+        background-color: transparent;
         top: 14px;
         left: 30px; }
         article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
