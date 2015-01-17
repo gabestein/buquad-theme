@@ -1233,7 +1233,8 @@ article.single, article.page, article.archive {
     width: 100%;
     background-color: #FCFCFC;
     border-top: 2px solid #333;
-    padding: 4px 0; }
+    padding: 4px 0;
+    text-align: center; }
     article.single .share-fixed ul, article.page .share-fixed ul, article.archive .share-fixed ul {
       list-style-type: none; }
       article.single .share-fixed ul a.facebook, article.page .share-fixed ul a.facebook, article.archive .share-fixed ul a.facebook {
@@ -1352,6 +1353,8 @@ article.single, article.page, article.archive {
         display: inline-block; }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
+        border-top: 0;
+        padding: 0;
         display: block;
         z-index: -100;
         width: auto;
