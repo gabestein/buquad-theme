@@ -1,3 +1,18 @@
+(function($) {
+  window.is_email = $.cookie('email_subscriber') || false;
+  window.is_facebook = $.cookie('facebook_subscriber') || false;
+  window.is_twitter = $.cookie('twitter_subscriber') || false;
+  window.is_donator = $.cookie('donator') || false;
+  window.visits = $.cookie('visits') || 1;
+
+  if(window.is_email) {
+    $('.action .support').fadeIn('slow');
+    $('.plea .subscribe').fadeOut('fast');
+  } else {
+    $('.action .subscribe').fadeIn('slow');
+  }
+})(jQuery);
+
 function fb_action_logger() {
   FB.Event.subscribe('edge.create', function(url, element){
     (function($) {

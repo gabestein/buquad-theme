@@ -1085,8 +1085,7 @@ article.single, article.page, article.archive {
         text-transform: uppercase; }
         article.single footer .plea .share-sub h3, article.page footer .plea .share-sub h3, article.archive footer .plea .share-sub h3 {
           font-weight: bold;
-          text-align: center;
-          margin-top: 20px; }
+          text-align: center; }
         article.single footer .plea .share-sub form, article.page footer .plea .share-sub form, article.archive footer .plea .share-sub form {
           margin: 0 auto;
           max-width: 400px;
@@ -1102,6 +1101,8 @@ article.single, article.page, article.archive {
               display: auto;
               clear: none;
               margin: 0; } }
+        article.single footer .plea .share-sub .share, article.page footer .plea .share-sub .share, article.archive footer .plea .share-sub .share {
+          margin-bottom: 20px; }
         article.single footer .plea .share-sub a.facebook, article.page footer .plea .share-sub a.facebook, article.archive footer .plea .share-sub a.facebook {
           background-color: #3a5795;
           border-radius: 3px;
