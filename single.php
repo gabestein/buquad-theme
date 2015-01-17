@@ -82,10 +82,14 @@
         } else {
 
           var stickyTop = $('article .body').offset().top;
+          var stickyBottom = $('.footer-menu').offset().top;
+          var sitckyBottom = $(window).height() - stickyBottom;
 
           $(window).scroll(function(){
             var windowTop = $(window).scrollTop();
 
+            console.log(stickyBottom, windowTop);
+            
             if(stickyTop < windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
