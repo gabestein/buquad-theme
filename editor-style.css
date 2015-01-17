@@ -784,8 +784,8 @@ article.single {
           article.single footer .plea .share-sub a.support:disabled {
             opacity: 0.5;
             cursor: not-allowed; }
-        article.single footer .plea .share-sub .social .facebook, article.single footer .plea .share-sub .social .twitter {
-          display: inline; }
+        article.single footer .plea .share-sub .social {
+          text-align: center; }
 
 html .mceContentBody {
   max-width: 640px;
