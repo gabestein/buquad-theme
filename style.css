@@ -1233,6 +1233,118 @@ article.single, article.page, article.archive {
     background-color: #333; }
     article.single .share-fixed ul, article.page .share-fixed ul, article.archive .share-fixed ul {
       list-style-type: none; }
+      article.single .share-fixed ul a.facebook, article.page .share-fixed ul a.facebook, article.archive .share-fixed ul a.facebook {
+        background-color: #3a5795;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .share-fixed ul a.facebook:hover:not(:disabled), article.page .share-fixed ul a.facebook:hover:not(:disabled), article.archive .share-fixed ul a.facebook:hover:not(:disabled) {
+          background-color: #3c60ac;
+          cursor: pointer; }
+        article.single .share-fixed ul a.facebook:active:not(:disabled), article.page .share-fixed ul a.facebook:active:not(:disabled), article.archive .share-fixed ul a.facebook:active:not(:disabled), article.single .share-fixed ul a.facebook:focus:not(:disabled), article.page .share-fixed ul a.facebook:focus:not(:disabled), article.archive .share-fixed ul a.facebook:focus:not(:disabled) {
+          background-color: #364e7f;
+          cursor: pointer; }
+        article.single .share-fixed ul a.facebook:disabled, article.page .share-fixed ul a.facebook:disabled, article.archive .share-fixed ul a.facebook:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .share-fixed ul a.twitter, article.page .share-fixed ul a.twitter, article.archive .share-fixed ul a.twitter {
+        background-color: #55acee;
+        border-radius: 3px;
+        border: none;
+        color: #333333;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .share-fixed ul a.twitter:hover:not(:disabled), article.page .share-fixed ul a.twitter:hover:not(:disabled), article.archive .share-fixed ul a.twitter:hover:not(:disabled) {
+          background-color: #69b8f4;
+          cursor: pointer; }
+        article.single .share-fixed ul a.twitter:active:not(:disabled), article.page .share-fixed ul a.twitter:active:not(:disabled), article.archive .share-fixed ul a.twitter:active:not(:disabled), article.single .share-fixed ul a.twitter:focus:not(:disabled), article.page .share-fixed ul a.twitter:focus:not(:disabled), article.archive .share-fixed ul a.twitter:focus:not(:disabled) {
+          background-color: #42a0e7;
+          cursor: pointer; }
+        article.single .share-fixed ul a.twitter:disabled, article.page .share-fixed ul a.twitter:disabled, article.archive .share-fixed ul a.twitter:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .share-fixed ul a.email, article.page .share-fixed ul a.email, article.archive .share-fixed ul a.email {
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .share-fixed ul a.email:hover:not(:disabled), article.page .share-fixed ul a.email:hover:not(:disabled), article.archive .share-fixed ul a.email:hover:not(:disabled) {
+          background-color: #404040;
+          cursor: pointer; }
+        article.single .share-fixed ul a.email:active:not(:disabled), article.page .share-fixed ul a.email:active:not(:disabled), article.archive .share-fixed ul a.email:active:not(:disabled), article.single .share-fixed ul a.email:focus:not(:disabled), article.page .share-fixed ul a.email:focus:not(:disabled), article.archive .share-fixed ul a.email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single .share-fixed ul a.email:hover:not(:disabled), article.page .share-fixed ul a.email:hover:not(:disabled), article.archive .share-fixed ul a.email:hover:not(:disabled) {
+          background-color: #423d3d;
+          cursor: pointer; }
+        article.single .share-fixed ul a.email:active:not(:disabled), article.page .share-fixed ul a.email:active:not(:disabled), article.archive .share-fixed ul a.email:active:not(:disabled), article.single .share-fixed ul a.email:focus:not(:disabled), article.page .share-fixed ul a.email:focus:not(:disabled), article.archive .share-fixed ul a.email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single .share-fixed ul a.email:disabled, article.page .share-fixed ul a.email:disabled, article.archive .share-fixed ul a.email:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .share-fixed ul a.support, article.page .share-fixed ul a.support, article.archive .share-fixed ul a.support {
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .share-fixed ul a.support:hover:not(:disabled), article.page .share-fixed ul a.support:hover:not(:disabled), article.archive .share-fixed ul a.support:hover:not(:disabled) {
+          background-color: #2d2d2d;
+          cursor: pointer; }
+        article.single .share-fixed ul a.support:active:not(:disabled), article.page .share-fixed ul a.support:active:not(:disabled), article.archive .share-fixed ul a.support:active:not(:disabled), article.single .share-fixed ul a.support:focus:not(:disabled), article.page .share-fixed ul a.support:focus:not(:disabled), article.archive .share-fixed ul a.support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single .share-fixed ul a.support:hover:not(:disabled), article.page .share-fixed ul a.support:hover:not(:disabled), article.archive .share-fixed ul a.support:hover:not(:disabled) {
+          background-color: #2f2b2b;
+          cursor: pointer; }
+        article.single .share-fixed ul a.support:active:not(:disabled), article.page .share-fixed ul a.support:active:not(:disabled), article.archive .share-fixed ul a.support:active:not(:disabled), article.single .share-fixed ul a.support:focus:not(:disabled), article.page .share-fixed ul a.support:focus:not(:disabled), article.archive .share-fixed ul a.support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single .share-fixed ul a.support:disabled, article.page .share-fixed ul a.support:disabled, article.archive .share-fixed ul a.support:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
       article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
         float: left; }
     @media screen and (min-width: 800px) {

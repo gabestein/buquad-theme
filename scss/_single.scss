@@ -1,5 +1,4 @@
 /* SINGLE */
-
 $article-width: 640px;
 $vertical-spacing: 24px;
 @mixin image-alignment {
@@ -30,6 +29,22 @@ $vertical-spacing: 24px;
       margin: 0 auto;
   }
 }
+
+@mixin social-buttons {
+  a.facebook {
+    @include button(flat, $color-facebook);
+  }
+  a.twitter {
+    @include button(flat, $color-twitter);
+  }
+  a.email {
+    @include button(flat, $color-grey);
+  }
+  a.support {
+    @include button(flat, $color-black);
+  }
+}
+
 .recommender {
   overflow: hidden;
   background-color: $color-grey;
@@ -364,18 +379,7 @@ article.single {
           }
           font-family: 'Architects Daughter', Helvetica, sans-serif;
           text-transform: uppercase;
-          a.facebook {
-            @include button(flat, $color-facebook);
-          }
-          a.twitter {
-            @include button(flat, $color-twitter);
-          }
-          a.email {
-            @include button(flat, $color-grey);
-          }
-          a.support {
-            @include button(flat, $color-black);
-          }
+          @include social-buttons;
         }
       }
     }
@@ -389,6 +393,7 @@ article.single {
     width: 100%;
     background-color: $color-grey;
     ul {
+      @include social-buttons;
       list-style-type: none;
       li {
         float: left;
