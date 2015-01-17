@@ -405,7 +405,10 @@ article.single {
       top: 14px;
       left: 30px;
       ul {
-        li { float: none; }
+        li {
+          float: none;
+          margin-bottom: 0.5em;
+        }
       }
     }
   }

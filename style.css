@@ -1354,7 +1354,8 @@ article.single, article.page, article.archive {
         top: 14px;
         left: 30px; }
         article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
-          float: none; } }
+          float: none;
+          margin-bottom: 0.5em; } }
 
 article.page header, article.archive header {
   height: 3em;
