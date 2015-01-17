@@ -455,6 +455,7 @@ blockquote {
         text-decoration: none; }
     [type="card"] .top img {
       display: block;
+      width: 50%;
       height: auto;
       border-bottom: 1px solid black;
       border-top-left-radius: 0px;
