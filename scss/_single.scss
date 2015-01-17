@@ -48,8 +48,11 @@ $vertical-spacing: 24px;
     .container {
       display: none;
       p.cta {
-        display: block;
+        display: none;
         padding: 0 25px;
+        @include media(400px) {
+          display: block;
+        }
         @include media(800px) {
           display: none;
         }
