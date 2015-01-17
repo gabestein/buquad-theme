@@ -87,7 +87,8 @@
 
           $(window).scroll(function(){
             var windowTop = $(window).scrollTop();
-
+            var windowBottom = windowTop - $(window).height();
+            
             console.log(windowTop, footerHeight);
 
             if(stickyTop < windowTop) {
