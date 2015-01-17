@@ -1066,8 +1066,11 @@ article.single, article.page, article.archive {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-    margin: 0 auto 1.5em auto;
-    border-top: 2px dashed #333; }
+    margin: 1.5em auto;
+    border-top: 1px dotted #999999; }
+    article.single footer .plea, article.page footer .plea, article.archive footer .plea {
+      color: #999999;
+      font-size: 0.9em; }
 
 article.page header, article.archive header {
   height: 3em;

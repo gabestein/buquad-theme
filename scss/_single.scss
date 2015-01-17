@@ -307,7 +307,12 @@ article.single {
       max-width: 640px;
       margin-left: auto;
       margin-right: auto;
-      margin: 0 auto 1.5em auto;
-      border-top: 2px dashed $color-grey;
+      margin: 1.5em auto;
+      border-top: 1px dotted lighten($color-grey, 40);
+
+      .plea {
+        color: lighten($color-grey, 40);
+        font-size: 0.9em;
+      }
     }
 }
