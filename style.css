@@ -1214,6 +1214,8 @@ article.single, article.page, article.archive {
           article.single footer .plea .share-sub a.support:disabled, article.page footer .plea .share-sub a.support:disabled, article.archive footer .plea .share-sub a.support:disabled {
             opacity: 0.5;
             cursor: not-allowed; }
+        article.single footer .plea .share-sub .social, article.page footer .plea .share-sub .social, article.archive footer .plea .share-sub .social {
+          text-align: center; }
 
 article.page header, article.archive header {
   height: 3em;

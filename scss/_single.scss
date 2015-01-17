@@ -362,6 +362,9 @@ article.single {
         a.support {
           @include button(flat, $color-black);
         }
+        .social {
+          text-align: center;
+        }
       }
       }
     }
