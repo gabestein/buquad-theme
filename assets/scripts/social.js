@@ -30,7 +30,6 @@ function twitter_share(url, text) {
         height = 400,
         left   = ($(window).width()  - width)  / 2,
         top    = ($(window).height() - height) / 2,
-        url    = this.href,
         opts   = 'status=1' +
         ',width='  + width  +
         ',height=' + height +
