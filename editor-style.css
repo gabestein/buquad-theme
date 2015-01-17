@@ -924,7 +924,8 @@ article.single {
         top: 14px;
         left: 30px; }
         article.single .share-fixed ul li {
-          float: none; } }
+          float: none;
+          margin-bottom: 0.5em; } }
 
 html .mceContentBody {
   max-width: 640px;
