@@ -109,16 +109,6 @@ $border-radius: 0px;
     }
     img {
       display: block;
-      width: 100%;
-      @include media(400px) {
-        width: 230px;
-      }
-      @include media(510px) {
-        width: 254px;
-      }
-      @include media(800px) {
-        width: 284px;
-      }
       @include media($large-screen) {
         width: 100%;
       }
