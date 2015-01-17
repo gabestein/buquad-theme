@@ -81,11 +81,11 @@
         } else {
 
           var stickyTop = $('article .body').offset().top;
+          var sitckyBottom - $('article footer .recommender').offset().top;
 
           $(window).scroll(function(){
             var windowTop = $(window).scrollTop();
-
-            if(stickyTop < windowTop) {
+            if(stickyTop < windowTop && stickyTop < stickyBottom) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
               $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
