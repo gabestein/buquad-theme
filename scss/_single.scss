@@ -350,16 +350,16 @@ article.single {
         }
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase;
-        .facebook {
+        a.facebook {
           @include button(flat, $color-facebook);
         }
-        .twitter {
+        a.twitter {
           @include button(flat, $color-twitter);
         }
-        .email {
+        a.email {
           @include button(flat, $color-grey);
         }
-        .support {
+        a.support {
           @include button(flat, $color-black);
         }
       }
