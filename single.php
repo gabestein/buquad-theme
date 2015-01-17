@@ -40,9 +40,16 @@
         <?php wp_link_pages(array('before' => '<div class="paginate">Page:', 'after' => '</div>', 'next_or_number' => 'number')); ?>
     </section>
     <footer>
+      <section class="plea">
+        <p class="comments"><strong>Got thoughts, comments or questions about this story?</strong> Send me a note here, or via email at edstein2 at gmail dot com. I publish my favorite comments weekly on my blog.</p>
+        <p class="appeal">After a 37-year career in print, it's not easy building an audience from scratch. So if you enjoy Sleeper Ave., please help me out by subscribing, donating if you can, but most importantly, spreading the word. Share this story on Facebook, Twitter and elsewhere, email it to your friends, let people know! Every little bit helps, and I'll be forever grateful. Thanks, Ed.</p>
+        <div class="shares-subscribe">
+        </div>
+      </section>
         <!--<?php user_card(get_the_author_meta('ID')); ?>-->
     </footer>
 </article>
+
 <section class="recommender">
   <?php
 
