@@ -308,11 +308,14 @@ article.single {
       margin-left: auto;
       margin-right: auto;
       margin: 1.5em auto;
-      border-top: 1px dotted lighten($color-grey, 40);
-
+      border-top: 1px dotted lighten($color-grey, 25);
+      padding-top: 1.5em;
       .plea {
-        color: lighten($color-grey, 40);
+        color: lighten($color-grey, 25);
         font-size: 0.9em;
+        p {
+          margin: 1em 0;
+        }
       }
     }
 }
