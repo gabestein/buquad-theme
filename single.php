@@ -91,7 +91,8 @@
             var windowBottom = windowTop + windowHeight;
             var stickyBottom = windowHeight - footerHeight;
 
-            console.log(windowBottom, stickyBottom);
+            console.log(windowHeight);
+//            console.log(windowBottom, stickyBottom);
 
             if(stickyTop < windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
