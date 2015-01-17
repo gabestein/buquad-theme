@@ -85,9 +85,10 @@
 
           $(window).scroll(function(){
 
-            console.log(stickyTop, windowTop, sitckyBottom);
-
             var windowTop = $(window).scrollTop();
+
+            console.log(stickyTop, windowTop, sitckyBottom);
+            
             if(stickyTop < windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
