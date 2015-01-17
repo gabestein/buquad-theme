@@ -658,7 +658,7 @@ article.single {
           text-align: center;
           margin-top: 20px; }
         article.single footer .plea .share-sub form {
-          margin: 20px auto 0;
+          margin: 0 auto;
           max-width: 400px;
           text-align: center; }
         article.single footer .plea .share-sub a {
