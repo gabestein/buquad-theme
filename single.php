@@ -44,6 +44,7 @@
         <p class="comments"><strong>Thoughts, comments or questions about this story?</strong> Send me a note <a href="/feedback">here</a>, or via email at <a href="mailto:ed@sleeperave.com?subject=Comment on <?php the_title(); ?>" target="_blank">ed@sleeperave.com</a>. I publish my favorite comments weekly on my blog.</p>
         <p class="appeal"><strong>I need your help!</strong> After a 37-year career in print, it's not easy building an audience from scratch. So if you enjoy Sleeper Ave., please help me out by subscribing, donating if you can, but most importantly, spreading the word. Share this story on Facebook, Twitter and elsewhere, email it to your friends, let people know! Every little bit helps, and I'll be forever grateful. Thanks! -- Ed</p>
         <div class="shares-subscribe">
+          <button>Test</button>
         </div>
       </section>
         <!--<?php user_card(get_the_author_meta('ID')); ?>-->
