@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
-<section class="recommender">
+<section class="recommender top">
   <?php
 
     $prev_post = get_previous_post();
@@ -113,7 +113,7 @@
     </div>
 </article>
 
-<section class="recommender top">
+<section class="recommender bottom">
   <?php
 
   $prev_post = get_previous_post();
