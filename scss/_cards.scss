@@ -109,6 +109,7 @@ $border-radius: 0px;
     }
     img {
       display: block;
+      width: 50%;
       @include media($large-screen) {
         width: 100%;
       }
