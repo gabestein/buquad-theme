@@ -325,6 +325,11 @@ article.single {
           margin: 1em 0;
         }
       .share-sub {
+        form {
+          margin: 20px auto 0;
+          max-width: 400px;
+          text-align: center;
+        }
         a {
           display: block;
           clear: both;
@@ -336,13 +341,6 @@ article.single {
             display: auto;
             clear: none;
             margin: 0;
-          }
-          form {
-            margin: 10px;
-            text-align: center;
-            input {
-              max-width: 400px;
-            }
           }
         }
         font-family: 'Architects Daughter', Helvetica, sans-serif;
