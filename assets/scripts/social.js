@@ -22,7 +22,27 @@ function fb_share(url) {
 
 
 function twitter_share(url, text) {
-  console.log(url, text);
+  var intent = 'https://twitter.com/intent?url='+ url + '&text=' + text + '&via=sleeperave';
+
+  (function($) {
+    $('.popup').click(function(event) {
+      var width  = 575,
+      height = 400,
+      left   = ($(window).width()  - width)  / 2,
+      top    = ($(window).height() - height) / 2,
+      url    = this.href,
+      opts   = 'status=1' +
+      ',width='  + width  +
+      ',height=' + height +
+      ',top='    + top    +
+      ',left='   + left;
+
+      window.open(intent, 'twitter', opts);
+
+      return false;
+    });
+  })(jQuery);
+  
 }
 
 function fb_action_logger() {
