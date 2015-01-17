@@ -34,7 +34,7 @@ $vertical-spacing: 24px;
   overflow: hidden;
   background-color: $color-grey;
   .action {
-    clear: both;
+    //clear: both;
     color: $color-white;
     padding: 10px;
     @include media(944px) {

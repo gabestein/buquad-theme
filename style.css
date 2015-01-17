@@ -765,7 +765,6 @@ blockquote {
   overflow: hidden;
   background-color: #333; }
   .recommender .action {
-    clear: both;
     color: #FCFCFC;
     padding: 10px; }
     @media screen and (min-width: 944px) {
