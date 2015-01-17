@@ -20,6 +20,7 @@ function fb_share(url) {
   }, function(response){});
 }
 
+
 function twitter_share() {
   twttr.events.trigger('click', {});
 }
