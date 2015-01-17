@@ -1080,6 +1080,118 @@ article.single, article.page, article.archive {
           font-style: normal; }
         article.single footer .plea p strong, article.page footer .plea p strong, article.archive footer .plea p strong {
           font-weight: bold; }
+      article.single footer .plea .share-sub .facebook, article.page footer .plea .share-sub .facebook, article.archive footer .plea .share-sub .facebook {
+        background-color: #3a5795;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single footer .plea .share-sub .facebook:hover:not(:disabled), article.page footer .plea .share-sub .facebook:hover:not(:disabled), article.archive footer .plea .share-sub .facebook:hover:not(:disabled) {
+          background-color: #3c60ac;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .facebook:active:not(:disabled), article.page footer .plea .share-sub .facebook:active:not(:disabled), article.archive footer .plea .share-sub .facebook:active:not(:disabled), article.single footer .plea .share-sub .facebook:focus:not(:disabled), article.page footer .plea .share-sub .facebook:focus:not(:disabled), article.archive footer .plea .share-sub .facebook:focus:not(:disabled) {
+          background-color: #364e7f;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .facebook:disabled, article.page footer .plea .share-sub .facebook:disabled, article.archive footer .plea .share-sub .facebook:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single footer .plea .share-sub .twitter, article.page footer .plea .share-sub .twitter, article.archive footer .plea .share-sub .twitter {
+        background-color: #55acee;
+        border-radius: 3px;
+        border: none;
+        color: #333333;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single footer .plea .share-sub .twitter:hover:not(:disabled), article.page footer .plea .share-sub .twitter:hover:not(:disabled), article.archive footer .plea .share-sub .twitter:hover:not(:disabled) {
+          background-color: #69b8f4;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .twitter:active:not(:disabled), article.page footer .plea .share-sub .twitter:active:not(:disabled), article.archive footer .plea .share-sub .twitter:active:not(:disabled), article.single footer .plea .share-sub .twitter:focus:not(:disabled), article.page footer .plea .share-sub .twitter:focus:not(:disabled), article.archive footer .plea .share-sub .twitter:focus:not(:disabled) {
+          background-color: #42a0e7;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .twitter:disabled, article.page footer .plea .share-sub .twitter:disabled, article.archive footer .plea .share-sub .twitter:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single footer .plea .share-sub .email, article.page footer .plea .share-sub .email, article.archive footer .plea .share-sub .email {
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single footer .plea .share-sub .email:hover:not(:disabled), article.page footer .plea .share-sub .email:hover:not(:disabled), article.archive footer .plea .share-sub .email:hover:not(:disabled) {
+          background-color: #404040;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .email:active:not(:disabled), article.page footer .plea .share-sub .email:active:not(:disabled), article.archive footer .plea .share-sub .email:active:not(:disabled), article.single footer .plea .share-sub .email:focus:not(:disabled), article.page footer .plea .share-sub .email:focus:not(:disabled), article.archive footer .plea .share-sub .email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .email:hover:not(:disabled), article.page footer .plea .share-sub .email:hover:not(:disabled), article.archive footer .plea .share-sub .email:hover:not(:disabled) {
+          background-color: #423d3d;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .email:active:not(:disabled), article.page footer .plea .share-sub .email:active:not(:disabled), article.archive footer .plea .share-sub .email:active:not(:disabled), article.single footer .plea .share-sub .email:focus:not(:disabled), article.page footer .plea .share-sub .email:focus:not(:disabled), article.archive footer .plea .share-sub .email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .email:disabled, article.page footer .plea .share-sub .email:disabled, article.archive footer .plea .share-sub .email:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single footer .plea .share-sub .support, article.page footer .plea .share-sub .support, article.archive footer .plea .share-sub .support {
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single footer .plea .share-sub .support:hover:not(:disabled), article.page footer .plea .share-sub .support:hover:not(:disabled), article.archive footer .plea .share-sub .support:hover:not(:disabled) {
+          background-color: #2d2d2d;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .support:active:not(:disabled), article.page footer .plea .share-sub .support:active:not(:disabled), article.archive footer .plea .share-sub .support:active:not(:disabled), article.single footer .plea .share-sub .support:focus:not(:disabled), article.page footer .plea .share-sub .support:focus:not(:disabled), article.archive footer .plea .share-sub .support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .support:hover:not(:disabled), article.page footer .plea .share-sub .support:hover:not(:disabled), article.archive footer .plea .share-sub .support:hover:not(:disabled) {
+          background-color: #2f2b2b;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .support:active:not(:disabled), article.page footer .plea .share-sub .support:active:not(:disabled), article.archive footer .plea .share-sub .support:active:not(:disabled), article.single footer .plea .share-sub .support:focus:not(:disabled), article.page footer .plea .share-sub .support:focus:not(:disabled), article.archive footer .plea .share-sub .support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single footer .plea .share-sub .support:disabled, article.page footer .plea .share-sub .support:disabled, article.archive footer .plea .share-sub .support:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
 
 article.page header, article.archive header {
   height: 3em;
