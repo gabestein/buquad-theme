@@ -80,10 +80,6 @@ $border-radius: 0px;
   }
 
   width: 50%;
-  margin-bottom: 10px;
-  @include media(800px) {
-    margin: 0;
-  }
   @include media(940px) {
     width: 100%;
   }
@@ -231,7 +227,7 @@ $border-radius: 0px;
 
   @media screen and (min-width: 300px) {
     display: inline-block;
-    //margin-bottom: 0em;
+    margin-bottom: 0em;
     margin-left: 0em;
   }
 

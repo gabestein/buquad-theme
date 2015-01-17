@@ -406,7 +406,6 @@ blockquote {
 
 [type="card"] {
   width: 50%;
-  margin-bottom: 10px;
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -443,9 +442,6 @@ blockquote {
     width: 100%;
     height: 100%;
     overflow: hidden; }
-  @media screen and (min-width: 800px) {
-    [type="card"] {
-      margin: 0; } }
   @media screen and (min-width: 940px) {
     [type="card"] {
       width: 100%; } }
@@ -558,6 +554,7 @@ blockquote {
   @media screen and (min-width: 300px) {
     [type="card"] {
       display: inline-block;
+      margin-bottom: 0em;
       margin-left: 0em; } }
 
 #brand {
@@ -780,7 +777,11 @@ blockquote {
   background-color: #333; }
   .recommender .action {
     color: #FCFCFC;
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 75px; }
+    @media screen and (min-width: 800) {
+      .recommender .action {
+        margin-top: 0; } }
     @media screen and (min-width: 944px) {
       .recommender .action {
         clear: none;
@@ -800,7 +801,8 @@ blockquote {
           .recommender .action .container p.cta {
             display: none;
             font-size: 0.85em;
-            line-height: 1.3em; } }
+            line-height: 1.3em;
+            margin: 0; } }
       .recommender .action .container .button {
         margin-top: 10px;
         margin-bottom: 10px; }
