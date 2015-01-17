@@ -389,7 +389,7 @@ article.single {
           float: left;
         }
       }
-      @media include(800px) {
+      @include media(800px) {
         top: 0;
         left: 0;
         ul {
