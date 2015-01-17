@@ -358,11 +358,7 @@ blockquote {
   background-color: #333; }
   .recommender .action {
     color: #FCFCFC;
-    padding: 10px;
-    margin-top: 75px; }
-    @media screen and (min-width: 800) {
-      .recommender .action {
-        margin-top: 0; } }
+    padding: 10px; }
     @media screen and (min-width: 944px) {
       .recommender .action {
         clear: none;
@@ -382,8 +378,7 @@ blockquote {
           .recommender .action .container p.cta {
             display: none;
             font-size: 0.85em;
-            line-height: 1.3em;
-            margin: 0; } }
+            line-height: 1.3em; } }
       .recommender .action .container .button {
         margin-top: 10px;
         margin-bottom: 10px; }
