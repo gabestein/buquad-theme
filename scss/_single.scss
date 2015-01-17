@@ -49,7 +49,7 @@ $vertical-spacing: 24px;
       display: none;
       p.cta {
         display: block;
-        padding: 120px 50px 0;
+        padding: 0 50px;
         @include media(800px) {
           display: none;
         }
