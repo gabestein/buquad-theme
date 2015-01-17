@@ -43,7 +43,24 @@
         <!--<?php user_card(get_the_author_meta('ID')); ?>-->
     </footer>
 </article>
+<section class="recommender">
+  <?php
 
+  $prev_post = get_previous_post();
+  if($prev_post !== '') {
+    article_card($prev_post->ID, 'prev');
+  }
+
+  $next_post = get_next_post();
+  if($next_post !== '') {
+    article_card($next_post->ID, 'next');
+  }
+
+  //get our actions
+  action_unit();
+
+  ?>
+</section>
 <?php } /* close while */ } else { ?>
 
 <article class="404">
