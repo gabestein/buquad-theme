@@ -412,6 +412,7 @@ article.single {
       }
     }
     @include media(1020px) {
+      text-align: left;
       border-top: 0;
       padding: 0;
       display: block;
@@ -423,6 +424,7 @@ article.single {
       ul {
         li {
           float: none;
+          display: block;
           margin-bottom: 0.5em;
         }
       }

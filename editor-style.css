@@ -928,6 +928,7 @@ article.single {
         display: inline; } }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed {
+        text-align: left;
         border-top: 0;
         padding: 0;
         display: block;
@@ -938,6 +939,7 @@ article.single {
         left: 30px; }
         article.single .share-fixed ul li {
           float: none;
+          display: block;
           margin-bottom: 0.5em; } }
 
 html .mceContentBody {

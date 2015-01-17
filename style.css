@@ -1358,6 +1358,7 @@ article.single, article.page, article.archive {
         display: inline; } }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
+        text-align: left;
         border-top: 0;
         padding: 0;
         display: block;
@@ -1368,6 +1369,7 @@ article.single, article.page, article.archive {
         left: 30px; }
         article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
           float: none;
+          display: block;
           margin-bottom: 0.5em; } }
 
 article.page header, article.archive header {
