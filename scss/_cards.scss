@@ -83,6 +83,7 @@ $border-radius: 0px;
   @include media($large-screen) {
     width: 100%;
   }
+
   display: block;
   @include box-sizing(border-box);
   max-width: 400px;
@@ -101,7 +102,10 @@ $border-radius: 0px;
     color: white;
     text-shadow: 1px, 1px, 1px, 0, black;
     h1 {
-      font-size: 24px;
+      font-size: 1em;
+      @include media($medium-screen) {
+        font-size: 24px;
+      }
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 6px lighten($color-black, 10);
