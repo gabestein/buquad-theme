@@ -13,6 +13,12 @@ jQuery(document).ready(function($) {
   }
 });
 
+function fb_share(url) {
+  FB.ui({
+    method: 'share',
+    href: url,
+  }, function(response){});
+}
 function fb_action_logger() {
   FB.Event.subscribe('edge.create', function(url, element){
     (function($) {
