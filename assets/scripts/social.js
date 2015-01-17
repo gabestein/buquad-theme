@@ -21,6 +21,7 @@ jQuery(document).ready(function($) {
     });
 
     if(stickyTop < windowTop) {
+      console.log('stick');
       $('.share-fixed').css({ position: fixed });
     }
   }
