@@ -77,15 +77,20 @@
           }
         });
       } else {
+
         var stickyTop = $('article .body').offset().top;
 
         $(window).scroll(function(){
           var windowTop = $(window).scrollTop();
+
+          console.log(stickyTop, windowTop);
+          
           if(stickyTop < windowTop) {
             $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
           } else {
             $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
           }
+
         });
 
       }
