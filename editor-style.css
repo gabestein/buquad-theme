@@ -646,6 +646,8 @@ article.single {
         margin: 1em 0; }
         article.single footer .plea p em {
           font-style: normal; }
+        article.single footer .plea p strong {
+          font-weight: bold; }
 
 html .mceContentBody {
   max-width: 640px;
