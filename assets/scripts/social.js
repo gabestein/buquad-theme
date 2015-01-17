@@ -29,11 +29,10 @@ jQuery(document).ready(function($) {
 
     $(window).scroll(function(){
       var windowTop = $(window).scrollTop();
-
       if(stickyTop < windowTop) {
-        $('.share-fixed').css({ 'position' : 'fixed' });
+        $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
       } else {
-        $('.share-fixed').css({ 'display' : 'none' });
+        $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
       }
     });
 
