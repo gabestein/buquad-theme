@@ -100,7 +100,6 @@
         <!-- Facebook JS API -->
         <div id="fb-root"></div>
         <script>
-        <script>
         window.fbAsyncInit = function() {
           FB.init({
             appId      : '361979493926818',
