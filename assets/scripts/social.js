@@ -6,11 +6,13 @@
   window.visits = $.cookie('visits') || 1;
 
   if(window.is_email) {
+    console.log('hey');
     $('.action .support').fadeIn('slow');
     $('.plea .subscribe').fadeOut('fast');
   } else {
     $('.action .subscribe').fadeIn('slow');
   }
+
 })(jQuery);
 
 function fb_action_logger() {
