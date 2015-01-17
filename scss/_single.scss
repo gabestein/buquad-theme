@@ -325,7 +325,19 @@ article.single {
           margin: 1em 0;
         }
       .share-sub {
-        color: $color-white;
+        a {
+          display: block;
+          clear: both;
+          width: 100%;
+          margin: 6px 0;
+          
+          @include media($small-screen) {
+            width: auto;
+            display: auto;
+            clear: none;
+            margin: 0;
+          }
+        }
         font-family: 'Architects Daughter', Helvetica, sans-serif;
         text-transform: uppercase;
         .facebook {
