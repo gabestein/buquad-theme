@@ -602,7 +602,7 @@ blockquote {
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }
   .secondary-menu ul, .footer-menu ul {
-    background-color: #202020; }
+    background-color: #333; }
   .secondary-menu a, .footer-menu a {
     text-decoration: none; }
     .secondary-menu a:link, .secondary-menu a:visited, .footer-menu a:link, .footer-menu a:visited {
