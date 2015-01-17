@@ -2,6 +2,8 @@
 scss
 .gitignore
 .git-ftp-ignore
+style.css.map
+editor-style.css.map
 Gemfile
 Gemfile.lock
 .ruby-version
