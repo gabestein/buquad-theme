@@ -405,7 +405,6 @@ blockquote {
     text-decoration: none; }
 
 [type="card"] {
-  width: 50%;
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -429,7 +428,11 @@ blockquote {
     float: right; }
   [type="card"] .prev, [type="card"] .next {
     height: 100%;
-    font-size: 3em; }
+    font-size: 3em;
+    width: 50%; }
+    @media screen and (min-width: 940px) {
+      [type="card"] .prev, [type="card"] .next {
+        width: 100%; } }
   [type="card"] i.fa {
     margin: 0 15px; }
     @media screen and (min-width: 405px) {
@@ -445,9 +448,6 @@ blockquote {
     width: 100%;
     height: 100%;
     overflow: hidden; }
-  @media screen and (min-width: 940px) {
-    [type="card"] {
-      width: 100%; } }
   [type="card"] .top {
     position: relative;
     color: white;
