@@ -804,8 +804,8 @@ article.single {
         float: left; }
     @media screen and (min-width: 800px) {
       article.single .share-fixed {
-        top: 0;
-        left: 0; }
+        top: 14px;
+        left: 30px; }
         article.single .share-fixed ul li {
           float: none; } }
 

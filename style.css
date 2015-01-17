@@ -1234,8 +1234,8 @@ article.single, article.page, article.archive {
         float: left; }
     @media screen and (min-width: 800px) {
       article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
-        top: 0;
-        left: 0; }
+        top: 14px;
+        left: 30px; }
         article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
           float: none; } }
 

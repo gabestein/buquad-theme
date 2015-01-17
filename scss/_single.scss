@@ -101,6 +101,7 @@ $vertical-spacing: 24px;
   }
 }
 article.single {
+    position: relative;
     width: 100%;
     // @include outer-container;
 
@@ -392,8 +393,8 @@ article.single {
       }
     }
     @include media(800px) {
-      top: 0;
-      left: 0;
+      top: 14px;
+      left: 30px;
       ul {
         li { float: none; }
       }
