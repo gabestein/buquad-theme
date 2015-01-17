@@ -93,7 +93,7 @@
 
             console.log(windowBottom, stickyBottom);
 
-            if(stickyTop < windowTop && stickyBottom < windowBottom) {
+            if(stickyTop < windowTop && stickyBottom > windowBottom) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
               $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
