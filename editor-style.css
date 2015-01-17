@@ -784,10 +784,11 @@ article.single {
             opacity: 0.5;
             cursor: not-allowed; }
         article.single footer .plea .share-sub .social {
-          margin: 6px 40px;
+          margin: 0 40px;
+          padding: 10px 0;
           text-align: center;
           border: 1px solid #333;
-          background-color: lightyellow; }
+          background-color: #333; }
           article.single footer .plea .share-sub .social .twitter-follow-button {
             margin-bottom: -9px; }
         article.single footer .plea .share-sub .share {

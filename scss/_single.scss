@@ -362,10 +362,11 @@ article.single {
           @include button(flat, $color-black);
         }
         .social {
-          margin: 6px 40px;
+          margin: 0 40px;
+          padding: 10px 0;
           text-align: center;
           border: 1px solid $color-grey;
-          background-color: lightyellow;
+          background-color: lighten($color-grey, 70);
           .twitter-follow-button {
             margin-bottom: -9px;
           }
