@@ -78,6 +78,7 @@
               $('.share-fixed').css({ 'position' : 'absolute' });
             }
           });
+
         } else {
 
           var stickyTop = $('article .body').offset().top;
@@ -88,7 +89,7 @@
             var windowBottom = windowTop + $(window).height();
 
             console.log(stickyTop, windowTop, stickyBottom, windowBottom);
-            
+
             if(stickyTop < windowTop && stickyBottom > windowBottom) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
