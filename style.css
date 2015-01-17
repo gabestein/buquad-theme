@@ -1062,6 +1062,12 @@ article.single, article.page, article.archive {
       article.single img.aligncenter, article.page img.aligncenter, article.archive img.aligncenter {
         padding: 0.5em 0;
         max-width: 100%; } }
+  article.single footer, article.page footer, article.archive footer {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto 1.5em auto;
+    border-top: 2px dashed #333; }
 
 article.page header, article.archive header {
   height: 3em;
