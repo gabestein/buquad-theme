@@ -52,6 +52,8 @@ $vertical-spacing: 24px;
           line-height: 1.3em;
         }
         @include media(1192px) {
+          font-size: 1em;
+          line-height: inherit;
           display: block;
         }
         font-style: italic;

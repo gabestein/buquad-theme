@@ -797,6 +797,8 @@ blockquote {
             line-height: 1.3em; } }
         @media screen and (min-width: 1192px) {
           .recommender .action .container p.cta {
+            font-size: 1em;
+            line-height: inherit;
             display: block; } }
       .recommender .action .container .button {
         margin-top: 10px;
