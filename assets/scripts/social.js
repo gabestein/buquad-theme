@@ -11,6 +11,19 @@ jQuery(document).ready(function($) {
   } else {
     $('.action .subscribe').fadeIn('slow');
   }
+
+  if($(window).width() > 800) {
+    var stickyTop = $('.fixed-bar').offset().top;
+
+    $(window).scroll(function(){
+      var windowTop = $(window).scrollTop();
+    });
+
+    if(stickyTop < windowTop) {
+      $('.fixed-bar').css({ position: fixed });
+    }
+  }
+
 });
 
 function fb_share(url) {
