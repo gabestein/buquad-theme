@@ -921,6 +921,11 @@ article.single {
           cursor: not-allowed; }
       article.single .share-fixed ul li {
         display: inline-block; }
+    article.single .share-fixed .hide-small {
+      display: none; }
+    @media screen and (min-width: 480px) {
+      article.single .share-fixed span.hide-small {
+        display: inline; } }
     @media screen and (min-width: 1020px) {
       article.single .share-fixed {
         border-top: 0;

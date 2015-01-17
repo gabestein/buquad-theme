@@ -403,6 +403,14 @@ article.single {
         display: inline-block;
       }
     }
+    .hide-small {
+      display: none;
+    }
+    @include media(480px) {
+      span.hide-small {
+        display: inline;
+      }
+    }
     @include media(1020px) {
       border-top: 0;
       padding: 0;

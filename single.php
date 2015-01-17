@@ -44,10 +44,22 @@
         <p class="comments"><strong>Thoughts, comments or questions about this story?</strong> Send me a note <a href="/feedback">here</a>, or via email at <a href="mailto:ed@sleeperave.com?subject=Comment on <?php the_title(); ?>" target="_blank">ed@sleeperave.com</a>. I publish my favorite comments weekly on my blog.</p>
         <div class="share-sub">
           <div class="share">
-            <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')"><i class="fa fa-facebook"></i> Share</a>
-            <a class="twitter" onclick="twitter_share('<?php the_permalink(); ?>', '<?php echo get_the_excerpt(); ?>')"><i class="fa fa-twitter"></i> Tweet</a>
-            <a class="email" target="_blank" href="mailto:?subject=Sleeper Ave.: <?php the_title(); ?>&body=Hi!%0D%0A%0D%0AI thought you might enjoy this Sleeper Ave. comic by Ed Stein.%0D%0A%0D%0A<?php htmlentities(the_title()); ?>%0D%0A<?php echo htmlentities(get_the_excerpt()); ?>%0D%0A%0D%0A<?php htmlentities(the_permalink()); ?>"><i class="fa fa-envelope"></i> Email a Friend</a>
-            <a class="support" href="http://beaconreader.com/projects/sleeper-ave"><i class="fa fa-credit-card"></i> Support</a>
+            <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')">
+              <i class="fa fa-facebook"></i>
+              <span class="hide-small"> Share</span>
+            </a>
+            <a class="twitter" onclick="twitter_share('<?php the_permalink(); ?>', '<?php echo get_the_excerpt(); ?>')">
+              <i class="fa fa-twitter"></i>
+              <span class="hide-small"> Tweet</span>
+            </a>
+            <a class="email" target="_blank" href="mailto:?subject=Sleeper Ave.: <?php the_title(); ?>&body=Hi!%0D%0A%0D%0AI thought you might enjoy this Sleeper Ave. comic by Ed Stein.%0D%0A%0D%0A<?php htmlentities(the_title()); ?>%0D%0A<?php echo htmlentities(get_the_excerpt()); ?>%0D%0A%0D%0A<?php htmlentities(the_permalink()); ?>">
+              <i class="fa fa-envelope"></i>
+              <span class="hide-small"> Email a Friend</span>
+            </a>
+            <a class="support" href="http://beaconreader.com/projects/sleeper-ave">
+              <i class="fa fa-credit-card"></i>
+              <span class="hide-small">Support</span>
+            </a>
           </div>
           <div class="subscribe">
             <h3>Subscribe to the Sleeper Ave. mailing list</h3>
