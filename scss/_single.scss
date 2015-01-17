@@ -362,8 +362,8 @@ article.single {
           @include button(flat, $color-black);
         }
         .social {
-          margin: 0 100px;
-          padding: 10px 0;
+          margin: 0 130px;
+          padding: 5px 0 10px;
           text-align: center;
           border: 1px solid $color-grey;
           background-color: lighten($color-grey, 70);

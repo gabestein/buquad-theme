@@ -785,7 +785,7 @@ article.single {
             cursor: not-allowed; }
         article.single footer .plea .share-sub .social {
           margin: 0 100px;
-          padding: 10px 0;
+          padding: 5px 0 10px;
           text-align: center;
           border: 1px solid #333;
           background-color: #e6e6e6; }
