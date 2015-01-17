@@ -77,7 +77,7 @@
           }
         });
       } else {
-        var stickyTop = $('.article .body').offset().top;
+        var stickyTop = $('article .body').offset().top;
 
         $(window).scroll(function(){
           var windowTop = $(window).scrollTop();
