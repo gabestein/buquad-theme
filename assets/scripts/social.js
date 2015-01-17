@@ -23,6 +23,7 @@ function fb_share(url) {
 
 
 function twitter_share(url, text) {
+  console.log(url);
   (function($) {
     var intent = 'https://twitter.com/intent/tweet?url='+ url + '&text=' + text + '&via=sleeperave';
     var width  = 575,
