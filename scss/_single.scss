@@ -51,7 +51,7 @@ $vertical-spacing: 24px;
         }
         font-size: 0.8em;
         line-height: 1.3em;
-        @include meida($medium-screen) {
+        @include media($medium-screen) {
           font-size: 1em;
           line-height: inherit;
         }
