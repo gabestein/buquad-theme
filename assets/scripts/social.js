@@ -29,6 +29,7 @@ function mailchimp_subscribe() {
   (function($) {
     $('.modal .email').fadeOut();
     $('.modal .social').fadeIn();
+    $('.plea .subscribe').fadeOut();
     $.cookie('email_subscriber', 'true', { expires: 7300, path: '/' });
   })(jQuery);
 }
