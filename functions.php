@@ -180,7 +180,7 @@ function article_card($id, $class = '') {
 }
 
 function email_subscribe_form() { ?>
-  <form onsubmit="mailchimp_subscribe()" role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target" novalidate>
+  <form onsubmit="mailchimp_subscribe()" role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target">
   <div class="form-group">
   <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="email address" required>
   </div>
