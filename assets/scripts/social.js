@@ -22,7 +22,7 @@ function fb_share(url) {
 
 
 function twitter_share(url, text) {
-  
+  console.log(url, text);
 }
 
 function fb_action_logger() {
