@@ -24,7 +24,7 @@ function fb_share(url) {
 
 function twitter_share(url, text) {
   (function($) {
-    var intent = 'https://twitter.com/intent?url='+ url + '&text=' + text + '&via=sleeperave';
+    var intent = 'https://twitter.com/intent/tweet?url='+ url + '&text=' + text + '&via=sleeperave';
     var width  = 575,
         height = 400,
         left   = ($(window).width()  - width)  / 2,
@@ -38,7 +38,7 @@ function twitter_share(url, text) {
 
     window.open(intent, 'twitter', opts);
   })(jQuery);
-  
+
   return false;
 }
 
