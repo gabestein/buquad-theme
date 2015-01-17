@@ -197,7 +197,7 @@ $border-radius: 0px;
     }
     summary {
       display: none;
-      @include media(800px) {
+      @include media(640px) {
         display: block;
       }
       font-family: $font-serif;
