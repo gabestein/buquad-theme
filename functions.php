@@ -112,17 +112,7 @@ function subscribe_action() { ?>
           <label class="modal-close" for="modal-1" onclick="modal_exit()"></label>
           <div class="email">
             <h2>Subscribe via Email</h2>
-            <form onsubmit="mailchimp_subscribe()" role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target" novalidate>
-              <div class="form-group">
-                <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
-              </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_95f484d00aece7f081c5241f2_2efc03da6c" tabindex="-1" value=""></div>
-              <div class="clear">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
-              </div>
-            </form>
-            <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
+            <?php email_subscribe_form(); ?>
           </div>
           <div class="social">
             <h2>Thanks so much! While you're at it, follow Sleeper Ave. on Facebook and Twitter, too!</h2>
@@ -189,6 +179,19 @@ function article_card($id, $class = '') {
   <?php
 }
 
+function email_subscribe_form() { ?>
+  <form onsubmit="mailchimp_subscribe()" role="form" action="//edsteinink.us6.list-manage.com/subscribe/post?u=95f484d00aece7f081c5241f2&amp;id=2efc03da6c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="mailchimp_target" novalidate>
+  <div class="form-group">
+  <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+  </div>
+  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+  <div style="position: absolute; left: -5000px;"><input type="text" name="b_95f484d00aece7f081c5241f2_2efc03da6c" tabindex="-1" value=""></div>
+  <div class="clear">
+  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
+  </div>
+  </form>
+  <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
+<?php }
 function user_card($id) {
   // get data
   $fullname = get_the_author_meta('display_name', $id);
