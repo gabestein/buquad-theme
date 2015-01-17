@@ -102,25 +102,6 @@ function subscribe_action() { ?>
   <div class="subscribe container">
     <p class="cta">Want to see Sleeper Ave. plus bonuses from me in your inbox every week? Subscribe! - Ed</p>
     <div class="email">
-    <script>
-
-    function mailchimp_subscribe() {
-      (function($) {
-        $('.modal .email').fadeOut();
-        $('.modal .social').fadeIn();
-        $.cookie('email_subscriber', 'true', { expires: 7300, path: '/' });
-      })(jQuery);
-    }
-
-    function modal_exit() {
-      (function($) {
-        $('.action .subscribe').fadeOut('fast', function(){
-          $('.action .support').fadeIn('slow');
-        });
-      })(jQuery);
-    }
-
-    </script>
     <div class="modal">
       <label for="modal-1">
         <div class="modal-trigger button"><i class="fa fa-envelope"></i> Subscribe via Email</div>
@@ -164,11 +145,6 @@ function support_action() { ?>
   <div class="support container">
     <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) over on Beacon Reader. -- Ed</p>
     <a onclick="donate_action_logger()" href="http://www.beaconreader.com/projects/sleeper-ave" class="button" target="_blank"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
-    <script>
-    (function($) {
-        $.cookie('donator', 'true', { expires: 7300, path: '/' });
-    })(jQuery);
-    </script>
   </div>
 <?php }
 // Functions to compose a standard _card object_ based on an id
