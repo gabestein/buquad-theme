@@ -54,10 +54,6 @@ $vertical-spacing: 24px;
           line-height: inherit;
           display: block;
         }
-        @include media(800px) {
-          font-size: 0.85em;
-          line-height: 1.3em;
-        }
         font-style: italic;
       }
       .button {
