@@ -378,5 +378,25 @@ article.single {
         }
       }
     }
+    //end plea
+    .share-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      ul {
+        list-style-type: none;
+        li {
+          float: left;
+        }
+      }
+      @media include(800px) {
+        top: 0;
+        left: 0;
+        ul {
+          li { float: none; }
+        }
+      }
+    }
   }
+  //end footer
 }
