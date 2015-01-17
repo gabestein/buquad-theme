@@ -671,8 +671,6 @@ article.single {
               display: auto;
               clear: none;
               margin: 0; } }
-        article.single footer .plea .share-sub .share {
-          margin-bottom: 20px; }
         article.single footer .plea .share-sub a.facebook {
           background-color: #3a5795;
           border-radius: 3px;
@@ -787,6 +785,10 @@ article.single {
             cursor: not-allowed; }
         article.single footer .plea .share-sub .social {
           text-align: center; }
+          article.single footer .plea .share-sub .social .twitter-follow-button {
+            margin-bottom: -9px; }
+        article.single footer .plea .share-sub .share {
+          margin-bottom: 20px; }
 
 html .mceContentBody {
   max-width: 640px;
