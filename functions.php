@@ -147,32 +147,9 @@ function subscribe_action() { ?>
             <h2>Thanks so much! While you're at it, follow Sleeper Ave. on Facebook and Twitter, too!</h2>
             <div class="facebook">
               <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-              <script>
-              function fb_action_logger() {
-                FB.Event.subscribe('edge.create', function(url, element){
-                  (function($) {
-                    $.cookie('facebook_subscriber', 'true', { expires: 7300, path: '/' });
-                  })(jQuery);
-                });
-              }
-              </script>
             </div>
             <div class="twitter">
               <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
-              <script>
-              twttr.ready(
-                function (twttr) {
-                  twttr.events.bind(
-                  'follow',
-                  function (event) {
-                    (function($) {
-                      $.cookie('twitter_subscriber', 'true', { expires: 7300, path: '/' });
-                    })(jQuery);
-                  }
-                  );
-                }
-                );
-              </script>
             </div>
           </div>
         </div>

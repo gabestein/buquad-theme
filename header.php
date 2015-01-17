@@ -118,6 +118,8 @@
         <!-- end Facebook JS API -->
         <?php wp_enqueue_script('jquery'); ?>
         <?php wp_enqueue_script('jquery-cookie', ''.get_template_directory_uri().'/assets/scripts/jquery.cookie.js', 'jquery'); ?>
+        <?php wp_enqueue_script('social', ''.get_template_directory_uri().'/assets/scripts/social.js', 'jquery-cookie'); ?>
+
         <?php wp_head(); ?>
 
     </head>
