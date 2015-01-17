@@ -680,7 +680,8 @@ article.single {
         font-weight: bold;
         padding: 7px 18px;
         text-decoration: none;
-        background-clip: padding-box; }
+        background-clip: padding-box;
+        color: #fff; }
         article.single footer .plea .share-sub .twitter:hover:not(:disabled) {
           background-color: #69b8f4;
           cursor: pointer; }

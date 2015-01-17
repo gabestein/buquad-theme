@@ -325,6 +325,9 @@ article.single {
           margin: 1em 0;
         }
       .share-sub {
+        color: $color-white;
+        font-family: 'Architects Daughter', Helvetica, sans-serif;
+        text-transform: uppercase;
         .facebook {
           @include button(flat, $color-facebook);
         }
