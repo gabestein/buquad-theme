@@ -405,6 +405,7 @@ blockquote {
     text-decoration: none; }
 
 [type="card"] {
+  width: 100%;
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
