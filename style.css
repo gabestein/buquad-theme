@@ -789,19 +789,15 @@ blockquote {
       text-align: center; }
       .recommender .action .container p.cta {
         display: block;
-        font-size: 0.85em;
-        line-height: 1.3em;
         font-style: italic; }
         @media screen and (min-width: 1192px) {
           .recommender .action .container p.cta {
             display: block; } }
-        @media screen and (min-width: 940px) {
+        @media screen and (min-width: 800px) {
           .recommender .action .container p.cta {
-            display: none; } }
-        @media screen and (min-width: 1315px) {
-          .recommender .action .container p.cta {
-            font-size: 1em;
-            line-height: inherit; } }
+            display: none;
+            font-size: 0.85em;
+            line-height: 1.3em; } }
       .recommender .action .container .button {
         margin-top: 10px;
         margin-bottom: 10px; }

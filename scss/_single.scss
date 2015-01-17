@@ -49,14 +49,10 @@ $vertical-spacing: 24px;
         @include media(1192px) {
           display: block;
         }
-        @include media(940px) {
+        @include media(800px) {
           display: none;
-        }
-        font-size: 0.85em;
-        line-height: 1.3em;
-        @include media(1315px) {
-          font-size: 1em;
-          line-height: inherit;
+          font-size: 0.85em;
+          line-height: 1.3em;
         }
         font-style: italic;
       }
