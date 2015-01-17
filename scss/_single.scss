@@ -352,7 +352,7 @@ article.single {
             display: block;
             clear: both;
             width: 100%;
-            margin: 6px;
+            margin: 6px 0;
 
             @include media($medium-screen) {
               width: auto;
