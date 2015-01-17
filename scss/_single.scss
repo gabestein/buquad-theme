@@ -309,6 +309,8 @@ article.single {
       margin-right: auto;
       margin: 1.5em auto;
       border-top: 1px dotted lighten($color-grey, 25);
+      border-bottom: 1px dotted lighten($color-grey, 25);
+      padding: 1em 0;
       .plea {
         color: lighten($color-grey, 25);
         font-size: 0.9em;
