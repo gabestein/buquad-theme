@@ -37,10 +37,6 @@ $vertical-spacing: 24px;
     //clear: both;
     color: $color-white;
     padding: 10px;
-    margin-top: 75px;
-    @include media(800) {
-      margin-top: 0;
-    }
     @include media(944px) {
       clear: none;
       margin-left: 400px;
@@ -48,7 +44,6 @@ $vertical-spacing: 24px;
     }
     .container {
       display: none;
-
       p.cta {
         display: block;
         @include media(1192px) {
@@ -58,7 +53,6 @@ $vertical-spacing: 24px;
           display: none;
           font-size: 0.85em;
           line-height: 1.3em;
-          margin: 0;
         }
         font-style: italic;
       }
