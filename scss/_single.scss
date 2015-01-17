@@ -395,6 +395,7 @@ article.single {
     background-color: $color-white;
     border-top: 2px solid $color-grey;
     padding: 4px 0;
+    text-align: center;
     ul {
       @include social-buttons;
       list-style-type: none;
@@ -403,6 +404,8 @@ article.single {
       }
     }
     @include media(1020px) {
+      border-top: 0;
+      padding: 0;
       display: block;
       z-index: -100;
       width: auto;
