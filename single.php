@@ -90,7 +90,7 @@
 
             console.log(stickyTop, windowTop, stickyBottom, windowBottom);
 
-            if(stickyTop < windowTop && stickyBottom > windowBottom) {
+            if(stickyTop < windowTop) {
               $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
             } else {
               $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
@@ -99,7 +99,7 @@
           });
 
         }
-        });
+      });
       </script>
       <ul>
         <li>
