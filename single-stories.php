@@ -1,6 +1,24 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
+<section class="recommender top">
+  <?php
+
+    $prev_post = get_previous_post(true);
+    if($prev_post !== '') {
+      article_card($prev_post->ID, 'prev');
+    }
+
+    $next_post = get_next_post(true);
+    if($next_post !== '') {
+      article_card($next_post->ID, 'next');
+    }
+
+    //get our actions
+    action_unit();
+
+  ?>
+</section>
 <article class="single" id="<?php the_ID(); ?>">
     <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
 
@@ -114,6 +132,25 @@
       </ul>
     </div>
 </article>
+
+<section class="recommender bottom">
+  <?php
+
+  $prev_post = get_previous_post();
+  if($prev_post !== '') {
+    article_card($prev_post->ID, 'prev');
+  }
+
+  $next_post = get_next_post();
+  if($next_post !== '') {
+    article_card($next_post->ID, 'next');
+  }
+
+  //get our actions
+  action_unit();
+
+  ?>
+</section>
 <?php } /* close while */ } else { ?>
 
 <article class="404">
