@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) { while (have_posts()) { the_post(); ?>
-<article class="single" id="<?php the_ID(); ?>">
+<article class="single blog" id="<?php the_ID(); ?>">
     <?php $imgsrc = wp_get_attachment_url(get_post_thumbnail_id()); ?>
 
     <!--<style>
