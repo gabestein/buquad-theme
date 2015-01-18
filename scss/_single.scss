@@ -406,11 +406,6 @@ article.single {
     .hide-small {
       display: none;
     }
-    @include media(1196px) {
-      span.hide-small {
-        display: none;
-      }
-    }
     @include media(480px) {
       span.hide-small {
         display: inline;
@@ -421,7 +416,6 @@ article.single {
       border-top: 0;
       padding: 0;
       display: block;
-      z-index: -100;
       width: auto;
       background-color: transparent;
       top: 14px;

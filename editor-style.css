@@ -925,9 +925,6 @@ article.single {
         display: inline-block; }
     article.single .share-fixed .hide-small {
       display: none; }
-    @media screen and (min-width: 1196px) {
-      article.single .share-fixed span.hide-small {
-        display: none; } }
     @media screen and (min-width: 480px) {
       article.single .share-fixed span.hide-small {
         display: inline; } }
@@ -937,7 +934,6 @@ article.single {
         border-top: 0;
         padding: 0;
         display: block;
-        z-index: -100;
         width: auto;
         background-color: transparent;
         top: 14px;
