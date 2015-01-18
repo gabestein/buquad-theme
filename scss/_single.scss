@@ -406,14 +406,14 @@ article.single {
     .hide-small {
       display: none;
     }
-    @include media(min-width 480px max-width 1200px) {
-      span.hide-small {
-        display: none;
-      }
-    }
     @include media(480px) {
       span.hide-small {
         display: inline;
+      }
+    }
+    @include media(min-width 480px max-width 1200px) {
+      span.hide-small {
+        display: none;
       }
     }
     @include media(1020px) {
