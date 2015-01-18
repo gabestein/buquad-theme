@@ -380,6 +380,9 @@ article.single {
             }
           }
           @include social-buttons;
+          a.email {
+            font-size: 0.9em;
+          }
         }
       }
     }

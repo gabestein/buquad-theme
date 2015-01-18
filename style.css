@@ -1225,6 +1225,8 @@ article.single, article.page, article.archive {
           article.single footer .plea .share-sub .share a.support:disabled, article.page footer .plea .share-sub .share a.support:disabled, article.archive footer .plea .share-sub .share a.support:disabled {
             opacity: 0.5;
             cursor: not-allowed; }
+        article.single footer .plea .share-sub .share a.email, article.page footer .plea .share-sub .share a.email, article.archive footer .plea .share-sub .share a.email {
+          font-size: 0.9em; }
   article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
     position: absolute;
     display: none;
