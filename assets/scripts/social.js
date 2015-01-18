@@ -1,12 +1,3 @@
-//visit counter
-(function($) {
-  window.visits = $.cookie('visits') || 0;
-  if(parseInt(window.visits) <= window.max_visits) {
-    window.visits = parseInt(window.visits) + 1;
-    $.cookie('visits', window.visits, { expires: 7300, path: '/' });
-  }
-})(jQuery);
-
 jQuery(document).ready(function($) {
   window.is_email = $.cookie('email_subscriber') || false;
   window.is_facebook = $.cookie('facebook_subscriber') || false;
@@ -14,6 +5,11 @@ jQuery(document).ready(function($) {
   window.is_donator = $.cookie('donator') || false;
   window.visits = $.cookie('visits') || 1;
   window.max_visits = 10;
+
+  if(parseInt(window.visits) <= window.max_visits) {
+    window.visits = parseInt(window.visits) + 1;
+    $.cookie('visits', window.visits, { expires: 7300, path: '/' });
+  }
 
   if(window.is_email && window.visits >= window.max_visits) {
     $('.action .support').fadeIn('slow');
