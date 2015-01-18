@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     $.cookie('visits', window.visits, { expires: 7300, path: '/' });
   }
 
-  if(window.is_email && window.visits >= window.max_visits) {
+  if(window.is_email || window.visits <= window.max_visits) {
     $('.action .support').fadeIn('slow');
     $('.plea .subscribe').fadeOut('fast');
   } else {
