@@ -26,6 +26,13 @@ function register_menus() {
 }
 add_action( 'init', 'register_menus' );
 
+p2p_register_connection_type( array(
+  'name' => 'posts_to_posts',
+  'from' => 'post',
+  'to' => 'post',
+  'reciprocal' => true
+) );
+
 // Return true if user is of the specified role, false if otherwise
 // via http://docs.appthemes.com/tutorials/wordpress-check-user-role-function/
 function check_user_role( $role, $user_id = null ) {
