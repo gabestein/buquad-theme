@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
   window.visits = $.cookie('visits') || 1;
   window.max_visits = 10;
 
-  if(window.is_email && window.visits < window.max_visits) {
+  if(window.is_email && window.visits >= window.max_visits) {
     $('.action .support').fadeIn('slow');
     $('.plea .subscribe').fadeOut('fast');
   } else {
