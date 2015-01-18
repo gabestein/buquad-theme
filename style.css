@@ -1355,6 +1355,9 @@ article.single, article.page, article.archive {
         display: inline-block; }
     article.single .share-fixed .hide-small, article.page .share-fixed .hide-small, article.archive .share-fixed .hide-small {
       display: none; }
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
+      article.single .share-fixed span.hide-small, article.page .share-fixed span.hide-small, article.archive .share-fixed span.hide-small {
+        display: none; } }
     @media screen and (min-width: 480px) {
       article.single .share-fixed span.hide-small, article.page .share-fixed span.hide-small, article.archive .share-fixed span.hide-small {
         display: inline; } }
