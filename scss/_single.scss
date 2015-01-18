@@ -406,6 +406,11 @@ article.single {
     .hide-small {
       display: none;
     }
+    @include media(1196px) {
+      span.hide-small {
+        display: none;
+      }
+    }
     @include media(480px) {
       span.hide-small {
         display: inline;
