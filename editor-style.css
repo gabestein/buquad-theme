@@ -925,6 +925,9 @@ article.single {
         display: inline-block; }
     article.single .share-fixed .hide-small {
       display: none; }
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
+      article.single .share-fixed span.hide-small {
+        display: none; } }
     @media screen and (min-width: 480px) {
       article.single .share-fixed span.hide-small {
         display: inline; } }
