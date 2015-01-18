@@ -287,7 +287,7 @@ class MY_Post_Numbers {
     if ( $this->count )
     return;
     global $wpdb;
-    $posts = $wpdb->get_col( "SELECT ID FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date " ); // can add or change order if you want
+    $posts = $wpdb->get_col( "SELECT ID FROM $wpdb->posts INNER JOIN $wpdb->term_relationships ON ID = object_id WHERE post_status = 'publish' AND post_type = 'post' AND term_taxonomy_id = 1 ORDER BY post_date " ); // can add or change order if you want
     $this->count = count($posts);
 
     foreach ( $posts as $key => $value ) {
