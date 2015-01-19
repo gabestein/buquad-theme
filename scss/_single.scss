@@ -390,6 +390,7 @@ article.single {
   }
   //end footer
   .share-fixed {
+    z-index: 100;
     position: absolute;
     display: none;
     bottom: 0;
