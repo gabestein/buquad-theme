@@ -575,7 +575,7 @@ blockquote {
   background: linear-gradient(#ADD8E6, #F0F8FF); }
   #brand img.logo {
     float: left;
-    max-width: 300px;
+    max-width: 216px;
     height: auto; }
   #brand .bg, #brand img.bg {
     display: none; }
