@@ -1381,7 +1381,7 @@ article.single, article.page, article.archive {
           margin-bottom: 0.5em; } }
 
 article.page header, article.archive header {
-  height: 3em;
+  height: 4em;
   max-width: 60em;
   margin: 0 auto;
   text-align: center; }
