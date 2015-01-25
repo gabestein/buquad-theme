@@ -19,6 +19,44 @@ jQuery(document).ready(function($) {
     $('.action .subscribe').fadeIn('slow');
   }
 
+  //social floating stuff
+  if($(window).width() > 1020) {
+    var stickyTop = $('.share-fixed').offset().top;
+
+    $(window).scroll(function(){
+      var windowTop = $(window).scrollTop();
+
+      if(stickyTop < windowTop) {
+        $('.share-fixed').css({ 'position' : 'fixed' });
+      } else {
+        $('.share-fixed').css({ 'position' : 'absolute' });
+      }
+    });
+
+  } else {
+
+    var stickyTop = $('article .body').offset().top;
+
+    var footerHeight = $('.footer-menu').height() + $('.recommender.bottom').height();
+
+    $(window).scroll(function(){
+      var windowHeight = $(window).height();
+      var windowTop = $(window).scrollTop();
+      var windowBottom = windowTop + windowHeight;
+      var stickyBottom = $(document).height() - footerHeight;
+
+      console.log(windowBottom, stickyBottom);
+
+      if(stickyTop < windowTop && stickyBottom > windowBottom) {
+        $('.share-fixed').css({ 'position' : 'fixed', 'display': 'block' });
+      } else {
+        $('.share-fixed').css({ 'position' : 'absolute', 'display' : 'none' });
+      }
+
+    });
+
+  }
+  
 });
 
 function fb_share(url) {
