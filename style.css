@@ -1383,7 +1383,8 @@ article.single, article.page, article.archive {
 article.page header, article.archive header {
   height: 3em;
   max-width: 60em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   @media screen and (max-width: 60em) {
     article.page header, article.archive header {
       margin: 0 1.5em; } }

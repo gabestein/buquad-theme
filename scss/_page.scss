@@ -4,6 +4,7 @@ article.page {
         height: 3em;
         max-width: 60em;
         margin: 0 auto;
+        text-align: center;
         @media screen and (max-width: 60em) {
             margin: 0 1.5em;
         }
