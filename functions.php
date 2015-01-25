@@ -194,8 +194,7 @@ function email_subscribe_form() { ?>
   <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
 <?php }
 
-function social_subscribe() {
-?>
+function social_subscribe() { ?>
   <div class="share">
     <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')"><i class="fa fa-facebook"></i> Share</a>
     <a class="twitter" onclick="twitter_share('<?php the_permalink(); ?>', '<?php echo get_the_excerpt(); ?>')"><i class="fa fa-twitter"></i> Tweet</a>
@@ -203,6 +202,17 @@ function social_subscribe() {
     <a class="support" href="http://beaconreader.com/projects/sleeper-ave"><i class="fa fa-credit-card"></i> Support</a>
   </div>
 <?php }
+
+function mailchimp_subscribe_shortcode(){
+  email_subscribe_form();
+}
+add_shortcode( 'email_subscribe', 'email_subscribe_shortcode' );
+
+function social_subscribe_func(){
+  social_subscribe();
+}
+add_shortcode( 'social_subscribe', 'social_subscribe_shortcode' );
+
 function user_card($id) {
   // get data
   $fullname = get_the_author_meta('display_name', $id);
@@ -319,13 +329,3 @@ $GLOBALS['my_post_numbers'] = new MY_Post_Numbers;
 function my_post_number() {
   $GLOBALS['my_post_numbers']->display_count();
 }
-
-function mailchimp_subscribe_func( $atts ){
-  email_subscribe_form();
-}
-add_shortcode( 'email_subscribe', 'email_subscribe_func' );
-
-function social_subscribe_func( $atts ){
-
-}
-add_shortcode( 'social_subscribe', 'social_subscribe_func' );
