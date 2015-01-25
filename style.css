@@ -576,7 +576,8 @@ blockquote {
   #brand img.logo {
     float: left;
     max-width: 238px;
-    height: auto; }
+    height: auto;
+    margin-left: 14px; }
   #brand .bg, #brand img.bg {
     display: none; }
   @media screen and (min-width: 660px) {
