@@ -208,7 +208,7 @@ function mailchimp_subscribe_shortcode(){
 }
 add_shortcode( 'email_subscribe', 'email_subscribe_shortcode' );
 
-function social_subscribe_func(){
+function social_subscribe_shortcode(){
   return social_subscribe();
 }
 add_shortcode( 'social_subscribe', 'social_subscribe_shortcode' );
