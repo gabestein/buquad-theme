@@ -204,12 +204,12 @@ function social_subscribe() { ?>
 <?php }
 
 function mailchimp_subscribe_shortcode(){
-  email_subscribe_form();
+  return email_subscribe_form();
 }
 add_shortcode( 'email_subscribe', 'email_subscribe_shortcode' );
 
 function social_subscribe_func(){
-  social_subscribe();
+  return social_subscribe();
 }
 add_shortcode( 'social_subscribe', 'social_subscribe_shortcode' );
 
