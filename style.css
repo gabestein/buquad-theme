@@ -1392,7 +1392,6 @@ article.page header, article.archive header {
     font-size: 3em;
     font-weight: 400;
     margin-top: 1em;
-    margin-bottom: 0.5em;
     font-style: italic;
     text-transform: uppercase; }
 article.page.error-404, article.error-404.archive {
