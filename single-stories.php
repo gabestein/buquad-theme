@@ -45,15 +45,9 @@
           'connected_type' => 'posts_to_posts',
           'connected_items' => get_queried_object(),
           'nopaging' => true,
-          ) );
-          if($connected->have_posts()) { ?>
-          <h3>Sleeper Alley</h3>
-          <ul>
-          <?php while($connected->have_posts()) { ?>
-            Hi
-          } ?>
-          </ul>
-        <?php } ?>
+          ) ); ?>
+        <h3>Sleeper Alley</h3>
+      </section>
       <section class="plea">
         <p class="comments"><strong>Thoughts, comments or questions about this story?</strong> Send me a note <a href="/feedback">here</a>, or via email at <a href="mailto:ed@sleeperave.com?subject=Comment on <?php the_title(); ?>" target="_blank">ed@sleeperave.com</a>. I publish my favorite comments weekly on my blog.</p>
         <div class="share-sub">
