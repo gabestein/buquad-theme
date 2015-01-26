@@ -346,10 +346,19 @@ article.single {
     }
     //end plea
   }
-  .related {
-    &.blog {
+  //inline related
+  @include media($medium-screen) {
+    .related.blog {
       float: right;
+      margin-right: -25%;
     }
+    p.alignleft {
+      float: left;
+      clear: left;
+      width: 50%;
+    }
+  }
+  .related {
     p {
       font-style: italic;
       color: $color-grey;
