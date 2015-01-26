@@ -16,9 +16,11 @@
     <div class="card container">
     <?php while ( have_posts() ) {
         the_post(); ?>
-        <article class="archive">
-          <h2><?php the_title(); ?></h2>
-          <h3><?php the_date(); ?></h3>
+        <article class="archive blog">
+          <header>
+            <h2><?php the_title(); ?></h2>
+            <h3><?php the_date(); ?></h3>
+          </header>
         </article>
     <?php  }
     ?>
