@@ -481,6 +481,7 @@ article.single {
             margin-bottom: 0em; } }
       article.single header .intro-text h3 {
         color: #666666;
+        font-family: Lora, Helvetica, Arial, sans-serif;
         font-size: 1.3em;
         font-weight: 300;
         line-height: 1.4em;
