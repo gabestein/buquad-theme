@@ -95,12 +95,12 @@
 <section class="recommender bottom">
   <?php
 
-  $prev_post = get_previous_post();
+  $prev_post = get_previous_post(true);
   if($prev_post !== '') {
     article_card($prev_post->ID, 'prev');
   }
 
-  $next_post = get_next_post();
+  $next_post = get_next_post(true);
   if($next_post !== '') {
     article_card($next_post->ID, 'next');
   }
