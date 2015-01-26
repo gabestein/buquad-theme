@@ -67,7 +67,7 @@
             <meta property="og:image" content="<?php echo $image; ?>"/>
             <!-- TWITTER CARDS -->
             <meta name="twitter:card" content="summary"/>
-            <meta name="twitter:site" content="@sleepeerave"/>
+            <meta name="twitter:site" content="@sleeperave"/>
             <meta name="twitter:title" content="<?php echo $title; ?>"/>
             <meta name="twitter:description" content="<?php echo $description; ?>"/>
             <meta name="twitter:image" content="<?php echo $image; ?>" />
