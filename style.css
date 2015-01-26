@@ -1505,6 +1505,7 @@ nav.pagination {
 article.archive.blog {
   padding-bottom: 0.5em; }
   article.archive.blog header {
+    height: auto;
     margin-bottom: 2.5em; }
     article.archive.blog header h2 {
       text-transform: uppercase;
