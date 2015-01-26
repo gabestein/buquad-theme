@@ -42,7 +42,7 @@
     <footer>
       <section class="related">
         <?php $connected = new WP_Query( array(
-          'connected_type' => 'posts_to_pages',
+          'connected_type' => 'posts_to_posts',
           'connected_items' => get_queried_object(),
           'nopaging' => true,
           ) );
