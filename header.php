@@ -45,7 +45,7 @@
           <meta property="og:type" content="article" />
           <meta property="og:site_name" content="Sleeper Ave." />
           <!-- TWITTER CARDS -->
-          <meta property="twitter:card" content="summary" />
+          <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:site" content="@sleeperave" />
           <meta property="twitter:title" content="<?php echo $title; ?>" />
           <meta property="twitter:description" content="<?php echo $description; ?>" />
