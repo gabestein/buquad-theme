@@ -50,7 +50,7 @@
                 } ?>
               <?php
             }
-            echo "</p>";
+            echo "<p>";
             $p_count++;
           }
         }
