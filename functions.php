@@ -209,7 +209,7 @@ function subscribe_block() { ?>
 
 function subscribe_block_shortcode(){
   $block = subscribe_block();
-  return echo $block;
+  return (string)$block;
 }
 add_shortcode( 'subscribe', 'subscribe_block_shortcode' );
 
