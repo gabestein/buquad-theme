@@ -655,6 +655,9 @@ article.single {
     border-bottom: 1px dotted #737373;
     margin-bottom: 1em;
     padding-bottom: 1em; }
+    article.single .related p {
+      font-style: italic;
+      color: #333; }
     article.single .related h3 {
       font-size: 1.75em;
       text-align: center;

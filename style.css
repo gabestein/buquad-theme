@@ -1086,6 +1086,9 @@ article.single, article.page, article.archive {
     border-bottom: 1px dotted #737373;
     margin-bottom: 1em;
     padding-bottom: 1em; }
+    article.single .related p, article.page .related p, article.archive .related p {
+      font-style: italic;
+      color: #333; }
     article.single .related h3, article.page .related h3, article.archive .related h3 {
       font-size: 1.75em;
       text-align: center;

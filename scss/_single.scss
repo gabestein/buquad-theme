@@ -346,6 +346,10 @@ article.single {
     //end plea
   }
   .related {
+    p {
+      font-style: italic;
+      color: $color-grey;
+    }
     h3 {
       font-size: 1.75em;
       text-align: center;
