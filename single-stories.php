@@ -48,6 +48,7 @@
           ) );
           if($connected->have_posts()) { ?>
           <h3>Sleeper Alley</h3>
+          <p>Thoughts and reactions to this story from the artist and readers.</p>
           <ul>
           <?php while($connected->have_posts()) : $connected->the_post(); ?>
             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>

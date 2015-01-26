@@ -350,7 +350,7 @@ article.single {
       font-weight: bold;
       text-align: center
     }
-    
+    border-bottom: 1px dotted lighten($color-grey, 25);
   }
   .share-sub {
     h3 {

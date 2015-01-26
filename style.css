@@ -1082,9 +1082,11 @@ article.single, article.page, article.archive {
           font-style: normal; }
         article.single footer .plea p strong, article.page footer .plea p strong, article.archive footer .plea p strong {
           font-weight: bold; }
-  article.single .related h3, article.page .related h3, article.archive .related h3 {
-    font-weight: bold;
-    text-align: center; }
+  article.single .related, article.page .related, article.archive .related {
+    border-bottom: 1px dotted #737373; }
+    article.single .related h3, article.page .related h3, article.archive .related h3 {
+      font-weight: bold;
+      text-align: center; }
   article.single .share-sub h3, article.page .share-sub h3, article.archive .share-sub h3 {
     font-weight: bold;
     text-align: center; }
