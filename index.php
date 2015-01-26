@@ -1,15 +1,4 @@
-<?php get_header(); ?>
-
-<?php if ( have_posts() ) { ?>
-  <div class="card container">
-  <?php while ( have_posts() ) {
-      the_post();
-      article_card(get_the_id());
-    }
-  ?>
-</div>
-<?php } else {
-        get_404();
-      } ?>
-
-<?php get_footer(); ?>
+<?php
+query_posts('cat=1&posts_per_page=1&order=DESC');
+include 'single-stories.php';
+wp_reset_query();
