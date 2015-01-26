@@ -23,7 +23,7 @@
         $content = apply_filters('the_content', $post->post_content);
         if(substr_count($content, '<p>') > $show_after_p)
         {
-          $contents = explode("</p>", $content);
+          $contents = explode("<p>", $content);
           $p_count = 1;
           foreach($contents as $content)
           {
@@ -48,7 +48,7 @@
               <?php
             }
             echo $content;
-            echo "</p>";
+            echo "<p>";
             $p_count++;
           }
         }
