@@ -49,7 +49,7 @@
         vertical-align: center;
         text-align: center;
     }
-    li.current-menu-item a {
+    li.current-menu-item a, li.current-post-parent a {
       color: $color-white;
       background-color: lighten($color-red, $lighten-amount);
     }

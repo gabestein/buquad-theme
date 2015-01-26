@@ -610,7 +610,7 @@ blockquote {
     height: 100%;
     vertical-align: center;
     text-align: center; }
-  .primary-menu li.current-menu-item a {
+  .primary-menu li.current-menu-item a, .primary-menu li.current-post-parent a {
     color: #FCFCFC;
     background-color: #54a7c9; }
   .primary-menu a {
