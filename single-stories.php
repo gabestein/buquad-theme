@@ -53,7 +53,9 @@
             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
           <?php endwhile; ?>
           </ul>
-        <?php } ?>
+        <?php
+        wp_reset_postdata();
+        } ?>
       </section>
       <section class="plea">
         <p class="comments"><strong>Thoughts, comments or questions about this story?</strong> Send me a note <a href="/feedback">here</a>, or via email at <a href="mailto:ed@sleeperave.com?subject=Comment on <?php the_title(); ?>" target="_blank">ed@sleeperave.com</a>. I publish my favorite comments weekly on my blog.</p>
