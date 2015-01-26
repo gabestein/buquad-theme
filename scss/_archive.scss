@@ -1,9 +1,15 @@
 article.archive.blog {
+  border-bottom: 1px dotted $color-grey;
+  border-top: 1px dotted $color-grey;
   header {
     h2 {
       text-transform: uppercase;
       font-size: 1.5em;
-      line-height: 2.0em;
+      line-height: 1.75em;
+    }
+    h3 {
+      font-family: Helvetica, Arial, sans-serif;
+      color: lighten($color-grey, 20);
     }
   }
 }
