@@ -651,6 +651,9 @@ article.single {
           font-style: normal; }
         article.single footer .plea p strong {
           font-weight: bold; }
+  article.single .related h3 {
+    font-weight: bold;
+    text-align: center; }
   article.single .share-sub h3 {
     font-weight: bold;
     text-align: center; }
