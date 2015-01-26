@@ -24,18 +24,18 @@
         'nopaging' => true,
         ) );
         if($connected->have_posts()) {
-          $show_after_p = 2;
+          $show_after_p = 3;
           $content = apply_filters('the_content', $post->post_content);
           if(substr_count($content, '<p>') > $show_after_p)
           {
             $contents = explode("<p>", $content);
-            $p_count = 3;
+            $p_count = 1;
             foreach($contents as $content)
             {
               if($p_count == $show_after_p)
               {
                 ?>
-                <section class="related">
+                <section class="related blog">
                   <h3>Related Stories</h3>
                   <?php while($connected->have_posts()) : $connected->the_post(); ?>
                     <?php article_card(get_the_ID()); ?>
