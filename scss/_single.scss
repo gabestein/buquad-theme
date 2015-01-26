@@ -373,6 +373,7 @@ article.single {
       text-align: center;
       display: block;
       clear: both;
+      border-top: 1px dotted lighten($color-grey, 25);
     }
   }
   //inline blog related
