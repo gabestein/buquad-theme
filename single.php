@@ -19,11 +19,12 @@
     </header>
     <section class="body">
         <?php
-        $show_after_p = 2;
+        $show_after_p = 3;
         $content = apply_filters('the_content', $post->post_content);
         if(substr_count($content, '<p>') > $show_after_p)
         {
-          $contents = explode("</p>", $content);
+          $contents = explode("<p>", $content);
+          print_r($contents);
           $p_count = 1;
           foreach($contents as $content)
           {
