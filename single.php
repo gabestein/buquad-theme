@@ -23,13 +23,10 @@
         $content = apply_filters('the_content', $post->post_content);
         if(substr_count($content, '<p>') > $show_after_p)
         {
-          $contents = explode("<p>", $content);
-          print_r($contents);
+          $contents = explode("</p>", $content);
           $p_count = 1;
           foreach($contents as $content)
           {
-            echo $content;
-
             if($p_count == $show_after_p)
             {
               ?>
@@ -50,7 +47,8 @@
                 } ?>
               <?php
             }
-            echo "<p>";
+            echo $content;
+            echo "</p>";
             $p_count++;
           }
         }
