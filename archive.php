@@ -25,6 +25,10 @@
               <?php the_permalink(); ?>
             </div>
           </header>
+          <section class="body">
+            <?php the_excerpt(); ?>
+            <?php the_permalink(); ?>
+          </section>
         </article>
     <?php } ?>
     <nav class="pagination">
