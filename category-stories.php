@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php
-
+  query_posts('order=ASC');
   if(is_author()) {
     $title = get_the_author();
   } else {
@@ -32,4 +32,5 @@
           get_404();
         } ?>
 </article>
+<?php wp_reset_query(); ?>
 <?php get_footer(); ?>
