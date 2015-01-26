@@ -16,10 +16,10 @@
     <div class="card container">
     <?php while ( have_posts() ) {
         the_post(); ?>
-        <section class="archive">
+        <article class="archive">
           <h2><?php the_title(); ?></h2>
           <h3><?php the_date(); ?></h3>
-        </section>
+        </article>
     <?php  }
     ?>
     <nav class="pagination">
