@@ -49,9 +49,9 @@
           if($connected->have_posts()) { ?>
           <h3>Sleeper Alley</h3>
           <ul>
-          <?php while($connected->have_posts()) : $connected->the_post(); { ?>
+          <?php while($connected->have_posts()) : $connected->the_post(); ?>
             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-          } ?>
+          <?php endwhile; ?>
           </ul>
         <?php } ?>
       </section>
