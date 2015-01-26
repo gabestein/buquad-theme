@@ -195,11 +195,13 @@ function email_subscribe_form() { ?>
 <?php }
 
 function social_subscribe() { ?>
-  <div class="share">
-    <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')"><i class="fa fa-facebook"></i> Share</a>
-    <a class="twitter" onclick="twitter_share('<?php the_permalink(); ?>', '<?php echo get_the_excerpt(); ?>')"><i class="fa fa-twitter"></i> Tweet</a>
-    <a class="email" target="_blank" href="mailto:?subject=Sleeper Ave.: <?php the_title(); ?>&body=Hi!%0D%0A%0D%0AI thought you might enjoy this Sleeper Ave. comic by Ed Stein.%0D%0A%0D%0A<?php htmlentities(the_title()); ?>%0D%0A<?php echo htmlentities(get_the_excerpt()); ?>%0D%0A%0D%0A<?php htmlentities(the_permalink()); ?>"><i class="fa fa-envelope"></i> Send to a Friend</a>
-    <a class="support" href="http://beaconreader.com/projects/sleeper-ave"><i class="fa fa-credit-card"></i> Support</a>
+  <div class="share-subscribe">
+    <div class="share">
+      <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')"><i class="fa fa-facebook"></i> Share</a>
+      <a class="twitter" onclick="twitter_share('<?php the_permalink(); ?>', '<?php echo get_the_excerpt(); ?>')"><i class="fa fa-twitter"></i> Tweet</a>
+      <a class="email" target="_blank" href="mailto:?subject=Sleeper Ave.: <?php the_title(); ?>&body=Hi!%0D%0A%0D%0AI thought you might enjoy this Sleeper Ave. comic by Ed Stein.%0D%0A%0D%0A<?php htmlentities(the_title()); ?>%0D%0A<?php echo htmlentities(get_the_excerpt()); ?>%0D%0A%0D%0A<?php htmlentities(the_permalink()); ?>"><i class="fa fa-envelope"></i> Send to a Friend</a>
+      <a class="support" href="http://beaconreader.com/projects/sleeper-ave"><i class="fa fa-credit-card"></i> Support</a>
+    </div>
   </div>
 <?php }
 
