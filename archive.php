@@ -16,7 +16,7 @@
     <div class="card container">
     <?php while ( have_posts() ) {
         the_post(); ?>
-        <article class="single blog archive" id="<?php the_ID(); ?>">
+        <article class="archive" id="<?php the_ID(); ?>">
           <header>
             <div class="intro-text" >
               <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
