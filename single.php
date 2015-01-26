@@ -16,6 +16,21 @@
             <h2><?php the_title(); ?></h2>
             <h3><?php the_date(); ?></h3>
         </div>
+        <?php $connected = new WP_Query( array(
+          'connected_type' => 'posts_to_posts',
+          'connected_items' => get_queried_object(),
+          'nopaging' => true,
+          ) );
+          if($connected->have_posts()) { ?>
+            <section class="related">
+              <h3>Related Stories</h3>
+                <?php while($connected->have_posts()) : $connected->the_post(); ?>
+                  <?php article_card(get_the_ID()); ?>
+                <?php endwhile; ?>
+            </section>
+            <?php
+            wp_reset_postdata();
+          } ?>
     </header>
     <section class="body">
         <?php the_content('Read More'); ?>
