@@ -18,22 +18,43 @@
         </div>
     </header>
     <section class="body">
-      <?php $connected = new WP_Query( array(
-        'connected_type' => 'posts_to_posts',
-        'connected_items' => get_queried_object(),
-        'nopaging' => true,
-        ) );
-        if($connected->have_posts()) { ?>
-          <section class="related blog">
-            <h3>Related Stories</h3>
-            <?php while($connected->have_posts()) : $connected->the_post(); ?>
-              <?php article_card(get_the_ID()); ?>
-            <?php endwhile; ?>
-          </section>
-          <?php
-          wp_reset_postdata();
-        } ?>
-        <?php the_content('Read More'); ?>
+        <?php
+        $show_after_p = 2;
+        $content = apply_filters('the_content', $post->post_content);
+        if(substr_count($content, '<p>') > $show_after_p)
+        {
+          $contents = explode("</p>", $content);
+          $p_count = 1;
+          foreach($contents as $content)
+          {
+            echo $content;
+
+            if($p_count == $show_after_p)
+            {
+              ?>
+              <?php $connected = new WP_Query( array(
+                'connected_type' => 'posts_to_posts',
+                'connected_items' => get_queried_object(),
+                'nopaging' => true,
+                ) );
+                if($connected->have_posts()) { ?>
+                  <section class="related blog">
+                    <h3>Related Stories</h3>
+                    <?php while($connected->have_posts()) : $connected->the_post(); ?>
+                      <?php article_card(get_the_ID()); ?>
+                    <?php endwhile; ?>
+                  </section>
+                  <?php
+                  wp_reset_postdata();
+                } ?>
+              <?php
+            }
+            echo "</p>";
+            $p_count++;
+          }
+        }
+        ?>
+
         <?php wp_link_pages(array('before' => '<div class="paginate">Page:', 'after' => '</div>', 'next_or_number' => 'number')); ?>
     </section>
     <footer>
