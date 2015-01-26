@@ -1100,6 +1100,11 @@ article.single, article.page, article.archive {
       list-style: disc inside; }
       article.single .related ul li, article.page .related ul li, article.archive .related ul li {
         margin: 0.5em 0; }
+    article.single .related.blog, article.page .related.blog, article.archive .related.blog {
+      width: 100%;
+      text-align: center;
+      display: block;
+      clear: both; }
   @media screen and (min-width: 990px) {
     article.single .related.blog, article.page .related.blog, article.archive .related.blog {
       float: right;

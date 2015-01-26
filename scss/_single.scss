@@ -368,6 +368,12 @@ article.single {
     border-bottom: 1px dotted lighten($color-grey, 25);
     margin-bottom: 1em;
     padding-bottom: 1em;
+    &.blog {
+      width: 100%;
+      text-align: center;
+      display: block;
+      clear: both;
+    }
   }
   //inline blog related
   @include media(990px) {
