@@ -32,7 +32,21 @@
             if($p_count == $show_after_p)
             {
               ?>
-              HI
+              <?php $connected = new WP_Query( array(
+                'connected_type' => 'posts_to_posts',
+                'connected_items' => get_queried_object(),
+                'nopaging' => true,
+                ) );
+                if($connected->have_posts()) { ?>
+                  <section class="related blog">
+                    <h3>Related Stories</h3>
+                    <?php while($connected->have_posts()) : $connected->the_post(); ?>
+                      <?php article_card(get_the_ID()); ?>
+                    <?php endwhile; ?>
+                  </section>
+                  <?php
+                  wp_reset_postdata();
+                } ?>
               <?php
             }
             echo "</p>";
