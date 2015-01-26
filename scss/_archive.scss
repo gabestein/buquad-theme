@@ -16,5 +16,10 @@ article.archive.blog {
   }
   .body {
     border-bottom: 1px dotted $color-grey;
+
+    a.button {
+      @include button(flat, $base-accent-color);
+      padding: 0.8em 1em;
+    }
   }
 }
