@@ -195,7 +195,7 @@ function email_subscribe_form() { ?>
 <?php }
 
 function social_subscribe() { ?>
-  <div class="share-subscribe">
+  <div class="share-sub">
     <div class="share">
       <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')"><i class="fa fa-facebook"></i> Share</a>
       <a class="twitter" onclick="twitter_share('<?php the_permalink(); ?>', '<?php echo get_the_excerpt(); ?>')"><i class="fa fa-twitter"></i> Tweet</a>
