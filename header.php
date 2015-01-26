@@ -8,7 +8,7 @@
       <?php } else { ?>
         <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
         <meta name="description" content="In 1953, a tornado roared through the small town I grew up in. The storm foreshadowed other winds of change coming to America.">
-      } ?>
+      <?php } ?>
 
         <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +33,7 @@
             $image = get_template_directory_uri().'/assets/images/placeholder.png';
           }
           ?>
-          <meta name="description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>">
+          <meta name="description" content="<?php echo $description ?>">
           <!-- FACEBOOK OPEN GRAPH -->
           <meta property="og:url" content="<?php echo $url; ?>"/>
           <meta property="og:title" content="<?php echo $title; ?>" />
