@@ -27,8 +27,9 @@
           $p_count = 1;
           foreach($contents as $content)
           {
+            echo '<p style="float: left">';
             echo $content;
-
+            echo '</p>';
             if($p_count == $show_after_p)
             {
               ?>
@@ -49,7 +50,6 @@
                 } ?>
               <?php
             }
-            echo "</p>";
             $p_count++;
           }
         }
