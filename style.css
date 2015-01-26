@@ -1088,6 +1088,7 @@ article.single, article.page, article.archive {
     padding-bottom: 1em; }
     article.single .related h3, article.page .related h3, article.archive .related h3 {
       font-weight: bold;
+      font-size: 1.75em;
       text-align: center; }
   article.single .share-sub h3, article.page .share-sub h3, article.archive .share-sub h3 {
     font-weight: bold;

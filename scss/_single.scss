@@ -348,7 +348,9 @@ article.single {
   .related {
     h3 {
       font-weight: bold;
-      text-align: center
+      font-size: 1.75em;
+      text-align: center;
+
     }
     border-bottom: 1px dotted lighten($color-grey, 25);
     margin-bottom: 1em;
