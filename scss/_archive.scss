@@ -1,29 +1,33 @@
-article.archive.blog {
-  padding-bottom: 0.5em;
-  header {
-    height: auto;
-    margin-bottom: 2.5em;
-    h2 {
-      text-transform: uppercase;
-      font-style: bold;
-      font-size: 1.75em;
-      line-height: 1.9em;
-    }
-    h3 {
-      font-family: Helvetica, Arial, sans-serif;
-      color: lighten($color-grey, 20);
-    }
+article.archive
+  img {
+    padding: 0;
   }
-  .body {
-    border-bottom: 1px dotted $color-grey;
-    padding-bottom: 1em;
-    text-align: center;
-    p {
-      text-align: left;
+  &.blog {
+    padding-bottom: 0.5em;
+    header {
+      height: auto;
+      margin-bottom: 2.5em;
+      h2 {
+        text-transform: uppercase;
+        font-style: bold;
+        font-size: 1.75em;
+        line-height: 1.9em;
+      }
+      h3 {
+        font-family: Helvetica, Arial, sans-serif;
+        color: lighten($color-grey, 20);
+      }
     }
-    a.button {
-      @include button(flat, $base-accent-color);
-      padding: 0.8em 1em;
+    .body {
+      border-bottom: 1px dotted $color-grey;
+      padding-bottom: 1em;
+      text-align: center;
+      p {
+        text-align: left;
+      }
+      a.button {
+        @include button(flat, $base-accent-color);
+        padding: 0.8em 1em;
+      }
     }
-  }
 }
