@@ -626,6 +626,10 @@ blockquote {
       color: #FCFCFC;
       background-color: #54a7c9; }
 
+li.current-menu-item.menu-item-592 a {
+  color: #388fb2;
+  background-color: #54a7c9; }
+
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }
   .secondary-menu ul, .footer-menu ul {
