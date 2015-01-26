@@ -362,6 +362,7 @@ blockquote {
   margin: 1.5em 0; }
 
 .card.container {
+  text-align: center;
   margin: 0.75em; }
   @media screen and (min-width: 450px) {
     .card.container {
