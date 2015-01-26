@@ -347,6 +347,9 @@ article.single {
     //end plea
   }
   .related {
+    .blog {
+      float: right;
+    }
     p {
       font-style: italic;
       color: $color-grey;
