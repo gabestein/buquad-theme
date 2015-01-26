@@ -29,7 +29,7 @@
           if(substr_count($content, '<p>') > $show_after_p)
           {
             $contents = explode("<p>", $content);
-            $p_count = 1;
+            $p_count = 3;
             foreach($contents as $content)
             {
               if($p_count == $show_after_p)
