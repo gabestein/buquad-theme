@@ -7,4 +7,6 @@
   ?>
 <?php } else {
   get_404();
-} ?>
+}
+wp_reset_query();
+?>
