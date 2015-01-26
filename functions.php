@@ -268,6 +268,10 @@ function user_card($id) {
           </section>
           <?php
         }
+function new_excerpt_more( $more ) {
+  return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 /*
 function tag_card($id) {
     $tag = get_tag($id);
