@@ -50,11 +50,10 @@
           <h3>Sleeper Alley</h3>
           <ul>
           <?php while($connected->have_posts()) { ?>
-            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+            Hi
           } ?>
           </ul>
-        <?php  }
-        ?>
+        <?php } ?>
       <section class="plea">
         <p class="comments"><strong>Thoughts, comments or questions about this story?</strong> Send me a note <a href="/feedback">here</a>, or via email at <a href="mailto:ed@sleeperave.com?subject=Comment on <?php the_title(); ?>" target="_blank">ed@sleeperave.com</a>. I publish my favorite comments weekly on my blog.</p>
         <div class="share-sub">
