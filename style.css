@@ -1516,7 +1516,11 @@ article.archive.blog {
       font-family: Helvetica, Arial, sans-serif;
       color: #666666; }
   article.archive.blog .body {
-    border-bottom: 1px dotted #333; }
+    border-bottom: 1px dotted #333;
+    padding-bottom: 1em;
+    text-align: center; }
+    article.archive.blog .body p {
+      text-align: left; }
     article.archive.blog .body a.button {
       background-color: #388fb2;
       border-radius: 3px;

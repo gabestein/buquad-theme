@@ -16,7 +16,11 @@ article.archive.blog {
   }
   .body {
     border-bottom: 1px dotted $color-grey;
-
+    padding-bottom: 1em;
+    text-align: center;
+    p {
+      text-align: left;
+    }
     a.button {
       @include button(flat, $base-accent-color);
       padding: 0.8em 1em;
