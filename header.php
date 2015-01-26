@@ -127,7 +127,7 @@
         <?php wp_head(); ?>
 
     </head>
-    <body <?php if(is_home() || is_front_page() { ?>class="homepage"<?php }) ?>>
+    <body <?php if(is_home() || is_front_page()) { ?>class="homepage"<?php } ?>>
       <header>
             <section id="brand">
               <a href="http://sleeperave.com">
