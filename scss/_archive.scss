@@ -1,9 +1,11 @@
 article.archive.blog {
   border-bottom: 1px dotted $color-grey;
-  border-top: 1px dotted $color-grey;
+  margin: 2em 0;
+  padding: 0.5em 0;
   header {
     h2 {
       text-transform: uppercase;
+      font-style: bold;
       font-size: 1.5em;
       line-height: 1.75em;
     }

@@ -1504,9 +1504,11 @@ nav.pagination {
 
 article.archive.blog {
   border-bottom: 1px dotted #333;
-  border-top: 1px dotted #333; }
+  margin: 2em 0;
+  padding: 0.5em 0; }
   article.archive.blog header h2 {
     text-transform: uppercase;
+    font-style: bold;
     font-size: 1.5em;
     line-height: 1.75em; }
   article.archive.blog header h3 {
