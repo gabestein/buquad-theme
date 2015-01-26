@@ -202,8 +202,8 @@ article.single {
                 margin: 0 auto 1em;
 
                 @include media($large-screen) {
-                    font-size: 1.7em;
-                    line-height: 1.35em;
+                    font-size: 1.3em;
+                    line-height: 1.6em;
                     margin: 0 auto 1em;
                     width: $intro-text-width;
                 }
