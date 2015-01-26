@@ -651,152 +651,152 @@ article.single {
           font-style: normal; }
         article.single footer .plea p strong {
           font-weight: bold; }
-      article.single footer .plea .share-sub h3 {
-        font-weight: bold;
-        text-align: center; }
-      article.single footer .plea .share-sub form {
-        margin: 0 auto;
-        max-width: 400px;
-        text-align: center; }
-      article.single footer .plea .share-sub .social {
-        margin: 0 auto;
-        max-width: 400px;
-        padding: 5px 0 10px;
-        text-align: center;
-        border: 1px solid #333;
-        background-color: #e6e6e6; }
-        article.single footer .plea .share-sub .social .twitter-follow-button {
-          margin-bottom: -9px; }
-      article.single footer .plea .share-sub .share {
-        text-align: center;
-        margin-bottom: 20px;
-        font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif;
-        text-transform: uppercase; }
-        article.single footer .plea .share-sub .share a {
-          display: block;
-          clear: both;
-          width: 100%;
-          margin: 6px 0; }
-          @media screen and (min-width: 40em) {
-            article.single footer .plea .share-sub .share a {
-              width: auto;
-              display: auto;
-              clear: none;
-              margin: 0; } }
-        article.single footer .plea .share-sub .share a.facebook {
-          background-color: #3a5795;
-          border-radius: 3px;
-          border: none;
-          color: white;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: bold;
-          padding: 7px 18px;
-          text-decoration: none;
-          background-clip: padding-box; }
-          article.single footer .plea .share-sub .share a.facebook:hover:not(:disabled) {
-            background-color: #3c60ac;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.facebook:active:not(:disabled), article.single footer .plea .share-sub .share a.facebook:focus:not(:disabled) {
-            background-color: #364e7f;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.facebook:disabled {
-            opacity: 0.5;
-            cursor: not-allowed; }
-        article.single footer .plea .share-sub .share a.twitter {
-          background-color: #55acee;
-          border-radius: 3px;
-          border: none;
-          color: #333333;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: bold;
-          padding: 7px 18px;
-          text-decoration: none;
-          background-clip: padding-box; }
-          article.single footer .plea .share-sub .share a.twitter:hover:not(:disabled) {
-            background-color: #69b8f4;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.twitter:active:not(:disabled), article.single footer .plea .share-sub .share a.twitter:focus:not(:disabled) {
-            background-color: #42a0e7;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.twitter:disabled {
-            opacity: 0.5;
-            cursor: not-allowed; }
-        article.single footer .plea .share-sub .share a.email {
-          background-color: #333;
-          border-radius: 3px;
-          border: none;
-          color: white;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: bold;
-          padding: 7px 18px;
-          text-decoration: none;
-          background-clip: padding-box;
-          background-color: #333;
-          border-radius: 3px;
-          border: none;
-          color: white;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: bold;
-          padding: 7px 18px;
-          text-decoration: none;
-          background-clip: padding-box; }
-          article.single footer .plea .share-sub .share a.email:hover:not(:disabled) {
-            background-color: #404040;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.email:active:not(:disabled), article.single footer .plea .share-sub .share a.email:focus:not(:disabled) {
-            background-color: #262626;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.email:hover:not(:disabled) {
-            background-color: #423d3d;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.email:active:not(:disabled), article.single footer .plea .share-sub .share a.email:focus:not(:disabled) {
-            background-color: #262626;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.email:disabled {
-            opacity: 0.5;
-            cursor: not-allowed; }
-        article.single footer .plea .share-sub .share a.support {
-          background-color: #202020;
-          border-radius: 3px;
-          border: none;
-          color: white;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: bold;
-          padding: 7px 18px;
-          text-decoration: none;
-          background-clip: padding-box;
-          background-color: #202020;
-          border-radius: 3px;
-          border: none;
-          color: white;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: bold;
-          padding: 7px 18px;
-          text-decoration: none;
-          background-clip: padding-box; }
-          article.single footer .plea .share-sub .share a.support:hover:not(:disabled) {
-            background-color: #2d2d2d;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.support:active:not(:disabled), article.single footer .plea .share-sub .share a.support:focus:not(:disabled) {
-            background-color: #131313;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.support:hover:not(:disabled) {
-            background-color: #2f2b2b;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.support:active:not(:disabled), article.single footer .plea .share-sub .share a.support:focus:not(:disabled) {
-            background-color: #131313;
-            cursor: pointer; }
-          article.single footer .plea .share-sub .share a.support:disabled {
-            opacity: 0.5;
-            cursor: not-allowed; }
-        article.single footer .plea .share-sub .share a.email {
-          font-size: 0.9em; }
+  article.single .share-sub h3 {
+    font-weight: bold;
+    text-align: center; }
+  article.single .share-sub form {
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center; }
+  article.single .share-sub .social {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 5px 0 10px;
+    text-align: center;
+    border: 1px solid #333;
+    background-color: #e6e6e6; }
+    article.single .share-sub .social .twitter-follow-button {
+      margin-bottom: -9px; }
+  article.single .share-sub .share {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif;
+    text-transform: uppercase; }
+    article.single .share-sub .share a {
+      display: block;
+      clear: both;
+      width: 100%;
+      margin: 6px 0; }
+      @media screen and (min-width: 40em) {
+        article.single .share-sub .share a {
+          width: auto;
+          display: auto;
+          clear: none;
+          margin: 0; } }
+    article.single .share-sub .share a.facebook {
+      background-color: #3a5795;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box; }
+      article.single .share-sub .share a.facebook:hover:not(:disabled) {
+        background-color: #3c60ac;
+        cursor: pointer; }
+      article.single .share-sub .share a.facebook:active:not(:disabled), article.single .share-sub .share a.facebook:focus:not(:disabled) {
+        background-color: #364e7f;
+        cursor: pointer; }
+      article.single .share-sub .share a.facebook:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+    article.single .share-sub .share a.twitter {
+      background-color: #55acee;
+      border-radius: 3px;
+      border: none;
+      color: #333333;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box; }
+      article.single .share-sub .share a.twitter:hover:not(:disabled) {
+        background-color: #69b8f4;
+        cursor: pointer; }
+      article.single .share-sub .share a.twitter:active:not(:disabled), article.single .share-sub .share a.twitter:focus:not(:disabled) {
+        background-color: #42a0e7;
+        cursor: pointer; }
+      article.single .share-sub .share a.twitter:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+    article.single .share-sub .share a.email {
+      background-color: #333;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box;
+      background-color: #333;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box; }
+      article.single .share-sub .share a.email:hover:not(:disabled) {
+        background-color: #404040;
+        cursor: pointer; }
+      article.single .share-sub .share a.email:active:not(:disabled), article.single .share-sub .share a.email:focus:not(:disabled) {
+        background-color: #262626;
+        cursor: pointer; }
+      article.single .share-sub .share a.email:hover:not(:disabled) {
+        background-color: #423d3d;
+        cursor: pointer; }
+      article.single .share-sub .share a.email:active:not(:disabled), article.single .share-sub .share a.email:focus:not(:disabled) {
+        background-color: #262626;
+        cursor: pointer; }
+      article.single .share-sub .share a.email:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+    article.single .share-sub .share a.support {
+      background-color: #202020;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box;
+      background-color: #202020;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box; }
+      article.single .share-sub .share a.support:hover:not(:disabled) {
+        background-color: #2d2d2d;
+        cursor: pointer; }
+      article.single .share-sub .share a.support:active:not(:disabled), article.single .share-sub .share a.support:focus:not(:disabled) {
+        background-color: #131313;
+        cursor: pointer; }
+      article.single .share-sub .share a.support:hover:not(:disabled) {
+        background-color: #2f2b2b;
+        cursor: pointer; }
+      article.single .share-sub .share a.support:active:not(:disabled), article.single .share-sub .share a.support:focus:not(:disabled) {
+        background-color: #131313;
+        cursor: pointer; }
+      article.single .share-sub .share a.support:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+    article.single .share-sub .share a.email {
+      font-size: 0.9em; }
   article.single .share-fixed {
     z-index: 100;
     position: absolute;

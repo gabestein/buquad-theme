@@ -342,51 +342,51 @@ article.single {
           }
           margin: 1em 0;
         }
-      .share-sub {
-        h3 {
-          font-weight: bold;
-          text-align: center;
-        }
-        form {
-          margin: 0 auto;
-          max-width: 400px;
-          text-align: center;
-        }
-        .social {
-          margin: 0 auto;
-          max-width: 400px;
-          padding: 5px 0 10px;
-          text-align: center;
-          border: 1px solid $color-grey;
-          background-color: lighten($color-grey, 70);
-          .twitter-follow-button {
-            margin-bottom: -9px;
-          }
-        }
-        .share {
-          text-align: center;
-          margin-bottom: 20px;
-          a {
-            display: block;
-            clear: both;
-            width: 100%;
-            margin: 6px 0;
-
-            @include media($medium-screen) {
-              width: auto;
-              display: auto;
-              clear: none;
-              margin: 0;
-            }
-          }
-          @include social-buttons;
-          a.email {
-            font-size: 0.9em;
-          }
-        }
-      }
     }
     //end plea
+  }
+  .share-sub {
+    h3 {
+      font-weight: bold;
+      text-align: center;
+    }
+    form {
+      margin: 0 auto;
+      max-width: 400px;
+      text-align: center;
+    }
+    .social {
+      margin: 0 auto;
+      max-width: 400px;
+      padding: 5px 0 10px;
+      text-align: center;
+      border: 1px solid $color-grey;
+      background-color: lighten($color-grey, 70);
+      .twitter-follow-button {
+        margin-bottom: -9px;
+      }
+    }
+    .share {
+      text-align: center;
+      margin-bottom: 20px;
+      a {
+        display: block;
+        clear: both;
+        width: 100%;
+        margin: 6px 0;
+
+        @include media($medium-screen) {
+          width: auto;
+          display: auto;
+          clear: none;
+          margin: 0;
+        }
+      }
+      @include social-buttons;
+      a.email {
+        font-size: 0.9em;
+      }
+    }
   }
   //end footer
   .share-fixed {
