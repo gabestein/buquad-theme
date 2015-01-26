@@ -16,19 +16,12 @@
     <div class="card container">
     <?php while ( have_posts() ) {
         the_post(); ?>
-        <article class="archive-list" id="<?php the_ID(); ?>">
-          <header>
-            <div class="intro-text" >
-              <h2><?php the_title(); ?></h2>
-              <h3><?php the_date(); ?></h3>
-            </div>
-          </header>
-          <section class="body">
-            <?php the_excerpt(); ?>
-            <?php the_permalink(); ?>
-          </section>
-        </article>
-    <?php } ?>
+        <section class="archive">
+          <h2><?php the_title(); ?></h2>
+          <h3><?php the_date(); ?></h3>
+        </section>
+    <?php  }
+    ?>
     <nav class="pagination">
       <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } else { ?>
 
