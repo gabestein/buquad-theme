@@ -23,17 +23,13 @@
         $content = apply_filters('the_content', $post->post_content);
         if(substr_count($content, '<p>') > $show_after_p)
         {
-          $contents = explode("</p>", $content);
+          $contents = explode("<p>", $content);
           $p_count = 1;
           foreach($contents as $content)
           {
-            echo '<p style="float: left">';
-            echo $content;
-            echo '</p>';
             if($p_count == $show_after_p)
             {
-              ?>
-              <?php $connected = new WP_Query( array(
+              $connected = new WP_Query( array(
                 'connected_type' => 'posts_to_posts',
                 'connected_items' => get_queried_object(),
                 'nopaging' => true,
@@ -47,8 +43,12 @@
                   </section>
                   <?php
                   wp_reset_postdata();
-                } ?>
-              <?php
+                }
+              echo '<p class="alignleft">';
+              echo $content;
+            } else {
+              echo '<p>';
+              echo $content;
             }
             $p_count++;
           }
