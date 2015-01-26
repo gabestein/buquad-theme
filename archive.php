@@ -13,10 +13,10 @@
     <h1><?php echo $title; ?></h1>
   </header>
   <?php if ( have_posts() ) { ?>
-    <div class="container">
+    <div class="card container">
     <?php while ( have_posts() ) {
         the_post(); ?>
-        <article class="archive" id="<?php the_ID(); ?>">
+        <article class="archive-list" id="<?php the_ID(); ?>">
           <header>
             <div class="intro-text" >
               <h2><?php the_title(); ?></h2>
