@@ -18,9 +18,12 @@
         the_post(); ?>
         <article class="archive blog">
           <header>
-            <h2><?php the_title(); ?></h2>
+            <h2><a href="<?php the_permalink(); ?>" title="permalink"><?php the_title(); ?></a></h2>
             <h3><?php the_date(); ?></h3>
           </header>
+          <section class="body">
+            <?php the_excerpt();
+          </section>
         </article>
     <?php  }
     ?>
