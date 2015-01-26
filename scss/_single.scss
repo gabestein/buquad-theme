@@ -346,19 +346,6 @@ article.single {
     }
     //end plea
   }
-  //inline related
-  @include media($medium-screen) {
-    .related.blog {
-      float: right;
-      margin-right: -25%;
-      width: 50%;
-    }
-    p.alignleft {
-      float: left;
-      clear: left;
-      width: 50%;
-    }
-  }
   .related {
     p {
       font-style: italic;
@@ -381,7 +368,19 @@ article.single {
     border-bottom: 1px dotted lighten($color-grey, 25);
     margin-bottom: 1em;
     padding-bottom: 1em;
-
+  }
+  //inline blog related
+  @include media(990px) {
+    .related.blog {
+      float: right;
+      margin-right: -25%;
+      width: 50%;
+    }
+    p.alignleft {
+      float: left;
+      clear: left;
+      width: 75%;
+    }
   }
   .share-sub {
     h3 {

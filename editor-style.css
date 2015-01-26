@@ -652,15 +652,6 @@ article.single {
           font-style: normal; }
         article.single footer .plea p strong {
           font-weight: bold; }
-  @media screen and (min-width: 40em) {
-    article.single .related.blog {
-      float: right;
-      margin-right: -25%;
-      width: 50%; }
-    article.single p.alignleft {
-      float: left;
-      clear: left;
-      width: 50%; } }
   article.single .related {
     border-bottom: 1px dotted #737373;
     margin-bottom: 1em;
@@ -678,6 +669,15 @@ article.single {
       list-style: disc inside; }
       article.single .related ul li {
         margin: 0.5em 0; }
+  @media screen and (min-width: 990px) {
+    article.single .related.blog {
+      float: right;
+      margin-right: -25%;
+      width: 50%; }
+    article.single p.alignleft {
+      float: left;
+      clear: left;
+      width: 75%; } }
   article.single .share-sub h3 {
     font-weight: bold;
     text-align: center; }

@@ -1083,15 +1083,6 @@ article.single, article.page, article.archive {
           font-style: normal; }
         article.single footer .plea p strong, article.page footer .plea p strong, article.archive footer .plea p strong {
           font-weight: bold; }
-  @media screen and (min-width: 40em) {
-    article.single .related.blog, article.page .related.blog, article.archive .related.blog {
-      float: right;
-      margin-right: -25%;
-      width: 50%; }
-    article.single p.alignleft, article.page p.alignleft, article.archive p.alignleft {
-      float: left;
-      clear: left;
-      width: 50%; } }
   article.single .related, article.page .related, article.archive .related {
     border-bottom: 1px dotted #737373;
     margin-bottom: 1em;
@@ -1109,6 +1100,15 @@ article.single, article.page, article.archive {
       list-style: disc inside; }
       article.single .related ul li, article.page .related ul li, article.archive .related ul li {
         margin: 0.5em 0; }
+  @media screen and (min-width: 990px) {
+    article.single .related.blog, article.page .related.blog, article.archive .related.blog {
+      float: right;
+      margin-right: -25%;
+      width: 50%; }
+    article.single p.alignleft, article.page p.alignleft, article.archive p.alignleft {
+      float: left;
+      clear: left;
+      width: 75%; } }
   article.single .share-sub h3, article.page .share-sub h3, article.archive .share-sub h3 {
     font-weight: bold;
     text-align: center; }
