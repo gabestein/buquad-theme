@@ -208,7 +208,8 @@ function subscribe_block() { ?>
 <?php }
 
 function subscribe_block_shortcode(){
-  return subscribe_block();
+  $block = subscribe_block();
+  return $block;
 }
 add_shortcode( 'subscribe', 'subscribe_block_shortcode' );
 
