@@ -686,7 +686,9 @@ article.single {
       width: 66%; } }
   article.single .share-sub h3 {
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2em; }
   article.single .share-sub form {
     margin: 0 auto;
     max-width: 400px;

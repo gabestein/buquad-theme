@@ -1125,7 +1125,9 @@ article.single, article.page, article.archive {
       width: 66%; } }
   article.single .share-sub h3, article.page .share-sub h3, article.archive .share-sub h3 {
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2em; }
   article.single .share-sub form, article.page .share-sub form, article.archive .share-sub form {
     margin: 0 auto;
     max-width: 400px;
