@@ -15,8 +15,9 @@
   <?php if ( have_posts() ) { ?>
     <div class="card container">
     <?php while ( have_posts() ) {
-        the_post(); ?>
+        the_post();
         article_card(get_the_id());
+        ?>
     <?php  }
     ?>
     <nav class="pagination">
