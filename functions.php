@@ -197,7 +197,6 @@ function email_subscribe_form() { ?>
 function subscribe_block() { ?>
   <div class="share-sub">
     <div class="subscribe">
-      <h3>Subscribe to the Sleeper Ave. mailing list</h3>
       <?php email_subscribe_form(); ?>
     </div>
     <div class="social">
