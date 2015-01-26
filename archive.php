@@ -22,7 +22,7 @@
             <h3><?php the_date(); ?></h3>
           </header>
           <section class="body">
-            <?php the_excerpt();
+            <?php the_excerpt(); ?>
           </section>
         </article>
     <?php  }
