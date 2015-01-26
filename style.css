@@ -626,9 +626,11 @@ blockquote {
       color: #FCFCFC;
       background-color: #54a7c9; }
 
-li.current-menu-item.menu-item-592 a {
+li.current-menu-item.menu-item-592 a:link, li.current-menu-item.menu-item-592 a:visited {
+  color: #FCFCFC; }
+li.current-menu-item.menu-item-592 a:hover, li.current-menu-item.menu-item-592 a:active {
   color: #FCFCFC;
-  background-color: #388fb2; }
+  background-color: #54a7c9; }
 
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }

@@ -71,8 +71,11 @@
 }
 
 li.current-menu-item.menu-item-592 a {
-  color: $color-white;
-  background-color: $color-red;
+  &:link, &:visited { color: $color-white; }
+  &:hover, &:active {
+    color: $color-white;
+    background-color: lighten($color-red, $lighten-amount);
+  }
 }
 .secondary-menu, .footer-menu {
     font-size: $font-size * 0.875;
