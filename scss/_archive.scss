@@ -1,8 +1,8 @@
 article.archive.blog {
-  border-bottom: 1px dotted $color-grey;
   margin: 2em 0;
   padding: 0.5em 0;
   header {
+    margin-bottom: 1em;
     h2 {
       text-transform: uppercase;
       font-style: bold;
@@ -13,5 +13,8 @@ article.archive.blog {
       font-family: Helvetica, Arial, sans-serif;
       color: lighten($color-grey, 20);
     }
+  }
+  body {
+    border-bottom: 1px dotted $color-grey;
   }
 }
