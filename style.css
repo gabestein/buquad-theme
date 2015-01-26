@@ -1087,9 +1087,13 @@ article.single, article.page, article.archive {
     margin-bottom: 1em;
     padding-bottom: 1em; }
     article.single .related h3, article.page .related h3, article.archive .related h3 {
-      font-weight: bold;
       font-size: 1.75em;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 1em; }
+    article.single .related ul, article.page .related ul, article.archive .related ul {
+      list-style: disc inside; }
+      article.single .related ul li, article.page .related ul li, article.archive .related ul li {
+        margin: 0.5em 0; }
   article.single .share-sub h3, article.page .share-sub h3, article.archive .share-sub h3 {
     font-weight: bold;
     text-align: center; }

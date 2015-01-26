@@ -347,10 +347,15 @@ article.single {
   }
   .related {
     h3 {
-      font-weight: bold;
       font-size: 1.75em;
       text-align: center;
-
+      margin-bottom: 1em;
+    }
+    ul {
+      list-style: disc inside;
+      li {
+        margin: 0.5em 0;
+      }
     }
     border-bottom: 1px dotted lighten($color-grey, 25);
     margin-bottom: 1em;
