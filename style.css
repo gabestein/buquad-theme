@@ -1086,7 +1086,8 @@ article.single, article.page, article.archive {
   @media screen and (min-width: 40em) {
     article.single .related.blog, article.page .related.blog, article.archive .related.blog {
       float: right;
-      margin-right: -25%; }
+      margin-right: -25%;
+      width: 50%; }
     article.single p.alignleft, article.page p.alignleft, article.archive p.alignleft {
       float: left;
       clear: left;
