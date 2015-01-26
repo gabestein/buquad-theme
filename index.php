@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1>Home</h1>
+
 <?php if ( have_posts() ) { ?>
   <div class="card container">
   <?php while ( have_posts() ) {
