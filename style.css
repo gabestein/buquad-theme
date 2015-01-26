@@ -1083,7 +1083,8 @@ article.single, article.page, article.archive {
         article.single footer .plea p strong, article.page footer .plea p strong, article.archive footer .plea p strong {
           font-weight: bold; }
   article.single .related, article.page .related, article.archive .related {
-    border-bottom: 1px dotted #737373; }
+    border-bottom: 1px dotted #737373;
+    margin-bottom: 1em; }
     article.single .related h3, article.page .related h3, article.archive .related h3 {
       font-weight: bold;
       text-align: center; }
