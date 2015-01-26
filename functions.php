@@ -194,26 +194,21 @@ function email_subscribe_form() { ?>
   <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
 <?php }
 
-function social_subscribe() { ?>
-  <div class="share-sub">
-    <div class="share">
-      <a class="facebook" onclick="fb_share('<?php the_permalink(); ?>')"><i class="fa fa-facebook"></i> Share</a>
-      <a class="twitter" onclick="twitter_share('<?php the_permalink(); ?>', '<?php echo get_the_excerpt(); ?>')"><i class="fa fa-twitter"></i> Tweet</a>
-      <a class="email" target="_blank" href="mailto:?subject=Sleeper Ave.: <?php the_title(); ?>&body=Hi!%0D%0A%0D%0AI thought you might enjoy this Sleeper Ave. comic by Ed Stein.%0D%0A%0D%0A<?php htmlentities(the_title()); ?>%0D%0A<?php echo htmlentities(get_the_excerpt()); ?>%0D%0A%0D%0A<?php htmlentities(the_permalink()); ?>"><i class="fa fa-envelope"></i> Send to a Friend</a>
-      <a class="support" href="http://beaconreader.com/projects/sleeper-ave"><i class="fa fa-credit-card"></i> Support</a>
-    </div>
+function subscribe_block() { ?>
+  <div class="subscribe">
+    <h3>Subscribe to the Sleeper Ave. mailing list</h3>
+    <?php email_subscribe_form(); ?>
+  </div>
+  <div class="social">
+    <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+    <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
   </div>
 <?php }
 
-function mailchimp_subscribe_shortcode(){
-  return email_subscribe_form();
+function subscribe_block_shortcode(){
+  return subscribe_block();
 }
-add_shortcode( 'email_subscribe', 'email_subscribe_shortcode' );
-
-function social_subscribe_shortcode(){
-  return social_subscribe();
-}
-add_shortcode( 'social_subscribe', 'social_subscribe_shortcode' );
+add_shortcode( 'subscribe', 'subscribe_block_shortcode' );
 
 function user_card($id) {
   // get data
