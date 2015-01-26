@@ -18,11 +18,12 @@
         the_post(); ?>
         <article class="archive blog">
           <header>
-            <h2><a href="<?php the_permalink(); ?>" title="permalink"><?php the_title(); ?></a></h2>
+            <h2><a href="<?php the_permalink(); ?>" title="Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
             <h3><?php the_date(); ?></h3>
           </header>
           <section class="body">
             <?php the_excerpt(); ?>
+            <a class="button" href="<?php the_permalink(); ?>" title="Link to <?php the_title(); ?>">Read More</a>
           </section>
         </article>
     <?php  }
