@@ -5,10 +5,13 @@
     <head>
       <?php if(is_single()) { ?>
         <title><?php the_title(); ?> | <?php bloginfo('name'); ?></title>
+      <?php } elseif(is_front_page()) { ?>
+        <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+        <meta name="description" content="In 1953, a tornado roared through the small town I grew up in. The storm foreshadowed other winds of change coming to America.">
       <?php } else { ?>
         <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
         <meta name="description" content="In 1953, a tornado roared through the small town I grew up in. The storm foreshadowed other winds of change coming to America.">
-      <?php } ?>
+    <?php  }?>
 
         <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
