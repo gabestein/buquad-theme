@@ -1506,7 +1506,7 @@ article.archive.blog {
   margin: 2em 0;
   padding: 0.5em 0; }
   article.archive.blog header {
-    margin-bottom: 1em; }
+    margin-bottom: 2.5em; }
     article.archive.blog header h2 {
       text-transform: uppercase;
       font-style: bold;
@@ -1515,5 +1515,5 @@ article.archive.blog {
     article.archive.blog header h3 {
       font-family: Helvetica, Arial, sans-serif;
       color: #666666; }
-  article.archive.blog body {
+  article.archive.blog .body {
     border-bottom: 1px dotted #333; }
