@@ -656,7 +656,7 @@ article.single {
     border-bottom: 1px dotted #737373;
     margin-bottom: 1em;
     padding-bottom: 1em; }
-    article.single .related .blog {
+    article.single .related.blog {
       float: right; }
     article.single .related p {
       font-style: italic;

@@ -347,7 +347,7 @@ article.single {
     //end plea
   }
   .related {
-    .blog {
+    &.blog {
       float: right;
     }
     p {
