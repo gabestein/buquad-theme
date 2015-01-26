@@ -71,7 +71,10 @@
 }
 
 li.current-menu-item.menu-item-592 a {
-  &:link, &:visited { color: $color-white; }
+  &:link, &:visited {
+    color: $color-white;
+    background-color: $color-red;
+  }
   &:hover, &:active {
     color: $color-white;
     background-color: lighten($color-red, $lighten-amount);
