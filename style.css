@@ -1502,7 +1502,7 @@ nav.pagination {
   .homepage .featured-article.container .featured-article-description h3 {
     margin-bottom: 1em; }
 
-article.archive.blog header h1 {
+article.archive.blog header h2 {
   text-transform: uppercase;
   font-size: 1.5em;
   line-height: 2.0em; }
