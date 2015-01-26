@@ -194,7 +194,7 @@ function email_subscribe_form() { ?>
   <iframe name="mailchimp_target" height=0 width=0 style="height: 0; width: 0;"></iframe>
 <?php }
 
-function subscribe_block() { return( ?>
+function subscribe_block() { ?>
   <div class="share-sub">
     <div class="subscribe">
       <h3>Subscribe to the Sleeper Ave. mailing list</h3>
@@ -205,11 +205,12 @@ function subscribe_block() { return( ?>
       <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
     </div>
   </div>
-<?php )}
+<?php }
 
 function subscribe_block_shortcode(){
-  $block = subscribe_block();
-  return $block;
+  ob_start();
+  subscribe_block();
+  return ob_get_clean();
 }
 add_shortcode( 'subscribe', 'subscribe_block_shortcode' );
 
