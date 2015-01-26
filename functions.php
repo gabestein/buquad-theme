@@ -195,13 +195,15 @@ function email_subscribe_form() { ?>
 <?php }
 
 function subscribe_block() { ?>
-  <div class="subscribe">
-    <h3>Subscribe to the Sleeper Ave. mailing list</h3>
-    <?php email_subscribe_form(); ?>
-  </div>
-  <div class="social">
-    <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-    <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
+  <div class="share-sub">
+    <div class="subscribe">
+      <h3>Subscribe to the Sleeper Ave. mailing list</h3>
+      <?php email_subscribe_form(); ?>
+    </div>
+    <div class="social">
+      <div class="fb-like" data-href="https://facebook.com/sleeperave" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      <a href="https://twitter.com/sleeperave" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @sleeperave</a>
+    </div>
   </div>
 <?php }
 
