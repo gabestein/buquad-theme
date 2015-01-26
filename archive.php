@@ -13,7 +13,7 @@
     <h1><?php echo $title; ?></h1>
   </header>
   <?php if ( have_posts() ) { ?>
-    <div class="card container">
+    <div class="container">
     <?php while ( have_posts() ) {
         the_post(); ?>
         <article class="archive" id="<?php the_ID(); ?>">
