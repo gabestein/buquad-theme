@@ -5,7 +5,6 @@
     article_card(get_the_id());
   }
   ?>
-</div>
 <?php } else {
   get_404();
 } ?>
