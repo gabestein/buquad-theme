@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php
-  query_posts('order=ASC');
+  query_posts('order=ASC&cat=1');
   if(is_author()) {
     $title = get_the_author();
   } else {
