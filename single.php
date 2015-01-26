@@ -25,7 +25,7 @@
         'nopaging' => true,
         ) );
         if($connected->have_posts()) {
-          $show_after_p = 4;
+          $show_after_p = 3;
           $content = apply_filters('the_content', $post->post_content);
           if(substr_count($content, '<p>') > $show_after_p)
           {
