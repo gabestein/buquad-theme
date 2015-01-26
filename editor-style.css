@@ -653,7 +653,8 @@ article.single {
           font-weight: bold; }
   article.single .related {
     border-bottom: 1px dotted #737373;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    padding-bottom: 1em; }
     article.single .related h3 {
       font-weight: bold;
       text-align: center; }
