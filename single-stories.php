@@ -32,7 +32,7 @@
         <div class="intro-text" >
             <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
             <h4><?php my_post_number(); ?></h4>
-            <h2><?php the_title(); ?></h2>
+            <h2><a href="<?php the_permalink(); ?>" title="permanent link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
         </div>
     </header>
     <section class="body">
