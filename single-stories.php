@@ -42,7 +42,7 @@
     <footer>
         <?php $connected = new WP_Query( array(
           'connected_type' => 'posts_to_posts',
-          'connected_items' => get_queried_object(),
+          'connected_items' => $post,
           'nopaging' => true,
           ) );
           if($connected->have_posts()) { ?>
