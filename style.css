@@ -857,11 +857,6 @@ li.current-menu-item.menu-item-592 a:hover, li.current-menu-item.menu-item-592 a
         font-size: 1.5em;
         margin: 0 0 30px;
         text-transform: uppercase; }
-        .recommender .action .modal h2 a, .recommender .action .modal h2 a:link, .recommender .action .modal h2 a:visited, .recommender .action .modal h2 a:active, .recommender .action .modal h2 a:hover {
-          color: #202020;
-          text-decoration: none; }
-        .recommender .action .modal h2 a:hover {
-          color: #333; }
       .recommender .action .modal form {
         margin: 0 0 30px; }
       .recommender .action .modal .social {
@@ -923,6 +918,11 @@ article.single, article.page, article.archive {
           article.single header .intro-text h2, article.page header .intro-text h2, article.archive header .intro-text h2 {
             font-size: 3em;
             margin-bottom: 0em; } }
+        article.single header .intro-text h2 a, article.page header .intro-text h2 a, article.archive header .intro-text h2 a, article.single header .intro-text h2 a:link, article.page header .intro-text h2 a:link, article.archive header .intro-text h2 a:link, article.single header .intro-text h2 a:visited, article.page header .intro-text h2 a:visited, article.archive header .intro-text h2 a:visited, article.single header .intro-text h2 a:active, article.page header .intro-text h2 a:active, article.archive header .intro-text h2 a:active, article.single header .intro-text h2 a:hover, article.page header .intro-text h2 a:hover, article.archive header .intro-text h2 a:hover {
+          color: #202020;
+          text-decoration: none; }
+        article.single header .intro-text h2 a:hover, article.page header .intro-text h2 a:hover, article.archive header .intro-text h2 a:hover {
+          color: #333; }
       article.single header .intro-text h3, article.page header .intro-text h3, article.archive header .intro-text h3 {
         color: #666666;
         font-family: Helvetica, Arial, sans-serif;

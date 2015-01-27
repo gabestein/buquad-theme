@@ -418,11 +418,6 @@ blockquote {
         font-size: 1.5em;
         margin: 0 0 30px;
         text-transform: uppercase; }
-        .recommender .action .modal h2 a, .recommender .action .modal h2 a:link, .recommender .action .modal h2 a:visited, .recommender .action .modal h2 a:active, .recommender .action .modal h2 a:hover {
-          color: #202020;
-          text-decoration: none; }
-        .recommender .action .modal h2 a:hover {
-          color: #333; }
       .recommender .action .modal form {
         margin: 0 0 30px; }
       .recommender .action .modal .social {
@@ -484,6 +479,11 @@ article.single {
           article.single header .intro-text h2 {
             font-size: 3em;
             margin-bottom: 0em; } }
+        article.single header .intro-text h2 a, article.single header .intro-text h2 a:link, article.single header .intro-text h2 a:visited, article.single header .intro-text h2 a:active, article.single header .intro-text h2 a:hover {
+          color: #202020;
+          text-decoration: none; }
+        article.single header .intro-text h2 a:hover {
+          color: #333; }
       article.single header .intro-text h3 {
         color: #666666;
         font-family: Helvetica, Arial, sans-serif;
