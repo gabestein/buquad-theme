@@ -6,6 +6,14 @@ set_post_thumbnail_size(300, 300, true );
 add_image_size('card', 400, 150, true );
 //add_image_size('banner', 1200, 900, true);
 
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
+add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );
+
+function remove_thumbnail_dimensions( $html ) {
+  $html = preg_replace( '/(height)=\"\d*\"\s/', "", $html );
+  return $html;
+}
+
 //Gets post cat slug and looks for single-[cat slug].php and applies it
 add_filter('single_template', create_function(
 '$the_template',
