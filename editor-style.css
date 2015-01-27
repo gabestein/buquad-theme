@@ -418,6 +418,11 @@ blockquote {
         font-size: 1.5em;
         margin: 0 0 30px;
         text-transform: uppercase; }
+        .recommender .action .modal h2 a, .recommender .action .modal h2 a:link, .recommender .action .modal h2 a:visited, .recommender .action .modal h2 a:active, .recommender .action .modal h2 a:hover {
+          color: #202020;
+          text-decoration: none; }
+        .recommender .action .modal h2 a:hover {
+          color: #333; }
       .recommender .action .modal form {
         margin: 0 0 30px; }
       .recommender .action .modal .social {
