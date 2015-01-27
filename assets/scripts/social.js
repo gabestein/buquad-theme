@@ -13,9 +13,9 @@ jQuery(document).ready(function($) {
 
   if(window.is_email || window.visits <= window.max_visits) {
     $('.action .support').fadeIn('slow');
-    $('.plea .subscribe').fadeIn('fast');
-  } else {
     $('.plea .subscribe').fadeOut('fast');
+  } else {
+    $('.plea .subscribe').fadeIn('fast');
     $('.action .subscribe').fadeIn('slow');
   }
 
@@ -56,7 +56,7 @@ jQuery(document).ready(function($) {
     });
 
   }
-  
+
 });
 
 function fb_share(url) {
