@@ -1087,7 +1087,7 @@ article.single, article.page, article.archive {
     border-bottom: 1px dotted #737373;
     padding: 1em; }
     article.single footer .plea, article.page footer .plea, article.archive footer .plea {
-      color: #737373;
+      color: #666666;
       font-size: 0.9em;
       font-style: italic; }
       article.single footer .plea p, article.page footer .plea p, article.archive footer .plea p {
