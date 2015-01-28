@@ -367,10 +367,7 @@ article.single {
     }
     &.blog {
       h3 {
-        font-size: 1.25em;
-      }
-      h2 {
-        font-size: 2.4em;
+      font-size: 1.25em;
       }
     }
     ul {
@@ -383,6 +380,9 @@ article.single {
     margin-bottom: 1em;
     padding-bottom: 1em;
     &.blog {
+      h2 {
+        font-size: 2.4em;
+      }
       width: 100%;
       text-align: center;
       display: block;
