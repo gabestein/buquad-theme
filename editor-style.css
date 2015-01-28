@@ -672,6 +672,8 @@ article.single {
       margin-bottom: 1em; }
     article.single .related.blog h3 {
       font-size: 1.25em; }
+    article.single .related.blog h2 {
+      font-size: 2.4em; }
     article.single .related ul {
       list-style: disc inside; }
       article.single .related ul li {

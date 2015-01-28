@@ -1111,6 +1111,8 @@ article.single, article.page, article.archive {
       margin-bottom: 1em; }
     article.single .related.blog h3, article.page .related.blog h3, article.archive .related.blog h3 {
       font-size: 1.25em; }
+    article.single .related.blog h2, article.page .related.blog h2, article.archive .related.blog h2 {
+      font-size: 2.4em; }
     article.single .related ul, article.page .related ul, article.archive .related ul {
       list-style: disc inside; }
       article.single .related ul li, article.page .related ul li, article.archive .related ul li {
