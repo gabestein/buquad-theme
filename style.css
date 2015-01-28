@@ -1106,6 +1106,7 @@ article.single, article.page, article.archive {
     article.single .related h3, article.page .related h3, article.archive .related h3 {
       font-family: Helvetica, Arial, sans-serif;
       font-size: 1.75em;
+      font-style: normal;
       text-align: center;
       margin-bottom: 1em; }
     article.single .related.blog h3, article.page .related.blog h3, article.archive .related.blog h3 {
