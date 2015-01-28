@@ -432,6 +432,8 @@ blockquote {
 article.single {
   position: relative;
   width: 100%; }
+  article.single.blog header .intro-text h2 {
+    font-size: 2.4em; }
   article.single header {
     position: relative;
     z-index: 1; }
@@ -670,8 +672,6 @@ article.single {
       font-weight: normal;
       text-align: center;
       margin-bottom: 1em; }
-    article.single .related.blog h3 {
-      font-size: 1.25em; }
     article.single .related ul {
       list-style: disc inside; }
       article.single .related ul li {
@@ -682,8 +682,8 @@ article.single {
       display: block;
       clear: both;
       border-top: 1px dotted #737373; }
-      article.single .related.blog h2 {
-        font-size: 2.4em; }
+      article.single .related.blog h3 {
+        font-size: 1.25em; }
   @media screen and (min-width: 990px) {
     article.single .related.blog {
       float: right;

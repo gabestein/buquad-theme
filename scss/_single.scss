@@ -118,6 +118,11 @@ $vertical-spacing: 24px;
   }
 }
 article.single {
+  &.blog {
+    header .intro-text h2 {
+      font-size: 2.4em;
+    }
+  }
     position: relative;
     width: 100%;
     // @include outer-container;
@@ -365,11 +370,6 @@ article.single {
       text-align: center;
       margin-bottom: 1em;
     }
-    &.blog {
-      h3 {
-      font-size: 1.25em;
-      }
-    }
     ul {
       list-style: disc inside;
       li {
@@ -380,8 +380,8 @@ article.single {
     margin-bottom: 1em;
     padding-bottom: 1em;
     &.blog {
-      h2 {
-        font-size: 2.4em;
+      h3 {
+        font-size: 1.25em;
       }
       width: 100%;
       text-align: center;
