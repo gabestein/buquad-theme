@@ -665,6 +665,7 @@ article.single {
       font-style: italic;
       color: #333; }
     article.single .related h3 {
+      font-family: Helvetica, Arial, sans-serif;
       font-size: 1.75em;
       text-align: center;
       margin-bottom: 1em; }
