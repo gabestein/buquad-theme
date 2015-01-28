@@ -948,7 +948,8 @@ article.single, article.page, article.archive {
         padding-bottom: .1em; }
         @media screen and (min-width: 53.75em) {
           article.single header .intro-text h4, article.page header .intro-text h4, article.archive header .intro-text h4 {
-            padding-bottom: .4em; } }
+            padding-bottom: .4em;
+            margin-bottom: .4em; } }
       article.single header .intro-text ul, article.page header .intro-text ul, article.archive header .intro-text ul {
         margin-bottom: 1.5em; }
       article.single header .intro-text ul li, article.page header .intro-text ul li, article.archive header .intro-text ul li {
