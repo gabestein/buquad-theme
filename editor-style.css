@@ -667,7 +667,7 @@ article.single {
     article.single .related h3 {
       font-family: Helvetica, Arial, sans-serif;
       font-size: 1.75em;
-      font-style: normal;
+      font-weight: normal;
       text-align: center;
       margin-bottom: 1em; }
     article.single .related.blog h3 {
