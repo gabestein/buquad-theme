@@ -1100,11 +1100,7 @@ article.single, article.page, article.archive {
         article.single footer .plea p strong, article.page footer .plea p strong, article.archive footer .plea p strong {
           font-weight: bold; }
   article.single .body .related h3, article.page .body .related h3, article.archive .body .related h3 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.75em;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 1em; }
+    font-family: Helvetica, Arial, sans-serif; }
   article.single .related, article.page .related, article.archive .related {
     border-bottom: 1px dotted #737373;
     margin-bottom: 1em;
@@ -1112,6 +1108,11 @@ article.single, article.page, article.archive {
     article.single .related p, article.page .related p, article.archive .related p {
       font-style: italic;
       color: #333; }
+    article.single .related h3, article.page .related h3, article.archive .related h3 {
+      font-size: 1.75em;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 1em; }
     article.single .related ul, article.page .related ul, article.archive .related ul {
       list-style: disc inside; }
       article.single .related ul li, article.page .related ul li, article.archive .related ul li {

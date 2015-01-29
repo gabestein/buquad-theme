@@ -362,16 +362,18 @@ article.single {
   .body .related {
     h3 {
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 1.75em;
-      font-weight: normal;
-      text-align: center;
-      margin-bottom: 1em;
     }
   }
   .related {
     p {
       font-style: italic;
       color: $color-grey;
+    }
+    h3 {
+      font-size: 1.75em;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 1em;
     }
     ul {
       list-style: disc inside;
