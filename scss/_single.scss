@@ -359,17 +359,19 @@ article.single {
     }
     //end plea
   }
-  .related {
-    p {
-      font-style: italic;
-      color: $color-grey;
-    }
+  .body .related {
     h3 {
       font-family: Helvetica, Arial, sans-serif;
       font-size: 1.75em;
       font-weight: normal;
       text-align: center;
       margin-bottom: 1em;
+    }
+  }
+  .related {
+    p {
+      font-style: italic;
+      color: $color-grey;
     }
     ul {
       list-style: disc inside;
