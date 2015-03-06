@@ -169,6 +169,7 @@ $border-radius: 0px;
   }
 
   &.article {
+    overflow: hidden;
     &.prev, &.next {
       width: 50%;
       @include media(940px) {

@@ -509,6 +509,7 @@ blockquote {
     [type="card"] .bottom a[type="button"] {
       display: block; }
   [type="card"].article {
+    overflow: hidden;
     text-align: left; }
     [type="card"].article.prev, [type="card"].article.next {
       width: 50%; }
