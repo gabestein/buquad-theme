@@ -39,7 +39,11 @@
                 <section class="related blog">
                   <h3>Related Stories</h3>
                   <?php while($connected->have_posts()) : $connected->the_post(); ?>
-                    <?php article_card(get_the_ID()); ?>
+                    <?php if(in_category('stories')) {
+                      article_card(get_the_ID());
+                    } else {
+                      
+                    } ?>
                   <?php endwhile; ?>
                 </section>
                 <?php
