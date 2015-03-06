@@ -42,7 +42,7 @@
                     <?php if(in_category('stories')) {
                       article_card(get_the_ID());
                     } else { ?>
-                      <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                      <h3>&bull; <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                   <?php  } ?>
                   <?php endwhile; ?>
                 </section>
