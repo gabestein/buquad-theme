@@ -38,15 +38,13 @@
                 ?>
                 <section class="related blog">
                   <h3>Related Stories</h3>
-                  <ul>
                   <?php while($connected->have_posts()) : $connected->the_post(); ?>
-                    <li><?php if(in_category('stories')) {
+                    <?php if(in_category('stories')) {
                       article_card(get_the_ID());
-                    } else {
-
-                    } ?></li>
+                    } else { ?>
+                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    } ?>
                   <?php endwhile; ?>
-                </ul>
                 </section>
                 <?php
                 echo '<p class="alignleft">';
