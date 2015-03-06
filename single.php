@@ -43,7 +43,7 @@
                       article_card(get_the_ID());
                     } else { ?>
                       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    } ?>
+                  <?php  } ?>
                   <?php endwhile; ?>
                 </section>
                 <?php
