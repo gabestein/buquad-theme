@@ -149,7 +149,7 @@ function support_action() { ?>
 
 function book_action() { ?>
   <div class="book container">
-    <p class="cta">The Sleeper Ave. Book is Here! Subscribe and it’s yours!</p>
+    <p class="cta">The Sleeper Ave. Book is Here! Support Sleeper Ave. and it's yours!</p>
     <a onclick="donate_action_logger()" href="https://www.beaconreader.com/projects/the-sleeper-ave-book" class="button book" target="_blank"><i class="fa fa-book"></i> Get the Book</a>
   </div>
 <?php }
