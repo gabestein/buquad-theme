@@ -101,7 +101,7 @@ function action_unit() { ?>
   <section class="action">
     <?php
       subscribe_action();
-      support_action();
+      book_action();
     ?>
   </section>
 
@@ -144,6 +144,13 @@ function support_action() { ?>
   <div class="support container">
     <p class="cta">Love Sleeper? Support my work (and a bunch of independent journalists and artists) over on Beacon Reader. -- Ed</p>
     <a onclick="donate_action_logger()" href="http://www.beaconreader.com/projects/sleeper-ave" class="button" target="_blank"><i class="fa fa-credit-card"></i> Fund Sleeper Ave.</a>
+  </div>
+<?php }
+
+function book_action() { ?>
+  <div class="book container">
+    <p class="cta">The Sleeper Ave. Book is Here! Subscribe and it’s yours!</p>
+    <a onclick="donate_action_logger()" href="https://www.beaconreader.com/projects/the-sleeper-ave-book" class="button" target="_blank"><i class="fa fa-book"></i> Get the Book</a>
   </div>
 <?php }
 // Functions to compose a standard _card object_ based on an id

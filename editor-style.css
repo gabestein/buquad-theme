@@ -535,6 +535,142 @@ article.single {
     max-width: 640px;
     margin: 0 auto 1.5em auto;
     padding: 0 8px; }
+    article.single .body .social {
+      text-align: center;
+      font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif;
+      text-transform: uppercase; }
+      article.single .body .social a.facebook {
+        background-color: #3a5795;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.facebook:hover:not(:disabled) {
+          background-color: #3c60ac;
+          cursor: pointer; }
+        article.single .body .social a.facebook:active:not(:disabled), article.single .body .social a.facebook:focus:not(:disabled) {
+          background-color: #364e7f;
+          cursor: pointer; }
+        article.single .body .social a.facebook:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.twitter {
+        background-color: #55acee;
+        border-radius: 3px;
+        border: none;
+        color: #333333;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.twitter:hover:not(:disabled) {
+          background-color: #69b8f4;
+          cursor: pointer; }
+        article.single .body .social a.twitter:active:not(:disabled), article.single .body .social a.twitter:focus:not(:disabled) {
+          background-color: #42a0e7;
+          cursor: pointer; }
+        article.single .body .social a.twitter:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.email {
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.email:hover:not(:disabled) {
+          background-color: #404040;
+          cursor: pointer; }
+        article.single .body .social a.email:active:not(:disabled), article.single .body .social a.email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single .body .social a.email:hover:not(:disabled) {
+          background-color: #423d3d;
+          cursor: pointer; }
+        article.single .body .social a.email:active:not(:disabled), article.single .body .social a.email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single .body .social a.email:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.support {
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.support:hover:not(:disabled) {
+          background-color: #2d2d2d;
+          cursor: pointer; }
+        article.single .body .social a.support:active:not(:disabled), article.single .body .social a.support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single .body .social a.support:hover:not(:disabled) {
+          background-color: #2f2b2b;
+          cursor: pointer; }
+        article.single .body .social a.support:active:not(:disabled), article.single .body .social a.support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single .body .social a.support:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.book {
+        background-color: green;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.book:hover:not(:disabled) {
+          background-color: #009a00;
+          cursor: pointer; }
+        article.single .body .social a.book:active:not(:disabled), article.single .body .social a.book:focus:not(:disabled) {
+          background-color: #026402;
+          cursor: pointer; }
+        article.single .body .social a.book:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
     article.single .body h3 {
       font-size: 1.5em;
       font-weight: 600;
@@ -841,6 +977,26 @@ article.single {
       article.single .share-sub .share a.support:disabled {
         opacity: 0.5;
         cursor: not-allowed; }
+    article.single .share-sub .share a.book {
+      background-color: green;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box; }
+      article.single .share-sub .share a.book:hover:not(:disabled) {
+        background-color: #009a00;
+        cursor: pointer; }
+      article.single .share-sub .share a.book:active:not(:disabled), article.single .share-sub .share a.book:focus:not(:disabled) {
+        background-color: #026402;
+        cursor: pointer; }
+      article.single .share-sub .share a.book:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
     article.single .share-sub .share a.email {
       font-size: 0.9em; }
   article.single .share-fixed {
@@ -968,6 +1124,26 @@ article.single {
           background-color: #131313;
           cursor: pointer; }
         article.single .share-fixed ul a.support:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .share-fixed ul a.book {
+        background-color: green;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .share-fixed ul a.book:hover:not(:disabled) {
+          background-color: #009a00;
+          cursor: pointer; }
+        article.single .share-fixed ul a.book:active:not(:disabled), article.single .share-fixed ul a.book:focus:not(:disabled) {
+          background-color: #026402;
+          cursor: pointer; }
+        article.single .share-fixed ul a.book:disabled {
           opacity: 0.5;
           cursor: not-allowed; }
       article.single .share-fixed ul li {

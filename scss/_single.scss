@@ -45,6 +45,9 @@ $vertical-spacing: 24px;
   a.support {
     @include button(flat, $color-black);
   }
+  a.book {
+    @include button(flat, $color-green);
+  }
 }
 
 .recommender {
@@ -259,6 +262,11 @@ article.single {
     }
 
     .body {
+
+        .social {
+            text-align: center;
+         @include social-buttons;
+        }
 
         h3 {
             font-size: 1.5*$base-font-size;

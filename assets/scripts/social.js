@@ -12,10 +12,10 @@ jQuery(document).ready(function($) {
   }
 
   if(window.is_email) {
-    $('.action .support').fadeIn('slow');
+    $('.action .book').fadeIn('slow');
     $('.plea .subscribe').fadeOut('fast');
   } else if(window.visits <= window.max_visits) {
-    $('.action .support').fadeIn('slow');
+    $('.action .book').fadeIn('slow');
     $('.plea .subscribe').fadeIn('fast');
   } else {
     $('.action .subscribe').fadeIn('slow');
@@ -130,7 +130,7 @@ function mailchimp_subscribe() {
 function modal_exit() {
   (function($) {
     $('.action .subscribe').fadeOut('fast', function(){
-      $('.action .support').fadeIn('slow');
+      $('.action .book').fadeIn('slow');
     });
   })(jQuery);
 }

@@ -455,7 +455,7 @@ blockquote {
       line-height: 1.2em;
       font-weight: 700;
       text-transform: uppercase;
-      text-shadow: 2px 2px 6px #393939; }
+      text-shadow: 2px 2px 6px #3a3a3a; }
       @media screen and (min-width: 380px) {
         [type="card"] .top h1 {
           font-size: 1em;
@@ -614,7 +614,7 @@ blockquote {
     text-align: center; }
   .primary-menu li.current-menu-item a, .primary-menu li.current-post-parent a {
     color: #FCFCFC;
-    background-color: #54a7c9; }
+    background-color: #54a8c9; }
   .primary-menu a {
     height: 100%;
     padding: 0.6em 1em 0.3em;
@@ -625,14 +625,14 @@ blockquote {
       color: #FCFCFC; }
     .primary-menu a:hover, .primary-menu a:active {
       color: #FCFCFC;
-      background-color: #54a7c9; }
+      background-color: #54a8c9; }
 
 li.current-menu-item.menu-item-592 a:link, li.current-menu-item.menu-item-592 a:visited {
   color: #FCFCFC;
   background-color: #388fb2; }
 li.current-menu-item.menu-item-592 a:hover, li.current-menu-item.menu-item-592 a:active {
   color: #FCFCFC;
-  background-color: #54a7c9; }
+  background-color: #54a8c9; }
 
 .secondary-menu, .footer-menu {
   font-size: 15.75px; }
@@ -644,10 +644,10 @@ li.current-menu-item.menu-item-592 a:hover, li.current-menu-item.menu-item-592 a
       color: #FCFCFC; }
     .secondary-menu a:hover, .secondary-menu a:active, .footer-menu a:hover, .footer-menu a:active {
       color: #FCFCFC;
-      background-color: #54a7c9; }
+      background-color: #54a8c9; }
   .secondary-menu li.current-menu-item a, .footer-menu li.current-menu-item a {
     color: #FCFCFC;
-    background-color: #54a7c9; }
+    background-color: #54a8c9; }
 
 .modal h1 {
   margin: 0; }
@@ -975,6 +975,142 @@ article.single, article.page, article.archive {
     max-width: 640px;
     margin: 0 auto 1.5em auto;
     padding: 0 8px; }
+    article.single .body .social, article.page .body .social, article.archive .body .social {
+      text-align: center;
+      font-family: 'Architects Daughter', 'Comic Sans', cursive, sans-serif;
+      text-transform: uppercase; }
+      article.single .body .social a.facebook, article.page .body .social a.facebook, article.archive .body .social a.facebook {
+        background-color: #3a5795;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.facebook:hover:not(:disabled), article.page .body .social a.facebook:hover:not(:disabled), article.archive .body .social a.facebook:hover:not(:disabled) {
+          background-color: #3c60ac;
+          cursor: pointer; }
+        article.single .body .social a.facebook:active:not(:disabled), article.page .body .social a.facebook:active:not(:disabled), article.archive .body .social a.facebook:active:not(:disabled), article.single .body .social a.facebook:focus:not(:disabled), article.page .body .social a.facebook:focus:not(:disabled), article.archive .body .social a.facebook:focus:not(:disabled) {
+          background-color: #364e7f;
+          cursor: pointer; }
+        article.single .body .social a.facebook:disabled, article.page .body .social a.facebook:disabled, article.archive .body .social a.facebook:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.twitter, article.page .body .social a.twitter, article.archive .body .social a.twitter {
+        background-color: #55acee;
+        border-radius: 3px;
+        border: none;
+        color: #333333;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.twitter:hover:not(:disabled), article.page .body .social a.twitter:hover:not(:disabled), article.archive .body .social a.twitter:hover:not(:disabled) {
+          background-color: #69b8f4;
+          cursor: pointer; }
+        article.single .body .social a.twitter:active:not(:disabled), article.page .body .social a.twitter:active:not(:disabled), article.archive .body .social a.twitter:active:not(:disabled), article.single .body .social a.twitter:focus:not(:disabled), article.page .body .social a.twitter:focus:not(:disabled), article.archive .body .social a.twitter:focus:not(:disabled) {
+          background-color: #42a0e7;
+          cursor: pointer; }
+        article.single .body .social a.twitter:disabled, article.page .body .social a.twitter:disabled, article.archive .body .social a.twitter:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.email, article.page .body .social a.email, article.archive .body .social a.email {
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #333;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.email:hover:not(:disabled), article.page .body .social a.email:hover:not(:disabled), article.archive .body .social a.email:hover:not(:disabled) {
+          background-color: #404040;
+          cursor: pointer; }
+        article.single .body .social a.email:active:not(:disabled), article.page .body .social a.email:active:not(:disabled), article.archive .body .social a.email:active:not(:disabled), article.single .body .social a.email:focus:not(:disabled), article.page .body .social a.email:focus:not(:disabled), article.archive .body .social a.email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single .body .social a.email:hover:not(:disabled), article.page .body .social a.email:hover:not(:disabled), article.archive .body .social a.email:hover:not(:disabled) {
+          background-color: #423d3d;
+          cursor: pointer; }
+        article.single .body .social a.email:active:not(:disabled), article.page .body .social a.email:active:not(:disabled), article.archive .body .social a.email:active:not(:disabled), article.single .body .social a.email:focus:not(:disabled), article.page .body .social a.email:focus:not(:disabled), article.archive .body .social a.email:focus:not(:disabled) {
+          background-color: #262626;
+          cursor: pointer; }
+        article.single .body .social a.email:disabled, article.page .body .social a.email:disabled, article.archive .body .social a.email:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.support, article.page .body .social a.support, article.archive .body .social a.support {
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #202020;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.support:hover:not(:disabled), article.page .body .social a.support:hover:not(:disabled), article.archive .body .social a.support:hover:not(:disabled) {
+          background-color: #2d2d2d;
+          cursor: pointer; }
+        article.single .body .social a.support:active:not(:disabled), article.page .body .social a.support:active:not(:disabled), article.archive .body .social a.support:active:not(:disabled), article.single .body .social a.support:focus:not(:disabled), article.page .body .social a.support:focus:not(:disabled), article.archive .body .social a.support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single .body .social a.support:hover:not(:disabled), article.page .body .social a.support:hover:not(:disabled), article.archive .body .social a.support:hover:not(:disabled) {
+          background-color: #2f2b2b;
+          cursor: pointer; }
+        article.single .body .social a.support:active:not(:disabled), article.page .body .social a.support:active:not(:disabled), article.archive .body .social a.support:active:not(:disabled), article.single .body .social a.support:focus:not(:disabled), article.page .body .social a.support:focus:not(:disabled), article.archive .body .social a.support:focus:not(:disabled) {
+          background-color: #131313;
+          cursor: pointer; }
+        article.single .body .social a.support:disabled, article.page .body .social a.support:disabled, article.archive .body .social a.support:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .body .social a.book, article.page .body .social a.book, article.archive .body .social a.book {
+        background-color: green;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .body .social a.book:hover:not(:disabled), article.page .body .social a.book:hover:not(:disabled), article.archive .body .social a.book:hover:not(:disabled) {
+          background-color: #009a00;
+          cursor: pointer; }
+        article.single .body .social a.book:active:not(:disabled), article.page .body .social a.book:active:not(:disabled), article.archive .body .social a.book:active:not(:disabled), article.single .body .social a.book:focus:not(:disabled), article.page .body .social a.book:focus:not(:disabled), article.archive .body .social a.book:focus:not(:disabled) {
+          background-color: #026402;
+          cursor: pointer; }
+        article.single .body .social a.book:disabled, article.page .body .social a.book:disabled, article.archive .body .social a.book:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
     article.single .body h3, article.page .body h3, article.archive .body h3 {
       font-size: 1.5em;
       font-weight: 600;
@@ -1281,6 +1417,26 @@ article.single, article.page, article.archive {
       article.single .share-sub .share a.support:disabled, article.page .share-sub .share a.support:disabled, article.archive .share-sub .share a.support:disabled {
         opacity: 0.5;
         cursor: not-allowed; }
+    article.single .share-sub .share a.book, article.page .share-sub .share a.book, article.archive .share-sub .share a.book {
+      background-color: green;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      padding: 7px 18px;
+      text-decoration: none;
+      background-clip: padding-box; }
+      article.single .share-sub .share a.book:hover:not(:disabled), article.page .share-sub .share a.book:hover:not(:disabled), article.archive .share-sub .share a.book:hover:not(:disabled) {
+        background-color: #009a00;
+        cursor: pointer; }
+      article.single .share-sub .share a.book:active:not(:disabled), article.page .share-sub .share a.book:active:not(:disabled), article.archive .share-sub .share a.book:active:not(:disabled), article.single .share-sub .share a.book:focus:not(:disabled), article.page .share-sub .share a.book:focus:not(:disabled), article.archive .share-sub .share a.book:focus:not(:disabled) {
+        background-color: #026402;
+        cursor: pointer; }
+      article.single .share-sub .share a.book:disabled, article.page .share-sub .share a.book:disabled, article.archive .share-sub .share a.book:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
     article.single .share-sub .share a.email, article.page .share-sub .share a.email, article.archive .share-sub .share a.email {
       font-size: 0.9em; }
   article.single .share-fixed, article.page .share-fixed, article.archive .share-fixed {
@@ -1408,6 +1564,26 @@ article.single, article.page, article.archive {
           background-color: #131313;
           cursor: pointer; }
         article.single .share-fixed ul a.support:disabled, article.page .share-fixed ul a.support:disabled, article.archive .share-fixed ul a.support:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+      article.single .share-fixed ul a.book, article.page .share-fixed ul a.book, article.archive .share-fixed ul a.book {
+        background-color: green;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box; }
+        article.single .share-fixed ul a.book:hover:not(:disabled), article.page .share-fixed ul a.book:hover:not(:disabled), article.archive .share-fixed ul a.book:hover:not(:disabled) {
+          background-color: #009a00;
+          cursor: pointer; }
+        article.single .share-fixed ul a.book:active:not(:disabled), article.page .share-fixed ul a.book:active:not(:disabled), article.archive .share-fixed ul a.book:active:not(:disabled), article.single .share-fixed ul a.book:focus:not(:disabled), article.page .share-fixed ul a.book:focus:not(:disabled), article.archive .share-fixed ul a.book:focus:not(:disabled) {
+          background-color: #026402;
+          cursor: pointer; }
+        article.single .share-fixed ul a.book:disabled, article.page .share-fixed ul a.book:disabled, article.archive .share-fixed ul a.book:disabled {
           opacity: 0.5;
           cursor: not-allowed; }
       article.single .share-fixed ul li, article.page .share-fixed ul li, article.archive .share-fixed ul li {
