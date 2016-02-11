@@ -90,6 +90,9 @@ $vertical-spacing: 24px;
       }
       a.button {
         @include button(flat, $base-accent-color);
+        &.book {
+            @include button(flat, $color-green);
+        }
         padding: 0.8em 1em;
       }
       margin: 0 auto;

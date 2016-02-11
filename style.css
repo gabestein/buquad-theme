@@ -851,6 +851,26 @@ li.current-menu-item.menu-item-592 a:hover, li.current-menu-item.menu-item-592 a
         .recommender .action .container a.button:disabled {
           opacity: 0.5;
           cursor: not-allowed; }
+        .recommender .action .container a.button.book {
+          background-color: green;
+          border-radius: 3px;
+          border: none;
+          color: white;
+          display: inline-block;
+          font-size: inherit;
+          font-weight: bold;
+          padding: 7px 18px;
+          text-decoration: none;
+          background-clip: padding-box; }
+          .recommender .action .container a.button.book:hover:not(:disabled) {
+            background-color: #009a00;
+            cursor: pointer; }
+          .recommender .action .container a.button.book:active:not(:disabled), .recommender .action .container a.button.book:focus:not(:disabled) {
+            background-color: #026402;
+            cursor: pointer; }
+          .recommender .action .container a.button.book:disabled {
+            opacity: 0.5;
+            cursor: not-allowed; }
     .recommender .action .modal {
       text-align: center; }
       .recommender .action .modal h2 {
